@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SFL Tips</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+  <header class="app-header">
+    <div>
+      <p class="eyebrow">Sunflower Land Toolkit</p>
+      <h1>SFL Tips</h1>
+      <p class="subtitle">Tabla base de precios actuales desde SFL.World</p>
+    </div>
+
+    <a class="primary-button" href="{{ url_for('index', search=search) }}">Actualizar</a>
+  </header>
+
+  <main class="container">
+    {% if error %}
+      <section class="error-box">
+        <strong>Error:</strong> {{ error }}
+      </section>
+    {% endif %}
+
+    <section class="cards">
+      <article class="card">
+        <span class="card-label">Productos</span>
+        <strong>{{ items|length }}</strong>
+      </article>
+
+      <article class="card">
+        <span class="card-label">SFL.World</span>
+        <strong>{{ data.updated_text or data.updated_at or "N/D" }}</strong>
+      </article>
+
+      <article class="card">
+        <span class="card-label">Refrescado local</span>
+        <strong>{{ local_refresh }}</strong>
+      </article>
+    </section>
+
+    <section class="panel">
+      <form class="table-toolbar" method="get" action="{{ url_for('index') }}">
+        <input
+          name="search"
+          type="search"
+          value="{{ search }}"
+          placeholder="Buscar producto, ej. Broccoli, Oil, Sunflower..."
+        >
+        <button class="secondary-button" type="submit">Buscar</button>
+        <a class="secondary-button" href="{{ url_for('download_csv', search=search) }}">Descargar CSV</a>
+      </form>
+
+      <p class="status">Fuente: {{ data.source or "N/D" }}</p>
+
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Producto</th>
+              <th>Precio Plaza / P2P</th>
+              <th>Precio Sequence</th>
+              <th>Diferencia</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for item in items %}
+              <tr>
+                <td>{{ item.item }}</td>
+                <td class="number">{{ item.plaza_price | price }}</td>
+                <td class="number">{{ item.sequence_price | price }}</td>
+                <td class="number {% if item.difference and item.difference > 0 %}positive{% elif item.difference and item.difference < 0 %}negative{% endif %}">
+                  {{ item.difference | signed_price }}
+                </td>
+              </tr>
+            {% else %}
+              <tr>
+                <td colspan="4">No hay productos para mostrar.</td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
