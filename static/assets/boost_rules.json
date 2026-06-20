@@ -1,0 +1,7775 @@
+{
+  "source": "Uploaded SFL Hub JS: skills.js.descarga, nfts.js.descarga, buffsTemporarios.js.descarga. Rules mirror calcularBuff signal fields.",
+  "signal_meaning": {
+    "quantidade.x": "multiply yield",
+    "quantidade.+": "add yield",
+    "quantidade.-": "subtract yield",
+    "quantidade.+A": "add area yield divided by plots",
+    "quantidade.xI": "instant/extra multiplier",
+    "tempo.x": "multiply time",
+    "tempo.-": "subtract time milliseconds",
+    "coins.xV": "multiply seed shop sell coins",
+    "coins.xC": "multiply seed cost",
+    "estoque.x": "multiply stock",
+    "estoque.+": "add stock",
+    "duracao.+": "add fruit-tree harvest rounds"
+  },
+  "rules": [
+    {
+      "idName": "greenThumb",
+      "name": "Green Thumb",
+      "sourceType": "skill",
+      "sourceGroup": "legacy",
+      "category": "Skills Legacy",
+      "tier": 0,
+      "description": "+5% more coins when selling crops (Seed Shop)",
+      "coins": [
+        {
+          "sinal": "xV",
+          "buff": 1.05,
+          "recursoAfetado": [
+            "Sunflower",
+            "Potato",
+            "Rhubarb",
+            "Pumpkin",
+            "Zucchini",
+            "Carrot",
+            "Yam",
+            "Cabbage",
+            "Broccoli",
+            "Soybean",
+            "Pepper",
+            "Beetroot",
+            "Cauliflower",
+            "Parsnip",
+            "Eggplant",
+            "Corn",
+            "Onion",
+            "Turnip",
+            "Radish",
+            "Wheat",
+            "Kale",
+            "Artichoke",
+            "Barley"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "seedSpecialist",
+      "name": "Seed Specialist",
+      "sourceType": "skill",
+      "sourceGroup": "legacy",
+      "category": "Skills Legacy",
+      "tier": 0,
+      "description": "-10% on crop growth time",
+      "tempo": [
+        {
+          "sinal": "x",
+          "buff": 0.9,
+          "recursoAfetado": [
+            "Sunflower",
+            "Potato",
+            "Rhubarb",
+            "Pumpkin",
+            "Zucchini",
+            "Carrot",
+            "Yam",
+            "Cabbage",
+            "Broccoli",
+            "Soybean",
+            "Pepper",
+            "Beetroot",
+            "Cauliflower",
+            "Parsnip",
+            "Eggplant",
+            "Corn",
+            "Onion",
+            "Turnip",
+            "Radish",
+            "Wheat",
+            "Kale",
+            "Artichoke",
+            "Barley",
+            "Rice",
+            "Olive"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "coder",
+      "name": "Coder",
+      "sourceType": "skill",
+      "sourceGroup": "legacy",
+      "category": "Skills Legacy",
+      "tier": 0,
+      "description": "+20% on crop harvest",
+      "quantidade": [
+        {
+          "sinal": "x",
+          "buff": 1.2,
+          "recursoAfetado": [
+            "Sunflower",
+            "Potato",
+            "Rhubarb",
+            "Pumpkin",
+            "Zucchini",
+            "Carrot",
+            "Yam",
+            "Cabbage",
+            "Broccoli",
+            "Soybean",
+            "Pepper",
+            "Beetroot",
+            "Cauliflower",
+            "Parsnip",
+            "Eggplant",
+            "Corn",
+            "Onion",
+            "Turnip",
+            "Radish",
+            "Wheat",
+            "Kale",
+            "Artichoke",
+            "Barley",
+            "Rice",
+            "Olive"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "lumberjack",
+      "name": "Lumberjack",
+      "sourceType": "skill",
+      "sourceGroup": "legacy",
+      "category": "Skills Legacy",
+      "tier": 0,
+      "description": "+10% more wood",
+      "quantidade": [
+        {
+          "sinal": "x",
+          "buff": 1.1,
+          "recursoAfetado": [
+            "Wood"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "logger",
+      "name": "Logger",
+      "sourceType": "skill",
+      "sourceGroup": "legacy",
+      "category": "Skills Legacy",
+      "tier": 0,
+      "description": "Uses half an axe per tree",
+      "quantidade": [
+        {
+          "sinal": "x",
+          "buff": 0.5,
+          "recursoAfetado": [
+            "Axe"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "discordMod",
+      "name": "Discord Mod",
+      "sourceType": "skill",
+      "sourceGroup": "legacy",
+      "category": "Skills Legacy",
+      "tier": 0,
+      "description": "+35% Wood",
+      "quantidade": [
+        {
+          "sinal": "x",
+          "buff": 1.35,
+          "recursoAfetado": [
+            "Wood"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "prospector",
+      "name": "Prospector",
+      "sourceType": "skill",
+      "sourceGroup": "legacy",
+      "category": "Skills Legacy",
+      "tier": 0,
+      "description": "+20% Stone",
+      "quantidade": [
+        {
+          "sinal": "x",
+          "buff": 1.2,
+          "recursoAfetado": [
+            "Stone"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "goldRush",
+      "name": "Gold Rush",
+      "sourceType": "skill",
+      "sourceGroup": "legacy",
+      "category": "Skills Legacy",
+      "tier": 0,
+      "description": "+50% Gold",
+      "quantidade": [
+        {
+          "sinal": "x",
+          "buff": 1.5,
+          "recursoAfetado": [
+            "Gold"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "wrangler",
+      "name": "Wrangler",
+      "sourceType": "skill",
+      "sourceGroup": "legacy",
+      "category": "Skills Legacy",
+      "tier": 0,
+      "description": "-10% Animal Cooldowns",
+      "tempo": [
+        {
+          "sinal": "x",
+          "buff": 0.9,
+          "recursoAfetado": [
+            "galinha",
+            "vaca",
+            "ovelha"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "barnManager",
+      "name": "Barn Manager",
+      "sourceType": "skill",
+      "sourceGroup": "legacy",
+      "category": "Skills Legacy",
+      "tier": 0,
+      "description": "+0.1 Yield for Animal Produce",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.1,
+          "recursoAfetado": [
+            "egg",
+            "feather",
+            "milk",
+            "leather",
+            "wool",
+            "merinoWool"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "greenThumb2",
+      "name": "Green Thumb",
+      "sourceType": "skill",
+      "sourceGroup": "skillsCrops",
+      "category": "Crops",
+      "tier": 1,
+      "description": "-5% in the time of Crops",
+      "tempo": [
+        {
+          "sinal": "x",
+          "buff": 0.95,
+          "recursoAfetado": [
+            "Sunflower",
+            "Potato",
+            "Rhubarb",
+            "Pumpkin",
+            "Zucchini",
+            "Carrot",
+            "Yam",
+            "Cabbage",
+            "Broccoli",
+            "Soybean",
+            "Pepper",
+            "Beetroot",
+            "Cauliflower",
+            "Parsnip",
+            "Eggplant",
+            "Corn",
+            "Onion",
+            "Turnip",
+            "Radish",
+            "Wheat",
+            "Kale",
+            "Artichoke",
+            "Barley"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "youngFarmer",
+      "name": "Young Farmer",
+      "sourceType": "skill",
+      "sourceGroup": "skillsCrops",
+      "category": "Crops",
+      "tier": 1,
+      "description": "+0.1 Basic Crop Yield",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.1,
+          "recursoAfetado": [
+            "Sunflower",
+            "Potato",
+            "Rhubarb",
+            "Pumpkin",
+            "Zucchini"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "experiencedFarmer",
+      "name": "Experienced Farmer",
+      "sourceType": "skill",
+      "sourceGroup": "skillsCrops",
+      "category": "Crops",
+      "tier": 1,
+      "description": "+0.1 Medium Crop Yield",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.1,
+          "recursoAfetado": [
+            "Carrot",
+            "Yam",
+            "Cabbage",
+            "Broccoli",
+            "Soybean",
+            "Pepper",
+            "Beetroot",
+            "Cauliflower",
+            "Parsnip"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "oldFarmer",
+      "name": "Old Farmer",
+      "sourceType": "skill",
+      "sourceGroup": "skillsCrops",
+      "category": "Crops",
+      "tier": 1,
+      "description": "+0.1 Advanced Crop Yield",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.1,
+          "recursoAfetado": [
+            "Eggplant",
+            "Corn",
+            "Onion",
+            "Turnip",
+            "Radish",
+            "Wheat",
+            "Kale",
+            "Artichoke",
+            "Barley"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "bettysFriend",
+      "name": "Betty's Friend",
+      "sourceType": "skill",
+      "sourceGroup": "skillsCrops",
+      "category": "Crops",
+      "tier": 1,
+      "description": "Delivery of 'Betty' Coin increased by 30%",
+      "delivery": [
+        {
+          "sinal": "x",
+          "buff": 1.3,
+          "recursoAfetado": [
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "chonkyScarecrow",
+      "name": "Chonky Scarecrow",
+      "sourceType": "skill",
+      "sourceGroup": "skillsCrops",
+      "category": "Crops",
+      "tier": 1,
+      "description": "Basic Scarecrow AOE increased to 7x7; -10% basic crop growth time.",
+      "tempo": [
+        {
+          "sinal": "x",
+          "buff": 1.3,
+          "recursoAfetado": [
+            "Basic Scarecrow"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "strongRoots",
+      "name": "Strong Roots",
+      "sourceType": "skill",
+      "sourceGroup": "skillsCrops",
+      "category": "Crops",
+      "tier": 2,
+      "description": "10% reduction in the time of Advanced Crops",
+      "tempo": [
+        {
+          "sinal": "x",
+          "buff": 0.9,
+          "recursoAfetado": [
+            "Eggplant",
+            "Corn",
+            "Onion",
+            "Turnip",
+            "Radish",
+            "Wheat",
+            "Kale",
+            "Artichoke",
+            "Barley"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "coinSwindler",
+      "name": "Coin Swindler",
+      "sourceType": "skill",
+      "sourceGroup": "skillsCrops",
+      "category": "Crops",
+      "tier": 2,
+      "description": "+10% coins when selling crops (Seed Shop)",
+      "coins": [
+        {
+          "sinal": "xV",
+          "buff": 1.1,
+          "recursoAfetado": [
+            "Sunflower",
+            "Potato",
+            "Rhubarb",
+            "Pumpkin",
+            "Zucchini",
+            "Carrot",
+            "Yam",
+            "Cabbage",
+            "Broccoli",
+            "Soybean",
+            "Pepper",
+            "Beetroot",
+            "Cauliflower",
+            "Parsnip",
+            "Eggplant",
+            "Corn",
+            "Onion",
+            "Turnip",
+            "Radish",
+            "Wheat",
+            "Kale",
+            "Artichoke",
+            "Barley"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "goldenSunflower",
+      "name": "Golden Sunflower",
+      "sourceType": "skill",
+      "sourceGroup": "skillsCrops",
+      "category": "Crops",
+      "tier": 2,
+      "description": "1/700 chance of getting +0.35 gold when manually harvesting sunflowers"
+    },
+    {
+      "idName": "horrorMike",
+      "name": "Horror Mike",
+      "sourceType": "skill",
+      "sourceGroup": "skillsCrops",
+      "category": "Crops",
+      "tier": 2,
+      "description": "Scary Mike AOE increases the size to 7x7 and +0.1 Crops (Medium Crops)",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 14.7,
+          "recursoAfetado": [
+            "Scary Mike"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "lauriesGains",
+      "name": "Laurie's Gains",
+      "sourceType": "skill",
+      "sourceGroup": "skillsCrops",
+      "category": "Crops",
+      "tier": 2,
+      "description": "Laurie Crow AOE increases the size to 7x7 and +0.1 Crops (Advanced Crops)",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 14.7,
+          "recursoAfetado": [
+            "Laurie the Chuckle Crow"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "instantGrowth",
+      "name": "Instant Growth",
+      "sourceType": "skill",
+      "sourceGroup": "skillsCrops",
+      "category": "Crops",
+      "tier": 3,
+      "description": "Ability to make all Crops ready for harvest (1/72h)",
+      "reset": [
+        {
+          "recursoAfetado": [
+            "Sunflower",
+            "Potato",
+            "Rhubarb",
+            "Pumpkin",
+            "Zucchini",
+            "Carrot",
+            "Yam",
+            "Cabbage",
+            "Broccoli",
+            "Soybean",
+            "Pepper",
+            "Beetroot",
+            "Cauliflower",
+            "Parsnip",
+            "Eggplant",
+            "Corn",
+            "Onion",
+            "Turnip",
+            "Radish",
+            "Wheat",
+            "Kale",
+            "Artichoke",
+            "Barley"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "acreFarm",
+      "name": "Acre Farm",
+      "sourceType": "skill",
+      "sourceGroup": "skillsCrops",
+      "category": "Crops",
+      "tier": 3,
+      "description": "+1 Advanced crop yeild, -0.5 Basic and Medium crop yield",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 1,
+          "recursoAfetado": [
+            "Eggplant",
+            "Corn",
+            "Onion",
+            "Turnip",
+            "Radish",
+            "Wheat",
+            "Kale",
+            "Artichoke",
+            "Barley"
+          ]
+        },
+        {
+          "sinal": "-",
+          "buff": 0.5,
+          "recursoAfetado": [
+            "Sunflower",
+            "Potato",
+            "Rhubarb",
+            "Pumpkin",
+            "Zucchini",
+            "Carrot",
+            "Yam",
+            "Cabbage",
+            "Broccoli",
+            "Soybean",
+            "Pepper",
+            "Beetroot",
+            "Cauliflower",
+            "Parsnip"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "hectareFarm",
+      "name": "Hectare Farm",
+      "sourceType": "skill",
+      "sourceGroup": "skillsCrops",
+      "category": "Crops",
+      "tier": 3,
+      "description": "+1 Basic and Medium crop yield, -0.5 Advanced crop yield",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 1,
+          "recursoAfetado": [
+            "Sunflower",
+            "Potato",
+            "Rhubarb",
+            "Pumpkin",
+            "Zucchini",
+            "Carrot",
+            "Yam",
+            "Cabbage",
+            "Broccoli",
+            "Soybean",
+            "Pepper",
+            "Beetroot",
+            "Cauliflower",
+            "Parsnip"
+          ]
+        },
+        {
+          "sinal": "-",
+          "buff": 0.5,
+          "recursoAfetado": [
+            "Eggplant",
+            "Corn",
+            "Onion",
+            "Turnip",
+            "Radish",
+            "Wheat",
+            "Kale",
+            "Artichoke",
+            "Barley"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "fruitfulFumble",
+      "name": "Fruitful Fumble",
+      "sourceType": "skill",
+      "sourceGroup": "skillsFruits",
+      "category": "Fruits",
+      "tier": 1,
+      "description": "+0.1 Fruit Yield",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.1,
+          "recursoAfetado": [
+            "Tomato",
+            "Lemon",
+            "Blueberry",
+            "Orange",
+            "Apple",
+            "Banana"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "fruityHeaven",
+      "name": "Fruity Heaven",
+      "sourceType": "skill",
+      "sourceGroup": "skillsFruits",
+      "category": "Fruits",
+      "tier": 1,
+      "description": "-10% in the cost of fruit seeds",
+      "coins": [
+        {
+          "sinal": "xC",
+          "buff": 0.9,
+          "recursoAfetado": [
+            "Tomato",
+            "Lemon",
+            "Blueberry",
+            "Orange",
+            "Apple",
+            "Banana"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "fruityProfit",
+      "name": "Fruity Profit",
+      "sourceType": "skill",
+      "sourceGroup": "skillsFruits",
+      "category": "Fruits",
+      "tier": 1,
+      "description": "+50% coins on Tango deliveries",
+      "delivery": [
+        {
+          "sinal": "x",
+          "buff": 1.5,
+          "recursoAfetado": [
+            "Tomato",
+            "Lemon",
+            "Blueberry",
+            "Orange",
+            "Apple",
+            "Banana"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "loyalMacaw",
+      "name": "Loyal Macaw",
+      "sourceType": "skill",
+      "sourceGroup": "skillsFruits",
+      "category": "Fruits",
+      "tier": 1,
+      "description": "Double Macaw's Effect",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.1,
+          "recursoAfetado": [
+            "Macaw"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "noAxeNoWorries",
+      "name": "No Axe No Worries",
+      "sourceType": "skill",
+      "sourceGroup": "skillsFruits",
+      "category": "Fruits",
+      "tier": 1,
+      "description": "Cut fruit branches without axes, -1 wood from fruit branches",
+      "quantidade": [
+        {
+          "sinal": "x",
+          "buff": 0,
+          "recursoAfetado": [
+            "Axe",
+            "Wood"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "catchup",
+      "name": "Catchup",
+      "sourceType": "skill",
+      "sourceGroup": "skillsFruits",
+      "category": "Fruits",
+      "tier": 2,
+      "description": "-10% in the growth time of fruits",
+      "tempo": [
+        {
+          "sinal": "x",
+          "buff": 0.9,
+          "recursoAfetado": [
+            "Tomato",
+            "Lemon",
+            "Blueberry",
+            "Orange",
+            "Apple",
+            "Banana"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "fruityWoody",
+      "name": "Fruity Woody",
+      "sourceType": "skill",
+      "sourceGroup": "skillsFruits",
+      "category": "Fruits",
+      "tier": 2,
+      "description": "+1 wood from fruit branches and stems",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 1,
+          "recursoAfetado": [
+            "Wood"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "pearTurbocharge",
+      "name": "Pear Turbocharge",
+      "sourceType": "skill",
+      "sourceGroup": "skillsFruits",
+      "category": "Fruits",
+      "tier": 2,
+      "description": "Double the effect of Immortal Pear's"
+    },
+    {
+      "idName": "crimeFruit",
+      "name": "Crime Fruit",
+      "sourceType": "skill",
+      "sourceGroup": "skillsFruits",
+      "category": "Fruits",
+      "tier": 2,
+      "description": "+10 in the stock of Tomato and Lemon seeds",
+      "estoque": [
+        {
+          "sinal": "+",
+          "buff": 10,
+          "recursoAfetado": [
+            "Tomato",
+            "Lemon"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "generousOrchard",
+      "name": "Generous Orchard",
+      "sourceType": "skill",
+      "sourceGroup": "skillsFruits",
+      "category": "Fruits",
+      "tier": 3,
+      "description": "20% chance of +1 in fruit yield",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.2,
+          "recursoAfetado": [
+            "Tomato",
+            "Lemon",
+            "Blueberry",
+            "Orange",
+            "Apple",
+            "Banana"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "longPickings",
+      "name": "Long Pickings",
+      "sourceType": "skill",
+      "sourceGroup": "skillsFruits",
+      "category": "Fruits",
+      "tier": 3,
+      "description": "-25% Apple and Banana growth time, +10% growth time for all other fruit patch fruits",
+      "tempo": [
+        {
+          "sinal": "x",
+          "buff": 0.75,
+          "recursoAfetado": [
+            "Apple",
+            "Banana"
+          ]
+        },
+        {
+          "sinal": "x",
+          "buff": 1.1,
+          "recursoAfetado": [
+            "Tomato",
+            "Lemon",
+            "Blueberry",
+            "Orange"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "shortPickings",
+      "name": "Short Pickings",
+      "sourceType": "skill",
+      "sourceGroup": "skillsFruits",
+      "category": "Fruits",
+      "tier": 3,
+      "description": "-25% Orange and Blueberry growth time, +10% growth time for all other fruit patch fruits",
+      "tempo": [
+        {
+          "sinal": "x",
+          "buff": 0.75,
+          "recursoAfetado": [
+            "Blueberry",
+            "Orange"
+          ]
+        },
+        {
+          "sinal": "x",
+          "buff": 1.1,
+          "recursoAfetado": [
+            "Tomato",
+            "Lemon",
+            "Apple",
+            "Banana"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "zestyVibes",
+      "name": "Zesty Vibes",
+      "sourceType": "skill",
+      "sourceGroup": "skillsFruits",
+      "category": "Fruits",
+      "tier": 3,
+      "description": "+1 in the yield of Tomato and Lemon, -0.25 in the yield for all other fruits.",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 1,
+          "recursoAfetado": [
+            "Tomato",
+            "Lemon"
+          ]
+        },
+        {
+          "sinal": "-",
+          "buff": 0.25,
+          "recursoAfetado": [
+            "Blueberry",
+            "Orange",
+            "Apple",
+            "Banana"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "glassRoom",
+      "name": "Glass Room",
+      "sourceType": "skill",
+      "sourceGroup": "skillsGreenhouse",
+      "category": "Greenhouse",
+      "tier": 1,
+      "description": "+0.1 in greenhouse production yield.",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.1,
+          "recursoAfetado": [
+            "Grape",
+            "Rice",
+            "Olive"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "seedyBusiness",
+      "name": "Seedy Business",
+      "sourceType": "skill",
+      "sourceGroup": "skillsGreenhouse",
+      "category": "Greenhouse",
+      "tier": 1,
+      "description": "-15% in the cost of greenhouse seeds.",
+      "coins": [
+        {
+          "sinal": "xC",
+          "buff": 0.85,
+          "recursoAfetado": [
+            "Grape",
+            "Rice",
+            "Olive"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "riceAndShine",
+      "name": "Rice and Shine",
+      "sourceType": "skill",
+      "sourceGroup": "skillsGreenhouse",
+      "category": "Greenhouse",
+      "tier": 1,
+      "description": "-5% in the growth time of greenhouse products.",
+      "tempo": [
+        {
+          "sinal": "x",
+          "buff": 0.95,
+          "recursoAfetado": [
+            "Grape",
+            "Rice",
+            "Olive"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "VictoriasSecretary",
+      "name": "Victoria's Secretary",
+      "sourceType": "skill",
+      "sourceGroup": "skillsGreenhouse",
+      "category": "Greenhouse",
+      "tier": 1,
+      "description": "+50% in coins on Victoria's deliveries.",
+      "delivery": [
+        {
+          "sinal": "x",
+          "buff": 1.5,
+          "recursoAfetado": [
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "oliveExpress",
+      "name": "Olive Express",
+      "sourceType": "skill",
+      "sourceGroup": "skillsGreenhouse",
+      "category": "Greenhouse",
+      "tier": 2,
+      "description": "-10% in the growth time of olives.",
+      "tempo": [
+        {
+          "sinal": "x",
+          "buff": 0.9,
+          "recursoAfetado": [
+            "Olive"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "riceRocket",
+      "name": "Rice Rocket",
+      "sourceType": "skill",
+      "sourceGroup": "skillsGreenhouse",
+      "category": "Greenhouse",
+      "tier": 2,
+      "description": "-10% in the growth time of rice.",
+      "tempo": [
+        {
+          "sinal": "x",
+          "buff": 0.9,
+          "recursoAfetado": [
+            "Rice"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "vineVelocity",
+      "name": "Vine Velocity",
+      "sourceType": "skill",
+      "sourceGroup": "skillsGreenhouse",
+      "category": "Greenhouse",
+      "tier": 2,
+      "description": "-10% in the growth time of grapes.",
+      "tempo": [
+        {
+          "sinal": "x",
+          "buff": 0.9,
+          "recursoAfetado": [
+            "Grape"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "seededBounty",
+      "name": "Seeded Bounty",
+      "sourceType": "skill",
+      "sourceGroup": "skillsGreenhouse",
+      "category": "Greenhouse",
+      "tier": 2,
+      "description": "+0.5 in GH production yield, +1 greenhouse seed to plant.",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.5,
+          "recursoAfetado": [
+            "Grape",
+            "Rice",
+            "Olive"
+          ]
+        },
+        {
+          "sinal": "+S",
+          "buff": 1,
+          "recursoAfetado": [
+            "Grape",
+            "Rice",
+            "Olive"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "greenhouseGuru",
+      "name": "Greenhouse Guru",
+      "sourceType": "skill",
+      "sourceGroup": "skillsGreenhouse",
+      "category": "Greenhouse",
+      "tier": 3,
+      "description": "Make all GH crops that are growing ready for harvest (1/96h).",
+      "reset": [
+        {
+          "recursoAfetado": [
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "greenhouseGamble",
+      "name": "Greenhouse Gamble",
+      "sourceType": "skill",
+      "sourceGroup": "skillsGreenhouse",
+      "category": "Greenhouse",
+      "tier": 3,
+      "description": "25% chance of +1 in GH production.",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.25,
+          "recursoAfetado": [
+            "Grape",
+            "Rice",
+            "Olive"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "slickSaver",
+      "name": "Slick Saver",
+      "sourceType": "skill",
+      "sourceGroup": "skillsGreenhouse",
+      "category": "Greenhouse",
+      "tier": 3,
+      "description": "-1 Oil to cultivate GH products.",
+      "oilGH": [
+        {
+          "sinal": "-",
+          "buff": 1,
+          "recursoAfetado": [
+            "Grape",
+            "Rice",
+            "Olive"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "greasyPlants",
+      "name": "Greasy Plants",
+      "sourceType": "skill",
+      "sourceGroup": "skillsGreenhouse",
+      "category": "Greenhouse",
+      "tier": 3,
+      "description": "+1 in GH production yield, +100% in Oil consumption.",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 1,
+          "recursoAfetado": [
+            "Grape",
+            "Rice",
+            "Olive"
+          ]
+        }
+      ],
+      "oilGH": [
+        {
+          "sinal": "x",
+          "buff": 2,
+          "recursoAfetado": [
+            "Grape",
+            "Rice",
+            "Olive"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "lumberjacksExtra",
+      "name": "Lumberjack's Extra",
+      "sourceType": "skill",
+      "sourceGroup": "skillsTrees",
+      "category": "Trees",
+      "tier": 1,
+      "description": "+0.1 in wood yield.",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.1,
+          "recursoAfetado": [
+            "Wood"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "treeCharge",
+      "name": "Tree Charge",
+      "sourceType": "skill",
+      "sourceGroup": "skillsTrees",
+      "category": "Trees",
+      "tier": 1,
+      "description": "-10% in the growth time of trees.",
+      "tempo": [
+        {
+          "sinal": "x",
+          "buff": 0.9,
+          "recursoAfetado": [
+            "Wood"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "moreAxes",
+      "name": "More Axes",
+      "sourceType": "skill",
+      "sourceGroup": "skillsTrees",
+      "category": "Trees",
+      "tier": 1,
+      "description": "+50 in axe stock.",
+      "estoque": [
+        {
+          "sinal": "+",
+          "buff": 50,
+          "recursoAfetado": [
+            "Axe"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "instaChop",
+      "name": "Insta-Chop",
+      "sourceType": "skill",
+      "sourceGroup": "skillsTrees",
+      "category": "Trees",
+      "tier": 1,
+      "description": "A single hit on trees."
+    },
+    {
+      "idName": "toughTree",
+      "name": "Tough Tree",
+      "sourceType": "skill",
+      "sourceGroup": "skillsTrees",
+      "category": "Trees",
+      "tier": 2,
+      "description": "1/10 chance of x3 in wood yield.",
+      "quantidade": [
+        {
+          "sinal": "x",
+          "buff": 1.2,
+          "recursoAfetado": [
+            "Wood"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "fellersDiscount",
+      "name": "Feller's Discount",
+      "sourceType": "skill",
+      "sourceGroup": "skillsTrees",
+      "category": "Trees",
+      "tier": 2,
+      "description": "-20% in axe cost.",
+      "coins": [
+        {
+          "sinal": "xC",
+          "buff": 0.8,
+          "recursoAfetado": [
+            "Axe"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "moneyTree",
+      "name": "Money Tree",
+      "sourceType": "skill",
+      "sourceGroup": "skillsTrees",
+      "category": "Trees",
+      "tier": 2,
+      "description": "1% chance to find 200 Coins when cutting down trees.",
+      "rng": [
+        {
+          "sinal": "+",
+          "buff": 200,
+          "recursoAfetado": [
+            "Wood"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "treeTurnaround",
+      "name": "Tree Turnaround",
+      "sourceType": "skill",
+      "sourceGroup": "skillsTrees",
+      "category": "Trees",
+      "tier": 3,
+      "description": "15% chance for trees to grow instantly.",
+      "quantidade": [
+        {
+          "sinal": "xI",
+          "buff": 1.15,
+          "recursoAfetado": [
+            "Axe",
+            "Wood"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "treeBlitz",
+      "name": "Tree Blitz",
+      "sourceType": "skill",
+      "sourceGroup": "skillsTrees",
+      "category": "Trees",
+      "tier": 3,
+      "description": "Make all trees grow instantly (once every 24 hours).",
+      "reset": [
+        {
+          "recursoAfetado": [
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "rockNRoll",
+      "name": "Rock'N'Roll",
+      "sourceType": "skill",
+      "sourceGroup": "skillsMinerals",
+      "category": "Minerals",
+      "tier": 1,
+      "description": "+0.1 Stone Yield",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.1,
+          "recursoAfetado": [
+            "Stone"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "ironBumpkin",
+      "name": "Iron Bumpkin",
+      "sourceType": "skill",
+      "sourceGroup": "skillsMinerals",
+      "category": "Minerals",
+      "tier": 1,
+      "description": "+0.1 Iron Yield",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.1,
+          "recursoAfetado": [
+            "Iron"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "speedMiner",
+      "name": "Speed Miner",
+      "sourceType": "skill",
+      "sourceGroup": "skillsMinerals",
+      "category": "Minerals",
+      "tier": 1,
+      "description": "-20% in stone recovery time.",
+      "tempo": [
+        {
+          "sinal": "x",
+          "buff": 0.8,
+          "recursoAfetado": [
+            "Stone"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "tapProspector",
+      "name": "Tap Prospector",
+      "sourceType": "skill",
+      "sourceGroup": "skillsMinerals",
+      "category": "Minerals",
+      "tier": 1,
+      "description": "1 hit on small minerals (stone, iron, gold)"
+    },
+    {
+      "idName": "forgeWardProfits",
+      "name": "Forge-Ward Profits",
+      "sourceType": "skill",
+      "sourceGroup": "skillsMinerals",
+      "category": "Minerals",
+      "tier": 1,
+      "description": "+20% revenue on deliveries to the Blacksmith.",
+      "delivery": [
+        {
+          "sinal": "x",
+          "buff": 1.2,
+          "recursoAfetado": [
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "ironHustle",
+      "name": "Iron Hustle",
+      "sourceType": "skill",
+      "sourceGroup": "skillsMinerals",
+      "category": "Minerals",
+      "tier": 2,
+      "description": "-30% in iron recovery time.",
+      "tempo": [
+        {
+          "sinal": "x",
+          "buff": 0.7,
+          "recursoAfetado": [
+            "Iron"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "frugalMiner",
+      "name": "Frugal Miner",
+      "sourceType": "skill",
+      "sourceGroup": "skillsMinerals",
+      "category": "Minerals",
+      "tier": 2,
+      "description": "-20% in pickaxe coin cost.",
+      "coins": [
+        {
+          "sinal": "xC",
+          "buff": 0.8,
+          "recursoAfetado": [
+            "Pickaxe",
+            "Stone Pickaxe",
+            "Iron Pickaxe",
+            "Gold Pickaxe"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "rockyFavor",
+      "name": "Rocky Favor",
+      "sourceType": "skill",
+      "sourceGroup": "skillsMinerals",
+      "category": "Minerals",
+      "tier": 2,
+      "description": "+1 in stone yield, -0.5 in iron yield.",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 1,
+          "recursoAfetado": [
+            "Stone"
+          ]
+        },
+        {
+          "sinal": "-",
+          "buff": 0.5,
+          "recursoAfetado": [
+            "Iron"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "fireKissed",
+      "name": "Fire Kissed",
+      "sourceType": "skill",
+      "sourceGroup": "skillsMinerals",
+      "category": "Minerals",
+      "tier": 2,
+      "description": "+1 in Crimstone yield on the 5th consecutive day.",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.2,
+          "recursoAfetado": [
+            "Crimstone"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "midasSprint",
+      "name": "Midas Sprint",
+      "sourceType": "skill",
+      "sourceGroup": "skillsMinerals",
+      "category": "Minerals",
+      "tier": 2,
+      "description": "-10% in gold recovery time.",
+      "tempo": [
+        {
+          "sinal": "x",
+          "buff": 0.9,
+          "recursoAfetado": [
+            "Gold"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "ferrousFavor",
+      "name": "Ferrous Favor",
+      "sourceType": "skill",
+      "sourceGroup": "skillsMinerals",
+      "category": "Minerals",
+      "tier": 3,
+      "description": "+1 in iron yield, -0.5 in stone yield.",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 1,
+          "recursoAfetado": [
+            "Iron"
+          ]
+        },
+        {
+          "sinal": "-",
+          "buff": 0.5,
+          "recursoAfetado": [
+            "Stone"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "goldenTouch",
+      "name": "Golden Touch",
+      "sourceType": "skill",
+      "sourceGroup": "skillsMinerals",
+      "category": "Minerals",
+      "tier": 3,
+      "description": "+0.5 Gold Yield",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.5,
+          "recursoAfetado": [
+            "Gold"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "morePicks",
+      "name": "More Picks",
+      "sourceType": "skill",
+      "sourceGroup": "skillsMinerals",
+      "category": "Minerals",
+      "tier": 3,
+      "description": "Increased stock: +70 Pickaxe, +20 Stone Pickaxe, +7 Iron Pickaxe.",
+      "estoque": [
+        {
+          "sinal": "+",
+          "buff": 70,
+          "recursoAfetado": [
+            "Pickaxe"
+          ]
+        },
+        {
+          "sinal": "+",
+          "buff": 20,
+          "recursoAfetado": [
+            "Stone Pickaxe"
+          ]
+        },
+        {
+          "sinal": "+",
+          "buff": 7,
+          "recursoAfetado": [
+            "Iron Pickaxe"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "firesideAlchemist",
+      "name": "Fireside Alchemist",
+      "sourceType": "skill",
+      "sourceGroup": "skillsMinerals",
+      "category": "Minerals",
+      "tier": 3,
+      "description": "-15% in Crimstone recovery time.",
+      "tempo": [
+        {
+          "sinal": "x",
+          "buff": 0.85,
+          "recursoAfetado": [
+            "Crimstone"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "midasRush",
+      "name": "Midas Rush",
+      "sourceType": "skill",
+      "sourceGroup": "skillsMinerals",
+      "category": "Minerals",
+      "tier": 3,
+      "description": "-20% in gold recovery time.",
+      "tempo": [
+        {
+          "sinal": "x",
+          "buff": 0.8,
+          "recursoAfetado": [
+            "Gold"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "cropExtensionModuleI",
+      "name": "Crop Extension Module I",
+      "sourceType": "skill",
+      "sourceGroup": "skillsMachinery",
+      "category": "Machinery",
+      "tier": 1,
+      "description": "Allow Rhubarb and Zucchini seeds to be used in the CM."
+    },
+    {
+      "idName": "cropProcessorUnit",
+      "name": "Crop Processor Unit",
+      "sourceType": "skill",
+      "sourceGroup": "skillsMachinery",
+      "category": "Machinery",
+      "tier": 1,
+      "description": "-5% in CM growth time, +10% in Oil consumption.",
+      "tempo": [
+        {
+          "sinal": "xCM",
+          "buff": 0.95,
+          "recursoAfetado": [
+            "Sunflower",
+            "Potato",
+            "Rhubarb",
+            "Pumpkin",
+            "Zucchini",
+            "Carrot",
+            "Yam",
+            "Cabbage",
+            "Broccoli"
+          ]
+        }
+      ],
+      "oilCM": [
+        {
+          "sinal": "+",
+          "buff": 0.1,
+          "recursoAfetado": [
+            "Oil"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "oilGadget",
+      "name": "Oil Gadget",
+      "sourceType": "skill",
+      "sourceGroup": "skillsMachinery",
+      "category": "Machinery",
+      "tier": 1,
+      "description": "-10% in Oil consumption.",
+      "oilCM": [
+        {
+          "sinal": "-",
+          "buff": 0.1,
+          "recursoAfetado": [
+            "Oil"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "oilExtraction",
+      "name": "Oil Extraction",
+      "sourceType": "skill",
+      "sourceGroup": "skillsMachinery",
+      "category": "Machinery",
+      "tier": 1,
+      "description": "+1 Oil when collecting from reserves.",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 1,
+          "recursoAfetado": [
+            "Oil"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "leakProofTank",
+      "name": "Leak-Proof Tank",
+      "sourceType": "skill",
+      "sourceGroup": "skillsMachinery",
+      "category": "Machinery",
+      "tier": 1,
+      "description": "Triple the Oil tank capacity of the Crop Machine."
+    },
+    {
+      "idName": "cropExtensionModuleII",
+      "name": "Crop Extension Module II",
+      "sourceType": "skill",
+      "sourceGroup": "skillsMachinery",
+      "category": "Machinery",
+      "tier": 2,
+      "description": "Allow Carrot and Cabbage seeds to be used in the CM."
+    },
+    {
+      "idName": "cropExtensionModuleIII",
+      "name": "Crop Extension Module III",
+      "sourceType": "skill",
+      "sourceGroup": "skillsMachinery",
+      "category": "Machinery",
+      "tier": 2,
+      "description": "Allow Yam and Broccoli seeds to be used in the CM."
+    },
+    {
+      "idName": "rapidRig",
+      "name": "Rapid Rig",
+      "sourceType": "skill",
+      "sourceGroup": "skillsMachinery",
+      "category": "Machinery",
+      "tier": 2,
+      "description": "-20% in CM growth time, +40% in Oil consumption.",
+      "tempo": [
+        {
+          "sinal": "xCM",
+          "buff": 0.8,
+          "recursoAfetado": [
+            "Sunflower",
+            "Potato",
+            "Rhubarb",
+            "Pumpkin",
+            "Zucchini",
+            "Carrot",
+            "Yam",
+            "Cabbage",
+            "Broccoli"
+          ]
+        }
+      ],
+      "oilCM": [
+        {
+          "sinal": "+",
+          "buff": 0.4,
+          "recursoAfetado": [
+            "Oil"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "oilBeBack",
+      "name": "Oil Be Back",
+      "sourceType": "skill",
+      "sourceGroup": "skillsMachinery",
+      "category": "Machinery",
+      "tier": 2,
+      "description": "-20% in Oil refilling time.",
+      "tempo": [
+        {
+          "sinal": "x",
+          "buff": 0.8,
+          "recursoAfetado": [
+            "Oil"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "oilRig",
+      "name": "Oil Rig",
+      "sourceType": "skill",
+      "sourceGroup": "skillsMachinery",
+      "category": "Machinery",
+      "tier": 2,
+      "description": "Oil Drill requires 20 Wool instead of Leather to craft"
+    },
+    {
+      "idName": "fieldExpansionModule",
+      "name": "Field Expansion Module",
+      "sourceType": "skill",
+      "sourceGroup": "skillsMachinery",
+      "category": "Machinery",
+      "tier": 3,
+      "description": "+5 packages added to the machine."
+    },
+    {
+      "idName": "fieldExtensionModule",
+      "name": "Field Extension Module",
+      "sourceType": "skill",
+      "sourceGroup": "skillsMachinery",
+      "category": "Machinery",
+      "tier": 3,
+      "description": "+5 plots added to the machine."
+    },
+    {
+      "idName": "efficiencyExtensionModule",
+      "name": "Efficiency Extension Module",
+      "sourceType": "skill",
+      "sourceGroup": "skillsMachinery",
+      "category": "Machinery",
+      "tier": 3,
+      "description": "-30% in Oil consumption.",
+      "oilCM": [
+        {
+          "sinal": "-",
+          "buff": 0.3,
+          "recursoAfetado": [
+            "Oil"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "greaseLightning",
+      "name": "Grease Lightning",
+      "sourceType": "skill",
+      "sourceGroup": "skillsMachinery",
+      "category": "Machinery",
+      "tier": 3,
+      "description": "Make empty Oil wells refill instantly (1/96h).",
+      "reset": [
+        {
+          "recursoAfetado": [
+            "Oil"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "efficientFeeding",
+      "name": "Efficient Feeding",
+      "sourceType": "skill",
+      "sourceGroup": "skillsAnimais",
+      "category": "Animals",
+      "tier": 1,
+      "description": "-5% feed required to feed all animals.",
+      "quantidade": [
+        {
+          "sinal": "x",
+          "buff": 0.95,
+          "recursoAfetado": [
+            "galinha",
+            "vaca",
+            "ovelha"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "restlessAnimals",
+      "name": "Restless Animals",
+      "sourceType": "skill",
+      "sourceGroup": "skillsAnimais",
+      "category": "Animals",
+      "tier": 1,
+      "description": "-10% animal sleep time.",
+      "tempo": [
+        {
+          "sinal": "x",
+          "buff": 0.9,
+          "recursoAfetado": [
+            "galinha",
+            "vaca",
+            "ovelha"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "fineFibers",
+      "name": "Fine Fibers",
+      "sourceType": "skill",
+      "sourceGroup": "skillsAnimais",
+      "category": "Animals",
+      "tier": 1,
+      "description": "+0.1 yield to feathers, leather, and merino wool.",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.1,
+          "recursoAfetado": [
+            "feather",
+            "leather",
+            "merinoWool"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "bountifulBounties",
+      "name": "Bountiful Bounties",
+      "sourceType": "skill",
+      "sourceGroup": "skillsAnimais",
+      "category": "Animals",
+      "tier": 1,
+      "description": "+50% coins from Animal Rewards.",
+      "coins": [
+        {
+          "sinal": "xV",
+          "buff": 1.5,
+          "recursoAfetado": [
+            "galinha",
+            "vaca",
+            "ovelha"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "doubleBale",
+      "name": "Double Bale",
+      "sourceType": "skill",
+      "sourceGroup": "skillsAnimais",
+      "category": "Animals",
+      "tier": 1,
+      "description": "Double the effect of Bale.",
+      "quantidade": [
+        {
+          "sinal": "x",
+          "buff": 2,
+          "recursoAfetado": [
+            "Bale"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "baleEconomy",
+      "name": "Bale Economy",
+      "sourceType": "skill",
+      "sourceGroup": "skillsAnimais",
+      "category": "Animals",
+      "tier": 1,
+      "description": "Bale also affects milk and wool production."
+    },
+    {
+      "idName": "featherweight",
+      "name": "Featherweight",
+      "sourceType": "skill",
+      "sourceGroup": "skillsAnimais",
+      "category": "Animals",
+      "tier": 1,
+      "description": "+0.35 feather yield, -0.1 leather & merino wool yield.",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.35,
+          "recursoAfetado": [
+            "feather"
+          ]
+        },
+        {
+          "sinal": "-",
+          "buff": 0.1,
+          "recursoAfetado": [
+            "leather",
+            "merinoWool"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "abundantHarvest",
+      "name": "Abundant Harvest",
+      "sourceType": "skill",
+      "sourceGroup": "skillsAnimais",
+      "category": "Animals",
+      "tier": 2,
+      "description": "+0.2 yield to eggs, wool, and milk.",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.2,
+          "recursoAfetado": [
+            "egg",
+            "milk",
+            "wool"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "heartwarmingInstruments",
+      "name": "Heartwarming Instruments",
+      "sourceType": "skill",
+      "sourceGroup": "skillsAnimais",
+      "category": "Animals",
+      "tier": 2,
+      "description": "+50% animal experience from Animal Affection tools.",
+      "quantidade": [
+        {
+          "sinal": "x",
+          "buff": 1.5,
+          "recursoAfetado": [
+            "Petting Hand",
+            "Brush",
+            "Music Box"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "kaleMix2",
+      "name": "Kale Mix",
+      "sourceType": "skill",
+      "sourceGroup": "skillsAnimais",
+      "category": "Animals",
+      "tier": 2,
+      "description": "Mixed Grain requires 3 kale to craft."
+    },
+    {
+      "idName": "alternateMedicine",
+      "name": "Alternate Medicine",
+      "sourceType": "skill",
+      "sourceGroup": "skillsAnimais",
+      "category": "Animals",
+      "tier": 2,
+      "description": "Medicine requires 1 less lemon and honey to craft.",
+      "quantidade": [
+        {
+          "sinal": "-",
+          "buff": 1,
+          "recursoAfetado": [
+            "Lemon",
+            "Honey"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "healthyLivestock",
+      "name": "Healthy Livestock",
+      "sourceType": "skill",
+      "sourceGroup": "skillsAnimais",
+      "category": "Animals",
+      "tier": 2,
+      "description": "-50% chance of disease.",
+      "rng": [
+        {
+          "sinal": "x",
+          "buff": 0.5,
+          "recursoAfetado": []
+        }
+      ]
+    },
+    {
+      "idName": "merinoWhisperer",
+      "name": "Merino Whisperer",
+      "sourceType": "skill",
+      "sourceGroup": "skillsAnimais",
+      "category": "Animals",
+      "tier": 2,
+      "description": "+0.35 merino wool yield, -0.1 leather & feather yield.",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.35,
+          "recursoAfetado": [
+            "merinoWool"
+          ]
+        },
+        {
+          "sinal": "-",
+          "buff": 0.1,
+          "recursoAfetado": [
+            "leather",
+            "feather"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "cluckyGrazing",
+      "name": "Clucky Grazing",
+      "sourceType": "skill",
+      "sourceGroup": "skillsAnimais",
+      "category": "Animals",
+      "tier": 3,
+      "description": "-25% feed required to feed chickens, +50% feed required to feed other animals.",
+      "quantidade": [
+        {
+          "sinal": "x-",
+          "buff": 0.75,
+          "recursoAfetado": [
+            "galinha"
+          ]
+        },
+        {
+          "sinal": "x+",
+          "buff": 1.5,
+          "recursoAfetado": [
+            "vaca",
+            "ovelha"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "sheepwiseDiet",
+      "name": "Sheepwise Diet",
+      "sourceType": "skill",
+      "sourceGroup": "skillsAnimais",
+      "category": "Animals",
+      "tier": 3,
+      "description": "-25% feed required to feed sheep, +50% feed required to feed other animals.",
+      "quantidade": [
+        {
+          "sinal": "x-",
+          "buff": 0.75,
+          "recursoAfetado": [
+            "ovelha"
+          ]
+        },
+        {
+          "sinal": "x+",
+          "buff": 1.5,
+          "recursoAfetado": [
+            "vaca",
+            "galinha"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "cow-SmartNutrition",
+      "name": "Cow-Smart Nutrition",
+      "sourceType": "skill",
+      "sourceGroup": "skillsAnimais",
+      "category": "Animals",
+      "tier": 3,
+      "description": "-25% feed required to feed cows, +50% feed required to feed other animals.",
+      "quantidade": [
+        {
+          "sinal": "x-",
+          "buff": 0.75,
+          "recursoAfetado": [
+            "vaca"
+          ]
+        },
+        {
+          "sinal": "x+",
+          "buff": 1.5,
+          "recursoAfetado": [
+            "ovelha",
+            "galinha"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "chonkyFeed",
+      "name": "Chonky Feed",
+      "sourceType": "skill",
+      "sourceGroup": "skillsAnimais",
+      "category": "Animals",
+      "tier": 3,
+      "description": "2x animal experience from feeding, +50% feed required to feed all animals.",
+      "quantidade": [
+        {
+          "buff": 2,
+          "recursoAfetado": [
+            "galinha",
+            "vaca",
+            "ovelha"
+          ]
+        },
+        {
+          "sinal": "x+",
+          "buff": 1.5,
+          "recursoAfetado": [
+            "galinha",
+            "vaca",
+            "ovelha"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "leathercraftMastery",
+      "name": "Leathercraft Mastery",
+      "sourceType": "skill",
+      "sourceGroup": "skillsAnimais",
+      "category": "Animals",
+      "tier": 3,
+      "description": "+0.35 leather yield, -0.1 feather & merino wool yield.",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.35,
+          "recursoAfetado": [
+            "leather"
+          ]
+        },
+        {
+          "sinal": "-",
+          "buff": 0.1,
+          "recursoAfetado": [
+            "feather",
+            "merinoWool"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "barnyardRouse",
+      "name": "Barnyard Rouse",
+      "sourceType": "skill",
+      "sourceGroup": "skillsAnimais",
+      "category": "Animals",
+      "tier": 3,
+      "description": "Instantly wakes all animals (1/5d)."
+    },
+    {
+      "idName": "fishermans5Fold",
+      "name": "Fisherman's 5 Fold",
+      "sourceType": "skill",
+      "sourceGroup": "skillsFishing",
+      "category": "Fishing",
+      "tier": 1,
+      "description": "+5 daily fishing reels",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 5,
+          "recursoAfetado": [
+            "fishing"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "fishyChance",
+      "name": "Fishy Chance",
+      "sourceType": "skill",
+      "sourceGroup": "skillsFishing",
+      "category": "Fishing",
+      "tier": 1,
+      "description": "10% chance to get +1 basic fish.",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.1,
+          "recursoAfetado": [
+            "basic fish"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "fishyRoll",
+      "name": "Fishy Roll",
+      "sourceType": "skill",
+      "sourceGroup": "skillsFishing",
+      "category": "Fishing",
+      "tier": 1,
+      "description": "10% chance to get +1 advanced fish.",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.1,
+          "recursoAfetado": [
+            "advenced fish"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "reelDeal",
+      "name": "Reel Deal",
+      "sourceType": "skill",
+      "sourceGroup": "skillsFishing",
+      "category": "Fishing",
+      "tier": 1,
+      "description": "-50% rod coin cost",
+      "quantidade": [
+        {
+          "sinal": "x",
+          "buff": 0.5,
+          "recursoAfetado": [
+            "rod"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "fishermans10Fold",
+      "name": "Fisherman's 10 Fold",
+      "sourceType": "skill",
+      "sourceGroup": "skillsFishing",
+      "category": "Fishing",
+      "tier": 2,
+      "description": "+10 daily fishing reels",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 10,
+          "recursoAfetado": [
+            "fishing"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "fishyFortune",
+      "name": "Fishy Fortune",
+      "sourceType": "skill",
+      "sourceGroup": "skillsFishing",
+      "category": "Fishing",
+      "tier": 2,
+      "description": "+100% coins from Corale's deliveries",
+      "quantidade": [
+        {
+          "sinal": "x",
+          "buff": 2,
+          "recursoAfetado": [
+            "delivery"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "fishyGamble",
+      "name": "Fishy Gamble",
+      "sourceType": "skill",
+      "sourceGroup": "skillsFishing",
+      "category": "Fishing",
+      "tier": 2,
+      "description": "20% chance of +1 expert fish",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.2,
+          "recursoAfetado": [
+            "expert fish"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "frenziedFish",
+      "name": "Frenzied Fish",
+      "sourceType": "skill",
+      "sourceGroup": "skillsFishing",
+      "category": "Fishing",
+      "tier": 3,
+      "description": "During fish frenzy, +1 fish and 50% chance of +1 fish",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 1.5,
+          "recursoAfetado": [
+            "fish"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "moreWithLess",
+      "name": "More With Less",
+      "sourceType": "skill",
+      "sourceGroup": "skillsFishing",
+      "category": "Fishing",
+      "tier": 3,
+      "description": "+10 daily fishing reels",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 10,
+          "recursoAfetado": [
+            "fishing"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "fishyFeast",
+      "name": "Fishy Feast",
+      "sourceType": "skill",
+      "sourceGroup": "skillsFishing",
+      "category": "Fishing",
+      "tier": 3,
+      "description": "+20% Bumpkin XP from Fish",
+      "quantidade": [
+        {
+          "sinal": "x",
+          "buff": 1.2,
+          "recursoAfetado": [
+            "xp"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "fastFeasts",
+      "name": "Fast Feasts",
+      "sourceType": "skill",
+      "sourceGroup": "skillsCooking",
+      "category": "Cooking",
+      "tier": 1,
+      "description": "-10% cooking time for Firepit and Kitchen.",
+      "tempo": [
+        {
+          "sinal": "x",
+          "buff": 0.9,
+          "recursoAfetado": [
+            "cooking"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "nomNom",
+      "name": "Nom Nom",
+      "sourceType": "skill",
+      "sourceGroup": "skillsCooking",
+      "category": "Cooking",
+      "tier": 1,
+      "description": "+10% in food delivery revenue.",
+      "quantidade": [
+        {
+          "sinal": "x",
+          "buff": 1.1,
+          "recursoAfetado": [
+            "delivery"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "munchingMastery",
+      "name": "Munching Mastery",
+      "sourceType": "skill",
+      "sourceGroup": "skillsCooking",
+      "category": "Cooking",
+      "tier": 1,
+      "description": "+5% Bumpkin XP",
+      "xp": [
+        {
+          "sinal": "x",
+          "buff": 1.05,
+          "recursoAfetado": [
+            "xp"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "swiftSizzle",
+      "name": "Swift Sizzle",
+      "sourceType": "skill",
+      "sourceGroup": "skillsCooking",
+      "category": "Cooking",
+      "tier": 1,
+      "description": "-40% Fire Pit cooking time with oil",
+      "tempo": [
+        {
+          "sinal": "x",
+          "buff": 0.6,
+          "recursoAfetado": [
+            "firepit oil"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "frostedCakes",
+      "name": "Frosted Cakes",
+      "sourceType": "skill",
+      "sourceGroup": "skillsCooking",
+      "category": "Cooking",
+      "tier": 2,
+      "description": "-10% Cakes cooking time",
+      "tempo": [
+        {
+          "sinal": "x",
+          "buff": 0.9,
+          "recursoAfetado": [
+            "cake"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "juicyBoost",
+      "name": "Juicy Boost",
+      "sourceType": "skill",
+      "sourceGroup": "skillsCooking",
+      "category": "Cooking",
+      "tier": 2,
+      "description": "+10% Bumpkin XP from drinks",
+      "xp": [
+        {
+          "sinal": "x",
+          "buff": 1.1,
+          "recursoAfetado": [
+            "drink"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "turboFry",
+      "name": "Turbo Fry",
+      "sourceType": "skill",
+      "sourceGroup": "skillsCooking",
+      "category": "Cooking",
+      "tier": 2,
+      "description": "-50% Kitchen cooking time with oil",
+      "tempo": [
+        {
+          "sinal": "x",
+          "buff": 0.5,
+          "recursoAfetado": [
+            "kitchen oil"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "drive-ThroughDeli",
+      "name": "Drive-Through Deli",
+      "sourceType": "skill",
+      "sourceGroup": "skillsCooking",
+      "category": "Cooking",
+      "tier": 2,
+      "description": "+15% Bumpkin XP from Deli",
+      "xp": [
+        {
+          "sinal": "x",
+          "buff": 1.15,
+          "recursoAfetado": [
+            "deli"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "instantGratification",
+      "name": "Instant Gratification",
+      "sourceType": "skill",
+      "sourceGroup": "skillsCooking",
+      "category": "Cooking",
+      "tier": 3,
+      "description": "Makes all currently cooking meals ready to be consumed (1/72h).",
+      "tempo": [
+        {
+          "sinal": "x",
+          "buff": 1,
+          "recursoAfetado": [
+            "cooking"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "doubleNom",
+      "name": "Double Nom",
+      "sourceType": "skill",
+      "sourceGroup": "skillsCooking",
+      "category": "Cooking",
+      "tier": 3,
+      "description": "+1 food from cooking | 2x ingredients required for cooking",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 1,
+          "recursoAfetado": [
+            "food"
+          ]
+        },
+        {
+          "sinal": "x",
+          "buff": 2,
+          "recursoAfetado": [
+            "ingredientes"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "fieryJackpot",
+      "name": "Fiery Jackpot",
+      "sourceType": "skill",
+      "sourceGroup": "skillsCooking",
+      "category": "Cooking",
+      "tier": 3,
+      "description": "+20% Chance of +1 food from Firepit",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.2,
+          "recursoAfetado": [
+            "firepit food"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "fryFrenzy",
+      "name": "Fry Frenzy",
+      "sourceType": "skill",
+      "sourceGroup": "skillsCooking",
+      "category": "Cooking",
+      "tier": 3,
+      "description": "-50% Deli cooking time with oil",
+      "tempo": [
+        {
+          "sinal": "x",
+          "buff": 0.4,
+          "recursoAfetado": [
+            "deli oil"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "efficientBin",
+      "name": "Efficient Bin",
+      "sourceType": "skill",
+      "sourceGroup": "skillsCompost",
+      "category": "Compost",
+      "tier": 1,
+      "description": "+5 Sprout Mix.",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 5,
+          "recursoAfetado": [
+            "sproutMix"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "turboCharged",
+      "name": "Turbo Charged",
+      "sourceType": "skill",
+      "sourceGroup": "skillsCompost",
+      "category": "Compost",
+      "tier": 1,
+      "description": "+5 Fruitful Blend",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 5,
+          "recursoAfetado": [
+            "fruitfulBlend"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "wormyTreat",
+      "name": "Wormy Treat",
+      "sourceType": "skill",
+      "sourceGroup": "skillsCompost",
+      "category": "Compost",
+      "tier": 1,
+      "description": "+1 Worm",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 1,
+          "recursoAfetado": [
+            "worm"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "featheryBusiness",
+      "name": "Feathery Business",
+      "sourceType": "skill",
+      "sourceGroup": "skillsCompost",
+      "category": "Compost",
+      "tier": 1,
+      "description": "Use feathers instead of eggs to boost composters | 2x feathers to boost composters",
+      "quantidade": [
+        {
+          "sinal": "x",
+          "buff": 2,
+          "recursoAfetado": [
+            "feathers"
+          ]
+        }
+      ],
+      "tempo": [
+        {
+          "sinal": "x",
+          "buff": 0.5,
+          "recursoAfetado": [
+            "composter"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "sproutSurge",
+      "name": "Sprout Surge",
+      "sourceType": "skill",
+      "sourceGroup": "skillsCompost",
+      "category": "Compost",
+      "tier": 1,
+      "description": "Place Sprout Mix in all plots."
+    },
+    {
+      "idName": "blend-tastic",
+      "name": "Blend-tastic",
+      "sourceType": "skill",
+      "sourceGroup": "skillsCompost",
+      "category": "Compost",
+      "tier": 1,
+      "description": "Place Fruitful Blend in all fruit tree plots."
+    },
+    {
+      "idName": "premiumWorms",
+      "name": "Premium Worms",
+      "sourceType": "skill",
+      "sourceGroup": "skillsCompost",
+      "category": "Compost",
+      "tier": 2,
+      "description": "+10 Rapid Root",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 10,
+          "recursoAfetado": [
+            "rapidRoot"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "fruitfulBounty",
+      "name": "Fruitful Bounty",
+      "sourceType": "skill",
+      "sourceGroup": "skillsCompost",
+      "category": "Compost",
+      "tier": 2,
+      "description": "Double the effect of Fruitful Blendz's.",
+      "quantidade": [
+        {
+          "sinal": "x",
+          "buff": 2,
+          "recursoAfetado": [
+            "fruitBlend"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "swiftDecomposer",
+      "name": "Swift Decomposer",
+      "sourceType": "skill",
+      "sourceGroup": "skillsCompost",
+      "category": "Compost",
+      "tier": 2,
+      "description": "-10% in composting time.",
+      "tempo": [
+        {
+          "sinal": "x",
+          "buff": 0.9,
+          "recursoAfetado": [
+            "composter"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "compostingBonanza",
+      "name": "Composting Bonanza",
+      "sourceType": "skill",
+      "sourceGroup": "skillsCompost",
+      "category": "Compost",
+      "tier": 2,
+      "description": "Speed up composters by an additional hour when boosting | 2x resources to boost composters",
+      "tempo": [
+        {
+          "sinal": "-",
+          "buff": 3600000,
+          "recursoAfetado": [
+            "composter"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "rootRocket",
+      "name": "Root Rocket",
+      "sourceType": "skill",
+      "sourceGroup": "skillsCompost",
+      "category": "Compost",
+      "tier": 2,
+      "description": "Place Rapid Root in all plots."
+    },
+    {
+      "idName": "compostingOverhaul",
+      "name": "Composting Overhaul",
+      "sourceType": "skill",
+      "sourceGroup": "skillsCompost",
+      "category": "Compost",
+      "tier": 3,
+      "description": "+2 Worms",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 2,
+          "recursoAfetado": [
+            "worm"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "compostingRevamp",
+      "name": "Composting Revamp",
+      "sourceType": "skill",
+      "sourceGroup": "skillsCompost",
+      "category": "Compost",
+      "tier": 3,
+      "description": "+5 fertilisers, -2 Worms",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 5,
+          "recursoAfetado": [
+            "fertilisers"
+          ]
+        },
+        {
+          "sinal": "-",
+          "buff": 2,
+          "recursoAfetado": [
+            "worms"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "sweetBonus",
+      "name": "Sweet Bonus",
+      "sourceType": "skill",
+      "sourceGroup": "skillsBeesFlowers",
+      "category": "Bees & Flowers",
+      "tier": 1,
+      "description": "+0.1 Honey per hive.",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.1,
+          "recursoAfetado": [
+            "honey"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "hyperBees",
+      "name": "Hyper Bees",
+      "sourceType": "skill",
+      "sourceGroup": "skillsBeesFlowers",
+      "category": "Bees & Flowers",
+      "tier": 1,
+      "description": "+0.1 in honey production speed.",
+      "tempo": [
+        {
+          "sinal": "x",
+          "buff": 0.9,
+          "recursoAfetado": [
+            "honey"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "bloomingBoost",
+      "name": "Blooming Boost",
+      "sourceType": "skill",
+      "sourceGroup": "skillsBeesFlowers",
+      "category": "Bees & Flowers",
+      "tier": 1,
+      "description": "-10% in the growth time of flowers.",
+      "tempo": [
+        {
+          "sinal": "x",
+          "buff": 0.9,
+          "recursoAfetado": [
+            "flowers"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "flowerSale",
+      "name": "Flower Sale",
+      "sourceType": "skill",
+      "sourceGroup": "skillsBeesFlowers",
+      "category": "Bees & Flowers",
+      "tier": 1,
+      "description": "-20% in the cost of flower seeds.",
+      "coins": [
+        {
+          "sinal": "x",
+          "buff": 0.8,
+          "recursoAfetado": [
+            "flowers"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "buzzworthyTreats",
+      "name": "Buzzworthy Treats",
+      "sourceType": "skill",
+      "sourceGroup": "skillsBeesFlowers",
+      "category": "Bees & Flowers",
+      "tier": 2,
+      "description": "+10% Experience in foods made with honey.",
+      "xp": [
+        {
+          "sinal": "x",
+          "buff": 1.1,
+          "recursoAfetado": [
+            "food honey"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "blossomBonding",
+      "name": "Blossom Bonding",
+      "sourceType": "skill",
+      "sourceGroup": "skillsBeesFlowers",
+      "category": "Bees & Flowers",
+      "tier": 2,
+      "description": "+2 relationship points when gifting flowers.",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 2,
+          "recursoAfetado": [
+            "relationship"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "pollenPowerUp",
+      "name": "Pollen Power Up",
+      "sourceType": "skill",
+      "sourceGroup": "skillsBeesFlowers",
+      "category": "Bees & Flowers",
+      "tier": 2,
+      "description": "Additional yield of +0.1 harvest after pollination.",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.1,
+          "recursoAfetado": [
+            "pollination"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "petalledPerk",
+      "name": "Petalled Perk",
+      "sourceType": "skill",
+      "sourceGroup": "skillsBeesFlowers",
+      "category": "Bees & Flowers",
+      "tier": 2,
+      "description": "10% chance to get +1 flower.",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.1,
+          "recursoAfetado": [
+            "flowers"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "beeCollective",
+      "name": "Bee Collective",
+      "sourceType": "skill",
+      "sourceGroup": "skillsBeesFlowers",
+      "category": "Bees & Flowers",
+      "tier": 3,
+      "description": "+20% chance of a bee swarm.",
+      "quantidade": [
+        {
+          "sinal": "x",
+          "buff": 1.2,
+          "recursoAfetado": [
+            "beeSwarm"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "flowerPower",
+      "name": "Flower Power",
+      "sourceType": "skill",
+      "sourceGroup": "skillsBeesFlowers",
+      "category": "Bees & Flowers",
+      "tier": 3,
+      "description": "-20% in the growth time of flowers.",
+      "tempo": [
+        {
+          "sinal": "x",
+          "buff": 0.8,
+          "recursoAfetado": [
+            "flowers"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "floweryAbode",
+      "name": "Flowery Abode",
+      "sourceType": "skill",
+      "sourceGroup": "skillsBeesFlowers",
+      "category": "Bees & Flowers",
+      "tier": 3,
+      "description": "+0.5 Honey production speed | +50% Flower growth time",
+      "tempo": [
+        {
+          "sinal": "x",
+          "buff": 0.5,
+          "recursoAfetado": [
+            "honey"
+          ]
+        },
+        {
+          "sinal": "x",
+          "buff": 1.5,
+          "recursoAfetado": [
+            "flowers"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "petalBlessed",
+      "name": "Petal Blessed",
+      "sourceType": "skill",
+      "sourceGroup": "skillsBeesFlowers",
+      "category": "Bees & Flowers",
+      "tier": 3,
+      "description": "Skill: make all currently growing flowers ready to be harvested (1/96h).",
+      "quantidade": [
+        {
+          "buff": 0,
+          "recursoAfetado": [
+            "flowers"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "cheapRakes",
+      "name": "Cheap Rakes",
+      "sourceType": "skill",
+      "sourceGroup": "skillsAging",
+      "category": "Aging",
+      "tier": 1,
+      "description": "-20% salt rake coin cost",
+      "coins": [
+        {
+          "sinal": "xC",
+          "buff": 0.8,
+          "recursoAfetado": [
+            "Salt Rake"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "speedyAging",
+      "name": "Speedy Aging",
+      "sourceType": "skill",
+      "sourceGroup": "skillsAging",
+      "category": "Aging",
+      "tier": 1,
+      "description": "-10% Fish Aging time",
+      "tempo": [
+        {
+          "sinal": "x",
+          "buff": 0.9,
+          "recursoAfetado": [
+            "fish aging"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "saltySeas",
+      "name": "Salty Seas",
+      "sourceType": "skill",
+      "sourceGroup": "skillsAging",
+      "category": "Aging",
+      "tier": 1,
+      "description": "-10% salt charge replenishment time",
+      "tempo": [
+        {
+          "sinal": "x",
+          "buff": 0.9,
+          "recursoAfetado": [
+            "Salt"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "wideRakes",
+      "name": "Wide Rakes",
+      "sourceType": "skill",
+      "sourceGroup": "skillsAging",
+      "category": "Aging",
+      "tier": 1,
+      "description": "+2 Salt per harvest",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 2,
+          "recursoAfetado": [
+            "Salt"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "bacalhau",
+      "name": "Bacalhau",
+      "sourceType": "skill",
+      "sourceGroup": "skillsAging",
+      "category": "Aging",
+      "tier": 1,
+      "description": "+1 Bait yield from fermentation rack",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 1,
+          "recursoAfetado": [
+            "bait"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "fishSmoking",
+      "name": "Fish Smoking",
+      "sourceType": "skill",
+      "sourceGroup": "skillsAging",
+      "category": "Aging",
+      "tier": 2,
+      "description": "Doubled chance Aged Fish becomes Prime Aged",
+      "quantidade": [
+        {
+          "sinal": "x",
+          "buff": 2,
+          "recursoAfetado": [
+            "fish"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "refiner",
+      "name": "Refiner",
+      "sourceType": "skill",
+      "sourceGroup": "skillsAging",
+      "category": "Aging",
+      "tier": 2,
+      "description": "15% chance of +1 Refined Salt when making Refined Salt",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.15,
+          "recursoAfetado": [
+            "refined salt"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "seaBlessed",
+      "name": "Sea Blessed",
+      "sourceType": "skill",
+      "sourceGroup": "skillsAging",
+      "category": "Aging",
+      "tier": 2,
+      "description": "5% chance to restore 1 charge to 4 Salt hodes on harvest",
+      "quantidade": [
+        {
+          "sinal": "xI",
+          "buff": 1.2,
+          "recursoAfetado": [
+            "Salt",
+            "Salt Rake"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "ager",
+      "name": "Ager",
+      "sourceType": "skill",
+      "sourceGroup": "skillsAging",
+      "category": "Aging",
+      "tier": 3,
+      "description": "2x output from Aging Shed Racks | 2x Aging Shed inputs (ingredients, fish & salt)",
+      "quantidade": [
+        {
+          "sinal": "x",
+          "buff": 2,
+          "recursoAfetado": [
+            "anging",
+            "recursos"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "saltSurge",
+      "name": "Salt Surge",
+      "sourceType": "skill",
+      "sourceGroup": "skillsAging",
+      "category": "Aging",
+      "tier": 3,
+      "description": "Recharge all Salt hodes to max"
+    },
+    {
+      "idName": "warehouse",
+      "name": "Warehouse",
+      "sourceType": "collectible",
+      "sourceGroup": "ferreiro",
+      "category": "",
+      "description": "+20% in Seed stock",
+      "estoque": [
+        {
+          "sinal": "x",
+          "buff": 1.2,
+          "recursoAfetado": [
+            "Sunflower",
+            "Potato",
+            "Rhubarb",
+            "Pumpkin",
+            "Zucchini",
+            "Carrot",
+            "Yam",
+            "Cabbage",
+            "Broccoli",
+            "Soybean",
+            "Pepper",
+            "Beetroot",
+            "Cauliflower",
+            "Parsnip",
+            "Eggplant",
+            "Corn",
+            "Onion",
+            "Turnip",
+            "Radish",
+            "Wheat",
+            "Kale",
+            "Artichoke",
+            "Barley",
+            "Tomato",
+            "Lemon",
+            "Blueberry",
+            "Orange",
+            "Apple",
+            "Banana",
+            "Grape",
+            "Rice",
+            "Olive"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "toolshed",
+      "name": "Toolshed",
+      "sourceType": "collectible",
+      "sourceGroup": "ferreiro",
+      "category": "",
+      "description": "+50% tools in stock",
+      "estoque": [
+        {
+          "sinal": "x",
+          "buff": 1.5,
+          "recursoAfetado": [
+            "Axe",
+            "Pickaxe",
+            "Stone Pickaxe",
+            "Iron Pickaxe",
+            "Gold Pickaxe",
+            "Oil Drill",
+            "Rod"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "basicScarecrow",
+      "name": "Basic Scarecrow",
+      "sourceType": "collectible",
+      "sourceGroup": "ferreiro",
+      "category": "",
+      "description": "-20% in Basic Crop time - Effect on 9 Plots",
+      "tempo": [
+        {
+          "sinal": "x",
+          "buffBase": 0.8,
+          "condicionalSkill": {
+            "dependeDe": "chonkyScarecrow",
+            "novoBuff": 0.7
+          },
+          "buff": 0.8,
+          "recursoAfetado": [
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "scaryMike",
+      "name": "Scary Mike",
+      "sourceType": "collectible",
+      "sourceGroup": "ferreiro",
+      "category": "",
+      "description": "+0.2 Medium Crops - Effect on 9 Plots",
+      "quantidade": [
+        {
+          "sinal": "+A",
+          "buffBase": 1.8,
+          "condicionalSkill": {
+            "dependeDe": "horrorMike",
+            "novoBuff": 14.7
+          },
+          "buff": 1.8,
+          "recursoAfetado": [
+            "Carrot",
+            "Yam",
+            "Cabbage",
+            "Broccoli",
+            "Soybean",
+            "Pepper",
+            "Beetroot",
+            "Cauliflower",
+            "Parsnip"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "laurieTheChuckleCrow",
+      "name": "Laurie the Chuckle Crow",
+      "sourceType": "collectible",
+      "sourceGroup": "ferreiro",
+      "category": "",
+      "description": "+0.2 Advanced Crops - Effect on 9 Plots",
+      "quantidade": [
+        {
+          "sinal": "+A",
+          "buffBase": 1.8,
+          "condicionalSkill": {
+            "dependeDe": "lauriesGains",
+            "novoBuff": 14.7
+          },
+          "buff": 1.8,
+          "recursoAfetado": [
+            "Eggplant",
+            "Corn",
+            "Onion",
+            "Turnip",
+            "Radish",
+            "Wheat",
+            "Kale",
+            "Artichoke",
+            "Barley"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "immortalPear",
+      "name": "Immortal Pear",
+      "sourceType": "collectible",
+      "sourceGroup": "ferreiro",
+      "category": "",
+      "description": "Fruit trees last +1 round",
+      "duracao": [
+        {
+          "sinal": "+",
+          "buffBase": 1,
+          "condicionalSkill": {
+            "dependeDe": "pearTurbocharge",
+            "novoBuff": 2
+          },
+          "buff": 1,
+          "recursoAfetado": [
+            "Tomato",
+            "Lemon",
+            "Blueberry",
+            "Orange",
+            "Apple",
+            "Banana"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "macaw",
+      "name": "Macaw",
+      "sourceType": "collectible",
+      "sourceGroup": "ferreiro",
+      "category": "",
+      "description": "Fruit trees last +1 round",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buffBase": 0.1,
+          "condicionalSkill": {
+            "dependeDe": "loyalMacaw",
+            "novoBuff": 0.2
+          },
+          "buff": 0.1,
+          "recursoAfetado": [
+            "Tomato",
+            "Lemon",
+            "Blueberry",
+            "Orange",
+            "Apple",
+            "Banana"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "squirrel",
+      "name": "Squirrel",
+      "sourceType": "collectible",
+      "sourceGroup": "ferreiro",
+      "category": "",
+      "description": "+0.1 Wood",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.1,
+          "recursoAfetado": [
+            "Wood"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "stoneBeetle",
+      "name": "Stone Beetle",
+      "sourceType": "collectible",
+      "sourceGroup": "ferreiro",
+      "category": "",
+      "description": "+0.1 Stone",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.1,
+          "recursoAfetado": [
+            "Stone"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "ironBeetle",
+      "name": "Iron Beetle",
+      "sourceType": "collectible",
+      "sourceGroup": "ferreiro",
+      "category": "",
+      "description": "+0.1 Iron",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.1,
+          "recursoAfetado": [
+            "Iron"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "goldBeetle",
+      "name": "Gold Beetle",
+      "sourceType": "collectible",
+      "sourceGroup": "ferreiro",
+      "category": "",
+      "description": "+0.1 Gold",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.1,
+          "recursoAfetado": [
+            "Gold"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "bale",
+      "name": "Bale",
+      "sourceType": "collectible",
+      "sourceGroup": "ferreiro",
+      "category": "",
+      "description": "+0.1 Egg",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buffBase": 0.1,
+          "recursoAfetadoBase": [
+            "egg"
+          ],
+          "condicionalSkill": {
+            "dependeDe": "doubleBale",
+            "novoBuff": 0.2
+          },
+          "condicionalSkill2": {
+            "dependeDe": "baleEconomy",
+            "novoRecursoAfetado": [
+              "egg",
+              "milk",
+              "wool"
+            ]
+          },
+          "buff": 0.1,
+          "recursoAfetado": [
+            "egg"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "saltSculpture1",
+      "name": "Salt Sculpture L1",
+      "sourceType": "collectible",
+      "sourceGroup": "ferreiro",
+      "category": "",
+      "description": "LEVEL 1<br>-5% salt charge replenishment time",
+      "tempo": [
+        {
+          "sinal": "x",
+          "buff": 0.95,
+          "recursoAfetado": [
+            "Salt"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "saltSculpture2",
+      "name": "Salt Sculpture L2",
+      "sourceType": "collectible",
+      "sourceGroup": "ferreiro",
+      "category": "",
+      "description": "LEVEL 2<br>+4% Prime Aging chance",
+      "rng": [
+        {
+          "sinal": "x",
+          "buff": 1.04,
+          "recursoAfetado": [
+            "aging chance"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "saltSculpture3",
+      "name": "Salt Sculpture L3",
+      "sourceType": "collectible",
+      "sourceGroup": "ferreiro",
+      "category": "",
+      "description": "LEVEL 3<br>+1 max salt harvest cap per node",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 1,
+          "recursoAfetado": [
+            "Salt"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "saltSculpture4",
+      "name": "Salt Sculpture L4",
+      "sourceType": "collectible",
+      "sourceGroup": "ferreiro",
+      "category": "",
+      "description": "LEVEL 4<br>-10% salt rake coin cost",
+      "coins": [
+        {
+          "sinal": "xC",
+          "buff": 0.9,
+          "recursoAfetado": [
+            "Salt Rake"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "saltSculpture5",
+      "name": "Salt Sculpture L5",
+      "sourceType": "collectible",
+      "sourceGroup": "ferreiro",
+      "category": "",
+      "description": "LEVEL 5<br>-5% Aging Rack Time",
+      "tempo": [
+        {
+          "sinal": "x",
+          "buff": 0.95,
+          "recursoAfetado": [
+            "Aging Rack"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "saltSculpture6",
+      "name": "Salt Sculpture L6",
+      "sourceType": "collectible",
+      "sourceGroup": "ferreiro",
+      "category": "",
+      "description": "LEVEL 6<br>+1 max salt harvest cap per node",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 1,
+          "recursoAfetado": [
+            "Salt"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "saltAwakeningBanner",
+      "name": "Salt Awakening Banner",
+      "sourceType": "collectible",
+      "sourceGroup": "temporada",
+      "category": "",
+      "description": "+2 Salt per Rake during the Salt Awakening chapter (Requires VIP)",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 2,
+          "recursoAfetado": [
+            "Salt"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "dinoEggTrophy",
+      "name": "Dino Egg Trophy",
+      "sourceType": "collectible",
+      "sourceGroup": "temporada",
+      "category": "",
+      "description": "Speed up with Coins instead of Gems (50 Coins/Gem, up to 20,000 Coins/day).",
+      "coins": [
+        {
+          "sinal": "x",
+          "buff": 50,
+          "recursoAfetado": [
+            "gems"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "crystalAltar",
+      "name": "Crystal Altar",
+      "sourceType": "collectible",
+      "sourceGroup": "temporada",
+      "category": "",
+      "description": "-5% Crab Pot & Mariner Pot time",
+      "tempo": [
+        {
+          "sinal": "x",
+          "buff": 0.95,
+          "recursoAfetado": [
+            "crab pot",
+            "mariner pot"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "navigationTable",
+      "name": "Navigation Table",
+      "sourceType": "collectible",
+      "sourceGroup": "temporada",
+      "category": "",
+      "description": "+100% Map Piece Odds",
+      "rng": [
+        {
+          "sinal": "x",
+          "buff": 2,
+          "recursoAfetado": [
+            "map"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "speedTrap",
+      "name": "Speed Trap",
+      "sourceType": "collectible",
+      "sourceGroup": "temporada",
+      "category": "",
+      "description": "-20% Trap Pot time",
+      "tempo": [
+        {
+          "sinal": "x",
+          "buff": 0.8,
+          "recursoAfetado": [
+            "trap"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "royalCrabPot",
+      "name": "Royal Crab Pot",
+      "sourceType": "collectible",
+      "sourceGroup": "temporada",
+      "category": "",
+      "description": "Trap without Trap Pots",
+      "quantidade": [
+        {
+          "sinal": "x",
+          "buff": 0,
+          "recursoAfetado": [
+            "trap"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "crabHouse",
+      "name": "Crab House",
+      "sourceType": "collectible",
+      "sourceGroup": "temporada",
+      "category": "",
+      "description": "+2 Crustacean yield",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 2,
+          "recursoAfetado": [
+            "crustacean"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "flamingoChicken",
+      "name": "Flamingo Chicken",
+      "sourceType": "collectible",
+      "sourceGroup": "temporada",
+      "category": "",
+      "description": "-2.5% Chicken Sleep Time",
+      "tempo": [
+        {
+          "sinal": "x",
+          "buff": 0.975,
+          "recursoAfetado": [
+            "galinha"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "spaCow",
+      "name": "Spa Cow",
+      "sourceType": "collectible",
+      "sourceGroup": "temporada",
+      "category": "",
+      "description": "+0.1 Milk",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.1,
+          "recursoAfetado": [
+            "milk"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "spaSheep",
+      "name": "Spa Sheep",
+      "sourceType": "collectible",
+      "sourceGroup": "temporada",
+      "category": "",
+      "description": "+5 Sheep XP from Animal Affection tools",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 5,
+          "recursoAfetado": [
+            "Petting Hand",
+            "Brush",
+            "Music Box"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "saltCrystalFlower",
+      "name": "Salt Crystal Flower",
+      "sourceType": "collectible",
+      "sourceGroup": "temporada",
+      "category": "",
+      "description": "5% chance for +1 Flower",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.05,
+          "recursoAfetado": [
+            "flower"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "deepSeaSlug",
+      "name": "Deep Sea Slug",
+      "sourceType": "collectible",
+      "sourceGroup": "temporada",
+      "category": "",
+      "description": "+5 daily fishing reels | +1 Worm from Composting",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 5,
+          "recursoAfetado": [
+            "fishing"
+          ]
+        },
+        {
+          "sinal": "+",
+          "buff": 1,
+          "recursoAfetado": [
+            "worm"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "nancy",
+      "name": "Nancy",
+      "sourceType": "collectible",
+      "sourceGroup": "crops",
+      "category": "",
+      "description": "-15% in Crop time",
+      "tempo": [
+        {
+          "sinal": "x",
+          "buff": 0.85,
+          "recursoAfetado": [
+            "Sunflower",
+            "Potato",
+            "Rhubarb",
+            "Pumpkin",
+            "Zucchini",
+            "Carrot",
+            "Yam",
+            "Cabbage",
+            "Broccoli",
+            "Soybean",
+            "Pepper",
+            "Beetroot",
+            "Cauliflower",
+            "Parsnip",
+            "Eggplant",
+            "Corn",
+            "Onion",
+            "Turnip",
+            "Radish",
+            "Wheat",
+            "Kale",
+            "Artichoke",
+            "Barley",
+            "Rice",
+            "Olive"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "scarecrow",
+      "name": "Scarecrow",
+      "sourceType": "collectible",
+      "sourceGroup": "crops",
+      "category": "",
+      "description": "-15% in Crop time, +20% Crops",
+      "quantidade": [
+        {
+          "sinal": "x",
+          "buff": 1.2,
+          "recursoAfetado": [
+            "Sunflower",
+            "Potato",
+            "Rhubarb",
+            "Pumpkin",
+            "Zucchini",
+            "Carrot",
+            "Yam",
+            "Cabbage",
+            "Broccoli",
+            "Soybean",
+            "Pepper",
+            "Beetroot",
+            "Cauliflower",
+            "Parsnip",
+            "Eggplant",
+            "Corn",
+            "Onion",
+            "Turnip",
+            "Radish",
+            "Wheat",
+            "Kale",
+            "Artichoke",
+            "Barley",
+            "Rice",
+            "Olive"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "kuebiko",
+      "name": "Kuebiko",
+      "sourceType": "collectible",
+      "sourceGroup": "crops",
+      "category": "",
+      "description": "-15% in Crop time, +20% Crops and Free Seeds",
+      "coins": [
+        {
+          "sinal": "xC",
+          "buff": 0,
+          "recursoAfetado": [
+            "Sunflower",
+            "Potato",
+            "Rhubarb",
+            "Pumpkin",
+            "Zucchini",
+            "Carrot",
+            "Yam",
+            "Cabbage",
+            "Broccoli",
+            "Soybean",
+            "Pepper",
+            "Beetroot",
+            "Cauliflower",
+            "Parsnip",
+            "Eggplant",
+            "Corn",
+            "Onion",
+            "Turnip",
+            "Radish",
+            "Wheat",
+            "Kale",
+            "Artichoke",
+            "Barley",
+            "Tomato",
+            "Lemon",
+            "Blueberry",
+            "Orange",
+            "Apple",
+            "Banana",
+            "Grape",
+            "Rice",
+            "Olive"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "springGuardian",
+      "name": "Spring Guardian",
+      "sourceType": "collectible",
+      "sourceGroup": "crops",
+      "category": "",
+      "description": "Spring Disaster Protection, Blessed Spring Events",
+      "upEvento": [
+        {
+          "sinal": "x",
+          "buff": 2,
+          "recursoAfetado": [
+            "spring"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "summerGuardian",
+      "name": "Summer Guardian",
+      "sourceType": "collectible",
+      "sourceGroup": "crops",
+      "category": "",
+      "description": "Summer Disaster Protection, Blessed Summer Events",
+      "upEvento": [
+        {
+          "sinal": "x",
+          "buff": 2,
+          "recursoAfetado": [
+            "summer"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "autumnGuardian",
+      "name": "Autumn Guardian",
+      "sourceType": "collectible",
+      "sourceGroup": "crops",
+      "category": "",
+      "description": "Autumn Disaster Protection, Blessed Autumn Events",
+      "upEvento": [
+        {
+          "sinal": "x",
+          "buff": 2,
+          "recursoAfetado": [
+            "autumn"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "winterGuardian",
+      "name": "Winter Guardian",
+      "sourceType": "collectible",
+      "sourceGroup": "crops",
+      "category": "",
+      "description": "Winter Disaster Protection, Blessed Winter Events",
+      "upEvento": [
+        {
+          "sinal": "x",
+          "buff": 2,
+          "recursoAfetado": [
+            "winter"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "lunarCalendar",
+      "name": "Lunar Calendar",
+      "sourceType": "collectible",
+      "sourceGroup": "crops",
+      "category": "",
+      "description": "-10% in Crop time",
+      "tempo": [
+        {
+          "sinal": "x",
+          "buff": 0.9,
+          "recursoAfetado": [
+            "Sunflower",
+            "Potato",
+            "Rhubarb",
+            "Pumpkin",
+            "Zucchini",
+            "Carrot",
+            "Yam",
+            "Cabbage",
+            "Broccoli",
+            "Soybean",
+            "Pepper",
+            "Beetroot",
+            "Cauliflower",
+            "Parsnip",
+            "Eggplant",
+            "Corn",
+            "Onion",
+            "Turnip",
+            "Radish",
+            "Wheat",
+            "Kale",
+            "Artichoke",
+            "Barley",
+            "Rice",
+            "Olive"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "gnome",
+      "name": "Gnome",
+      "sourceType": "collectible",
+      "sourceGroup": "crops",
+      "category": "",
+      "description": "+10 Medium or Advanced Crops - Effect on 1 Plot",
+      "quantidade": [
+        {
+          "sinal": "+A",
+          "buff": 10,
+          "recursoAfetado": [
+            "Carrot",
+            "Yam",
+            "Cabbage",
+            "Broccoli",
+            "Soybean",
+            "Pepper",
+            "Beetroot",
+            "Cauliflower",
+            "Parsnip",
+            "Eggplant",
+            "Corn",
+            "Onion",
+            "Turnip",
+            "Radish",
+            "Wheat",
+            "Kale",
+            "Artichoke",
+            "Barley"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "sirGoldensnout",
+      "name": "Sir Goldensnout",
+      "sourceType": "collectible",
+      "sourceGroup": "crops",
+      "category": "",
+      "description": "+0.5 Crops - Effect on 12 Plots",
+      "quantidade": [
+        {
+          "sinal": "+A",
+          "buff": 6,
+          "recursoAfetado": [
+            "Sunflower",
+            "Potato",
+            "Rhubarb",
+            "Pumpkin",
+            "Zucchini",
+            "Carrot",
+            "Yam",
+            "Cabbage",
+            "Broccoli",
+            "Soybean",
+            "Pepper",
+            "Beetroot",
+            "Cauliflower",
+            "Parsnip",
+            "Eggplant",
+            "Corn",
+            "Onion",
+            "Turnip",
+            "Radish",
+            "Wheat",
+            "Kale",
+            "Artichoke",
+            "Barley"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "stellarSunflower",
+      "name": "Stellar Sunflower",
+      "sourceType": "collectible",
+      "sourceGroup": "crops",
+      "category": "",
+      "description": "3% chance to get +10 Sunflowers",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.3,
+          "recursoAfetado": [
+            "Sunflower"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "peeledPotato",
+      "name": "Peeled Potato",
+      "sourceType": "collectible",
+      "sourceGroup": "crops",
+      "category": "",
+      "description": "20% chance to get +1 Potato",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.2,
+          "recursoAfetado": [
+            "Potato"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "potentPotato",
+      "name": "Potent Potato",
+      "sourceType": "collectible",
+      "sourceGroup": "crops",
+      "category": "",
+      "description": "3% chance to get +10 Potatoes",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.3,
+          "recursoAfetado": [
+            "Potato"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "victoriaSisters",
+      "name": "Victoria Sisters",
+      "sourceType": "collectible",
+      "sourceGroup": "crops",
+      "category": "",
+      "description": "+20% Pumpkins",
+      "quantidade": [
+        {
+          "sinal": "x",
+          "buff": 1.2,
+          "recursoAfetado": [
+            "Pumpkin"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "labGrownPumpkin",
+      "name": "Lab Grown Pumpkin",
+      "sourceType": "collectible",
+      "sourceGroup": "crops",
+      "category": "",
+      "description": "+0.3 Pumpkins",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.3,
+          "recursoAfetado": [
+            "Pumpkin"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "freyaFox",
+      "name": "Freya Fox",
+      "sourceType": "collectible",
+      "sourceGroup": "crops",
+      "category": "",
+      "description": "+0.5 Pumpkins",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.5,
+          "recursoAfetado": [
+            "Pumpkin"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "giantZucchini",
+      "name": "Giant Zucchini",
+      "sourceType": "collectible",
+      "sourceGroup": "crops",
+      "category": "",
+      "description": "2x Zuchinni Speed",
+      "tempo": [
+        {
+          "sinal": "x",
+          "buff": 0.5,
+          "recursoAfetado": [
+            "Zucchini"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "easterBunny",
+      "name": "Easter Bunny",
+      "sourceType": "collectible",
+      "sourceGroup": "crops",
+      "category": "",
+      "description": "+20% Carrots",
+      "quantidade": [
+        {
+          "sinal": "x",
+          "buff": 1.2,
+          "recursoAfetado": [
+            "Carrot"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "pabloTheBunny",
+      "name": "Pablo The Bunny",
+      "sourceType": "collectible",
+      "sourceGroup": "crops",
+      "category": "",
+      "description": "+0.1 Carrot",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.1,
+          "recursoAfetado": [
+            "Carrot"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "labGrownCarrot",
+      "name": "Lab Grown Carrot",
+      "sourceType": "collectible",
+      "sourceGroup": "crops",
+      "category": "",
+      "description": "+0,2 Carrots",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.2,
+          "recursoAfetado": [
+            "Carrot"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "giantYam",
+      "name": "Giant Yam",
+      "sourceType": "collectible",
+      "sourceGroup": "crops",
+      "category": "",
+      "description": "+0.5 Yams",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.5,
+          "recursoAfetado": [
+            "Yam"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "karkinos",
+      "name": "Karkinos",
+      "sourceType": "collectible",
+      "sourceGroup": "crops",
+      "category": "",
+      "description": "+0.1 Cabbage (Doesn't work with Cabbage Boy)",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buffBase": 0.1,
+          "condicionalNft": {
+            "dependeDe": "cabbageBoy",
+            "novoBuff": 0
+          },
+          "buff": 0.1,
+          "recursoAfetado": [
+            "Cabbage"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "cabbageBoy",
+      "name": "Cabbage Boy",
+      "sourceType": "collectible",
+      "sourceGroup": "crops",
+      "category": "",
+      "description": "+0.25 Cabbage or +0.5 Cabbage having Cabbage Girl",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buffBase": 0.25,
+          "condicionalNft": {
+            "dependeDe": "cabbageGirl",
+            "novoBuff": 0.5
+          },
+          "buff": 0.25,
+          "recursoAfetado": [
+            "Cabbage"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "cabbageGirl",
+      "name": "Cabbage Girl",
+      "sourceType": "collectible",
+      "sourceGroup": "crops",
+      "category": "",
+      "description": "-50% in Cabbage time",
+      "tempo": [
+        {
+          "sinal": "x",
+          "buff": 0.5,
+          "recursoAfetado": [
+            "Cabbage"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "soybliss",
+      "name": "Soybliss",
+      "sourceType": "collectible",
+      "sourceGroup": "crops",
+      "category": "",
+      "description": "+1 Soybean",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 1,
+          "recursoAfetado": [
+            "Soybean"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "goldenCauliflower",
+      "name": "Golden Cauliflower",
+      "sourceType": "collectible",
+      "sourceGroup": "crops",
+      "category": "",
+      "description": "+100% Cauliflower",
+      "quantidade": [
+        {
+          "sinal": "x",
+          "buff": 2,
+          "recursoAfetado": [
+            "Cauliflower"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "mysteriousParsnip",
+      "name": "Mysterious Parsnip",
+      "sourceType": "collectible",
+      "sourceGroup": "crops",
+      "category": "",
+      "description": "-50% in Parsnip time",
+      "tempo": [
+        {
+          "sinal": "x",
+          "buff": 0.5,
+          "recursoAfetado": [
+            "Parsnip"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "purpleTrail",
+      "name": "Purple Trail",
+      "sourceType": "collectible",
+      "sourceGroup": "crops",
+      "category": "",
+      "description": "+0.2 Eggplant",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.2,
+          "recursoAfetado": [
+            "Eggplant"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "obie",
+      "name": "Obie",
+      "sourceType": "collectible",
+      "sourceGroup": "crops",
+      "category": "",
+      "description": "-25% in Eggplant time",
+      "tempo": [
+        {
+          "sinal": "x",
+          "buff": 0.75,
+          "recursoAfetado": [
+            "Eggplant"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "maximus",
+      "name": "Maximus",
+      "sourceType": "collectible",
+      "sourceGroup": "crops",
+      "category": "",
+      "description": "+1 Eggplant",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 1,
+          "recursoAfetado": [
+            "Eggplant"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "poppy",
+      "name": "Poppy",
+      "sourceType": "collectible",
+      "sourceGroup": "crops",
+      "category": "",
+      "description": "+0.1 Corn",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.1,
+          "recursoAfetado": [
+            "Corn"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "queenCornelia",
+      "name": "Queen Cornelia",
+      "sourceType": "collectible",
+      "sourceGroup": "crops",
+      "category": "",
+      "description": "+1 Corn - Effect on 10 Plots",
+      "quantidade": [
+        {
+          "sinal": "+A",
+          "buff": 10,
+          "recursoAfetado": [
+            "Corn"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "kernaldo",
+      "name": "Kernaldo",
+      "sourceType": "collectible",
+      "sourceGroup": "crops",
+      "category": "",
+      "description": "-25% in Corn time",
+      "tempo": [
+        {
+          "sinal": "x",
+          "buff": 0.75,
+          "recursoAfetado": [
+            "Corn"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "giantOnion",
+      "name": "Giant Onion",
+      "sourceType": "collectible",
+      "sourceGroup": "crops",
+      "category": "",
+      "description": "+3 Onions",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 3,
+          "recursoAfetado": [
+            "Onion"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "giantTurnip",
+      "name": "Giant Turnip",
+      "sourceType": "collectible",
+      "sourceGroup": "crops",
+      "category": "",
+      "description": "2x Turnip Growth Speed",
+      "tempo": [
+        {
+          "sinal": "x",
+          "buff": 0.5,
+          "recursoAfetado": [
+            "Turnip"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "hoot",
+      "name": "Hoot",
+      "sourceType": "collectible",
+      "sourceGroup": "crops",
+      "category": "",
+      "description": "+0.5 Radish, Wheat, Kale, Rice e Barley",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.5,
+          "recursoAfetado": [
+            "Radish",
+            "Wheat",
+            "Kale",
+            "Barley",
+            "Rice"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "radicalRadish",
+      "name": "Radical Radish",
+      "sourceType": "collectible",
+      "sourceGroup": "crops",
+      "category": "",
+      "description": "3% chance to get +10 Radishes",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.3,
+          "recursoAfetado": [
+            "Radish"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "labGrownRadish",
+      "name": "Lab Grown Radish",
+      "sourceType": "collectible",
+      "sourceGroup": "crops",
+      "category": "",
+      "description": "+0,4 Radishes",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.4,
+          "recursoAfetado": [
+            "Radish"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "foliant",
+      "name": "Foliant",
+      "sourceType": "collectible",
+      "sourceGroup": "crops",
+      "category": "",
+      "description": "+0.2 Kale",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.2,
+          "recursoAfetado": [
+            "Kale"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "giantKale",
+      "name": "Giant Kale",
+      "sourceType": "collectible",
+      "sourceGroup": "crops",
+      "category": "",
+      "description": "+2 Kale",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 2,
+          "recursoAfetado": [
+            "Kale"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "giantArtichoke",
+      "name": "Giant Artichoke",
+      "sourceType": "collectible",
+      "sourceGroup": "crops",
+      "category": "",
+      "description": "+2 Artichokes",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 2,
+          "recursoAfetado": [
+            "Artichoke"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "sheafOfPlenty",
+      "name": "Sheaf of Plenty",
+      "sourceType": "collectible",
+      "sourceGroup": "crops",
+      "category": "",
+      "description": "+2 Barley",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 2,
+          "recursoAfetado": [
+            "Barley"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "groovyGramophone",
+      "name": "Groovy Gramophone",
+      "sourceType": "collectible",
+      "sourceGroup": "cropMachine",
+      "category": "",
+      "description": "+100% Growth Speed on Crop Machine",
+      "tempo": [
+        {
+          "sinal": "xCM",
+          "buff": 0.5,
+          "recursoAfetado": [
+            "Sunflower",
+            "Potato",
+            "Rhubarb",
+            "Pumpkin",
+            "Zucchini",
+            "Carrot",
+            "Yam",
+            "Cabbage",
+            "Broccoli"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "fruitTuneBox",
+      "name": "Fruit Tune Box",
+      "sourceType": "collectible",
+      "sourceGroup": "fruits",
+      "category": "",
+      "description": "+20% Fruit Patch Growth Speed",
+      "tempo": [
+        {
+          "sinal": "x",
+          "buff": 0.8,
+          "recursoAfetado": [
+            "Tomato",
+            "Lemon",
+            "Blueberry",
+            "Orange",
+            "Apple",
+            "Banana"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "cannonball",
+      "name": "Cannonball",
+      "sourceType": "collectible",
+      "sourceGroup": "fruits",
+      "category": "",
+      "description": "-25% in Tomato growth time",
+      "tempo": [
+        {
+          "sinal": "x",
+          "buff": 0.75,
+          "recursoAfetado": [
+            "Tomato"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "tomatoClown",
+      "name": "Tomato Clown",
+      "sourceType": "collectible",
+      "sourceGroup": "fruits",
+      "category": "",
+      "description": "-50% in Tomato growth time",
+      "tempo": [
+        {
+          "sinal": "x",
+          "buff": 0.5,
+          "recursoAfetado": [
+            "Tomato"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "tomatoBombard",
+      "name": "Tomato Bombard",
+      "sourceType": "collectible",
+      "sourceGroup": "fruits",
+      "category": "",
+      "description": "+1 Tomato",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 1,
+          "recursoAfetado": [
+            "Tomato"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "lemonShark",
+      "name": "Lemon Shark",
+      "sourceType": "collectible",
+      "sourceGroup": "fruits",
+      "category": "",
+      "description": "+0.2 Lemons",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.2,
+          "recursoAfetado": [
+            "Lemon"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "revelingLemon",
+      "name": "Reveling Lemon",
+      "sourceType": "collectible",
+      "sourceGroup": "fruits",
+      "category": "",
+      "description": "+0.25 Lemons",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.25,
+          "recursoAfetado": [
+            "Lemon"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "lemonFrog",
+      "name": "Lemon Frog",
+      "sourceType": "collectible",
+      "sourceGroup": "fruits",
+      "category": "",
+      "description": "-25% in Lemon growth time",
+      "tempo": [
+        {
+          "sinal": "x",
+          "buff": 0.75,
+          "recursoAfetado": [
+            "Lemon"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "lemonTeaBath",
+      "name": "Lemon Tea Bath",
+      "sourceType": "collectible",
+      "sourceGroup": "fruits",
+      "category": "",
+      "description": "-50% in Lemon growth time",
+      "tempo": [
+        {
+          "sinal": "x",
+          "buff": 0.5,
+          "recursoAfetado": [
+            "Lemon"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "blackBearry",
+      "name": "Black Bearry",
+      "sourceType": "collectible",
+      "sourceGroup": "fruits",
+      "category": "",
+      "description": "+1 Blueberry",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 1,
+          "recursoAfetado": [
+            "Blueberry"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "squirrelMonkey",
+      "name": "Squirrel Monkey",
+      "sourceType": "collectible",
+      "sourceGroup": "fruits",
+      "category": "",
+      "description": "-50% in Orange growth time",
+      "tempo": [
+        {
+          "sinal": "x",
+          "buff": 0.5,
+          "recursoAfetado": [
+            "Orange"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "ladyBug",
+      "name": "Lady Bug",
+      "sourceType": "collectible",
+      "sourceGroup": "fruits",
+      "category": "",
+      "description": "+0.25 Apples",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.25,
+          "recursoAfetado": [
+            "Apple"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "nana",
+      "name": "Nana",
+      "sourceType": "collectible",
+      "sourceGroup": "fruits",
+      "category": "",
+      "description": "-10% in Banana growth time",
+      "tempo": [
+        {
+          "sinal": "x",
+          "buff": 0.9,
+          "recursoAfetado": [
+            "Banana"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "bananaChicken",
+      "name": "Banana Chicken",
+      "sourceType": "collectible",
+      "sourceGroup": "fruits",
+      "category": "",
+      "description": "+0.1 Banana",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.1,
+          "recursoAfetado": [
+            "Banana"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "woodyTheBeaver",
+      "name": "Woody the Beaver",
+      "sourceType": "collectible",
+      "sourceGroup": "trees",
+      "category": "",
+      "description": "+20% Wood",
+      "quantidade": [
+        {
+          "sinal": "x",
+          "buff": 1.2,
+          "recursoAfetado": [
+            "Wood"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "apprenticeBeaver",
+      "name": "Apprentice Beaver",
+      "sourceType": "collectible",
+      "sourceGroup": "trees",
+      "category": "",
+      "description": "+20% Wood, -50% in the time for trees",
+      "tempo": [
+        {
+          "sinal": "x",
+          "buff": 0.5,
+          "recursoAfetado": [
+            "Wood"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "foremanBeaver",
+      "name": "Foreman Beaver",
+      "sourceType": "collectible",
+      "sourceGroup": "trees",
+      "category": "",
+      "description": "+20% Wood, -50% in the time for trees, cut without an axe",
+      "quantidade": [
+        {
+          "sinal": "x",
+          "buff": 0,
+          "recursoAfetado": [
+            "Axe"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "woodNymphWendy",
+      "name": "Wood Nymph Wendy",
+      "sourceType": "collectible",
+      "sourceGroup": "trees",
+      "category": "",
+      "description": "+0.2 Woods",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.2,
+          "recursoAfetado": [
+            "Wood"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "tikiTotem",
+      "name": "Tiki Totem",
+      "sourceType": "collectible",
+      "sourceGroup": "trees",
+      "category": "",
+      "description": "+0.1 Wood",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.1,
+          "recursoAfetado": [
+            "Wood"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "volcanoGnome",
+      "name": "Volcano Gnome",
+      "sourceType": "collectible",
+      "sourceGroup": "minerals",
+      "category": "",
+      "description": "+0.1 Mineral (stone - iron - gold)",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.1,
+          "recursoAfetado": [
+            "Stone",
+            "Iron",
+            "Gold"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "emeraldTurtle",
+      "name": "Emerald Turtle",
+      "sourceType": "collectible",
+      "sourceGroup": "minerals",
+      "category": "",
+      "description": "+0.5 stone, iron or gold - Effect on 8 nodes",
+      "quantidade": [
+        {
+          "sinal": "+A",
+          "buff": 0.5,
+          "recursoAfetado": [
+            "Stone",
+            "Iron",
+            "Gold"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "tunnelMole",
+      "name": "Tunnel Mole",
+      "sourceType": "collectible",
+      "sourceGroup": "minerals",
+      "category": "",
+      "description": "+0.25 Stones",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.25,
+          "recursoAfetado": [
+            "Stone"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "rockGolem",
+      "name": "Rock Golem",
+      "sourceType": "collectible",
+      "sourceGroup": "minerals",
+      "category": "",
+      "description": "10% chance to get +2 Stones",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.2,
+          "recursoAfetado": [
+            "Stone"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "tinTurtle",
+      "name": "Tin Turtle",
+      "sourceType": "collectible",
+      "sourceGroup": "minerals",
+      "category": "",
+      "description": "+0.1 Stone - Effect on 8 nodes",
+      "quantidade": [
+        {
+          "sinal": "+A",
+          "buff": 0.1,
+          "recursoAfetado": [
+            "Stone"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "quarry",
+      "name": "Quarry",
+      "sourceType": "collectible",
+      "sourceGroup": "minerals",
+      "category": "",
+      "description": "Mine stone for free",
+      "quantidade": [
+        {
+          "sinal": "x",
+          "buff": 0,
+          "recursoAfetado": [
+            "Pickaxe"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "rockyTheMole",
+      "name": "Rocky the Mole",
+      "sourceType": "collectible",
+      "sourceGroup": "minerals",
+      "category": "",
+      "description": "+0.25 Irons",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.25,
+          "recursoAfetado": [
+            "Iron"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "ironIdol",
+      "name": "Iron Idol",
+      "sourceType": "collectible",
+      "sourceGroup": "minerals",
+      "category": "",
+      "description": "+1 Iron",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 1,
+          "recursoAfetado": [
+            "Iron"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "radiantRay",
+      "name": "Radiant Ray",
+      "sourceType": "collectible",
+      "sourceGroup": "minerals",
+      "category": "",
+      "description": "+0.1 Iron",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.1,
+          "recursoAfetado": [
+            "Iron"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "nugget",
+      "name": "Nugget",
+      "sourceType": "collectible",
+      "sourceGroup": "minerals",
+      "category": "",
+      "description": "+0.25 Golds",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.25,
+          "recursoAfetado": [
+            "Gold"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "gildedSwordfish",
+      "name": "Gilded Swordfish",
+      "sourceType": "collectible",
+      "sourceGroup": "minerals",
+      "category": "",
+      "description": "+0.1 Gold",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.1,
+          "recursoAfetado": [
+            "Gold"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "crimsonCarp",
+      "name": "Crimson Carp",
+      "sourceType": "collectible",
+      "sourceGroup": "minerals",
+      "category": "",
+      "description": "+0.05 Crimstones",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.05,
+          "recursoAfetado": [
+            "Crimstone"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "crimPeckster",
+      "name": "Crim Peckster",
+      "sourceType": "collectible",
+      "sourceGroup": "minerals",
+      "category": "",
+      "description": "+0.1 Crimstone",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.1,
+          "recursoAfetado": [
+            "Crimstone"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "crimstoneClam",
+      "name": "Crimstone Clam",
+      "sourceType": "collectible",
+      "sourceGroup": "minerals",
+      "category": "",
+      "description": "10% faster crimstone<br>10% chance to instant respawn",
+      "quantidade": [
+        {
+          "sinal": "xI",
+          "buff": 1.1,
+          "recursoAfetado": [
+            "Gold Pickaxe",
+            "Crimstone"
+          ]
+        }
+      ],
+      "tempo": [
+        {
+          "sinal": "x",
+          "buff": 0.9,
+          "recursoAfetado": [
+            "Crimstone"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "knightChicken",
+      "name": "Knight Chicken",
+      "sourceType": "collectible",
+      "sourceGroup": "minerals",
+      "category": "",
+      "description": "+0.1 Oil",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.1,
+          "recursoAfetado": [
+            "Oil"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "battleFish",
+      "name": "Battle Fish",
+      "sourceType": "collectible",
+      "sourceGroup": "minerals",
+      "category": "",
+      "description": "+0.05 Oils",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.05,
+          "recursoAfetado": [
+            "Oil"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "obsidianTurtle",
+      "name": "Obsidian Turtle",
+      "sourceType": "collectible",
+      "sourceGroup": "minerals",
+      "category": "",
+      "description": "+0.5 Obsidians",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.5,
+          "recursoAfetado": [
+            "Obsidian"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "magmaStone",
+      "name": "Magma Stone",
+      "sourceType": "collectible",
+      "sourceGroup": "minerals",
+      "category": "",
+      "description": "-15% Lava Pit Time, +0.15 Obsidian",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.5,
+          "recursoAfetado": [
+            "Obsidian"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "turboSprout",
+      "name": "Turbo Sprout",
+      "sourceType": "collectible",
+      "sourceGroup": "greenhouse",
+      "category": "",
+      "description": "-50% of time on Greenhouse",
+      "tempo": [
+        {
+          "sinal": "x",
+          "buff": 0.5,
+          "recursoAfetado": [
+            "Grape",
+            "Rice",
+            "Olive"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "pharaohGnome",
+      "name": "Pharaoh Gnome",
+      "sourceType": "collectible",
+      "sourceGroup": "greenhouse",
+      "category": "",
+      "description": "+2 Crops and Fruits from Greenhouse",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 2,
+          "recursoAfetado": [
+            "Grape",
+            "Rice",
+            "Olive"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "vinny",
+      "name": "Vinny",
+      "sourceType": "collectible",
+      "sourceGroup": "greenhouse",
+      "category": "",
+      "description": "+0.25 Grape",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.25,
+          "recursoAfetado": [
+            "Grape"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "grapeGranny",
+      "name": "Grape Granny",
+      "sourceType": "collectible",
+      "sourceGroup": "greenhouse",
+      "category": "",
+      "description": "+1 Grape",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 1,
+          "recursoAfetado": [
+            "Grape"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "ricePanda",
+      "name": "Rice Panda",
+      "sourceType": "collectible",
+      "sourceGroup": "greenhouse",
+      "category": "",
+      "description": "+0.25 Rices",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.25,
+          "recursoAfetado": [
+            "Rice"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "chickenCoop",
+      "name": "Chicken Coop",
+      "sourceType": "collectible",
+      "sourceGroup": "animais",
+      "category": "",
+      "description": "+1 Egg, +5 Base Chickens and +5 per upgrade",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 1,
+          "recursoAfetado": [
+            "egg"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "goldEgg",
+      "name": "Gold Egg",
+      "sourceType": "collectible",
+      "sourceGroup": "animais",
+      "category": "",
+      "description": "Feed the chickens without food",
+      "quantidade": [
+        {
+          "sinal": "x-",
+          "buff": 0,
+          "recursoAfetado": [
+            "galinha"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "cluckulator",
+      "name": "Cluckulator",
+      "sourceType": "collectible",
+      "sourceGroup": "animais",
+      "category": "",
+      "description": "-25% food to feed the chickens",
+      "quantidade": [
+        {
+          "sinal": "x-",
+          "buff": 0.75,
+          "recursoAfetado": [
+            "galinha"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "speedChicken",
+      "name": "Speed Chicken",
+      "sourceType": "collectible",
+      "sourceGroup": "animais",
+      "category": "",
+      "description": "-10% in chicken production time",
+      "tempo": [
+        {
+          "sinal": "x",
+          "buff": 0.9,
+          "recursoAfetado": [
+            "galinha"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "fatChicken",
+      "name": "Fat Chicken",
+      "sourceType": "collectible",
+      "sourceGroup": "animais",
+      "category": "",
+      "description": "-10% food needed for the chickens",
+      "quantidade": [
+        {
+          "sinal": "x-",
+          "buff": 0.9,
+          "recursoAfetado": [
+            "galinha"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "richChicken",
+      "name": "Rich Chicken",
+      "sourceType": "collectible",
+      "sourceGroup": "animais",
+      "category": "",
+      "description": "+0.1 Egg",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.1,
+          "recursoAfetado": [
+            "egg"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "undeadRooster",
+      "name": "Undead Rooster",
+      "sourceType": "collectible",
+      "sourceGroup": "animais",
+      "category": "",
+      "description": "+0.1 Egg",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.1,
+          "recursoAfetado": [
+            "egg"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "ayamCemani",
+      "name": "Ayam Cemani",
+      "sourceType": "collectible",
+      "sourceGroup": "animais",
+      "category": "",
+      "description": "+0.2 Eggs",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.2,
+          "recursoAfetado": [
+            "egg"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "elPolloVeloz",
+      "name": "El Pollo Veloz",
+      "sourceType": "collectible",
+      "sourceGroup": "animais",
+      "category": "",
+      "description": "-2 hours in chicken production time",
+      "tempo": [
+        {
+          "sinal": "-",
+          "buff": 7200000,
+          "recursoAfetado": [
+            "galinha"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "alienChicken",
+      "name": "Alien Chicken",
+      "sourceType": "collectible",
+      "sourceGroup": "animais",
+      "category": "",
+      "description": "+0.1 Feather",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.1,
+          "recursoAfetado": [
+            "feather"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "janitorChicken",
+      "name": "Janitor Chicken",
+      "sourceType": "collectible",
+      "sourceGroup": "animais",
+      "category": "",
+      "description": "-5% chicken sleep time",
+      "tempo": [
+        {
+          "sinal": "x",
+          "buff": 0.95,
+          "recursoAfetado": [
+            "galinha"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "rooster",
+      "name": "Rooster",
+      "sourceType": "collectible",
+      "sourceGroup": "animais",
+      "category": "",
+      "description": "Double the chances of getting Mutant Chickens",
+      "rng": [
+        {
+          "sinal": "x",
+          "buff": 2,
+          "recursoAfetado": [
+            "galinha"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "summerChicken",
+      "name": "Summer Chicken",
+      "sourceType": "collectible",
+      "sourceGroup": "animais",
+      "category": "",
+      "description": "Chickens don't get sick in Summer"
+    },
+    {
+      "idName": "sleepyChicken",
+      "name": "Sleepy Chicken",
+      "sourceType": "collectible",
+      "sourceGroup": "animais",
+      "category": "",
+      "description": "Prevent chicken sickness during fall"
+    },
+    {
+      "idName": "squidChicken",
+      "name": "Squid Chicken",
+      "sourceType": "collectible",
+      "sourceGroup": "animais",
+      "category": "",
+      "description": "+0.1 egg yield.",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.1,
+          "recursoAfetado": [
+            "egg"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "barnBlueprint",
+      "name": "Barn Blueprint",
+      "sourceType": "collectible",
+      "sourceGroup": "animais",
+      "category": "",
+      "description": "+5 animals per level of the Barn"
+    },
+    {
+      "idName": "babyCow",
+      "name": "Baby Cow",
+      "sourceType": "collectible",
+      "sourceGroup": "animais",
+      "category": "",
+      "description": "+10 cow xp from affection"
+    },
+    {
+      "idName": "mammoth",
+      "name": "Mammoth",
+      "sourceType": "collectible",
+      "sourceGroup": "animais",
+      "category": "",
+      "description": "-25% in Cow Sleep Time",
+      "tempo": [
+        {
+          "sinal": "x",
+          "buff": 0.75,
+          "recursoAfetado": [
+            "vaca"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "drCow",
+      "name": "Dr Cow",
+      "sourceType": "collectible",
+      "sourceGroup": "animais",
+      "category": "",
+      "description": "5% less feeding cost for cows",
+      "quantidade": [
+        {
+          "sinal": "x-",
+          "buff": 0.95,
+          "recursoAfetado": [
+            "vaca"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "goldenCow",
+      "name": "Golden Cow",
+      "sourceType": "collectible",
+      "sourceGroup": "animais",
+      "category": "",
+      "description": "Feed the cows without food",
+      "quantidade": [
+        {
+          "sinal": "x-",
+          "buff": 0,
+          "recursoAfetado": [
+            "vaca"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "longhornCowfish",
+      "name": "Longhorn Cowfish",
+      "sourceType": "collectible",
+      "sourceGroup": "animais",
+      "category": "",
+      "description": "+0.2 Milk",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.2,
+          "recursoAfetado": [
+            "milk"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "mootant",
+      "name": "Mootant",
+      "sourceType": "collectible",
+      "sourceGroup": "animais",
+      "category": "",
+      "description": "+0.1 Leather",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.1,
+          "recursoAfetado": [
+            "leather"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "moover",
+      "name": "Moo-ver",
+      "sourceType": "collectible",
+      "sourceGroup": "animais",
+      "category": "",
+      "description": "+0.25 Leather",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.25,
+          "recursoAfetado": [
+            "leather"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "frozenCow",
+      "name": "Frozen Cow",
+      "sourceType": "collectible",
+      "sourceGroup": "animais",
+      "category": "",
+      "description": "Cows don't get sick in Winter"
+    },
+    {
+      "idName": "goldenSheep",
+      "name": "Golden Sheep",
+      "sourceType": "collectible",
+      "sourceGroup": "animais",
+      "category": "",
+      "description": "Feed the sheep without food",
+      "quantidade": [
+        {
+          "sinal": "x-",
+          "buff": 0,
+          "recursoAfetado": [
+            "ovelha"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "farmDog",
+      "name": "Farm Dog",
+      "sourceType": "collectible",
+      "sourceGroup": "animais",
+      "category": "",
+      "description": "-25% in sheep production time",
+      "tempo": [
+        {
+          "sinal": "x",
+          "buff": 0.75,
+          "recursoAfetado": [
+            "ovelha"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "astronautSheep",
+      "name": "Astronaut Sheep",
+      "sourceType": "collectible",
+      "sourceGroup": "animais",
+      "category": "",
+      "description": "Increase Wool Yield +0.1",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.1,
+          "recursoAfetado": [
+            "wool"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "toxicTuft",
+      "name": "Toxic Tuft",
+      "sourceType": "collectible",
+      "sourceGroup": "animais",
+      "category": "",
+      "description": "+0.1 Merino Wool",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.1,
+          "recursoAfetado": [
+            "merinoWool"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "frozenSheep",
+      "name": "Frozen Sheep",
+      "sourceType": "collectible",
+      "sourceGroup": "animais",
+      "category": "",
+      "description": "Sheep don't get sick in Winter"
+    },
+    {
+      "idName": "nurseSheep",
+      "name": "Nurse Sheep",
+      "sourceType": "collectible",
+      "sourceGroup": "animais",
+      "category": "",
+      "description": "Sheeps cannot get sick during summer"
+    },
+    {
+      "idName": "mermaidSheep",
+      "name": "Mermaid Sheep",
+      "sourceType": "collectible",
+      "sourceGroup": "animais",
+      "category": "",
+      "description": "5% less feed required for sheep.",
+      "quantidade": [
+        {
+          "sinal": "x",
+          "buff": 0.95,
+          "recursoAfetado": [
+            "ovelha"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "oaken",
+      "name": "Oaken",
+      "sourceType": "collectible",
+      "sourceGroup": "outros",
+      "category": "",
+      "description": "25% chance of 1+ acorn fetch yield",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.25,
+          "recursoAfetado": [
+            "acorn"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "poseidonsThrone",
+      "name": "Poseidon's Throne",
+      "sourceType": "collectible",
+      "sourceGroup": "outros",
+      "category": "",
+      "description": "1+ Weed and Dung Yield",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 1,
+          "recursoAfetado": [
+            "weed",
+            "dung"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "meerkat",
+      "name": "Meerkat",
+      "sourceType": "collectible",
+      "sourceGroup": "outros",
+      "category": "",
+      "description": "5+ digs<br>1+ sand",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 5,
+          "recursoAfetado": [
+            "digs"
+          ]
+        }
+      ],
+      "quantidade2": [
+        {
+          "sinal": "+",
+          "buff": 1,
+          "recursoAfetado": [
+            "sand"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "nautilus",
+      "name": "Nautilus",
+      "sourceType": "collectible",
+      "sourceGroup": "outros",
+      "category": "",
+      "description": "Adds +5 daily fishing attempts.",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 5,
+          "recursoAfetado": [
+            "pesca"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "anemoneFlower",
+      "name": "Anemone Flower",
+      "sourceType": "collectible",
+      "sourceGroup": "outros",
+      "category": "",
+      "description": "+1 free attempt in the Fishing Puzzle",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 1,
+          "recursoAfetado": [
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "pistolShrimp",
+      "name": "Pistol Shrimp",
+      "sourceType": "wearable",
+      "sourceGroup": "temporada",
+      "category": "",
+      "description": "20% chance to get +1 crustacean yield",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.2,
+          "recursoAfetado": [
+            "crustacean"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "deepSeaSaltCaveBackground",
+      "name": "Deep Sea Salt Cave Background",
+      "sourceType": "wearable",
+      "sourceGroup": "temporada",
+      "category": "",
+      "description": "+5 Salt per harvest",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 5,
+          "recursoAfetado": [
+            "Salt"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "bubbleAura",
+      "name": "Bubble Aura",
+      "sourceType": "wearable",
+      "sourceGroup": "temporada",
+      "category": "",
+      "description": "-20% Fish Market processing time | 20% chance for +1 yield from Fish Processing",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.2,
+          "recursoAfetado": [
+            "fish processing"
+          ]
+        }
+      ],
+      "tempo": [
+        {
+          "sinal": "x",
+          "buff": 0.8,
+          "recursoAfetado": [
+            "fish processing"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "factionQuiver",
+      "name": "\"Faction\" Quiver",
+      "sourceType": "wearable",
+      "sourceGroup": "factions",
+      "category": "",
+      "description": "+0.25 Crops & Fruits",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.25,
+          "recursoAfetado": [
+            "Sunflower",
+            "Potato",
+            "Rhubarb",
+            "Pumpkin",
+            "Zucchini",
+            "Carrot",
+            "Yam",
+            "Cabbage",
+            "Broccoli",
+            "Soybean",
+            "Pepper",
+            "Beetroot",
+            "Cauliflower",
+            "Parsnip",
+            "Eggplant",
+            "Corn",
+            "Onion",
+            "Turnip",
+            "Radish",
+            "Wheat",
+            "Kale",
+            "Artichoke",
+            "Barley",
+            "Tomato",
+            "Lemon",
+            "Blueberry",
+            "Orange",
+            "Apple",
+            "Banana",
+            "Grape",
+            "Rice",
+            "Olive"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "factionCrown",
+      "name": "\"Faction\" Crown",
+      "sourceType": "wearable",
+      "sourceGroup": "factions",
+      "category": "",
+      "description": "+25% FLOWER and Coin Deliveries / +10% Marks",
+      "delivery": [
+        {
+          "sinal": "+",
+          "buff": 0.25,
+          "recursoAfetado": [
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "factionShield",
+      "name": "\"Faction\" Shield",
+      "sourceType": "wearable",
+      "sourceGroup": "factions",
+      "category": "",
+      "description": "+0.25 Wood and Minerals",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.25,
+          "recursoAfetado": [
+            "Wood",
+            "Stone",
+            "Iron",
+            "Gold"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "factionMedallion",
+      "name": "\"Faction\" Medallion",
+      "sourceType": "wearable",
+      "sourceGroup": "factions",
+      "category": "",
+      "description": "-25% Cooking Time",
+      "tempo": [
+        {
+          "sinal": "x",
+          "buff": 0.75,
+          "recursoAfetado": [
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "greenAmulet",
+      "name": "Green Amulet",
+      "sourceType": "wearable",
+      "sourceGroup": "crops",
+      "category": "",
+      "description": "Chance to harvest 10x more crops",
+      "quantidade": [
+        {
+          "sinal": "x",
+          "buff": 1.9,
+          "recursoAfetado": [
+            "Sunflower",
+            "Potato",
+            "Rhubarb",
+            "Pumpkin",
+            "Zucchini",
+            "Carrot",
+            "Yam",
+            "Cabbage",
+            "Broccoli",
+            "Soybean",
+            "Pepper",
+            "Beetroot",
+            "Cauliflower",
+            "Parsnip",
+            "Eggplant",
+            "Corn",
+            "Onion",
+            "Turnip",
+            "Radish",
+            "Wheat",
+            "Kale",
+            "Artichoke",
+            "Barley",
+            "Rice",
+            "Olive"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "infernalPitchfork",
+      "name": "Infernal Pitchfork",
+      "sourceType": "wearable",
+      "sourceGroup": "crops",
+      "category": "",
+      "description": "+3 Crops",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 3,
+          "recursoAfetado": [
+            "Sunflower",
+            "Potato",
+            "Rhubarb",
+            "Pumpkin",
+            "Zucchini",
+            "Carrot",
+            "Yam",
+            "Cabbage",
+            "Broccoli",
+            "Soybean",
+            "Pepper",
+            "Beetroot",
+            "Cauliflower",
+            "Parsnip",
+            "Eggplant",
+            "Corn",
+            "Onion",
+            "Turnip",
+            "Radish",
+            "Wheat",
+            "Kale",
+            "Artichoke",
+            "Barley",
+            "Rice",
+            "Olive"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "devilOrAngelWings",
+      "name": [
+        "Devil Wings - Angel Wings"
+      ],
+      "sourceType": "wearable",
+      "sourceGroup": "crops",
+      "category": "",
+      "description": "30% chance to harvest crop instantly",
+      "quantidade": [
+        {
+          "sinal": "xI",
+          "buff": 1.4,
+          "recursoAfetado": [
+            "Sunflower",
+            "Potato",
+            "Rhubarb",
+            "Pumpkin",
+            "Zucchini",
+            "Carrot",
+            "Yam",
+            "Cabbage",
+            "Broccoli",
+            "Soybean",
+            "Pepper",
+            "Beetroot",
+            "Cauliflower",
+            "Parsnip",
+            "Eggplant",
+            "Corn",
+            "Onion",
+            "Turnip",
+            "Radish",
+            "Wheat",
+            "Kale",
+            "Artichoke",
+            "Barley",
+            "Rice",
+            "Olive"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "blossomWard",
+      "name": "Blossom Ward",
+      "sourceType": "wearable",
+      "sourceGroup": "crops",
+      "category": "",
+      "description": "+1 Crop per plot in Spring",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 1,
+          "recursoAfetado": [
+            "Sunflower",
+            "Rhubarb",
+            "Carrot",
+            "Cabbage",
+            "Soybean",
+            "Corn",
+            "Wheat",
+            "Kale",
+            "Barley"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "solflareAegis",
+      "name": "Solflare Aegis",
+      "sourceType": "wearable",
+      "sourceGroup": "crops",
+      "category": "",
+      "description": "-50% in Crop time in Summer",
+      "tempo": [
+        {
+          "sinal": "x",
+          "buff": 0.5,
+          "recursoAfetado": [
+            "Sunflower",
+            "Potato",
+            "Zucchini",
+            "Pepper",
+            "Beetroot",
+            "Cauliflower",
+            "Eggplant",
+            "Radish",
+            "Wheat"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "autumnsEmbrace",
+      "name": "Autumn's Embrace",
+      "sourceType": "wearable",
+      "sourceGroup": "crops",
+      "category": "",
+      "description": "-50% in Crop time in Autumn",
+      "tempo": [
+        {
+          "sinal": "x",
+          "buff": 0.5,
+          "recursoAfetado": [
+            "Potato",
+            "Pumpkin",
+            "Carrot",
+            "Yam",
+            "Broccoli",
+            "Soybean",
+            "Wheat",
+            "Artichoke",
+            "Barley"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "frozenHeart",
+      "name": "Frozen Heart",
+      "sourceType": "wearable",
+      "sourceGroup": "crops",
+      "category": "",
+      "description": "+1 Crop per plot in Winter",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 1,
+          "recursoAfetado": [
+            "Potato",
+            "Cabbage",
+            "Beetroot",
+            "Cauliflower",
+            "Parsnip",
+            "Onion",
+            "Turnip",
+            "Wheat",
+            "Kale"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "sunflowerShield",
+      "name": "Sunflower Shield",
+      "sourceType": "wearable",
+      "sourceGroup": "crops",
+      "category": "",
+      "description": "Free Sunflower Seeds",
+      "coins": [
+        {
+          "sinal": "xC",
+          "buff": 0,
+          "recursoAfetado": [
+            "Sunflower"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "sunflowerAmulet",
+      "name": "Sunflower Amulet",
+      "sourceType": "wearable",
+      "sourceGroup": "crops",
+      "category": "",
+      "description": "+10% Sunflower",
+      "quantidade": [
+        {
+          "sinal": "x",
+          "buff": 1.1,
+          "recursoAfetado": [
+            "Sunflower"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "carrotAmulet",
+      "name": "Carrot Amulet",
+      "sourceType": "wearable",
+      "sourceGroup": "crops",
+      "category": "",
+      "description": "-20% in Carrot growth time",
+      "tempo": [
+        {
+          "sinal": "x",
+          "buff": 0.8,
+          "recursoAfetado": [
+            "Carrot"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "broccoliHat",
+      "name": "Broccoli Hat",
+      "sourceType": "wearable",
+      "sourceGroup": "crops",
+      "category": "",
+      "description": "2x Broccoli Speed",
+      "tempo": [
+        {
+          "sinal": "x",
+          "buff": 0.5,
+          "recursoAfetado": [
+            "Broccoli"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "tofuMask",
+      "name": "Tofu Mask",
+      "sourceType": "wearable",
+      "sourceGroup": "crops",
+      "category": "",
+      "description": "+0.1 Soybean",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.1,
+          "recursoAfetado": [
+            "Soybean"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "beetrootAmulet",
+      "name": "Beetroot Amulet",
+      "sourceType": "wearable",
+      "sourceGroup": "crops",
+      "category": "",
+      "description": "+20% Beetroot",
+      "quantidade": [
+        {
+          "sinal": "x",
+          "buff": 1.2,
+          "recursoAfetado": [
+            "Beetroot"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "redPepperOnesie",
+      "name": "Red Pepper Onesie",
+      "sourceType": "wearable",
+      "sourceGroup": "crops",
+      "category": "",
+      "description": "-25% harvest time for Pepper",
+      "tempo": [
+        {
+          "sinal": "x",
+          "buff": 0.75,
+          "recursoAfetado": [
+            "Pepper"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "parsnip",
+      "name": "Parsnip",
+      "sourceType": "wearable",
+      "sourceGroup": "crops",
+      "category": "",
+      "description": "+20% Parsnip",
+      "quantidade": [
+        {
+          "sinal": "x",
+          "buff": 1.2,
+          "recursoAfetado": [
+            "Parsnip"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "eggplantOnesie",
+      "name": "Eggplant Onesie",
+      "sourceType": "wearable",
+      "sourceGroup": "crops",
+      "category": "",
+      "description": "+0.1 Eggplant",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.1,
+          "recursoAfetado": [
+            "Eggplant"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "cornOnesie",
+      "name": "Corn Onesie",
+      "sourceType": "wearable",
+      "sourceGroup": "crops",
+      "category": "",
+      "description": "+0.1 Corn",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.1,
+          "recursoAfetado": [
+            "Corn"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "cornSilkHair",
+      "name": "Corn Silk Hair",
+      "sourceType": "wearable",
+      "sourceGroup": "crops",
+      "category": "",
+      "description": "2+ Corn Yield",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 2,
+          "recursoAfetado": [
+            "Corn"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "ladybugSuit",
+      "name": "Ladybug Suit",
+      "sourceType": "wearable",
+      "sourceGroup": "crops",
+      "category": "",
+      "description": "-25% Onion Seed Coin cost",
+      "coins": [
+        {
+          "sinal": "xC",
+          "buff": 0.75,
+          "recursoAfetado": [
+            "Onion"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "sickle",
+      "name": "Sickle",
+      "sourceType": "wearable",
+      "sourceGroup": "crops",
+      "category": "",
+      "description": "+2 Wheat",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 2,
+          "recursoAfetado": [
+            "Wheat"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "camelOnesie",
+      "name": "Camel Onesie",
+      "sourceType": "wearable",
+      "sourceGroup": "fruits",
+      "category": "",
+      "description": "+0.1 Fruits (except GH fruits)",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.1,
+          "recursoAfetado": [
+            "Tomato",
+            "Lemon",
+            "Blueberry",
+            "Orange",
+            "Apple",
+            "Banana"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "fruitPickerApron",
+      "name": "Fruit Picker Apron",
+      "sourceType": "wearable",
+      "sourceGroup": "fruits",
+      "category": "",
+      "description": "+0.1 Apple, Blueberry, Orange e Banana",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.1,
+          "recursoAfetado": [
+            "Apple",
+            "Blueberry",
+            "Orange",
+            "Banana"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "lemonShield",
+      "name": "Lemon Shield",
+      "sourceType": "wearable",
+      "sourceGroup": "fruits",
+      "category": "",
+      "description": "+1 Lemon",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 1,
+          "recursoAfetado": [
+            "Lemon"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "bananaOnesie",
+      "name": "Banana Onesie",
+      "sourceType": "wearable",
+      "sourceGroup": "fruits",
+      "category": "",
+      "description": "-20% in Banana growth time",
+      "tempo": [
+        {
+          "sinal": "x",
+          "buff": 0.8,
+          "recursoAfetado": [
+            "Banana"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "bananaAmulet",
+      "name": "Banana Amulet",
+      "sourceType": "wearable",
+      "sourceGroup": "fruits",
+      "category": "",
+      "description": "+0.5 Bananas",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.5,
+          "recursoAfetado": [
+            "Banana"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "pickaxeShark",
+      "name": "Pickaxe Shark",
+      "sourceType": "wearable",
+      "sourceGroup": "minerals",
+      "category": "",
+      "description": "+15% Gold Recovery Time and 10% chance of Instant Gold",
+      "quantidade": [
+        {
+          "sinal": "xI",
+          "buff": 1.1,
+          "recursoAfetado": [
+            "Gold",
+            "Iron Pickaxe"
+          ]
+        }
+      ],
+      "tempo": [
+        {
+          "sinal": "x",
+          "buff": 0.85,
+          "recursoAfetado": [
+            "Gold"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "crimstoneArmor",
+      "name": "Crimstone Armor",
+      "sourceType": "wearable",
+      "sourceGroup": "minerals",
+      "category": "",
+      "description": "+0.1 Crimstone",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.1,
+          "recursoAfetado": [
+            "Crimstone"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "crimstoneAmulet",
+      "name": "Crimstone Amulet",
+      "sourceType": "wearable",
+      "sourceGroup": "minerals",
+      "category": "",
+      "description": "-20% in the time for Crimstone",
+      "tempo": [
+        {
+          "sinal": "x",
+          "buff": 0.8,
+          "recursoAfetado": [
+            "Crimstone"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "crimstoneHammer",
+      "name": "Crimstone Hammer",
+      "sourceType": "wearable",
+      "sourceGroup": "minerals",
+      "category": "",
+      "description": "+2 Crimstone on the 5th day",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.4,
+          "recursoAfetado": [
+            "Crimstone"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "crimstoneSpikesHair",
+      "name": "Crimstone Spikes Hair",
+      "sourceType": "wearable",
+      "sourceGroup": "minerals",
+      "category": "",
+      "description": "Free crimstone mining",
+      "quantidade": [
+        {
+          "sinal": "x",
+          "buff": 0,
+          "recursoAfetado": [
+            "Gold Pickaxe"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "infernalDrill",
+      "name": "Infernal Drill",
+      "sourceType": "wearable",
+      "sourceGroup": "minerals",
+      "category": "",
+      "description": "Get Oil without needing an Oil Drill",
+      "quantidade": [
+        {
+          "sinal": "x",
+          "buff": 0,
+          "recursoAfetado": [
+            "Oil Drill"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "oilCan",
+      "name": "Oil Can",
+      "sourceType": "wearable",
+      "sourceGroup": "minerals",
+      "category": "",
+      "description": "+2 Oils",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 2,
+          "recursoAfetado": [
+            "Oil"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "oilGallon",
+      "name": "Oil Gallon",
+      "sourceType": "wearable",
+      "sourceGroup": "minerals",
+      "category": "",
+      "description": "+5 Oils",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 5,
+          "recursoAfetado": [
+            "Oil"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "oilOveralls",
+      "name": "Oil Overalls",
+      "sourceType": "wearable",
+      "sourceGroup": "minerals",
+      "category": "",
+      "description": "+10 Oils",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 10,
+          "recursoAfetado": [
+            "Oil"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "devWrench",
+      "name": "Dev Wrench",
+      "sourceType": "wearable",
+      "sourceGroup": "minerals",
+      "category": "",
+      "description": "-50% in the time for Oil regeneration",
+      "tempo": [
+        {
+          "sinal": "x",
+          "buff": 0.5,
+          "recursoAfetado": [
+            "Oil"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "obsidianNecklace",
+      "name": "Obsidian Necklace",
+      "sourceType": "wearable",
+      "sourceGroup": "minerals",
+      "category": "",
+      "description": "2x Lava Pit Speed",
+      "tempo": [
+        {
+          "sinal": "x",
+          "buff": 0.5,
+          "recursoAfetado": [
+            "Obsidian"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "lavaSwimwear",
+      "name": "Lava Swimwear",
+      "sourceType": "wearable",
+      "sourceGroup": "minerals",
+      "category": "",
+      "description": "-50% Lava Pit resources"
+    },
+    {
+      "idName": "grapePants",
+      "name": "Grape Pants",
+      "sourceType": "wearable",
+      "sourceGroup": "greenhouse",
+      "category": "",
+      "description": "+0.2 Grapes",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.2,
+          "recursoAfetado": [
+            "Grape"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "nonLaHat",
+      "name": "Non La Hat",
+      "sourceType": "wearable",
+      "sourceGroup": "greenhouse",
+      "category": "",
+      "description": "+1 Rice",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 1,
+          "recursoAfetado": [
+            "Rice"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "oliveRoyaltyShirt",
+      "name": "Olive Royalty Shirt",
+      "sourceType": "wearable",
+      "sourceGroup": "greenhouse",
+      "category": "",
+      "description": "+0.25 Olives",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.25,
+          "recursoAfetado": [
+            "Olive"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "oliveShield",
+      "name": "Olive Shield",
+      "sourceType": "wearable",
+      "sourceGroup": "greenhouse",
+      "category": "",
+      "description": "+1 Olive",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 1,
+          "recursoAfetado": [
+            "Olive"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "cattlegrim",
+      "name": "Cattlegrim",
+      "sourceType": "wearable",
+      "sourceGroup": "animais",
+      "category": "",
+      "description": "+0.25 in animal production",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.25,
+          "recursoAfetado": [
+            "egg",
+            "feather",
+            "milk",
+            "leather",
+            "wool",
+            "merinoWool"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "medicApron",
+      "name": "Medic Apron",
+      "sourceType": "wearable",
+      "sourceGroup": "animais",
+      "category": "",
+      "description": "Half Price Medicine"
+    },
+    {
+      "idName": "oracleSyringe",
+      "name": "Oracle Syringe",
+      "sourceType": "wearable",
+      "sourceGroup": "animais",
+      "category": "",
+      "description": "Heal animals for free"
+    },
+    {
+      "idName": "chickenSuit",
+      "name": "Chicken Suit",
+      "sourceType": "wearable",
+      "sourceGroup": "animais",
+      "category": "",
+      "description": "+1 Feather",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 1,
+          "recursoAfetado": [
+            "feather"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "infernalBullwhip",
+      "name": "Infernal Bullwhip",
+      "sourceType": "wearable",
+      "sourceGroup": "animais",
+      "category": "",
+      "description": "-50% food for Barn animals",
+      "quantidade": [
+        {
+          "sinal": "x-",
+          "buff": 0.5,
+          "recursoAfetado": [
+            "vaca",
+            "ovelha"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "milkApron",
+      "name": "Milk Apron",
+      "sourceType": "wearable",
+      "sourceGroup": "animais",
+      "category": "",
+      "description": "+0.5 Milk",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.5,
+          "recursoAfetado": [
+            "milk"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "cowbellNecklace",
+      "name": "Cowbell Necklace",
+      "sourceType": "wearable",
+      "sourceGroup": "animais",
+      "category": "",
+      "description": "+2 Milk",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 2,
+          "recursoAfetado": [
+            "milk"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "trainingWhistle",
+      "name": "Training Whistle",
+      "sourceType": "wearable",
+      "sourceGroup": "animais",
+      "category": "",
+      "description": "+1 Leather",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 1,
+          "recursoAfetado": [
+            "leather"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "dreamScarf",
+      "name": "Dream Scarf",
+      "sourceType": "wearable",
+      "sourceGroup": "animais",
+      "category": "",
+      "description": "-20% in sheep production time",
+      "tempo": [
+        {
+          "sinal": "x",
+          "buff": 0.8,
+          "recursoAfetado": [
+            "ovelha"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "whiteSheepOnesie",
+      "name": "White Sheep Onesie",
+      "sourceType": "wearable",
+      "sourceGroup": "animais",
+      "category": "",
+      "description": "+0.25 Wool",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 0.25,
+          "recursoAfetado": [
+            "wool"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "blackSheepOnesie",
+      "name": "Black Sheep Onesie",
+      "sourceType": "wearable",
+      "sourceGroup": "animais",
+      "category": "",
+      "description": "+2 Wool",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 2,
+          "recursoAfetado": [
+            "wool"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "merinoJumper",
+      "name": "Merino Jumper",
+      "sourceType": "wearable",
+      "sourceGroup": "animais",
+      "category": "",
+      "description": "+1 Merino Wool",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 2,
+          "recursoAfetado": [
+            "merinoWool"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "ancientShovel",
+      "name": "Ancient Shovel",
+      "sourceType": "wearable",
+      "sourceGroup": "terouso",
+      "category": "",
+      "description": "Dig without needing a shovel",
+      "quantidade": [
+        {
+          "sinal": "x",
+          "buff": 0,
+          "recursoAfetado": [
+            "Sand Shovel"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "ancientRod",
+      "name": "Ancient Rod",
+      "sourceType": "wearable",
+      "sourceGroup": "pesca",
+      "category": "",
+      "description": "Fish without a rod",
+      "quantidade": [
+        {
+          "sinal": "x",
+          "buff": 0,
+          "recursoAfetado": [
+            "Rod"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "pawAura",
+      "name": "Paw Aura",
+      "sourceType": "wearable",
+      "sourceGroup": "outros",
+      "category": "",
+      "description": "Free pet feeding",
+      "quantidade": [
+        {
+          "sinal": "x",
+          "buff": 0,
+          "recursoAfetado": [
+            "food pet"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "victoriasApron",
+      "name": "Victoria's Apron",
+      "sourceType": "wearable",
+      "sourceGroup": "outros",
+      "category": "",
+      "description": "33% chance to reset the pet request",
+      "reset": [
+        {
+          "sinal": "x",
+          "buff": 1.33,
+          "recursoAfetado": [
+            "food pet"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "beastShoes",
+      "name": "Beast Shoes",
+      "sourceType": "wearable",
+      "sourceGroup": "outros",
+      "category": "",
+      "description": "+100 XP to medium food requests<br>+250 XP to hard food requests",
+      "xpPet": [
+        {
+          "sinal": "+",
+          "buff": 100,
+          "recursoAfetado": [
+            "food medium"
+          ]
+        },
+        {
+          "sinal": "+",
+          "buff": 250,
+          "recursoAfetado": [
+            "food hard"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "boarShrine",
+      "name": "Boar Shrine",
+      "sourceType": "shrine",
+      "sourceGroup": "shrines",
+      "category": "",
+      "description": "-20% Cooking Time - Lasts for 7days",
+      "tempo": [
+        {
+          "sinal": "x",
+          "buff": 0.8,
+          "recursoAfetado": [
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "houndShrine",
+      "name": "Hound Shrine",
+      "sourceType": "shrine",
+      "sourceGroup": "shrines",
+      "category": "",
+      "description": "+100 Pet XP - Lasts for 7days",
+      "xp": [
+        {
+          "sinal": "+",
+          "buff": 100,
+          "recursoAfetado": [
+            "pet"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "sparrowShrine",
+      "name": "Sparrow Shrine",
+      "sourceType": "shrine",
+      "sourceGroup": "shrines",
+      "category": "",
+      "description": "-25% Crop Growth Time - Lasts for 7days",
+      "tempo": [
+        {
+          "sinal": "x",
+          "buff": 0.75,
+          "recursoAfetado": [
+            "Sunflower",
+            "Potato",
+            "Rhubarb",
+            "Pumpkin",
+            "Zucchini",
+            "Carrot",
+            "Yam",
+            "Cabbage",
+            "Broccoli",
+            "Soybean",
+            "Pepper",
+            "Beetroot",
+            "Cauliflower",
+            "Parsnip",
+            "Eggplant",
+            "Corn",
+            "Onion",
+            "Turnip",
+            "Radish",
+            "Wheat",
+            "Kale",
+            "Artichoke",
+            "Barley"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "foxShrine",
+      "name": "Fox Shrine",
+      "sourceType": "shrine",
+      "sourceGroup": "shrines",
+      "category": "",
+      "description": "-25% Crafting Box Time / 10% chance to instantly craft a recipe - Lasts for 7days",
+      "quantidade": [
+        {
+          "sinal": "x",
+          "buff": 1.1,
+          "recursoAfetado": [
+            ""
+          ]
+        }
+      ],
+      "tempo": [
+        {
+          "sinal": "x",
+          "buff": 0.75,
+          "recursoAfetado": [
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "toucanShrine",
+      "name": "Toucan Shrine",
+      "sourceType": "shrine",
+      "sourceGroup": "shrines",
+      "category": "",
+      "description": "-25% Fruit Growth Time - Lasts for 7days",
+      "tempo": [
+        {
+          "sinal": "x",
+          "buff": 0.75,
+          "recursoAfetado": [
+            "Tomato",
+            "Lemon",
+            "Blueberry",
+            "Orange",
+            "Apple",
+            "Banana"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "collieShrine",
+      "name": "Collie Shrine",
+      "sourceType": "shrine",
+      "sourceGroup": "shrines",
+      "category": "",
+      "description": "-25% Cow Sleep Time / -25% Sheep Sleep Time / -5% Feed to feed barn animals - Lasts for 7days",
+      "quantidade": [
+        {
+          "sinal": "x-",
+          "buff": 0.95,
+          "recursoAfetado": [
+            "vaca",
+            "ovelha"
+          ]
+        }
+      ],
+      "tempo": [
+        {
+          "sinal": "x",
+          "buff": 0.75,
+          "recursoAfetado": [
+            "vaca",
+            "ovelha"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "mothShrine",
+      "name": "Moth Shrine",
+      "sourceType": "shrine",
+      "sourceGroup": "shrines",
+      "category": "",
+      "description": "-25% Flower Growth Time / 20% chance to get +1 Flower - Lasts for 7days",
+      "quantidade": [
+        {
+          "sinal": "x",
+          "buff": 1.2,
+          "recursoAfetado": [
+            ""
+          ]
+        }
+      ],
+      "tempo": [
+        {
+          "sinal": "x",
+          "buff": 0.75,
+          "recursoAfetado": [
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "badgerShrine",
+      "name": "Badger Shrine",
+      "sourceType": "shrine",
+      "sourceGroup": "shrines",
+      "category": "",
+      "description": "-25% Tree Recovery Time / -25% Stone Recovery Time - Lasts for 7days",
+      "tempo": [
+        {
+          "sinal": "x",
+          "buff": 0.75,
+          "recursoAfetado": [
+            "Wood",
+            "Stone"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "moleShrine",
+      "name": "Mole Shrine",
+      "sourceType": "shrine",
+      "sourceGroup": "shrines",
+      "category": "",
+      "description": "-25% Iron Recovery Time / -25% Gold Recovery Time / -25% Crimstone Recovery Time - Lasts for 7days",
+      "tempo": [
+        {
+          "sinal": "x",
+          "buff": 0.75,
+          "recursoAfetado": [
+            "Iron",
+            "Gold",
+            "Crimstone"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "tortoiseShrine",
+      "name": "Tortoise Shrine",
+      "sourceType": "shrine",
+      "sourceGroup": "shrines",
+      "category": "",
+      "description": "-33% Greenhouse Growth Time / -10% Crop Machine Growth Time - Lasts for 7days",
+      "tempo": [
+        {
+          "sinal": "x",
+          "buff": 0.67,
+          "recursoAfetado": [
+            "Grape",
+            "Rice",
+            "Olive"
+          ]
+        },
+        {
+          "sinal": "xCM",
+          "buff": 0.9,
+          "recursoAfetado": [
+            "Sunflower",
+            "Potato",
+            "Rhubarb",
+            "Pumpkin",
+            "Zucchini",
+            "Carrot",
+            "Yam",
+            "Cabbage",
+            "Broccoli"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "stagShrine",
+      "name": "Stag Shrine",
+      "sourceType": "shrine",
+      "sourceGroup": "shrines",
+      "category": "",
+      "description": "-25% Oil Recovery Time / +15 Óleo a cada 3 perfurações - Lasts for 7days",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 5,
+          "recursoAfetado": [
+            "Oil"
+          ]
+        }
+      ],
+      "tempo": [
+        {
+          "sinal": "x",
+          "buff": 0.75,
+          "recursoAfetado": [
+            "Oil"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "bearShrine",
+      "name": "Bear Shrine",
+      "sourceType": "shrine",
+      "sourceGroup": "shrines",
+      "category": "",
+      "description": "+0.5 Honey Production Speed / +20% chance of bee swarm - Lasts for 7days",
+      "quantidade": [
+        {
+          "sinal": "x",
+          "buff": 1.2,
+          "recursoAfetado": [
+            ""
+          ]
+        }
+      ],
+      "tempo": [
+        {
+          "sinal": "x",
+          "buff": 0.5,
+          "recursoAfetado": [
+            "Honey"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "bantamShrine",
+      "name": "Bantam Shrine",
+      "sourceType": "shrine",
+      "sourceGroup": "shrines",
+      "category": "",
+      "description": "-25% Chicken Sleep Time / -5% Feed to feed chickens - Lasts for 7days",
+      "quantidade": [
+        {
+          "sinal": "x-",
+          "buff": 0.95,
+          "recursoAfetado": [
+            "galinha"
+          ]
+        }
+      ],
+      "tempo": [
+        {
+          "sinal": "x",
+          "buff": 0.75,
+          "recursoAfetado": [
+            "galinha"
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "legendaryShrine",
+      "name": "Legendary Shrine",
+      "sourceType": "shrine",
+      "sourceGroup": "shrines",
+      "category": "",
+      "description": "+1 to crops / +1 to fruits / +1 to wood / +1 to stone / +1 Flower / -50% Cooking Time - Lasts for 1 day",
+      "quantidade": [
+        {
+          "sinal": "+",
+          "buff": 1,
+          "recursoAfetado": [
+            "Sunflower",
+            "Potato",
+            "Rhubarb",
+            "Pumpkin",
+            "Zucchini",
+            "Carrot",
+            "Yam",
+            "Cabbage",
+            "Broccoli",
+            "Soybean",
+            "Pepper",
+            "Beetroot",
+            "Cauliflower",
+            "Parsnip",
+            "Eggplant",
+            "Corn",
+            "Onion",
+            "Turnip",
+            "Radish",
+            "Wheat",
+            "Kale",
+            "Artichoke",
+            "Barley",
+            "Tomato",
+            "Lemon",
+            "Blueberry",
+            "Orange",
+            "Apple",
+            "Banana",
+            "Wood",
+            "Stone",
+            "Flower"
+          ]
+        }
+      ],
+      "tempo": [
+        {
+          "sinal": "x",
+          "buff": 0.5,
+          "recursoAfetado": [
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "idName": "tradingShrine",
+      "name": "Trading Shrine",
+      "sourceType": "shrine",
+      "sourceGroup": "shrines",
+      "category": "",
+      "description": "-2.5% resource tax - Lasts for 30days"
+    },
+    {
+      "idName": "obsidianShrine",
+      "name": "Obsidian Shrine",
+      "sourceType": "shrine",
+      "sourceGroup": "shrines",
+      "category": "",
+      "description": "Bulk harvest all ready crops and plant seeds - Lasts for 14days"
+    },
+    {
+      "idName": "superTotem",
+      "name": "Super Totem",
+      "sourceType": "totem",
+      "sourceGroup": "totems",
+      "category": "",
+      "description": "2x speed for crops, trees, fruits, cooking & minerals - Lasts for 7 days",
+      "tempo": [
+        {
+          "sinal": "x",
+          "buff": 0.5,
+          "recursoAfetado": [
+            "Sunflower",
+            "Potato",
+            "Rhubarb",
+            "Pumpkin",
+            "Zucchini",
+            "Carrot",
+            "Yam",
+            "Cabbage",
+            "Broccoli",
+            "Soybean",
+            "Pepper",
+            "Beetroot",
+            "Cauliflower",
+            "Parsnip",
+            "Eggplant",
+            "Corn",
+            "Onion",
+            "Turnip",
+            "Radish",
+            "Wheat",
+            "Kale",
+            "Artichoke",
+            "Barley",
+            "Grape",
+            "Rice",
+            "Olive",
+            "Tomato",
+            "Lemon",
+            "Blueberry",
+            "Orange",
+            "Apple",
+            "Banana",
+            "Wood",
+            "Stone",
+            "Iron",
+            "Gold"
+          ]
+        }
+      ]
+    }
+  ]
+}

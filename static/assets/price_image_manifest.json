@@ -1,0 +1,1752 @@
+[
+  {
+    "name": "Axe",
+    "image": "prices/axe.png",
+    "source_sheet": "Informações Minerais"
+  },
+  {
+    "name": "Custo da Ferramenta Convertido em:",
+    "image": "prices/custo_da_ferramenta_convertido_em.png",
+    "source_sheet": "Informações Minerais"
+  },
+  {
+    "name": "Seu Custo de Convertido Coins",
+    "image": "prices/seu_custo_de_convertido_coins.png",
+    "source_sheet": "Informações Minerais"
+  },
+  {
+    "name": "Pickaxe",
+    "image": "prices/pickaxe.png",
+    "source_sheet": "Informações Minerais"
+  },
+  {
+    "name": "Stone Pickaxe",
+    "image": "prices/stone_pickaxe.png",
+    "source_sheet": "Informações Minerais"
+  },
+  {
+    "name": "Iron Pickaxe",
+    "image": "prices/iron_pickaxe.png",
+    "source_sheet": "Informações Minerais"
+  },
+  {
+    "name": "Gold Pickaxe",
+    "image": "prices/gold_pickaxe.png",
+    "source_sheet": "Informações Minerais"
+  },
+  {
+    "name": "Oil Drill",
+    "image": "prices/oil_drill.png",
+    "source_sheet": "Informações Minerais"
+  },
+  {
+    "name": "Fishing Rod",
+    "image": "prices/fishing_rod.png",
+    "source_sheet": "Informações Minerais"
+  },
+  {
+    "name": "Sand Shovel",
+    "image": "prices/sand_shovel.png",
+    "source_sheet": "Informações Minerais"
+  },
+  {
+    "name": "Sand Drill",
+    "image": "prices/sand_drill.png",
+    "source_sheet": "Informações Minerais"
+  },
+  {
+    "name": "Custo escolhendo comprar ou minerar",
+    "image": "prices/custo_escolhendo_comprar_ou_minerar.png",
+    "source_sheet": "Informações Minerais"
+  },
+  {
+    "name": "Tempo sem buff",
+    "image": "prices/tempo_sem_buff.png",
+    "source_sheet": "Informações Minerais"
+  },
+  {
+    "name": "Tempo com buff",
+    "image": "prices/tempo_com_buff.png",
+    "source_sheet": "Informações Minerais"
+  },
+  {
+    "name": "Wood",
+    "image": "prices/wood.png",
+    "source_sheet": "Informações Minerais"
+  },
+  {
+    "name": "Stone",
+    "image": "prices/stone.png",
+    "source_sheet": "Informações Minerais"
+  },
+  {
+    "name": "Iron",
+    "image": "prices/iron.png",
+    "source_sheet": "Informações Minerais"
+  },
+  {
+    "name": "Gold",
+    "image": "prices/gold.png",
+    "source_sheet": "Informações Minerais"
+  },
+  {
+    "name": "#N/A",
+    "image": "prices/n_a.png",
+    "source_sheet": "Informações Minerais"
+  },
+  {
+    "name": "Crimstone",
+    "image": "prices/crimstone.png",
+    "source_sheet": "Informações Minerais"
+  },
+  {
+    "name": "oil",
+    "image": "prices/oil.png",
+    "source_sheet": "Informações Minerais"
+  },
+  {
+    "name": "sunstone",
+    "image": "prices/sunstone.png",
+    "source_sheet": "Informações Minerais"
+  },
+  {
+    "name": "Custo em de PRODUÇÃO",
+    "image": "prices/custo_em_de_produ_o.png",
+    "source_sheet": "Informações Minerais"
+  },
+  {
+    "name": "Spring",
+    "image": "prices/spring.png",
+    "source_sheet": "Informações Minerais"
+  },
+  {
+    "name": "Summer",
+    "image": "prices/summer.png",
+    "source_sheet": "Informações Minerais"
+  },
+  {
+    "name": "Autumn",
+    "image": "prices/autumn.png",
+    "source_sheet": "Informações Minerais"
+  },
+  {
+    "name": "Winter",
+    "image": "prices/winter.png",
+    "source_sheet": "Informações Minerais"
+  },
+  {
+    "name": "Sunflower",
+    "image": "prices/sunflower.png",
+    "source_sheet": "Informações Minerais"
+  },
+  {
+    "name": "Potato",
+    "image": "prices/potato.png",
+    "source_sheet": "Informações Minerais"
+  },
+  {
+    "name": "Rhubarb",
+    "image": "prices/rhubarb.png",
+    "source_sheet": "Informações Minerais"
+  },
+  {
+    "name": "Pumpkin",
+    "image": "prices/pumpkin.png",
+    "source_sheet": "Informações Minerais"
+  },
+  {
+    "name": "Zucchini",
+    "image": "prices/zucchini.png",
+    "source_sheet": "Informações Minerais"
+  },
+  {
+    "name": "Carrot",
+    "image": "prices/carrot.png",
+    "source_sheet": "Informações Minerais"
+  },
+  {
+    "name": "Yam",
+    "image": "prices/yam.png",
+    "source_sheet": "Informações Minerais"
+  },
+  {
+    "name": "Cabbage",
+    "image": "prices/cabbage.png",
+    "source_sheet": "Informações Minerais"
+  },
+  {
+    "name": "Broccoli",
+    "image": "prices/broccoli.png",
+    "source_sheet": "Informações Minerais"
+  },
+  {
+    "name": "Soybean",
+    "image": "prices/soybean.png",
+    "source_sheet": "Informações Minerais"
+  },
+  {
+    "name": "Pepper",
+    "image": "prices/pepper.png",
+    "source_sheet": "Informações Minerais"
+  },
+  {
+    "name": "Beetroot",
+    "image": "prices/beetroot.png",
+    "source_sheet": "Informações Minerais"
+  },
+  {
+    "name": "Cauliflower",
+    "image": "prices/cauliflower.png",
+    "source_sheet": "Informações Minerais"
+  },
+  {
+    "name": "Parsnip",
+    "image": "prices/parsnip.png",
+    "source_sheet": "Informações Minerais"
+  },
+  {
+    "name": "Eggplant",
+    "image": "prices/eggplant.png",
+    "source_sheet": "Informações Minerais"
+  },
+  {
+    "name": "Corn",
+    "image": "prices/corn.png",
+    "source_sheet": "Informações Minerais"
+  },
+  {
+    "name": "Onion",
+    "image": "prices/onion.png",
+    "source_sheet": "Informações Minerais"
+  },
+  {
+    "name": "Turnip",
+    "image": "prices/turnip.png",
+    "source_sheet": "Informações Minerais"
+  },
+  {
+    "name": "Radish",
+    "image": "prices/radish.png",
+    "source_sheet": "Informações Minerais"
+  },
+  {
+    "name": "Wheat",
+    "image": "prices/wheat.png",
+    "source_sheet": "Informações Minerais"
+  },
+  {
+    "name": "Kale",
+    "image": "prices/kale.png",
+    "source_sheet": "Informações Minerais"
+  },
+  {
+    "name": "Artichoke",
+    "image": "prices/artichoke.png",
+    "source_sheet": "Informações Minerais"
+  },
+  {
+    "name": "Barley",
+    "image": "prices/barley.png",
+    "source_sheet": "Informações Minerais"
+  },
+  {
+    "name": "Tomato",
+    "image": "prices/tomato.png",
+    "source_sheet": "Informações Minerais"
+  },
+  {
+    "name": "Lemon",
+    "image": "prices/lemon.png",
+    "source_sheet": "Informações Minerais"
+  },
+  {
+    "name": "Blueberry",
+    "image": "prices/blueberry.png",
+    "source_sheet": "Informações Minerais"
+  },
+  {
+    "name": "Orange",
+    "image": "prices/orange.png",
+    "source_sheet": "Informações Minerais"
+  },
+  {
+    "name": "Apple",
+    "image": "prices/apple.png",
+    "source_sheet": "Informações Minerais"
+  },
+  {
+    "name": "Banana",
+    "image": "prices/banana.png",
+    "source_sheet": "Informações Minerais"
+  },
+  {
+    "name": "Grape",
+    "image": "prices/grape.png",
+    "source_sheet": "Informações Minerais"
+  },
+  {
+    "name": "Rice",
+    "image": "prices/rice.png",
+    "source_sheet": "Informações Minerais"
+  },
+  {
+    "name": "Olive",
+    "image": "prices/olive.png",
+    "source_sheet": "Informações Minerais"
+  },
+  {
+    "name": "Celestine",
+    "image": "prices/celestine.png",
+    "source_sheet": "Informações Minerais"
+  },
+  {
+    "name": "Lunara",
+    "image": "prices/lunara.png",
+    "source_sheet": "Informações Minerais"
+  },
+  {
+    "name": "Duskberry",
+    "image": "prices/duskberry.png",
+    "source_sheet": "Informações Minerais"
+  },
+  {
+    "name": "Egg",
+    "image": "prices/egg.png",
+    "source_sheet": "Informações Minerais"
+  },
+  {
+    "name": "Feather",
+    "image": "prices/feather.png",
+    "source_sheet": "Informações Minerais"
+  },
+  {
+    "name": "Honey",
+    "image": "prices/honey.png",
+    "source_sheet": "Informações Minerais"
+  },
+  {
+    "name": "Milk",
+    "image": "prices/milk.png",
+    "source_sheet": "Informações Minerais"
+  },
+  {
+    "name": "Leather",
+    "image": "prices/leather.png",
+    "source_sheet": "Informações Minerais"
+  },
+  {
+    "name": "Wool",
+    "image": "prices/wool.png",
+    "source_sheet": "Informações Minerais"
+  },
+  {
+    "name": "Merino Wool",
+    "image": "prices/merino_wool.png",
+    "source_sheet": "Informações Minerais"
+  },
+  {
+    "name": "Acorn",
+    "image": "prices/acorn.png",
+    "source_sheet": "Informações Minerais"
+  },
+  {
+    "name": "Ruffroot",
+    "image": "prices/ruffroot.png",
+    "source_sheet": "Informações Minerais"
+  },
+  {
+    "name": "Chewed Bone",
+    "image": "prices/chewed_bone.png",
+    "source_sheet": "Informações Minerais"
+  },
+  {
+    "name": "Heart leaf",
+    "image": "prices/heart_leaf.png",
+    "source_sheet": "Informações Minerais"
+  },
+  {
+    "name": "Frost Pebble",
+    "image": "prices/frost_pebble.png",
+    "source_sheet": "Informações Minerais"
+  },
+  {
+    "name": "Wild Grass",
+    "image": "prices/wild_grass.png",
+    "source_sheet": "Informações Minerais"
+  },
+  {
+    "name": "Ribbon",
+    "image": "prices/ribbon.png",
+    "source_sheet": "Informações Minerais"
+  },
+  {
+    "name": "Dewberry",
+    "image": "prices/dewberry.png",
+    "source_sheet": "Informações Minerais"
+  },
+  {
+    "name": "Fossil Shell",
+    "image": "prices/fossil_shell.png",
+    "source_sheet": "Informações Minerais"
+  },
+  {
+    "name": "Moonfur",
+    "image": "prices/moonfur.png",
+    "source_sheet": "Informações Minerais"
+  },
+  {
+    "name": "Ingredientes e Custo",
+    "image": "prices/ingredientes_e_custo.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Mashed Potato",
+    "image": "prices/mashed_potato.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Rhubarb Tart",
+    "image": "prices/rhubarb_tart.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Pumpkin Soup",
+    "image": "prices/pumpkin_soup.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Reindeer Carrot",
+    "image": "prices/reindeer_carrot.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Mushroom",
+    "image": "prices/mushroom.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Mushroom Soup",
+    "image": "prices/mushroom_soup.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Boiled Eggs",
+    "image": "prices/boiled_eggs.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Bumpkin Broth",
+    "image": "prices/bumpkin_broth.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Popcorn",
+    "image": "prices/popcorn.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Cabbers n Mash",
+    "image": "prices/cabbers_n_mash.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Magic Mushroom",
+    "image": "prices/magic_mushroom.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Rapid Roast",
+    "image": "prices/rapid_roast.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Kale Stew",
+    "image": "prices/kale_stew.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Fried Tofu",
+    "image": "prices/fried_tofu.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Red Snapper",
+    "image": "prices/red_snapper.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Gumbo",
+    "image": "prices/gumbo.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Kale Omelette",
+    "image": "prices/kale_omelette.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Rice Bun",
+    "image": "prices/rice_bun.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Antipasto",
+    "image": "prices/antipasto.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Cheese",
+    "image": "prices/cheese.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Pizza Margherita",
+    "image": "prices/pizza_margherita.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Sunflower Crunch",
+    "image": "prices/sunflower_crunch.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Roast Veggies",
+    "image": "prices/roast_veggies.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Club Sandwich",
+    "image": "prices/club_sandwich.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Fruit Salad",
+    "image": "prices/fruit_salad.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Mushroom Jacket Potatoes",
+    "image": "prices/mushroom_jacket_potatoes.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Cauliflower Burger",
+    "image": "prices/cauliflower_burger.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Bumpkin Salad",
+    "image": "prices/bumpkin_salad.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Goblin's Treat",
+    "image": "prices/goblin_s_treat.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Pancakes",
+    "image": "prices/pancakes.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Bumpkin ganoush",
+    "image": "prices/bumpkin_ganoush.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Anchovy",
+    "image": "prices/anchovy.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Chowder",
+    "image": "prices/chowder.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Tofu Scramble",
+    "image": "prices/tofu_scramble.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Horse Mackerel",
+    "image": "prices/horse_mackerel.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Fish Burger",
+    "image": "prices/fish_burger.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Squid",
+    "image": "prices/squid.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Fried Calamari",
+    "image": "prices/fried_calamari.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Surgeonfish",
+    "image": "prices/surgeonfish.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Butterflyfish",
+    "image": "prices/butterflyfish.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Fish Omelette",
+    "image": "prices/fish_omelette.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Beetroot Blaze",
+    "image": "prices/beetroot_blaze.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Olive Flounder",
+    "image": "prices/olive_flounder.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Ocean's Olive",
+    "image": "prices/ocean_s_olive.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Fancy Fries",
+    "image": "prices/fancy_fries.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Halibut",
+    "image": "prices/halibut.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Fish n Chips",
+    "image": "prices/fish_n_chips.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Angelfish",
+    "image": "prices/angelfish.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Seaweed",
+    "image": "prices/seaweed.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Sushi Roll",
+    "image": "prices/sushi_roll.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Blowfish",
+    "image": "prices/blowfish.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Napoleanfish",
+    "image": "prices/napoleanfish.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Sunfish",
+    "image": "prices/sunfish.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Seafood Basket",
+    "image": "prices/seafood_basket.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Bumpkin Roast",
+    "image": "prices/bumpkin_roast.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Goblin Brunch",
+    "image": "prices/goblin_brunch.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Steamed Red Rice",
+    "image": "prices/steamed_red_rice.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Caprese Salad",
+    "image": "prices/caprese_salad.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Spaghetti al Limone",
+    "image": "prices/spaghetti_al_limone.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Sunflower Cake",
+    "image": "prices/sunflower_cake.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Cornbread",
+    "image": "prices/cornbread.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Pumpkin Cake",
+    "image": "prices/pumpkin_cake.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Potato Cake",
+    "image": "prices/potato_cake.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Apple Pie",
+    "image": "prices/apple_pie.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Kale & Mushroom Pie",
+    "image": "prices/kale_and_mushroom_pie.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Orange Cake",
+    "image": "prices/orange_cake.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Carrot Cake",
+    "image": "prices/carrot_cake.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Cabbage Cake",
+    "image": "prices/cabbage_cake.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Wheat Cake",
+    "image": "prices/wheat_cake.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Cauliflower Cake",
+    "image": "prices/cauliflower_cake.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Radish Cake",
+    "image": "prices/radish_cake.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Beetroot Cake",
+    "image": "prices/beetroot_cake.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Parsnip Cake",
+    "image": "prices/parsnip_cake.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Eggplant Cake",
+    "image": "prices/eggplant_cake.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Honey Cake",
+    "image": "prices/honey_cake.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Lemon Cheesecake",
+    "image": "prices/lemon_cheesecake.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Pirate Cake",
+    "image": "prices/pirate_cake.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Fermented Carrots",
+    "image": "prices/fermented_carrots.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Blueberry Jam",
+    "image": "prices/blueberry_jam.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Sauerkraut",
+    "image": "prices/sauerkraut.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Tuna",
+    "image": "prices/tuna.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Fermented Fish",
+    "image": "prices/fermented_fish.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Blue Cheese",
+    "image": "prices/blue_cheese.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Shroom Syrup",
+    "image": "prices/shroom_syrup.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Honey Cheddar",
+    "image": "prices/honey_cheddar.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Quick Juice",
+    "image": "prices/quick_juice.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Carrot Juice",
+    "image": "prices/carrot_juice.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Purple Smoothie",
+    "image": "prices/purple_smoothie.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Orange Juice",
+    "image": "prices/orange_juice.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Apple Juice",
+    "image": "prices/apple_juice.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Power Smoothie",
+    "image": "prices/power_smoothie.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Bumpkin Detox",
+    "image": "prices/bumpkin_detox.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Sour Shake",
+    "image": "prices/sour_shake.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Banana Blast",
+    "image": "prices/banana_blast.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "The Lot",
+    "image": "prices/the_lot.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Grape Juice",
+    "image": "prices/grape_juice.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Slow Juice",
+    "image": "prices/slow_juice.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Rod",
+    "image": "prices/rod.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "#DIV/0!",
+    "image": "prices/div_0.png",
+    "source_sheet": "Informações Comidas"
+  },
+  {
+    "name": "Galinha",
+    "image": "prices/galinha.png",
+    "source_sheet": "Informações Animais"
+  },
+  {
+    "name": "Vaca",
+    "image": "prices/vaca.png",
+    "source_sheet": "Informações Animais"
+  },
+  {
+    "name": "Ovelha",
+    "image": "prices/ovelha.png",
+    "source_sheet": "Informações Animais"
+  },
+  {
+    "name": "Mixed Grain",
+    "image": "prices/mixed_grain.png",
+    "source_sheet": "Informações Animais"
+  },
+  {
+    "name": "Omnifeed",
+    "image": "prices/omnifeed.png",
+    "source_sheet": "Informações Animais"
+  },
+  {
+    "name": "Galinhas",
+    "image": "prices/galinhas.png",
+    "source_sheet": "Informações Animais"
+  },
+  {
+    "name": "Level 0",
+    "image": "prices/level_0.png",
+    "source_sheet": "Informações Animais"
+  },
+  {
+    "name": "Até Level 1",
+    "image": "prices/at_level_1.png",
+    "source_sheet": "Informações Animais"
+  },
+  {
+    "name": "Level 1",
+    "image": "prices/level_1.png",
+    "source_sheet": "Informações Animais"
+  },
+  {
+    "name": "Até Level 2",
+    "image": "prices/at_level_2.png",
+    "source_sheet": "Informações Animais"
+  },
+  {
+    "name": "Level 2",
+    "image": "prices/level_2.png",
+    "source_sheet": "Informações Animais"
+  },
+  {
+    "name": "Até Level 3",
+    "image": "prices/at_level_3.png",
+    "source_sheet": "Informações Animais"
+  },
+  {
+    "name": "Level 3",
+    "image": "prices/level_3.png",
+    "source_sheet": "Informações Animais"
+  },
+  {
+    "name": "Até Level 4",
+    "image": "prices/at_level_4.png",
+    "source_sheet": "Informações Animais"
+  },
+  {
+    "name": "Level 4",
+    "image": "prices/level_4.png",
+    "source_sheet": "Informações Animais"
+  },
+  {
+    "name": "Até Level 5",
+    "image": "prices/at_level_5.png",
+    "source_sheet": "Informações Animais"
+  },
+  {
+    "name": "Level 5",
+    "image": "prices/level_5.png",
+    "source_sheet": "Informações Animais"
+  },
+  {
+    "name": "Até Level 6",
+    "image": "prices/at_level_6.png",
+    "source_sheet": "Informações Animais"
+  },
+  {
+    "name": "Level 6",
+    "image": "prices/level_6.png",
+    "source_sheet": "Informações Animais"
+  },
+  {
+    "name": "Até Level 7",
+    "image": "prices/at_level_7.png",
+    "source_sheet": "Informações Animais"
+  },
+  {
+    "name": "Level 7",
+    "image": "prices/level_7.png",
+    "source_sheet": "Informações Animais"
+  },
+  {
+    "name": "Até Level 8",
+    "image": "prices/at_level_8.png",
+    "source_sheet": "Informações Animais"
+  },
+  {
+    "name": "Level 8",
+    "image": "prices/level_8.png",
+    "source_sheet": "Informações Animais"
+  },
+  {
+    "name": "Até Level 9",
+    "image": "prices/at_level_9.png",
+    "source_sheet": "Informações Animais"
+  },
+  {
+    "name": "Level 9",
+    "image": "prices/level_9.png",
+    "source_sheet": "Informações Animais"
+  },
+  {
+    "name": "Vacas",
+    "image": "prices/vacas.png",
+    "source_sheet": "Informações Animais"
+  },
+  {
+    "name": "Ovelhas",
+    "image": "prices/ovelhas.png",
+    "source_sheet": "Informações Animais"
+  },
+  {
+    "name": "Petting Hand",
+    "image": "prices/petting_hand.png",
+    "source_sheet": "Informações Animais"
+  },
+  {
+    "name": "Brush",
+    "image": "prices/brush.png",
+    "source_sheet": "Informações Animais"
+  },
+  {
+    "name": "Music Box",
+    "image": "prices/music_box.png",
+    "source_sheet": "Informações Animais"
+  },
+  {
+    "name": "Média de xp",
+    "image": "prices/m_dia_de_xp.png",
+    "source_sheet": "Informações Animais"
+  },
+  {
+    "name": "Valor",
+    "image": "prices/valor.png",
+    "source_sheet": "Informações Animais"
+  },
+  {
+    "name": "PRA ABA C/G/F",
+    "image": "prices/pra_aba_c_g_f.png",
+    "source_sheet": "Informações CropsFrutasGH"
+  },
+  {
+    "name": "Bountiful Harvest",
+    "image": "prices/bountiful_harvest.png",
+    "source_sheet": "Informações CropsFrutasGH"
+  },
+  {
+    "name": "Sunshower",
+    "image": "prices/sunshower.png",
+    "source_sheet": "Informações CropsFrutasGH"
+  },
+  {
+    "name": "portugues",
+    "image": "prices/portugues.png",
+    "source_sheet": "Informações CropsFrutasGH"
+  },
+  {
+    "name": "Valor Listado",
+    "image": "prices/valor_listado.png",
+    "source_sheet": "Informações CropsFrutasGH"
+  },
+  {
+    "name": "Ultima Venda",
+    "image": "prices/ultima_venda.png",
+    "source_sheet": "Informações CropsFrutasGH"
+  },
+  {
+    "name": "Profit per Stock",
+    "image": "prices/profit_per_stock.png",
+    "source_sheet": "CropsGHFruits"
+  },
+  {
+    "name": "Hours",
+    "image": "prices/hours.png",
+    "source_sheet": "Minerals"
+  },
+  {
+    "name": "Total Expense",
+    "image": "prices/total_expense.png",
+    "source_sheet": "Minerals"
+  },
+  {
+    "name": "Average per Node",
+    "image": "prices/average_per_node.png",
+    "source_sheet": "Minerals"
+  },
+  {
+    "name": "Time to Respawn",
+    "image": "prices/time_to_respawn.png",
+    "source_sheet": "Minerals"
+  },
+  {
+    "name": "Total per Cycle",
+    "image": "prices/total_per_cycle.png",
+    "source_sheet": "Minerals"
+  },
+  {
+    "name": "Production Cost",
+    "image": "prices/production_cost.png",
+    "source_sheet": "Minerals"
+  },
+  {
+    "name": "Sale Price - 7,5%",
+    "image": "prices/sale_price_7_5.png",
+    "source_sheet": "Minerals"
+  },
+  {
+    "name": "Profit per Stone",
+    "image": "prices/profit_per_stone.png",
+    "source_sheet": "Minerals"
+  },
+  {
+    "name": "Profit per Iron",
+    "image": "prices/profit_per_iron.png",
+    "source_sheet": "Minerals"
+  },
+  {
+    "name": "Profit per Gold",
+    "image": "prices/profit_per_gold.png",
+    "source_sheet": "Minerals"
+  },
+  {
+    "name": "Profit per Crimstone",
+    "image": "prices/profit_per_crimstone.png",
+    "source_sheet": "Minerals"
+  },
+  {
+    "name": "Lava Pit",
+    "image": "prices/lava_pit.png",
+    "source_sheet": "Minerals"
+  },
+  {
+    "name": "Required Resources",
+    "image": "prices/required_resources.png",
+    "source_sheet": "Minerals"
+  },
+  {
+    "name": "Average per Oil Pool",
+    "image": "prices/average_per_oil_pool.png",
+    "source_sheet": "Minerals"
+  },
+  {
+    "name": "Obsidian",
+    "image": "prices/obsidian.png",
+    "source_sheet": "Minerals"
+  },
+  {
+    "name": "Average per Lava Pit",
+    "image": "prices/average_per_lava_pit.png",
+    "source_sheet": "Minerals"
+  },
+  {
+    "name": "Production Time",
+    "image": "prices/production_time.png",
+    "source_sheet": "Minerals"
+  },
+  {
+    "name": "Cost per Obsidian",
+    "image": "prices/cost_per_obsidian.png",
+    "source_sheet": "Minerals"
+  },
+  {
+    "name": "Cost in FLOWER",
+    "image": "prices/cost_in_flower.png",
+    "source_sheet": "Animals"
+  },
+  {
+    "name": "Lvl 0 - Lvl 1",
+    "image": "prices/lvl_0_lvl_1.png",
+    "source_sheet": "Animals"
+  },
+  {
+    "name": "Lvl 1 - Lvl 2",
+    "image": "prices/lvl_1_lvl_2.png",
+    "source_sheet": "Animals"
+  },
+  {
+    "name": "Lvl 2 - Lvl 3",
+    "image": "prices/lvl_2_lvl_3.png",
+    "source_sheet": "Animals"
+  },
+  {
+    "name": "Lvl 3 - Lvl 4",
+    "image": "prices/lvl_3_lvl_4.png",
+    "source_sheet": "Animals"
+  },
+  {
+    "name": "Lvl 4 - Lvl 5",
+    "image": "prices/lvl_4_lvl_5.png",
+    "source_sheet": "Animals"
+  },
+  {
+    "name": "Lvl 5 - Lvl 6",
+    "image": "prices/lvl_5_lvl_6.png",
+    "source_sheet": "Animals"
+  },
+  {
+    "name": "Lvl 6 - Lvl 7",
+    "image": "prices/lvl_6_lvl_7.png",
+    "source_sheet": "Animals"
+  },
+  {
+    "name": "Lvl 7 - Lvl 8",
+    "image": "prices/lvl_7_lvl_8.png",
+    "source_sheet": "Animals"
+  },
+  {
+    "name": "Lvl 8 - Lvl 9",
+    "image": "prices/lvl_8_lvl_9.png",
+    "source_sheet": "Animals"
+  },
+  {
+    "name": "Crimsteel",
+    "image": "prices/crimsteel.png",
+    "source_sheet": "Informações Crafting"
+  },
+  {
+    "name": "Custo em FLower",
+    "image": "prices/custo_em_flower.png",
+    "source_sheet": "Informações Crafting"
+  },
+  {
+    "name": "Cushion",
+    "image": "prices/cushion.png",
+    "source_sheet": "Informações Crafting"
+  },
+  {
+    "name": "Hardened Leather",
+    "image": "prices/hardened_leather.png",
+    "source_sheet": "Informações Crafting"
+  },
+  {
+    "name": "Kelp Fibre",
+    "image": "prices/kelp_fibre.png",
+    "source_sheet": "Informações Crafting"
+  },
+  {
+    "name": "Merino Cushion",
+    "image": "prices/merino_cushion.png",
+    "source_sheet": "Informações Crafting"
+  },
+  {
+    "name": "Ocean's Treasure",
+    "image": "prices/ocean_s_treasure.png",
+    "source_sheet": "Informações Crafting"
+  },
+  {
+    "name": "Coral",
+    "image": "prices/coral.png",
+    "source_sheet": "Informações Crafting"
+  },
+  {
+    "name": "Pearl",
+    "image": "prices/pearl.png",
+    "source_sheet": "Informações Crafting"
+  },
+  {
+    "name": "Pirate Bounty",
+    "image": "prices/pirate_bounty.png",
+    "source_sheet": "Informações Crafting"
+  },
+  {
+    "name": "Royal Bedding",
+    "image": "prices/royal_bedding.png",
+    "source_sheet": "Informações Crafting"
+  },
+  {
+    "name": "Synthetic Fabric",
+    "image": "prices/synthetic_fabric.png",
+    "source_sheet": "Informações Crafting"
+  },
+  {
+    "name": "Royal Ornament",
+    "image": "prices/royal_ornament.png",
+    "source_sheet": "Informações Crafting"
+  },
+  {
+    "name": "Timber",
+    "image": "prices/timber.png",
+    "source_sheet": "Informações Crafting"
+  },
+  {
+    "name": "Basic Bed",
+    "image": "prices/basic_bed.png",
+    "source_sheet": "Informações Crafting"
+  },
+  {
+    "name": "Fisher Bed",
+    "image": "prices/fisher_bed.png",
+    "source_sheet": "Informações Crafting"
+  },
+  {
+    "name": "Floral Bed",
+    "image": "prices/floral_bed.png",
+    "source_sheet": "Informações Crafting"
+  },
+  {
+    "name": "Prism Petal",
+    "image": "prices/prism_petal.png",
+    "source_sheet": "Informações Crafting"
+  },
+  {
+    "name": "Celestial Frostbloom",
+    "image": "prices/celestial_frostbloom.png",
+    "source_sheet": "Informações Crafting"
+  },
+  {
+    "name": "Primula Enigma",
+    "image": "prices/primula_enigma.png",
+    "source_sheet": "Informações Crafting"
+  },
+  {
+    "name": "Red Pansy",
+    "image": "prices/red_pansy.png",
+    "source_sheet": "Informações Crafting"
+  },
+  {
+    "name": "Blue Pansy",
+    "image": "prices/blue_pansy.png",
+    "source_sheet": "Informações Crafting"
+  },
+  {
+    "name": "Yellow Pansy",
+    "image": "prices/yellow_pansy.png",
+    "source_sheet": "Informações Crafting"
+  },
+  {
+    "name": "Bee Box",
+    "image": "prices/bee_box.png",
+    "source_sheet": "Informações Crafting"
+  },
+  {
+    "name": "Sturdy Bed",
+    "image": "prices/sturdy_bed.png",
+    "source_sheet": "Informações Crafting"
+  },
+  {
+    "name": "Desert Bed",
+    "image": "prices/desert_bed.png",
+    "source_sheet": "Informações Crafting"
+  },
+  {
+    "name": "Cow Bed",
+    "image": "prices/cow_bed.png",
+    "source_sheet": "Informações Crafting"
+  },
+  {
+    "name": "Pirate Bed",
+    "image": "prices/pirate_bed.png",
+    "source_sheet": "Informações Crafting"
+  },
+  {
+    "name": "Vase",
+    "image": "prices/vase.png",
+    "source_sheet": "Informações Crafting"
+  },
+  {
+    "name": "Royal Bed",
+    "image": "prices/royal_bed.png",
+    "source_sheet": "Informações Crafting"
+  },
+  {
+    "name": "Basic Bear",
+    "image": "prices/basic_bear.png",
+    "source_sheet": "Informações Crafting"
+  },
+  {
+    "name": "Bonnie's Tombstone",
+    "image": "prices/bonnie_s_tombstone.png",
+    "source_sheet": "Informações Crafting"
+  },
+  {
+    "name": "Golden Maple",
+    "image": "prices/golden_maple.png",
+    "source_sheet": "Informações Crafting"
+  },
+  {
+    "name": "Dirt Path",
+    "image": "prices/dirt_path.png",
+    "source_sheet": "Informações Crafting"
+  },
+  {
+    "name": "Fence",
+    "image": "prices/fence.png",
+    "source_sheet": "Informações Crafting"
+  },
+  {
+    "name": "Grubnash's Tombstone",
+    "image": "prices/grubnash_s_tombstone.png",
+    "source_sheet": "Informações Crafting"
+  },
+  {
+    "name": "Potted Potato",
+    "image": "prices/potted_potato.png",
+    "source_sheet": "Informações Crafting"
+  },
+  {
+    "name": "Potted Pumpkin",
+    "image": "prices/potted_pumpkin.png",
+    "source_sheet": "Informações Crafting"
+  },
+  {
+    "name": "Potted Sunflower",
+    "image": "prices/potted_sunflower.png",
+    "source_sheet": "Informações Crafting"
+  },
+  {
+    "name": "Stone Fence",
+    "image": "prices/stone_fence.png",
+    "source_sheet": "Informações Crafting"
+  },
+  {
+    "name": "Toadstool Seat",
+    "image": "prices/toadstool_seat.png",
+    "source_sheet": "Informações Crafting"
+  },
+  {
+    "name": "Wild Mushroom",
+    "image": "prices/wild_mushroom.png",
+    "source_sheet": "Informações Crafting"
+  },
+  {
+    "name": "Town Sign",
+    "image": "prices/town_sign.png",
+    "source_sheet": "Informações Crafting"
+  },
+  {
+    "name": "White Tulips",
+    "image": "prices/white_tulips.png",
+    "source_sheet": "Informações Crafting"
+  },
+  {
+    "name": "White Pansy",
+    "image": "prices/white_pansy.png",
+    "source_sheet": "Informações Crafting"
+  },
+  {
+    "name": "Basic Hair",
+    "image": "prices/basic_hair.png",
+    "source_sheet": "Informações Crafting"
+  },
+  {
+    "name": "Farmer Overalls",
+    "image": "prices/farmer_overalls.png",
+    "source_sheet": "Informações Crafting"
+  },
+  {
+    "name": "Farmer Pants",
+    "image": "prices/farmer_pants.png",
+    "source_sheet": "Informações Crafting"
+  },
+  {
+    "name": "Lumberjack Overalls",
+    "image": "prices/lumberjack_overalls.png",
+    "source_sheet": "Informações Crafting"
+  },
+  {
+    "name": "Rancher Hair",
+    "image": "prices/rancher_hair.png",
+    "source_sheet": "Informações Crafting"
+  },
+  {
+    "name": "Red Farmer Shirt",
+    "image": "prices/red_farmer_shirt.png",
+    "source_sheet": "Informações Crafting"
+  },
+  {
+    "name": "Basic Fish",
+    "image": "prices/basic_fish.png",
+    "source_sheet": "PescaFlores"
+  },
+  {
+    "name": "Advanced Fish",
+    "image": "prices/advanced_fish.png",
+    "source_sheet": "PescaFlores"
+  },
+  {
+    "name": "Expert Fish",
+    "image": "prices/expert_fish.png",
+    "source_sheet": "PescaFlores"
+  },
+  {
+    "name": "#REF!",
+    "image": "prices/ref.png",
+    "source_sheet": "PescaFlores"
+  },
+  {
+    "name": "Compost Bin",
+    "image": "prices/compost_bin.png",
+    "source_sheet": "PescaFlores"
+  },
+  {
+    "name": "Turbo Composter",
+    "image": "prices/turbo_composter.png",
+    "source_sheet": "PescaFlores"
+  },
+  {
+    "name": "Premium Composter",
+    "image": "prices/premium_composter.png",
+    "source_sheet": "PescaFlores"
+  },
+  {
+    "name": "Sprout Mix",
+    "image": "prices/sprout_mix.png",
+    "source_sheet": "PescaFlores"
+  },
+  {
+    "name": "Fruitful Blend",
+    "image": "prices/fruitful_blend.png",
+    "source_sheet": "PescaFlores"
+  },
+  {
+    "name": "Rapid Root",
+    "image": "prices/rapid_root.png",
+    "source_sheet": "PescaFlores"
+  },
+  {
+    "name": "XP per Unit",
+    "image": "prices/xp_per_unit.png",
+    "source_sheet": "Food"
+  },
+  {
+    "name": "Average XP earned",
+    "image": "prices/average_xp_earned.png",
+    "source_sheet": "Food"
+  },
+  {
+    "name": "FirePit",
+    "image": "prices/firepit.png",
+    "source_sheet": "XP in Stock"
+  },
+  {
+    "name": "Bakery",
+    "image": "prices/bakery.png",
+    "source_sheet": "XP in Stock"
+  },
+  {
+    "name": "Deli",
+    "image": "prices/deli.png",
+    "source_sheet": "XP in Stock"
+  },
+  {
+    "name": "Smoothie Shack",
+    "image": "prices/smoothie_shack.png",
+    "source_sheet": "XP in Stock"
+  },
+  {
+    "name": "Fish",
+    "image": "prices/fish.png",
+    "source_sheet": "XP in Stock"
+  },
+  {
+    "name": "Clownfish",
+    "image": "prices/clownfish.png",
+    "source_sheet": "XP in Stock"
+  },
+  {
+    "name": "Sea Bass",
+    "image": "prices/sea_bass.png",
+    "source_sheet": "XP in Stock"
+  },
+  {
+    "name": "Sea Horse",
+    "image": "prices/sea_horse.png",
+    "source_sheet": "XP in Stock"
+  },
+  {
+    "name": "Porgy",
+    "image": "prices/porgy.png",
+    "source_sheet": "XP in Stock"
+  },
+  {
+    "name": "Muskellunge",
+    "image": "prices/muskellunge.png",
+    "source_sheet": "XP in Stock"
+  },
+  {
+    "name": "Food",
+    "image": "prices/food.png",
+    "source_sheet": "XP in Stock"
+  },
+  {
+    "name": "Moray Eel",
+    "image": "prices/moray_eel.png",
+    "source_sheet": "XP in Stock"
+  },
+  {
+    "name": "Zebra Turkeyfish",
+    "image": "prices/zebra_turkeyfish.png",
+    "source_sheet": "XP in Stock"
+  },
+  {
+    "name": "Ray",
+    "image": "prices/ray.png",
+    "source_sheet": "XP in Stock"
+  },
+  {
+    "name": "Hammerhead shark",
+    "image": "prices/hammerhead_shark.png",
+    "source_sheet": "XP in Stock"
+  },
+  {
+    "name": "Barred Knifejaw",
+    "image": "prices/barred_knifejaw.png",
+    "source_sheet": "XP in Stock"
+  },
+  {
+    "name": "Walleye",
+    "image": "prices/walleye.png",
+    "source_sheet": "XP in Stock"
+  },
+  {
+    "name": "Rock Blackfish",
+    "image": "prices/rock_blackfish.png",
+    "source_sheet": "XP in Stock"
+  },
+  {
+    "name": "Tilapia",
+    "image": "prices/tilapia.png",
+    "source_sheet": "XP in Stock"
+  },
+  {
+    "name": "Mahi Mahi",
+    "image": "prices/mahi_mahi.png",
+    "source_sheet": "XP in Stock"
+  },
+  {
+    "name": "Blue Marlin",
+    "image": "prices/blue_marlin.png",
+    "source_sheet": "XP in Stock"
+  },
+  {
+    "name": "Oarfish",
+    "image": "prices/oarfish.png",
+    "source_sheet": "XP in Stock"
+  },
+  {
+    "name": "Football fish",
+    "image": "prices/football_fish.png",
+    "source_sheet": "XP in Stock"
+  },
+  {
+    "name": "Coelacanth",
+    "image": "prices/coelacanth.png",
+    "source_sheet": "XP in Stock"
+  },
+  {
+    "name": "Parrotfish",
+    "image": "prices/parrotfish.png",
+    "source_sheet": "XP in Stock"
+  },
+  {
+    "name": "Whale Shark",
+    "image": "prices/whale_shark.png",
+    "source_sheet": "XP in Stock"
+  },
+  {
+    "name": "Saw Shark",
+    "image": "prices/saw_shark.png",
+    "source_sheet": "XP in Stock"
+  },
+  {
+    "name": "White Shark",
+    "image": "prices/white_shark.png",
+    "source_sheet": "XP in Stock"
+  },
+  {
+    "name": "Cobia",
+    "image": "prices/cobia.png",
+    "source_sheet": "XP in Stock"
+  },
+  {
+    "name": "Trout",
+    "image": "prices/trout.png",
+    "source_sheet": "XP in Stock"
+  },
+  {
+    "name": "Weakfish",
+    "image": "prices/weakfish.png",
+    "source_sheet": "XP in Stock"
+  },
+  {
+    "name": "Discord:",
+    "image": "prices/discord.png",
+    "source_sheet": "Crops to Coins"
+  },
+  {
+    "name": "Wallet Donation:",
+    "image": "prices/wallet_donation.png",
+    "source_sheet": "Crops to Coins"
+  },
+  {
+    "name": "Coffee",
+    "image": "crops/placeholder.svg",
+    "source_sheet": "crop_manifest"
+  },
+  {
+    "name": "Goblin Emblem",
+    "image": "prices/goblin_emblem.png",
+    "source_sheet": "User prices"
+  },
+  {
+    "name": "Umbrella Bait",
+    "image": "prices/umbrella_bait.png",
+    "source_sheet": "User prices"
+  },
+  {
+    "name": "Sunflorian Emblem",
+    "image": "prices/sunflorian_emblem.png",
+    "source_sheet": "User prices"
+  },
+  {
+    "name": "Capsule Bait",
+    "image": "prices/capsule_bait.png",
+    "source_sheet": "User prices"
+  },
+  {
+    "name": "Bumpkin Emblem",
+    "image": "prices/bumpkin_emblem.png",
+    "source_sheet": "User prices"
+  },
+  {
+    "name": "Crimson Bait",
+    "image": "prices/crimson_bait.png",
+    "source_sheet": "User prices"
+  },
+  {
+    "name": "Nightshade Emblem",
+    "image": "prices/nightshade_emblem.png",
+    "source_sheet": "User prices"
+  }
+]

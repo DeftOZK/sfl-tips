@@ -1,0 +1,2615 @@
+{% extends "base.html" %}
+
+{% block page_header %}
+  <header class="page-title-only">
+    <h1>Skills</h1>
+  </header>
+{% endblock %}
+
+{% block content %}
+<section class="skills-view" aria-label="Skill builder">
+  <div class="skills-summary" aria-label="Resumen de build">
+    <article class="summary-card summary-card-main">
+      <span class="summary-label">Puntos usados</span>
+      <strong id="totalSkillPoints">0</strong>
+    </article>
+    <article class="summary-card">
+      <span class="summary-label">Skills seleccionadas</span>
+      <strong id="selectedSkillCount">0</strong>
+    </article>
+  </div>
+
+  <div class="skills-toolbar">
+    <label class="search-box" for="skillSearch">
+      <span>Buscar</span>
+      <input id="skillSearch" type="search" autocomplete="off" placeholder="Skill, categoría o efecto…">
+    </label>
+    <button class="button-secondary" type="button" id="clearSkills">Limpiar build</button>
+  </div>
+
+  <div id="skillCategories" class="skills-categories"></div>
+  <p id="skillEmptyState" class="empty-state" hidden>No encontré skills con ese filtro.</p>
+</section>
+
+<script>
+  const SKILL_ICON_BASE = "{{ url_for('static', filename='assets/icons/') }}";
+  const skillCategories = [
+  {
+    "name": "Trees",
+    "unlock": {
+      "2": {
+        "points": 3,
+        "tiers": [
+          1
+        ]
+      },
+      "3": {
+        "points": 5,
+        "tiers": [
+          1,
+          2
+        ]
+      }
+    },
+    "skills": [
+      {
+        "id": "trees-16-lumberjack-s-extra",
+        "name": "Lumberjack's Extra",
+        "description": "+0.1 in wood yield.",
+        "tier": 1,
+        "cost": 1,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 16,
+        "icon": "005_Lumberjacks_Extra.png",
+        "sourceIndex": 5,
+        "excelCell": "J16"
+      },
+      {
+        "id": "trees-17-tree-charge",
+        "name": "Tree Charge",
+        "description": "-10% in the growth time of trees.",
+        "tier": 1,
+        "cost": 1,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 17,
+        "icon": "007_Tree_Charge.png",
+        "sourceIndex": 7,
+        "excelCell": "J17"
+      },
+      {
+        "id": "trees-18-more-axes",
+        "name": "More Axes",
+        "description": "+50 in axe stock.",
+        "tier": 1,
+        "cost": 1,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 18,
+        "icon": "009_More_Axes.png",
+        "sourceIndex": 9,
+        "excelCell": "J18"
+      },
+      {
+        "id": "trees-19-insta-chop-x",
+        "name": "Insta-Chop - X",
+        "description": "A single hit on trees.",
+        "tier": 1,
+        "cost": 1,
+        "selected": false,
+        "inactive": true,
+        "sourceRow": 19,
+        "icon": "011_Insta-Chop.png",
+        "sourceIndex": 11,
+        "excelCell": "J19"
+      },
+      {
+        "id": "trees-21-tough-tree",
+        "name": "Tough Tree",
+        "description": "1/10 chance of x3 in wood yield.",
+        "tier": 2,
+        "cost": 2,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 21,
+        "icon": "014_Tough_Tree.png",
+        "sourceIndex": 14,
+        "excelCell": "J21"
+      },
+      {
+        "id": "trees-22-feller-s-discount",
+        "name": "Feller's Discount",
+        "description": "-20% in axe cost.",
+        "tier": 2,
+        "cost": 2,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 22,
+        "icon": "016_Fellers_Discount.png",
+        "sourceIndex": 16,
+        "excelCell": "J22"
+      },
+      {
+        "id": "trees-23-money-tree-x",
+        "name": "Money Tree - X",
+        "description": "1% chance to find 200 Coins when cutting down trees.",
+        "tier": 2,
+        "cost": 2,
+        "selected": false,
+        "inactive": true,
+        "sourceRow": 23,
+        "icon": "018_Money_Tree.png",
+        "sourceIndex": 18,
+        "excelCell": "J23"
+      },
+      {
+        "id": "trees-25-tree-turnaround",
+        "name": "Tree Turnaround",
+        "description": "15% chance for trees to grow instantly.",
+        "tier": 3,
+        "cost": 3,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 25,
+        "icon": "021_Tree_Turnaround.png",
+        "sourceIndex": 21,
+        "excelCell": "J25"
+      },
+      {
+        "id": "trees-26-tree-blitz-x",
+        "name": "Tree Blitz - X",
+        "description": "Make all trees grow instantly (once every 24 hours).",
+        "tier": 3,
+        "cost": 3,
+        "selected": false,
+        "inactive": true,
+        "sourceRow": 26,
+        "icon": "023_Tree_Blitz.png",
+        "sourceIndex": 23,
+        "excelCell": "J26"
+      }
+    ],
+    "unlockNote": "Tier 2 configurado a 3 puntos de Tier 1 según la indicación del usuario."
+  },
+  {
+    "name": "Crops",
+    "unlock": {
+      "2": {
+        "points": 3,
+        "tiers": [
+          1
+        ]
+      },
+      "3": {
+        "points": 7,
+        "tiers": [
+          1,
+          2
+        ]
+      }
+    },
+    "skills": [
+      {
+        "id": "crops-32-green-thumb",
+        "name": "Green Thumb",
+        "description": "-5% in the time of Crops",
+        "tier": 1,
+        "cost": 1,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 32,
+        "icon": "026_Green_Thumb.png",
+        "sourceIndex": 26,
+        "excelCell": "C32"
+      },
+      {
+        "id": "crops-33-young-farmer",
+        "name": "Young Farmer",
+        "description": "+0.1 Basic Crop Yield",
+        "tier": 1,
+        "cost": 1,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 33,
+        "icon": "028_Young_Farmer.png",
+        "sourceIndex": 28,
+        "excelCell": "C33"
+      },
+      {
+        "id": "crops-34-experienced-farmer",
+        "name": "Experienced Farmer",
+        "description": "+0.1 Medium Crop Yield",
+        "tier": 1,
+        "cost": 1,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 34,
+        "icon": "030_Experienced_Farmer.png",
+        "sourceIndex": 30,
+        "excelCell": "C34"
+      },
+      {
+        "id": "crops-35-betty-s-friend-x",
+        "name": "Betty's Friend - X",
+        "description": "Delivery of 'Betty' Coin increased by 30%",
+        "tier": 1,
+        "cost": 1,
+        "selected": false,
+        "inactive": true,
+        "sourceRow": 35,
+        "icon": "032_Bettys_Friend.png",
+        "sourceIndex": 32,
+        "excelCell": "C35"
+      },
+      {
+        "id": "crops-36-old-farmer",
+        "name": "Old Farmer",
+        "description": "+0.1 Advanded Crop Yield",
+        "tier": 1,
+        "cost": 1,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 36,
+        "icon": "034_Old_Farmer.png",
+        "sourceIndex": 34,
+        "excelCell": "C36"
+      },
+      {
+        "id": "crops-37-chonky-scarecrow-x",
+        "name": "Chonky Scarecrow - X",
+        "description": "Basic Scarecrow AOE increased to 7x7; -10% basic crop growth time.",
+        "tier": 1,
+        "cost": 1,
+        "selected": false,
+        "inactive": true,
+        "sourceRow": 37,
+        "icon": "035_Chonky_Scarecrow.png",
+        "sourceIndex": 35,
+        "excelCell": "C37"
+      },
+      {
+        "id": "crops-39-strong-roots",
+        "name": "Strong Roots",
+        "description": "10% reduction in the time of Advanced Crops",
+        "tier": 2,
+        "cost": 2,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 39,
+        "icon": "038_Strong_Roots.png",
+        "sourceIndex": 38,
+        "excelCell": "C39"
+      },
+      {
+        "id": "crops-40-coin-swindler",
+        "name": "Coin Swindler",
+        "description": "+10% coins when selling crops (Seed Shop)",
+        "tier": 2,
+        "cost": 2,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 40,
+        "icon": "040_Coin_Swindler.png",
+        "sourceIndex": 40,
+        "excelCell": "C40"
+      },
+      {
+        "id": "crops-41-golden-sunflower-x",
+        "name": "Golden Sunflower - X",
+        "description": "1/700 chance of getting +0.35 gold when manually harvesting sunflowers",
+        "tier": 2,
+        "cost": 2,
+        "selected": false,
+        "inactive": true,
+        "sourceRow": 41,
+        "icon": "042_Golden_Sunflower.png",
+        "sourceIndex": 42,
+        "excelCell": "C41"
+      },
+      {
+        "id": "crops-42-horror-mike",
+        "name": "Horror Mike",
+        "description": "Scary Mike AOE increases the size to 7x7 and +0.1 Crops (Medium Crops)",
+        "tier": 2,
+        "cost": 2,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 42,
+        "icon": "044_Horror_Mike.png",
+        "sourceIndex": 44,
+        "excelCell": "C42"
+      },
+      {
+        "id": "crops-43-laurie-s-gains",
+        "name": "Laurie's Gains",
+        "description": "Laurie Crow AOE increases the size to 7x7 and +0.1 Crops (Advanced Crops)",
+        "tier": 2,
+        "cost": 2,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 43,
+        "icon": "045_Lauries_Gains.png",
+        "sourceIndex": 45,
+        "excelCell": "C43"
+      },
+      {
+        "id": "crops-45-acre-farm",
+        "name": "Acre Farm",
+        "description": "+1 Advanced crop yield, -0.5 Basic and Medium crop yield",
+        "tier": 3,
+        "cost": 3,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 45,
+        "icon": "048_Acre_Farm.png",
+        "sourceIndex": 48,
+        "excelCell": "C45"
+      },
+      {
+        "id": "crops-46-hectare-farm",
+        "name": "Hectare Farm",
+        "description": "+1 Basic and Medium crop yield, -0.5 Advanced crop yield",
+        "tier": 3,
+        "cost": 3,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 46,
+        "icon": "050_Hectare_Farm.png",
+        "sourceIndex": 50,
+        "excelCell": "C46"
+      },
+      {
+        "id": "crops-47-instant-growth-x",
+        "name": "Instant Growth - X",
+        "description": "Ability to make all Crops ready for harvest (1/72h)",
+        "tier": 3,
+        "cost": 3,
+        "selected": false,
+        "inactive": true,
+        "sourceRow": 47,
+        "icon": "052_Instant_Growth.png",
+        "sourceIndex": 52,
+        "excelCell": "C47"
+      }
+    ],
+    "unlockNote": "Requisitos tomados de las fórmulas de la hoja Skills."
+  },
+  {
+    "name": "Mining",
+    "unlock": {
+      "2": {
+        "points": 3,
+        "tiers": [
+          1
+        ]
+      },
+      "3": {
+        "points": 7,
+        "tiers": [
+          1,
+          2
+        ]
+      }
+    },
+    "skills": [
+      {
+        "id": "mining-31-rock-n-roll",
+        "name": "Rock'N'Roll",
+        "description": "+0.1 Stone Yield",
+        "tier": 1,
+        "cost": 1,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 31,
+        "icon": "025_RockNRoll.png",
+        "sourceIndex": 25,
+        "excelCell": "J31"
+      },
+      {
+        "id": "mining-32-iron-bumpkin",
+        "name": "Iron Bumpkin",
+        "description": "+0.1 Iron Yield",
+        "tier": 1,
+        "cost": 1,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 32,
+        "icon": "027_Iron_Bumpkin.png",
+        "sourceIndex": 27,
+        "excelCell": "J32"
+      },
+      {
+        "id": "mining-33-speed-miner",
+        "name": "Speed Miner",
+        "description": "-20% in stone recovery time.",
+        "tier": 1,
+        "cost": 1,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 33,
+        "icon": "029_Speed_Miner.png",
+        "sourceIndex": 29,
+        "excelCell": "J33"
+      },
+      {
+        "id": "mining-34-tap-prospector-x",
+        "name": "Tap Prospector - X",
+        "description": "1 hit on small minerals (stone, iron, gold)",
+        "tier": 1,
+        "cost": 1,
+        "selected": false,
+        "inactive": true,
+        "sourceRow": 34,
+        "icon": "031_Tap_Prospector.png",
+        "sourceIndex": 31,
+        "excelCell": "J34"
+      },
+      {
+        "id": "mining-35-forge-ward-profits-x",
+        "name": "Forge-Ward Profits - X",
+        "description": "+20% revenue on deliveries to the Blacksmith.",
+        "tier": 1,
+        "cost": 1,
+        "selected": false,
+        "inactive": true,
+        "sourceRow": 35,
+        "icon": "033_Forge-Ward_Profits.png",
+        "sourceIndex": 33,
+        "excelCell": "J35"
+      },
+      {
+        "id": "mining-37-iron-hustle",
+        "name": "Iron Hustle",
+        "description": "-30% in iron recovery time.",
+        "tier": 2,
+        "cost": 2,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 37,
+        "icon": "036_Iron_Hustle.png",
+        "sourceIndex": 36,
+        "excelCell": "J37"
+      },
+      {
+        "id": "mining-38-frugal-miner",
+        "name": "Frugal Miner",
+        "description": "-20% in pickaxe coin cost.",
+        "tier": 2,
+        "cost": 2,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 38,
+        "icon": "037_Frugal_Miner.png",
+        "sourceIndex": 37,
+        "excelCell": "J38"
+      },
+      {
+        "id": "mining-39-rocky-favor",
+        "name": "Rocky Favor",
+        "description": "+1 in stone yield, -0.5 in iron yield.",
+        "tier": 2,
+        "cost": 2,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 39,
+        "icon": "039_Rocky_Favor.png",
+        "sourceIndex": 39,
+        "excelCell": "J39"
+      },
+      {
+        "id": "mining-40-fire-kissed",
+        "name": "Fire Kissed",
+        "description": "+1 in Crimstone yield on the 5th consecutive day.",
+        "tier": 2,
+        "cost": 2,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 40,
+        "icon": "041_Fire_Kissed.png",
+        "sourceIndex": 41,
+        "excelCell": "J40"
+      },
+      {
+        "id": "mining-41-midas-sprint",
+        "name": "Midas Sprint",
+        "description": "-10% in gold recovery time.",
+        "tier": 2,
+        "cost": 2,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 41,
+        "icon": "043_Midas_Sprint.png",
+        "sourceIndex": 43,
+        "excelCell": "J41"
+      },
+      {
+        "id": "mining-43-midas-rush",
+        "name": "Midas Rush",
+        "description": "-20% in gold recovery time.",
+        "tier": 3,
+        "cost": 3,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 43,
+        "icon": "046_Midas_Rush.png",
+        "sourceIndex": 46,
+        "excelCell": "J43"
+      },
+      {
+        "id": "mining-44-golden-touch",
+        "name": "Golden Touch",
+        "description": "+0.5 Gold Yield",
+        "tier": 3,
+        "cost": 3,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 44,
+        "icon": "047_Golden_Touch.png",
+        "sourceIndex": 47,
+        "excelCell": "J44"
+      },
+      {
+        "id": "mining-45-more-picks",
+        "name": "More Picks",
+        "description": "Increased stock: +70 Pickaxe, +20 Stone Pickaxe, +7 Iron Pickaxe.",
+        "tier": 3,
+        "cost": 3,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 45,
+        "icon": "049_More_Picks.png",
+        "sourceIndex": 49,
+        "excelCell": "J45"
+      },
+      {
+        "id": "mining-46-ferrous-favor",
+        "name": "Ferrous Favor",
+        "description": "+1 in iron yield, -0.5 in stone yield.",
+        "tier": 3,
+        "cost": 3,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 46,
+        "icon": "051_Ferrous_Favor.png",
+        "sourceIndex": 51,
+        "excelCell": "J46"
+      },
+      {
+        "id": "mining-47-fireside-alchemist",
+        "name": "Fireside Alchemist",
+        "description": "-15% in Crimstone recovery time.",
+        "tier": 3,
+        "cost": 3,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 47,
+        "icon": "053_Fireside_Alchemist.png",
+        "sourceIndex": 53,
+        "excelCell": "J47"
+      }
+    ],
+    "unlockNote": "Requisitos tomados de las fórmulas de la hoja Skills."
+  },
+  {
+    "name": "Fruit Patch",
+    "unlock": {
+      "2": {
+        "points": 2,
+        "tiers": [
+          1
+        ]
+      },
+      "3": {
+        "points": 5,
+        "tiers": [
+          1,
+          2
+        ]
+      }
+    },
+    "skills": [
+      {
+        "id": "fruit-patch-52-fruitful-fumble",
+        "name": "Fruitful Fumble",
+        "description": "+0.1 Fruit Yield",
+        "tier": 1,
+        "cost": 1,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 52,
+        "icon": "054_Fruitful_Fumble.png",
+        "sourceIndex": 54,
+        "excelCell": "C52"
+      },
+      {
+        "id": "fruit-patch-53-fruity-heaven",
+        "name": "Fruity Heaven",
+        "description": "-10% in the cost of fruit seeds",
+        "tier": 1,
+        "cost": 1,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 53,
+        "icon": "056_Fruity_Heaven.png",
+        "sourceIndex": 56,
+        "excelCell": "C53"
+      },
+      {
+        "id": "fruit-patch-54-fruity-profit-x",
+        "name": "Fruity Profit - X",
+        "description": "+50% coins on Tango deliveries",
+        "tier": 1,
+        "cost": 1,
+        "selected": false,
+        "inactive": true,
+        "sourceRow": 54,
+        "icon": "058_Fruity_Profit.png",
+        "sourceIndex": 58,
+        "excelCell": "C54"
+      },
+      {
+        "id": "fruit-patch-55-loyal-macaw",
+        "name": "Loyal Macaw",
+        "description": "Double Macaw's Effect",
+        "tier": 1,
+        "cost": 1,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 55,
+        "icon": "060_Loyal_Macaw.png",
+        "sourceIndex": 60,
+        "excelCell": "C55"
+      },
+      {
+        "id": "fruit-patch-56-no-axe-no-worries",
+        "name": "No Axe No Worries",
+        "description": "Cut fruit branches without axes, -1 wood from fruit branches",
+        "tier": 1,
+        "cost": 1,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 56,
+        "icon": "062_No_Axe_No_Worries.png",
+        "sourceIndex": 62,
+        "excelCell": "C56"
+      },
+      {
+        "id": "fruit-patch-58-catchup",
+        "name": "Catchup",
+        "description": "-10% in the growth time of fruits",
+        "tier": 2,
+        "cost": 2,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 58,
+        "icon": "065_Catchup.png",
+        "sourceIndex": 65,
+        "excelCell": "C58"
+      },
+      {
+        "id": "fruit-patch-59-fruity-woody",
+        "name": "Fruity Woody",
+        "description": "+1 wood from fruit branches and stems",
+        "tier": 2,
+        "cost": 2,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 59,
+        "icon": "067_Fruity_Woody.png",
+        "sourceIndex": 67,
+        "excelCell": "C59"
+      },
+      {
+        "id": "fruit-patch-60-pear-turbocharge",
+        "name": "Pear Turbocharge",
+        "description": "Double the effect of Immortal Pear's",
+        "tier": 2,
+        "cost": 2,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 60,
+        "icon": "068_Pear_Turbocharge.png",
+        "sourceIndex": 68,
+        "excelCell": "C60"
+      },
+      {
+        "id": "fruit-patch-61-crime-fruit",
+        "name": "Crime Fruit",
+        "description": "+10 in the stock of Tomato and Lemon seeds",
+        "tier": 2,
+        "cost": 2,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 61,
+        "icon": "069_Crime_Fruit.png",
+        "sourceIndex": 69,
+        "excelCell": "C61"
+      },
+      {
+        "id": "fruit-patch-63-generous-orchard",
+        "name": "Generous Orchard",
+        "description": "20% chance of +1 in fruit yield",
+        "tier": 3,
+        "cost": 3,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 63,
+        "icon": "072_Generous_Orchard.png",
+        "sourceIndex": 72,
+        "excelCell": "C63"
+      },
+      {
+        "id": "fruit-patch-64-long-pickings",
+        "name": "Long Pickings",
+        "description": "-50% in the growth time of apples and bananas,\n+100% in the growth time for all other fruits.",
+        "tier": 3,
+        "cost": 3,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 64,
+        "icon": "074_Long_Pickings.png",
+        "sourceIndex": 74,
+        "excelCell": "C64"
+      },
+      {
+        "id": "fruit-patch-66-short-pickings",
+        "name": "Short Pickings",
+        "description": "-50% in the growth time of blueberries and oranges,\n+100% in the growth time for all other fruits.",
+        "tier": 3,
+        "cost": 3,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 66,
+        "icon": "077_Short_Pickings.png",
+        "sourceIndex": 77,
+        "excelCell": "C66"
+      },
+      {
+        "id": "fruit-patch-68-zesty-vibes",
+        "name": "Zesty Vibes",
+        "description": "+1 in the yield of Tomato and Lemon,\n-0.25 in the yield for all other fruits.",
+        "tier": 3,
+        "cost": 3,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 68,
+        "icon": "079_Zesty_Vibes.png",
+        "sourceIndex": 79,
+        "excelCell": "C68"
+      }
+    ],
+    "unlockNote": "Requisitos tomados de las fórmulas de la hoja Skills."
+  },
+  {
+    "name": "Animals",
+    "unlock": {
+      "2": {
+        "points": 3,
+        "tiers": [
+          1
+        ]
+      },
+      "3": {
+        "points": 7,
+        "tiers": [
+          1,
+          2
+        ]
+      }
+    },
+    "skills": [
+      {
+        "id": "animals-52-efficient-feeding",
+        "name": "Efficient Feeding",
+        "description": "-5% in feed for all animals.",
+        "tier": 1,
+        "cost": 1,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 52,
+        "icon": "055_Efficient_Feeding.png",
+        "sourceIndex": 55,
+        "excelCell": "J52"
+      },
+      {
+        "id": "animals-53-restless-animals",
+        "name": "Restless Animals",
+        "description": "-10% in animal sleep time.",
+        "tier": 1,
+        "cost": 1,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 53,
+        "icon": "057_Restless_Animals.png",
+        "sourceIndex": 57,
+        "excelCell": "J53"
+      },
+      {
+        "id": "animals-54-fine-fibers",
+        "name": "Fine Fibers",
+        "description": "+0.1 in feather, leather, and Merino wool yield.",
+        "tier": 1,
+        "cost": 1,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 54,
+        "icon": "059_Fine_Fibers.png",
+        "sourceIndex": 59,
+        "excelCell": "J54"
+      },
+      {
+        "id": "animals-55-bountiful-bounties",
+        "name": "Bountiful Bounties",
+        "description": "+50% in coins from Animal Rewards.",
+        "tier": 1,
+        "cost": 1,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 55,
+        "icon": "061_Bountiful_Bounties.png",
+        "sourceIndex": 61,
+        "excelCell": "J55"
+      },
+      {
+        "id": "animals-56-double-bale",
+        "name": "Double Bale",
+        "description": "Double the effect of Bale.",
+        "tier": 1,
+        "cost": 1,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 56,
+        "icon": "063_Double_Bale.png",
+        "sourceIndex": 63,
+        "excelCell": "J56"
+      },
+      {
+        "id": "animals-57-bale-economy",
+        "name": "Bale Economy",
+        "description": "Bale affects milk and wool production.",
+        "tier": 1,
+        "cost": 1,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 57,
+        "icon": "064_Bale_Economy.png",
+        "sourceIndex": 64,
+        "excelCell": "J57"
+      },
+      {
+        "id": "animals-58-featherweight",
+        "name": "Featherweight",
+        "description": "+0.25 Feather yield\n-0.35 Leather & Merino Wool yield",
+        "tier": 1,
+        "cost": 1,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 58,
+        "icon": "066_Featherweight.png",
+        "sourceIndex": 66,
+        "excelCell": "J58"
+      },
+      {
+        "id": "animals-61-abundant-harvest",
+        "name": "Abundant Harvest",
+        "description": "+0.2 in egg, wool, and milk yield.",
+        "tier": 2,
+        "cost": 2,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 61,
+        "icon": "070_Abundant_Harvest.png",
+        "sourceIndex": 70,
+        "excelCell": "J61"
+      },
+      {
+        "id": "animals-62-heartwarming-instruments",
+        "name": "Heartwarming Instruments",
+        "description": "+50% animal experience from Animal Affection tools.",
+        "tier": 2,
+        "cost": 2,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 62,
+        "icon": "071_Heartwarming_Instruments.png",
+        "sourceIndex": 71,
+        "excelCell": "J62"
+      },
+      {
+        "id": "animals-63-kale-mix",
+        "name": "Kale Mix",
+        "description": "Mixed Grain requires 3 kale to mix.",
+        "tier": 2,
+        "cost": 2,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 63,
+        "icon": "073_Kale_Mix.png",
+        "sourceIndex": 73,
+        "excelCell": "J63"
+      },
+      {
+        "id": "animals-64-alternate-medicine-x",
+        "name": "Alternate Medicine - X",
+        "description": "Medicine requires 1 less lemon and honey to mix.",
+        "tier": 2,
+        "cost": 2,
+        "selected": false,
+        "inactive": true,
+        "sourceRow": 64,
+        "icon": "075_Alternate_Medicine.png",
+        "sourceIndex": 75,
+        "excelCell": "J64"
+      },
+      {
+        "id": "animals-65-healthy-livestock-x",
+        "name": "Healthy Livestock - X",
+        "description": "-50% chance of disease.",
+        "tier": 2,
+        "cost": 2,
+        "selected": false,
+        "inactive": true,
+        "sourceRow": 65,
+        "icon": "076_Healthy_Livestock.png",
+        "sourceIndex": 76,
+        "excelCell": "J65"
+      },
+      {
+        "id": "animals-66-merino-whisperer",
+        "name": "Merino Whisperer",
+        "description": "+0.25 Merino Wool yield\n-0.35 Leather & Feather yield",
+        "tier": 2,
+        "cost": 2,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 66,
+        "icon": "078_Merino_Whisperer.png",
+        "sourceIndex": 78,
+        "excelCell": "J66"
+      },
+      {
+        "id": "animals-69-clucky-grazing",
+        "name": "Clucky Grazing",
+        "description": "-25% feed for chickens,\n+50% feed for other animals.",
+        "tier": 3,
+        "cost": 3,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 69,
+        "icon": "080_Clucky_Grazing.png",
+        "sourceIndex": 80,
+        "excelCell": "J69"
+      },
+      {
+        "id": "animals-71-sheepwise-diet",
+        "name": "Sheepwise Diet",
+        "description": "-25% feed for sheep,\n+50% feed for other animals.",
+        "tier": 3,
+        "cost": 3,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 71,
+        "icon": "081_Sheepwise_Diet.png",
+        "sourceIndex": 81,
+        "excelCell": "J71"
+      },
+      {
+        "id": "animals-73-cow-smart-nutrition",
+        "name": "Cow-Smart Nutrition",
+        "description": "-25% feed for cows,\n+50% feed for other animals.",
+        "tier": 3,
+        "cost": 3,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 73,
+        "icon": "082_Cow-Smart_Nutrition.png",
+        "sourceIndex": 82,
+        "excelCell": "J73"
+      },
+      {
+        "id": "animals-75-chonky-feed",
+        "name": "Chonky Feed",
+        "description": "2x animal experience from feeding,\n+50% feed for all animals.",
+        "tier": 3,
+        "cost": 3,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 75,
+        "icon": "085_Chonky_Feed.png",
+        "sourceIndex": 85,
+        "excelCell": "J75"
+      },
+      {
+        "id": "animals-77-barnyard-rouse-x",
+        "name": "Barnyard Rouse - X",
+        "description": "Instantly wake up all animals (1/5d).",
+        "tier": 3,
+        "cost": 3,
+        "selected": false,
+        "inactive": true,
+        "sourceRow": 77,
+        "icon": "088_Barnyard_Rouse.png",
+        "sourceIndex": 88,
+        "excelCell": "J77"
+      },
+      {
+        "id": "animals-78-leathercraft-mastery",
+        "name": "Leathercraft Mastery",
+        "description": "+0.25 Leather yield\n-0.35 Feather & Merino Wool yield",
+        "tier": 3,
+        "cost": 3,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 78,
+        "icon": "089_Leathercraft_Mastery.png",
+        "sourceIndex": 89,
+        "excelCell": "J78"
+      }
+    ],
+    "unlockNote": "Requisitos tomados de las fórmulas de la hoja Skills."
+  },
+  {
+    "name": "Greenhouse",
+    "unlock": {
+      "2": {
+        "points": 2,
+        "tiers": [
+          1
+        ]
+      },
+      "3": {
+        "points": 5,
+        "tiers": [
+          1,
+          2
+        ]
+      }
+    },
+    "skills": [
+      {
+        "id": "greenhouse-74-glass-room",
+        "name": "Glass Room",
+        "description": "+0.1 in greenhouse production yield.",
+        "tier": 1,
+        "cost": 1,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 74,
+        "icon": "083_Glass_Room.png",
+        "sourceIndex": 83,
+        "excelCell": "C74"
+      },
+      {
+        "id": "greenhouse-75-rice-and-shine",
+        "name": "Rice and Shine",
+        "description": "-5% in the growth time of greenhouse products.",
+        "tier": 1,
+        "cost": 1,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 75,
+        "icon": "084_Rice_and_Shine.png",
+        "sourceIndex": 84,
+        "excelCell": "C75"
+      },
+      {
+        "id": "greenhouse-76-seedy-business",
+        "name": "Seedy Business",
+        "description": "-15% in the cost of greenhouse seeds.",
+        "tier": 1,
+        "cost": 1,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 76,
+        "icon": "086_Seedy_Business.png",
+        "sourceIndex": 86,
+        "excelCell": "C76"
+      },
+      {
+        "id": "greenhouse-77-victoria-s-secretary-x",
+        "name": "Victoria's Secretary - X",
+        "description": "+50% in coins on Victoria's deliveries.",
+        "tier": 1,
+        "cost": 1,
+        "selected": false,
+        "inactive": true,
+        "sourceRow": 77,
+        "icon": "087_Victorias_Secretary.png",
+        "sourceIndex": 87,
+        "excelCell": "C77"
+      },
+      {
+        "id": "greenhouse-79-olive-express",
+        "name": "Olive Express",
+        "description": "-10% in the growth time of olives.",
+        "tier": 2,
+        "cost": 2,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 79,
+        "icon": "090_Olive_Express.png",
+        "sourceIndex": 90,
+        "excelCell": "C79"
+      },
+      {
+        "id": "greenhouse-80-rice-rocket",
+        "name": "Rice Rocket",
+        "description": "-10% in the growth time of rice.",
+        "tier": 2,
+        "cost": 2,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 80,
+        "icon": "091_Rice_Rocket.png",
+        "sourceIndex": 91,
+        "excelCell": "C80"
+      },
+      {
+        "id": "greenhouse-81-vine-velocity",
+        "name": "Vine Velocity",
+        "description": "-10% in the growth time of grapes.",
+        "tier": 2,
+        "cost": 2,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 81,
+        "icon": "092_Vine_Velocity.png",
+        "sourceIndex": 92,
+        "excelCell": "C81"
+      },
+      {
+        "id": "greenhouse-82-seeded-bounty",
+        "name": "Seeded Bounty",
+        "description": "+0.5 in GH production yield, +1 greenhouse seed to plant.",
+        "tier": 2,
+        "cost": 2,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 82,
+        "icon": "093_Seeded_Bounty.png",
+        "sourceIndex": 93,
+        "excelCell": "C82"
+      },
+      {
+        "id": "greenhouse-84-greenhouse-gamble",
+        "name": "Greenhouse Gamble",
+        "description": "25% chance of +1 in GH production.",
+        "tier": 3,
+        "cost": 3,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 84,
+        "icon": "094_Greenhouse_Gamble.png",
+        "sourceIndex": 94,
+        "excelCell": "C84"
+      },
+      {
+        "id": "greenhouse-85-slick-saver",
+        "name": "Slick Saver",
+        "description": "-1 Oil to cultivate GH products.",
+        "tier": 3,
+        "cost": 3,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 85,
+        "icon": "096_Slick_Saver.png",
+        "sourceIndex": 96,
+        "excelCell": "C85"
+      },
+      {
+        "id": "greenhouse-86-greasy-plants",
+        "name": "Greasy Plants",
+        "description": "+1 in GH production yield, +100% in Oil consumption.",
+        "tier": 3,
+        "cost": 3,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 86,
+        "icon": "098_Greasy_Plants.png",
+        "sourceIndex": 98,
+        "excelCell": "C86"
+      },
+      {
+        "id": "greenhouse-87-greenhouse-guru-x",
+        "name": "Greenhouse Guru - X",
+        "description": "Make all GH crops that are growing ready for harvest (1/96h).",
+        "tier": 3,
+        "cost": 3,
+        "selected": false,
+        "inactive": true,
+        "sourceRow": 87,
+        "icon": "100_Greenhouse_Guru.png",
+        "sourceIndex": 100,
+        "excelCell": "C87"
+      }
+    ],
+    "unlockNote": "Requisitos tomados de las fórmulas de la hoja Skills."
+  },
+  {
+    "name": "Fishing",
+    "unlock": {
+      "2": {
+        "points": 2,
+        "tiers": [
+          1
+        ]
+      },
+      "3": {
+        "points": 5,
+        "tiers": [
+          1,
+          2
+        ]
+      }
+    },
+    "skills": [
+      {
+        "id": "fishing-84-fisherman-s-5-fold-x",
+        "name": "Fisherman's 5 Fold - X",
+        "description": "+5 in the daily fishing limit.",
+        "tier": 1,
+        "cost": 1,
+        "selected": false,
+        "inactive": true,
+        "sourceRow": 84,
+        "icon": "095_Fishermans_5_Fold.png",
+        "sourceIndex": 95,
+        "excelCell": "J84"
+      },
+      {
+        "id": "fishing-85-fishy-chance-x",
+        "name": "Fishy Chance - X",
+        "description": "10% chance to get +1 basic fish.",
+        "tier": 1,
+        "cost": 1,
+        "selected": false,
+        "inactive": true,
+        "sourceRow": 85,
+        "icon": "097_Fishy_Chance.png",
+        "sourceIndex": 97,
+        "excelCell": "J85"
+      },
+      {
+        "id": "fishing-86-fishy-roll-x",
+        "name": "Fishy Roll - X",
+        "description": "10% chance to get +1 advanced fish.",
+        "tier": 1,
+        "cost": 1,
+        "selected": false,
+        "inactive": true,
+        "sourceRow": 86,
+        "icon": "099_Fishy_Roll.png",
+        "sourceIndex": 99,
+        "excelCell": "J86"
+      },
+      {
+        "id": "fishing-87-reel-deal-x",
+        "name": "Reel Deal - X",
+        "description": "-50% on the cost of fishing rods.",
+        "tier": 1,
+        "cost": 1,
+        "selected": false,
+        "inactive": true,
+        "sourceRow": 87,
+        "icon": "101_Reel_Deal.png",
+        "sourceIndex": 101,
+        "excelCell": "J87"
+      },
+      {
+        "id": "fishing-89-fisherman-s-10-fold-x",
+        "name": "Fisherman's 10 Fold - X",
+        "description": "+10 in the daily fishing limit.",
+        "tier": 2,
+        "cost": 2,
+        "selected": false,
+        "inactive": true,
+        "sourceRow": 89,
+        "icon": "102_Fishermans_10_Fold.png",
+        "sourceIndex": 102,
+        "excelCell": "J89"
+      },
+      {
+        "id": "fishing-90-fishy-fortune-x",
+        "name": "Fishy Fortune - X",
+        "description": "+100% in Coins from Corale deliveries.",
+        "tier": 2,
+        "cost": 2,
+        "selected": false,
+        "inactive": true,
+        "sourceRow": 90,
+        "icon": "103_Fishy_Fortune.png",
+        "sourceIndex": 103,
+        "excelCell": "J90"
+      },
+      {
+        "id": "fishing-91-fishy-gamble-x",
+        "name": "Fishy Gamble - X",
+        "description": "20% chance to get +1 expert fish.",
+        "tier": 2,
+        "cost": 2,
+        "selected": false,
+        "inactive": true,
+        "sourceRow": 91,
+        "icon": "104_Fishy_Gamble.png",
+        "sourceIndex": 104,
+        "excelCell": "J91"
+      },
+      {
+        "id": "fishing-93-frenzied-fish-x",
+        "name": "Frenzied Fish - X",
+        "description": "During the fish Frenzied, +1 fish and 50% chance of +1 fish.",
+        "tier": 3,
+        "cost": 3,
+        "selected": false,
+        "inactive": true,
+        "sourceRow": 93,
+        "icon": "106_Frenzied_Fish.png",
+        "sourceIndex": 106,
+        "excelCell": "J93"
+      },
+      {
+        "id": "fishing-94-more-with-less-x",
+        "name": "More With Less - X",
+        "description": "+15 in the daily fishing limit, -1 worm from all composters.",
+        "tier": 3,
+        "cost": 3,
+        "selected": false,
+        "inactive": true,
+        "sourceRow": 94,
+        "icon": "108_More_With_Less.png",
+        "sourceIndex": 108,
+        "excelCell": "J94"
+      },
+      {
+        "id": "fishing-95-fishy-feast-x",
+        "name": "Fishy Feast - X",
+        "description": "+20% Fish XP.",
+        "tier": 3,
+        "cost": 3,
+        "selected": false,
+        "inactive": true,
+        "sourceRow": 95,
+        "icon": "110_Fishy_Feast.png",
+        "sourceIndex": 110,
+        "excelCell": "J95"
+      }
+    ],
+    "unlockNote": "Requisitos tomados de las fórmulas de la hoja Skills."
+  },
+  {
+    "name": "Bees Flowers",
+    "unlock": {
+      "2": {
+        "points": 2,
+        "tiers": [
+          1
+        ]
+      },
+      "3": {
+        "points": 5,
+        "tiers": [
+          1,
+          2
+        ]
+      }
+    },
+    "skills": [
+      {
+        "id": "bees-flowers-93-sweet-bonus-x",
+        "name": "Sweet Bonus - X",
+        "description": "+0.1 Honey per hive.",
+        "tier": 1,
+        "cost": 1,
+        "selected": false,
+        "inactive": true,
+        "sourceRow": 93,
+        "icon": "105_Sweet_Bonus.png",
+        "sourceIndex": 105,
+        "excelCell": "C93"
+      },
+      {
+        "id": "bees-flowers-94-hyper-bees-x",
+        "name": "Hyper Bees - X",
+        "description": "+0.1 in honey production speed.",
+        "tier": 1,
+        "cost": 1,
+        "selected": false,
+        "inactive": true,
+        "sourceRow": 94,
+        "icon": "107_Hyper_Bees.png",
+        "sourceIndex": 107,
+        "excelCell": "C94"
+      },
+      {
+        "id": "bees-flowers-95-blooming-boost-x",
+        "name": "Blooming Boost - X",
+        "description": "-10% in the growth time of flowers.",
+        "tier": 1,
+        "cost": 1,
+        "selected": false,
+        "inactive": true,
+        "sourceRow": 95,
+        "icon": "109_Blooming_Boost.png",
+        "sourceIndex": 109,
+        "excelCell": "C95"
+      },
+      {
+        "id": "bees-flowers-96-flower-sale-x",
+        "name": "Flower Sale - X",
+        "description": "-20% in the cost of flower seeds.",
+        "tier": 1,
+        "cost": 1,
+        "selected": false,
+        "inactive": true,
+        "sourceRow": 96,
+        "icon": "111_Flower_Sale.png",
+        "sourceIndex": 111,
+        "excelCell": "C96"
+      },
+      {
+        "id": "bees-flowers-98-buzzworthy-treats",
+        "name": "Buzzworthy Treats",
+        "description": "+10% Experience in foods made with honey.",
+        "tier": 2,
+        "cost": 2,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 98,
+        "icon": "112_Buzzworthy_Treats.png",
+        "sourceIndex": 112,
+        "excelCell": "C98"
+      },
+      {
+        "id": "bees-flowers-99-blossom-bonding-x",
+        "name": "Blossom Bonding - X",
+        "description": "+2 relationship points when gifting flowers.",
+        "tier": 2,
+        "cost": 2,
+        "selected": false,
+        "inactive": true,
+        "sourceRow": 99,
+        "icon": "113_Blossom_Bonding.png",
+        "sourceIndex": 113,
+        "excelCell": "C99"
+      },
+      {
+        "id": "bees-flowers-100-pollen-power-up-x",
+        "name": "Pollen Power Up - X",
+        "description": "Additional yield of +0.1 harvest after pollination.",
+        "tier": 2,
+        "cost": 2,
+        "selected": false,
+        "inactive": true,
+        "sourceRow": 100,
+        "icon": "114_Pollen_Power_Up.png",
+        "sourceIndex": 114,
+        "excelCell": "C100"
+      },
+      {
+        "id": "bees-flowers-101-petalled-perk-x",
+        "name": "Petalled Perk - X",
+        "description": "10% chance to get +1 flower.",
+        "tier": 2,
+        "cost": 2,
+        "selected": false,
+        "inactive": true,
+        "sourceRow": 101,
+        "icon": "116_Petalled_Perk.png",
+        "sourceIndex": 116,
+        "excelCell": "C101"
+      },
+      {
+        "id": "bees-flowers-103-bee-collective-x",
+        "name": "Bee Collective - X",
+        "description": "+20% chance of a bee swarm.",
+        "tier": 3,
+        "cost": 3,
+        "selected": false,
+        "inactive": true,
+        "sourceRow": 103,
+        "icon": "119_Bee_Collective.png",
+        "sourceIndex": 119,
+        "excelCell": "C103"
+      },
+      {
+        "id": "bees-flowers-104-flower-power-x",
+        "name": "Flower Power - X",
+        "description": "-20% in the growth time of flowers.",
+        "tier": 3,
+        "cost": 3,
+        "selected": false,
+        "inactive": true,
+        "sourceRow": 104,
+        "icon": "121_Flower_Power.png",
+        "sourceIndex": 121,
+        "excelCell": "C104"
+      },
+      {
+        "id": "bees-flowers-105-flowery-abode-x",
+        "name": "Flowery Abode - X",
+        "description": "+0.5 in honey production speed,\n+50% in flower growth time.",
+        "tier": 3,
+        "cost": 3,
+        "selected": false,
+        "inactive": true,
+        "sourceRow": 105,
+        "icon": "122_Flowery_Abode.png",
+        "sourceIndex": 122,
+        "excelCell": "C105"
+      },
+      {
+        "id": "bees-flowers-107-petal-blessed-x",
+        "name": "Petal Blessed - X",
+        "description": "Skill: make all currently growing flowers ready to be harvested (1/96h).",
+        "tier": 3,
+        "cost": 3,
+        "selected": false,
+        "inactive": true,
+        "sourceRow": 107,
+        "icon": "125_Petal_Blessed.png",
+        "sourceIndex": 125,
+        "excelCell": "C107"
+      }
+    ],
+    "unlockNote": "Requisitos tomados de las fórmulas de la hoja Skills."
+  },
+  {
+    "name": "Cooking",
+    "unlock": {
+      "2": {
+        "points": 2,
+        "tiers": [
+          1
+        ]
+      },
+      "3": {
+        "points": 5,
+        "tiers": [
+          1,
+          2
+        ]
+      }
+    },
+    "skills": [
+      {
+        "id": "cooking-100-fast-feasts",
+        "name": "Fast Feasts",
+        "description": "-10% cooking time for Firepit and Kitchen.",
+        "tier": 1,
+        "cost": 1,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 100,
+        "icon": "115_Fast_Feasts.png",
+        "sourceIndex": 115,
+        "excelCell": "J100"
+      },
+      {
+        "id": "cooking-101-nom-nom-x",
+        "name": "Nom Nom - X",
+        "description": "+10% in food delivery revenue.",
+        "tier": 1,
+        "cost": 1,
+        "selected": false,
+        "inactive": true,
+        "sourceRow": 101,
+        "icon": "117_Nom_Nom.png",
+        "sourceIndex": 117,
+        "excelCell": "J101"
+      },
+      {
+        "id": "cooking-102-munching-mastery",
+        "name": "Munching Mastery",
+        "description": "+5% Experience when eating meals.",
+        "tier": 1,
+        "cost": 1,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 102,
+        "icon": "118_Munching_Mastery.png",
+        "sourceIndex": 118,
+        "excelCell": "J102"
+      },
+      {
+        "id": "cooking-103-swift-sizzle-x",
+        "name": "Swift Sizzle - X",
+        "description": "-40% cooking time for FirePit with Oil.",
+        "tier": 1,
+        "cost": 1,
+        "selected": false,
+        "inactive": true,
+        "sourceRow": 103,
+        "icon": "120_Swift_Sizzle.png",
+        "sourceIndex": 120,
+        "excelCell": "J103"
+      },
+      {
+        "id": "cooking-105-frosted-cakes",
+        "name": "Frosted Cakes",
+        "description": "-10% cooking time for cakes.",
+        "tier": 2,
+        "cost": 2,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 105,
+        "icon": "123_Frosted_Cakes.png",
+        "sourceIndex": 123,
+        "excelCell": "J105"
+      },
+      {
+        "id": "cooking-106-juicy-boost",
+        "name": "Juicy Boost",
+        "description": "+10% experience for Smoothie Shack drinks.",
+        "tier": 2,
+        "cost": 2,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 106,
+        "icon": "124_Juicy_Boost.png",
+        "sourceIndex": 124,
+        "excelCell": "J106"
+      },
+      {
+        "id": "cooking-107-turbo-fry-x",
+        "name": "Turbo Fry - X",
+        "description": "-50% cooking time for Kitchen with Oil.",
+        "tier": 2,
+        "cost": 2,
+        "selected": false,
+        "inactive": true,
+        "sourceRow": 107,
+        "icon": "126_Turbo_Fry.png",
+        "sourceIndex": 126,
+        "excelCell": "J107"
+      },
+      {
+        "id": "cooking-108-drive-through-deli",
+        "name": "Drive-Through Deli",
+        "description": "+15% experience for Deli meals.",
+        "tier": 2,
+        "cost": 2,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 108,
+        "icon": "127_Drive-Through_Deli.png",
+        "sourceIndex": 127,
+        "excelCell": "J108"
+      },
+      {
+        "id": "cooking-110-double-nom",
+        "name": "Double Nom",
+        "description": "+1 food when cooking, 2x ingredients needed for cooking.",
+        "tier": 3,
+        "cost": 3,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 110,
+        "icon": "128_Double_Nom.png",
+        "sourceIndex": 128,
+        "excelCell": "J110"
+      },
+      {
+        "id": "cooking-111-fiery-jackpot",
+        "name": "Fiery Jackpot",
+        "description": "+20% chance to get +1 food in the Firepit.",
+        "tier": 3,
+        "cost": 3,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 111,
+        "icon": "129_Fiery_Jackpot.png",
+        "sourceIndex": 129,
+        "excelCell": "J111"
+      },
+      {
+        "id": "cooking-112-fry-frenzy-x",
+        "name": "Fry Frenzy - X",
+        "description": "-60% cooking time for the Deli with Oil.",
+        "tier": 3,
+        "cost": 3,
+        "selected": false,
+        "inactive": true,
+        "sourceRow": 112,
+        "icon": "130_Fry_Frenzy.png",
+        "sourceIndex": 130,
+        "excelCell": "J112"
+      },
+      {
+        "id": "cooking-113-instant-gratification-x",
+        "name": "Instant Gratification - X",
+        "description": "Makes all currently cooking meals ready to be consumed (1/72h).",
+        "tier": 3,
+        "cost": 3,
+        "selected": false,
+        "inactive": true,
+        "sourceRow": 113,
+        "icon": "132_Instant_Gratification.png",
+        "sourceIndex": 132,
+        "excelCell": "J113"
+      }
+    ],
+    "unlockNote": "Requisitos tomados de las fórmulas de la hoja Skills."
+  },
+  {
+    "name": "Machinery",
+    "unlock": {
+      "2": {
+        "points": 2,
+        "tiers": [
+          1
+        ]
+      },
+      "3": {
+        "points": 5,
+        "tiers": [
+          1,
+          2
+        ]
+      }
+    },
+    "skills": [
+      {
+        "id": "machinery-113-crop-extension-module-i-x",
+        "name": "Crop Extension Module I - X",
+        "description": "Allow Rhubarb and Zucchini seeds to be used in the CM.",
+        "tier": 1,
+        "cost": 1,
+        "selected": false,
+        "inactive": true,
+        "sourceRow": 113,
+        "icon": "131_Crop_Extension_Module_I.png",
+        "sourceIndex": 131,
+        "excelCell": "C113"
+      },
+      {
+        "id": "machinery-114-crop-processor-unit",
+        "name": "Crop Processor Unit",
+        "description": "-5% in CM growth time, +10% in Oil consumption.",
+        "tier": 1,
+        "cost": 1,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 114,
+        "icon": "133_Crop_Processor_Unit.png",
+        "sourceIndex": 133,
+        "excelCell": "C114"
+      },
+      {
+        "id": "machinery-115-oil-gadget",
+        "name": "Oil Gadget",
+        "description": "-10% in Oil consumption.",
+        "tier": 1,
+        "cost": 1,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 115,
+        "icon": "134_Oil_Gadget.png",
+        "sourceIndex": 134,
+        "excelCell": "C115"
+      },
+      {
+        "id": "machinery-116-oil-extraction",
+        "name": "Oil Extraction",
+        "description": "+1 Oil when collecting from reserves.",
+        "tier": 1,
+        "cost": 1,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 116,
+        "icon": "135_Oil_Extraction.png",
+        "sourceIndex": 135,
+        "excelCell": "C116"
+      },
+      {
+        "id": "machinery-117-leak-proof-tank-x",
+        "name": "Leak-Proof Tank - X",
+        "description": "Triple the Oil tank capacity of the Crop Machine.",
+        "tier": 1,
+        "cost": 1,
+        "selected": false,
+        "inactive": true,
+        "sourceRow": 117,
+        "icon": "136_Leak-Proof_Tank.png",
+        "sourceIndex": 136,
+        "excelCell": "C117"
+      },
+      {
+        "id": "machinery-119-crop-extension-module-ii-x",
+        "name": "Crop Extension Module II - X",
+        "description": "Allow Carrot and Cabbage seeds to be used in the CM.",
+        "tier": 2,
+        "cost": 2,
+        "selected": false,
+        "inactive": true,
+        "sourceRow": 119,
+        "icon": "137_Crop_Extension_Module_II.png",
+        "sourceIndex": 137,
+        "excelCell": "C119"
+      },
+      {
+        "id": "machinery-120-crop-extension-module-iii-x",
+        "name": "Crop Extension Module III - X",
+        "description": "Allow Yam and Brocolli seeds to be used in the CM.",
+        "tier": 2,
+        "cost": 2,
+        "selected": false,
+        "inactive": true,
+        "sourceRow": 120,
+        "icon": "139_Crop_Extension_Module_III.png",
+        "sourceIndex": 139,
+        "excelCell": "C120"
+      },
+      {
+        "id": "machinery-121-rapid-rig",
+        "name": "Rapid Rig",
+        "description": "-20% in CM growth time, +40% in Oil consumption.",
+        "tier": 2,
+        "cost": 2,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 121,
+        "icon": "141_Rapid_Rig.png",
+        "sourceIndex": 141,
+        "excelCell": "C121"
+      },
+      {
+        "id": "machinery-122-oil-be-back",
+        "name": "Oil Be Back",
+        "description": "-20% in Oil refilling time.",
+        "tier": 2,
+        "cost": 2,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 122,
+        "icon": "143_Oil_Be_Back.png",
+        "sourceIndex": 143,
+        "excelCell": "C122"
+      },
+      {
+        "id": "machinery-123-oil-rig",
+        "name": "Oil Rig",
+        "description": "Oil Drill requires 20 Wool instead of Leather to craft",
+        "tier": 2,
+        "cost": 2,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 123,
+        "icon": "145_Oil_Rig.png",
+        "sourceIndex": 145,
+        "excelCell": "C123"
+      },
+      {
+        "id": "machinery-125-field-expansion-module-x",
+        "name": "Field Expansion Module - X",
+        "description": "+5 packages added to the machine.",
+        "tier": 3,
+        "cost": 3,
+        "selected": false,
+        "inactive": true,
+        "sourceRow": 125,
+        "icon": "147_Field_Expansion_Module.png",
+        "sourceIndex": 147,
+        "excelCell": "C125"
+      },
+      {
+        "id": "machinery-126-field-extension-module",
+        "name": "Field Extension Module",
+        "description": "+5 plots added to the machine.",
+        "tier": 3,
+        "cost": 3,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 126,
+        "icon": "149_Field_Extension_Module.png",
+        "sourceIndex": 149,
+        "excelCell": "C126"
+      },
+      {
+        "id": "machinery-127-efficiency-extension-module",
+        "name": "Efficiency Extension Module",
+        "description": "-30% in Oil consumption.",
+        "tier": 3,
+        "cost": 3,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 127,
+        "icon": "150_Efficiency_Extension_Module.png",
+        "sourceIndex": 150,
+        "excelCell": "C127"
+      },
+      {
+        "id": "machinery-128-grease-lightning-x",
+        "name": "Grease Lightning - X",
+        "description": "Make empty Oil wells refill instantly (1/96h).",
+        "tier": 3,
+        "cost": 3,
+        "selected": false,
+        "inactive": true,
+        "sourceRow": 128,
+        "icon": "152_Grease_Lightning.png",
+        "sourceIndex": 152,
+        "excelCell": "C128"
+      }
+    ],
+    "unlockNote": "Requisitos tomados de las fórmulas de la hoja Skills."
+  },
+  {
+    "name": "Compost",
+    "unlock": {
+      "2": {
+        "points": 3,
+        "tiers": [
+          1
+        ]
+      },
+      "3": {
+        "points": 7,
+        "tiers": [
+          1,
+          2
+        ]
+      }
+    },
+    "skills": [
+      {
+        "id": "compost-119-efficient-bin-x",
+        "name": "Efficient Bin - X",
+        "description": "+5 Sprout Mix.",
+        "tier": 1,
+        "cost": 1,
+        "selected": false,
+        "inactive": true,
+        "sourceRow": 119,
+        "icon": "138_Efficient_Bin.png",
+        "sourceIndex": 138,
+        "excelCell": "J119"
+      },
+      {
+        "id": "compost-120-turbo-charged-x",
+        "name": "Turbo Charged - X",
+        "description": "+5 Fruitful Blend",
+        "tier": 1,
+        "cost": 1,
+        "selected": false,
+        "inactive": true,
+        "sourceRow": 120,
+        "icon": "140_Turbo_Charged.png",
+        "sourceIndex": 140,
+        "excelCell": "J120"
+      },
+      {
+        "id": "compost-121-wormy-treat-x",
+        "name": "Wormy Treat - X",
+        "description": "+1 Worm",
+        "tier": 1,
+        "cost": 1,
+        "selected": false,
+        "inactive": true,
+        "sourceRow": 121,
+        "icon": "142_Wormy_Treat.png",
+        "sourceIndex": 142,
+        "excelCell": "J121"
+      },
+      {
+        "id": "compost-122-feathery-business-x",
+        "name": "Feathery Business - X",
+        "description": "Use feathers instead of eggs to speed up the composters,\n2x feathers to speed up the composters.",
+        "tier": 1,
+        "cost": 1,
+        "selected": false,
+        "inactive": true,
+        "sourceRow": 122,
+        "icon": "144_Feathery_Business.png",
+        "sourceIndex": 144,
+        "excelCell": "J122"
+      },
+      {
+        "id": "compost-124-sprout-surge-x",
+        "name": "Sprout Surge - X",
+        "description": "Place Sprout Mix in all plots.",
+        "tier": 1,
+        "cost": 1,
+        "selected": false,
+        "inactive": true,
+        "sourceRow": 124,
+        "icon": "146_Sprout_Surge.png",
+        "sourceIndex": 146,
+        "excelCell": "J124"
+      },
+      {
+        "id": "compost-125-blend-tastic-x",
+        "name": "Blend-tastic - X",
+        "description": "Place Fruitful Blend in all fruit tree plots.",
+        "tier": 1,
+        "cost": 1,
+        "selected": false,
+        "inactive": true,
+        "sourceRow": 125,
+        "icon": "148_Blend-tastic.png",
+        "sourceIndex": 148,
+        "excelCell": "J125"
+      },
+      {
+        "id": "compost-127-swift-decomposer-x",
+        "name": "Swift Decomposer - X",
+        "description": "-10% in composting time.",
+        "tier": 2,
+        "cost": 2,
+        "selected": false,
+        "inactive": true,
+        "sourceRow": 127,
+        "icon": "151_Swift_Decomposer.png",
+        "sourceIndex": 151,
+        "excelCell": "J127"
+      },
+      {
+        "id": "compost-128-root-rocket-x",
+        "name": "Root Rocket - X",
+        "description": "Place Rapid Root in all plots.",
+        "tier": 2,
+        "cost": 2,
+        "selected": false,
+        "inactive": true,
+        "sourceRow": 128,
+        "icon": "153_Root_Rocket.png",
+        "sourceIndex": 153,
+        "excelCell": "J128"
+      },
+      {
+        "id": "compost-129-composting-bonanza-x",
+        "name": "Composting Bonanza - X",
+        "description": "Speed up the composters for an additional hour when boosted,\n2x resources to boost the composters.",
+        "tier": 2,
+        "cost": 2,
+        "selected": false,
+        "inactive": true,
+        "sourceRow": 129,
+        "icon": "154_Composting_Bonanza.png",
+        "sourceIndex": 154,
+        "excelCell": "J129"
+      },
+      {
+        "id": "compost-131-premium-worms-x",
+        "name": "Premium Worms - X",
+        "description": "+10 Rapid Root",
+        "tier": 2,
+        "cost": 2,
+        "selected": false,
+        "inactive": true,
+        "sourceRow": 131,
+        "icon": "155_Premium_Worms.png",
+        "sourceIndex": 155,
+        "excelCell": "J131"
+      },
+      {
+        "id": "compost-132-fruitful-bounty-x",
+        "name": "Fruitful Bounty - X",
+        "description": "Double the effect of Fruitful Blend's.",
+        "tier": 2,
+        "cost": 2,
+        "selected": false,
+        "inactive": true,
+        "sourceRow": 132,
+        "icon": "156_Fruitful_Bounty.png",
+        "sourceIndex": 156,
+        "excelCell": "J132"
+      },
+      {
+        "id": "compost-134-composting-overhaul-x",
+        "name": "Composting Overhaul - X",
+        "description": "+2 Worms, -5 fertilisers",
+        "tier": 3,
+        "cost": 3,
+        "selected": false,
+        "inactive": true,
+        "sourceRow": 134,
+        "icon": "157_Composting_Overhaul.png",
+        "sourceIndex": 157,
+        "excelCell": "J134"
+      },
+      {
+        "id": "compost-135-composting-revamp-x",
+        "name": "Composting Revamp - X",
+        "description": "+5 fertilisers, -3 Worms",
+        "tier": 3,
+        "cost": 3,
+        "selected": false,
+        "inactive": true,
+        "sourceRow": 135,
+        "icon": "158_Composting_Revamp.png",
+        "sourceIndex": 158,
+        "excelCell": "J135"
+      }
+    ],
+    "unlockNote": "Requisitos tomados de las fórmulas de la hoja Skills."
+  },
+  {
+    "name": "Aging",
+    "unlock": {
+      "2": {
+        "points": 3,
+        "tiers": [
+          1
+        ]
+      },
+      "3": {
+        "points": 7,
+        "tiers": [
+          1,
+          2
+        ]
+      }
+    },
+    "skills": [
+      {
+        "id": "aging-159-cheap-rakes",
+        "name": "Cheap Rakes",
+        "description": "-20% salt rake coin cost",
+        "tier": 1,
+        "cost": 1,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": null,
+        "icon": "159_Cheap_Rakes.png",
+        "sourceIndex": 159,
+        "excelCell": ""
+      },
+      {
+        "id": "aging-160-speedy-aging",
+        "name": "Speedy Aging",
+        "description": "-10% Fish Aging time",
+        "tier": 1,
+        "cost": 1,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": null,
+        "icon": "160_Speedy_Aging.png",
+        "sourceIndex": 160,
+        "excelCell": ""
+      },
+      {
+        "id": "aging-161-salty-seas",
+        "name": "Salty Seas",
+        "description": "-10% salt charge replenishment time",
+        "tier": 1,
+        "cost": 1,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": null,
+        "icon": "161_Salty_Seas.png",
+        "sourceIndex": 161,
+        "excelCell": ""
+      },
+      {
+        "id": "aging-162-wide-rakes",
+        "name": "Wide Rakes",
+        "description": "+2 Salt per harvest",
+        "tier": 1,
+        "cost": 1,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": null,
+        "icon": "162_Wide_Rakes.png",
+        "sourceIndex": 162,
+        "excelCell": ""
+      },
+      {
+        "id": "aging-163-bacalhau",
+        "name": "Bacalhau",
+        "description": "+1 Bait yield from fermentation rack",
+        "tier": 1,
+        "cost": 1,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": null,
+        "icon": "163_Bacalhau.png",
+        "sourceIndex": 163,
+        "excelCell": ""
+      },
+      {
+        "id": "aging-164-fish-smoking",
+        "name": "Fish Smoking",
+        "description": "Doubled chance Aged Fish becomes Prime Aged",
+        "tier": 2,
+        "cost": 2,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": null,
+        "icon": "164_Fish_Smoking.png",
+        "sourceIndex": 164,
+        "excelCell": ""
+      },
+      {
+        "id": "aging-165-refiner",
+        "name": "Refiner",
+        "description": "15% chance of +1 Refined Salt when making Refined Salt",
+        "tier": 2,
+        "cost": 2,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": null,
+        "icon": "165_Refiner.png",
+        "sourceIndex": 165,
+        "excelCell": ""
+      },
+      {
+        "id": "aging-168-sea-blessed",
+        "name": "Sea Blessed",
+        "description": "5% chance to restore 1 charge to 4 Salt hodes on harvest",
+        "tier": 2,
+        "cost": 2,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": null,
+        "icon": "168_Sea_Blessed.png",
+        "sourceIndex": 168,
+        "excelCell": ""
+      },
+      {
+        "id": "aging-169-ager",
+        "name": "Ager",
+        "description": "2x output from Aging Shed Racks | 2x Aging Shed inputs (ingredients, fish & salt)",
+        "tier": 3,
+        "cost": 3,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": null,
+        "icon": "169_Ager.png",
+        "sourceIndex": 169,
+        "excelCell": ""
+      },
+      {
+        "id": "aging-170-salt-surge",
+        "name": "Salt Surge",
+        "description": "Recharge all Salt hodes to max",
+        "tier": 3,
+        "cost": 3,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": null,
+        "icon": "170_Salt_Surge.png",
+        "sourceIndex": 170,
+        "excelCell": ""
+      }
+    ],
+    "unlockNote": "Skills de Aging agregadas manualmente al manifest. Tier 2 requiere 3 pts en T1; Tier 3 requiere 7 pts en T1 + T2."
+  },
+  {
+    "name": "Legacy Skills",
+    "unlock": {},
+    "skills": [
+      {
+        "id": "skills-legacy-16-green-thumb",
+        "name": "Green Thumb",
+        "description": "+5% more coins when selling crops (Seed Shop)",
+        "tier": 0,
+        "cost": 0,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 16,
+        "icon": "004_Green_Thumb.png",
+        "sourceIndex": 4,
+        "excelCell": "C16"
+      },
+      {
+        "id": "skills-legacy-17-seed-specialist",
+        "name": "Seed Specialist",
+        "description": "-10% on crop growth time",
+        "tier": 0,
+        "cost": 0,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 17,
+        "icon": "006_Seed_Specialist.png",
+        "sourceIndex": 6,
+        "excelCell": "C17"
+      },
+      {
+        "id": "skills-legacy-18-coder",
+        "name": "Coder",
+        "description": "+20% on crop harvest",
+        "tier": 0,
+        "cost": 0,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 18,
+        "icon": "008_Coder.png",
+        "sourceIndex": 8,
+        "excelCell": "C18"
+      },
+      {
+        "id": "skills-legacy-19-lumberjack",
+        "name": "Lumberjack",
+        "description": "+10% more wood",
+        "tier": 0,
+        "cost": 0,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 19,
+        "icon": "010_Lumberjack.png",
+        "sourceIndex": 10,
+        "excelCell": "C19"
+      },
+      {
+        "id": "skills-legacy-20-logger",
+        "name": "Logger",
+        "description": "Uses half an axe per tree",
+        "tier": 0,
+        "cost": 0,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 20,
+        "icon": "012_Logger.png",
+        "sourceIndex": 12,
+        "excelCell": "C20"
+      },
+      {
+        "id": "skills-legacy-21-prospector",
+        "name": "Prospector",
+        "description": "+20% Stone",
+        "tier": 0,
+        "cost": 0,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 21,
+        "icon": "013_Prospector.png",
+        "sourceIndex": 13,
+        "excelCell": "C21"
+      },
+      {
+        "id": "skills-legacy-22-gold-rush",
+        "name": "Gold Rush",
+        "description": "+50% Gold",
+        "tier": 0,
+        "cost": 0,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 22,
+        "icon": "015_Gold_Rush.png",
+        "sourceIndex": 15,
+        "excelCell": "C22"
+      },
+      {
+        "id": "skills-legacy-23-discord-mod",
+        "name": "Discord Mod",
+        "description": "+35% Wood",
+        "tier": 0,
+        "cost": 0,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 23,
+        "icon": "017_Discord_Mod.png",
+        "sourceIndex": 17,
+        "excelCell": "C23"
+      },
+      {
+        "id": "skills-legacy-24-barn-manager",
+        "name": "Barn Manager",
+        "description": "+5% Animal Production +10% Chance of Mutant Animals",
+        "tier": 0,
+        "cost": 0,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 24,
+        "icon": "019_Barn_Manager.png",
+        "sourceIndex": 19,
+        "excelCell": "C24"
+      },
+      {
+        "id": "skills-legacy-25-wrangler",
+        "name": "Wrangler",
+        "description": "-10% on animal growth time +10% Chance of Mutant Animals",
+        "tier": 0,
+        "cost": 0,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 25,
+        "icon": "020_Wrangler.png",
+        "sourceIndex": 20,
+        "excelCell": "C25"
+      },
+      {
+        "id": "skills-legacy-26-artist",
+        "name": "Artist",
+        "description": "10% Discount on Seeds and Tools",
+        "tier": 0,
+        "cost": 0,
+        "selected": false,
+        "inactive": false,
+        "sourceRow": 26,
+        "icon": "022_Artist.png",
+        "sourceIndex": 22,
+        "excelCell": "C26"
+      },
+      {
+        "id": "skills-legacy-27-liquidity-provider-x",
+        "name": "Liquidity Provider - X",
+        "description": "+50% reduction in FLOWER withdrawal fee",
+        "tier": 0,
+        "cost": 0,
+        "selected": false,
+        "inactive": true,
+        "sourceRow": 27,
+        "icon": "024_Liquidity_Provider.png",
+        "sourceIndex": 24,
+        "excelCell": "C27"
+      }
+    ],
+    "unlockNote": "Requisitos tomados de las fórmulas de la hoja Skills."
+  }
+];
+
+  const state = { selected: new Set() };
+  const categoriesRoot = document.getElementById('skillCategories');
+  const totalSkillPoints = document.getElementById('totalSkillPoints');
+  const selectedSkillCount = document.getElementById('selectedSkillCount');
+  const skillSearch = document.getElementById('skillSearch');
+  const clearSkills = document.getElementById('clearSkills');
+  const emptyState = document.getElementById('skillEmptyState');
+
+
+  function persistSkillSelection() {
+    if (!window.SFLBuildState) return;
+    const selectedSkills = skillCategories
+      .flatMap((category) => category.skills.map((skill) => ({ ...skill, category: category.name })))
+      .filter((skill) => state.selected.has(skill.id))
+      .map((skill) => ({
+        id: skill.id,
+        name: skill.name,
+        category: skill.category,
+        tier: skill.tier,
+        cost: Number(skill.cost || 0),
+        description: skill.description || '',
+        inactive: Boolean(skill.inactive),
+        icon: skill.icon || ''
+      }));
+    window.SFLBuildState.setSkills(selectedSkills);
+  }
+
+  function restoreSkillSelection() {
+    if (!window.SFLBuildState) return;
+    window.SFLBuildState.getSkillIds().forEach((id) => state.selected.add(id));
+  }
+
+  const tierLabel = (tier) => tier === 0 ? 'Legacy' : `Tier ${tier}`;
+  const pointLabel = (cost) => cost === 1 ? '1 pt' : `${cost} pts`;
+  const slug = (value) => String(value || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+
+  function selectedPointsByTier(category) {
+    const result = { 1: 0, 2: 0, 3: 0 };
+    category.skills.forEach((skill) => {
+      if (state.selected.has(skill.id) && skill.tier > 0) result[skill.tier] += Number(skill.cost || 0);
+    });
+    return result;
+  }
+
+  function isTierUnlocked(category, tier) {
+    if (tier === 0 || tier === 1) return true;
+    const requirement = category.unlock?.[String(tier)];
+    if (!requirement) return true;
+    const points = selectedPointsByTier(category);
+    const total = requirement.tiers.reduce((sum, tierKey) => sum + (points[tierKey] || 0), 0);
+    return total >= requirement.points;
+  }
+
+  function enforceUnlocks() {
+    let changed = false;
+    skillCategories.forEach((category) => {
+      category.skills.forEach((skill) => {
+        if (skill.tier > 1 && state.selected.has(skill.id) && !isTierUnlocked(category, skill.tier)) {
+          state.selected.delete(skill.id);
+          changed = true;
+        }
+      });
+    });
+    return changed;
+  }
+
+  function requirementText(category, tier) {
+    const requirement = category.unlock?.[String(tier)];
+    if (!requirement || tier <= 1) return '';
+    const tiers = requirement.tiers.map((item) => `T${item}`).join(' + ');
+    return `${requirement.points} pts en ${tiers}`;
+  }
+
+  function skillMatches(skill, categoryName, term) {
+    if (!term) return true;
+    return [skill.name, skill.description, categoryName, tierLabel(skill.tier)]
+      .join(' ')
+      .toLowerCase()
+      .includes(term);
+  }
+
+  function renderSkillCard(skill, category, locked, term) {
+    const checked = state.selected.has(skill.id);
+    const isLegacy = skill.tier === 0;
+    const description = skill.description || 'Sin descripción';
+    const cost = isLegacy ? 'Legacy' : pointLabel(skill.cost);
+    const hidden = !skillMatches(skill, category.name, term);
+    return `
+      <label class="skill-card ${checked ? 'is-selected' : ''} ${locked ? 'is-locked' : ''} ${hidden ? 'is-hidden' : ''}" data-category="${slug(category.name)}" data-tier="${skill.tier}">
+        <input type="checkbox" value="${skill.id}" ${checked ? 'checked' : ''} ${locked ? 'disabled' : ''} aria-label="${skill.name.replace(/"/g, '&quot;')}">
+        <img class="skill-icon" src="${SKILL_ICON_BASE}${skill.icon}" alt="" loading="lazy">
+        <span class="skill-copy">
+          <span class="skill-row">
+            <strong class="skill-name">${skill.name}</strong>
+            <span class="skill-cost ${isLegacy ? 'is-legacy' : ''}">${cost}</span>
+          </span>
+          <span class="skill-description">${description}</span>
+        </span>
+      </label>`;
+  }
+
+  function renderTier(category, tier, term) {
+    const skills = category.skills.filter((skill) => skill.tier === tier);
+    if (!skills.length) return '';
+    const locked = !isTierUnlocked(category, tier);
+    const req = requirementText(category, tier);
+    const cards = skills.map((skill) => renderSkillCard(skill, category, locked && !state.selected.has(skill.id), term)).join('');
+    return `
+      <section class="tier-column ${locked ? 'is-locked' : ''}">
+        <div class="tier-heading">
+          <h4>${tierLabel(tier)}</h4>
+          ${req ? `<span>${locked ? 'Requiere' : 'Desbloqueado'} · ${req}</span>` : ''}
+        </div>
+        <div class="skill-list">${cards}</div>
+      </section>`;
+  }
+
+  function renderCategory(category, term) {
+    const isLegacy = category.skills.every((skill) => skill.tier === 0);
+    const tiers = [...new Set(category.skills.map((skill) => skill.tier))].sort((a, b) => a - b);
+    const selectedNormal = category.skills.filter((skill) => state.selected.has(skill.id) && skill.tier > 0);
+    const points = selectedNormal.reduce((sum, skill) => sum + Number(skill.cost || 0), 0);
+    const tierMarkup = tiers.map((tier) => renderTier(category, tier, term)).join('');
+    return `
+      <article class="skill-category ${isLegacy ? 'is-legacy-section' : ''}" data-category="${slug(category.name)}">
+        <header class="category-heading">
+          <div>
+            <h3>${category.name}</h3>
+            <p>${isLegacy ? 'Boosts antiguos del farm. No consumen puntos de habilidad.' : 'Skills organizadas por tier.'}</p>
+          </div>
+          ${isLegacy ? '<span class="category-pill">0 pts</span>' : `<span class="category-pill">${points} pts</span>`}
+        </header>
+        <div class="tier-grid">${tierMarkup}</div>
+      </article>`;
+  }
+
+  function render() {
+    enforceUnlocks();
+    const term = skillSearch.value.trim().toLowerCase();
+    categoriesRoot.innerHTML = skillCategories.map((category) => renderCategory(category, term)).join('');
+
+    let visibleCards = 0;
+    categoriesRoot.querySelectorAll('.skill-card').forEach((card) => {
+      if (!card.classList.contains('is-hidden')) visibleCards += 1;
+    });
+    emptyState.hidden = visibleCards > 0;
+
+    const selectedBuildSkills = skillCategories
+      .flatMap((category) => category.skills)
+      .filter((skill) => state.selected.has(skill.id) && skill.tier > 0);
+    totalSkillPoints.textContent = selectedBuildSkills.reduce((sum, skill) => sum + Number(skill.cost || 0), 0);
+    selectedSkillCount.textContent = selectedBuildSkills.length;
+    persistSkillSelection();
+  }
+
+  categoriesRoot.addEventListener('change', (event) => {
+    const input = event.target.closest('input[type="checkbox"]');
+    if (!input) return;
+    if (input.checked) state.selected.add(input.value);
+    else state.selected.delete(input.value);
+    render();
+  });
+
+  skillSearch.addEventListener('input', render);
+  clearSkills.addEventListener('click', () => {
+    state.selected.clear();
+    render();
+  });
+
+  restoreSkillSelection();
+  render();
+</script>
+{% endblock %}

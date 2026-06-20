@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% block page_header %}
+  <header class="page-title-only compact-title">
+    <h1>Crops</h1>
+  </header>
+{% endblock %}
+
+{% block content %}
+<section class="crops-builder" aria-label="Calculadora de crops">
+  <div class="crop-heading">
+    <div>
+      <h2>Ganancias por crops, frutas e invernadero</h2>
+      <p>Calcula ganancia usando valores base, horas activas configuradas, plots, stock, restock configurable de 5, 10, 15 o 20 gemas, costo de oil y boosts seleccionados desde Skills/NFTs.</p>
+    </div>
+    <button class="button-secondary" id="resetCropInputs" type="button">Restaurar plots</button>
+  </div>
+
+  <div class="crop-settings-grid compact-plots-grid">
+    <label>
+      <span>Crop plots</span>
+      <input id="plotsCrops" type="number" min="0" step="1" inputmode="numeric">
+    </label>
+    <label>
+      <span>Fruit patches</span>
+      <input id="plotsFruits" type="number" min="0" step="1" inputmode="numeric">
+    </label>
+  </div>
+
+  <div class="crop-summary" aria-label="Resumen de crops">
+    <article><span>Ganancia neta diaria</span><strong id="cropTotalFlower">0 FLOWER</strong></article>
+    <article><span>Mejor opción</span><strong id="cropBestItem">—</strong></article>
+  </div>
+
+
+  <div class="crop-controls">
+    <div class="crop-tabs" role="tablist" aria-label="Categorías de crops">
+      <button class="crop-tab" type="button" data-tab="crops">Crops</button>
+      <button class="crop-tab" type="button" data-tab="fruits">Frutas</button>
+      <button class="crop-tab" type="button" data-tab="greenhouse">Invernadero</button>
+    </div>
+    <label class="search-box crop-search" for="cropSearch">
+      <span>Buscar</span>
+      <input id="cropSearch" type="search" autocomplete="off" placeholder="Buscar crop, fruta o greenhouse…">
+    </label>
+  </div>
+
+  <div class="crop-table-wrapper" id="cropTableWrapper"></div>
+  <p class="empty-state" id="cropEmptyState" hidden>No encontré cultivos con ese filtro.</p>
+</section>
+
+<script>
+  window.CROP_ASSET_BASE = "{{ url_for('static', filename='assets/') }}";
+  window.CROP_GROUPS = {{ crop_groups|tojson }};
+  window.SFL_HUB_BOOST_RULES = {{ boost_rules|tojson }};
+  window.CROP_PRICE_MAP = {{ crop_price_map|tojson }};
+</script>
+<script src="{{ url_for('static', filename='js/crops.js') }}"></script>
+{% endblock %}

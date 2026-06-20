@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block page_header %}
+  <header class="page-title-only compact-title">
+    <h1>NFTs</h1>
+  </header>
+{% endblock %}
+
+{% block content %}
+<section class="asset-builder" aria-label="NFT builder">
+  <div class="asset-heading">
+    <div>
+      <h2>Boosts activos</h2>
+      <p>Selecciona los NFTs, wearables, blacksmith NFTs y shrines que tiene tu farm. Se guardan en este navegador para usarlos después en los cálculos.</p>
+    </div>
+    <button class="button-secondary" id="clearAssets" type="button">Limpiar selección</button>
+  </div>
+
+  <div class="asset-summary" aria-label="Resumen de selección">
+    <article><span>Total seleccionado</span><strong id="assetTotalSelected">0</strong></article>
+    <article><span>NFTs</span><strong id="assetCountNfts">0</strong></article>
+    <article><span>Wearables</span><strong id="assetCountWearables">0</strong></article>
+    <article><span>Blacksmith</span><strong id="assetCountBlacksmith">0</strong></article>
+    <article><span>Shrines</span><strong id="assetCountShrines">0</strong></article>
+  </div>
+
+  <div class="asset-controls">
+    <div class="asset-tabs" role="tablist" aria-label="Categorías de assets">
+      <button class="asset-tab" type="button" data-tab="nfts">NFTs</button>
+      <button class="asset-tab" type="button" data-tab="wearables">Wearables</button>
+      <button class="asset-tab" type="button" data-tab="blacksmith">Blacksmith</button>
+      <button class="asset-tab" type="button" data-tab="shrines">Shrines</button>
+    </div>
+    <label class="search-box asset-search" for="assetSearch">
+      <span>Buscar</span>
+      <input id="assetSearch" type="search" autocomplete="off" placeholder="Nombre, boost o categoría…">
+    </label>
+  </div>
+
+  <div class="asset-grid" id="assetGrid"></div>
+  <p class="empty-state" id="assetEmptyState" hidden>No encontré assets con ese filtro.</p>
+</section>
+
+<script>
+  window.NFT_ASSET_BASE = "{{ url_for('static', filename='assets/') }}";
+  window.NFT_ASSET_GROUPS = {{ asset_groups|tojson }};
+</script>
+<script src="{{ url_for('static', filename='js/nfts.js') }}"></script>
+{% endblock %}

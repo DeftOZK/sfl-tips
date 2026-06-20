@@ -1,0 +1,279 @@
+group,id,sflHubId,name,tab,section,price,effect_text,image,source_sheet,source_row,source_cell
+nfts,nfts-oaken-14-left,,Oaken,NFTs,Collectibles,Stella,25% chance of 1+ acorn fetch yield,nfts/nfts/001_oaken.png,NFTs,14,D14
+nfts,nfts-crimstone-clam-15-left,,Crimstone Clam,NFTs,Collectibles,Stella,"10% faster crimstone, 10% chance to instant respawn",nfts/nfts/002_crimstone-clam.png,NFTs,15,D15
+nfts,nfts-poseidons-throne-16-left,,Poseidon's Throne,NFTs,Collectibles,Stella,1+ Weed and Dung Yield,nfts/nfts/003_poseidons-throne.png,NFTs,16,D16
+nfts,nfts-meerkat-17-left,,Meerkat,NFTs,Collectibles,Stella,"5+ digs, 1+ sand",nfts/nfts/004_meerkat.png,NFTs,17,D17
+nfts,nfts-nautilus-18-left,,Nautilus,NFTs,Collectibles,Mutant,Adds +5 daily fishing attempts.,nfts/nfts/005_nautilus.png,NFTs,18,D18
+nfts,nfts-squid-chicken-19-left,,Squid Chicken,NFTs,Collectibles,Mutant,+0.1 egg yield.,nfts/nfts/006_squid-chicken.png,NFTs,19,D19
+nfts,nfts-mermaid-sheep-20-left,,Mermaid Sheep,NFTs,Collectibles,Mutant,5% less feed required for sheep.,nfts/nfts/007_mermaid-sheep.png,NFTs,20,D20
+nfts,nfts-anemone-flower-21-left,,Anemone Flower,NFTs,Collectibles,Mutant,+1 free attempt in the Fishing Puzzle,nfts/nfts/008_anemone-flower.png,NFTs,21,D21
+nfts,nfts-nancy-37-left,,Nancy,NFTs,Collectibles,218,-15% in Crop time,nfts/nfts/015_nancy.png,NFTs,37,D37
+nfts,nfts-scarecrow-38-left,,Scarecrow,NFTs,Collectibles,1080,"-15% in Crop time, +20% Crops",nfts/nfts/016_scarecrow.png,NFTs,38,D38
+nfts,nfts-kuebiko-39-left,,Kuebiko,NFTs,Collectibles,0,"-15% in Crop time, +20% Crops and Free Seeds",nfts/nfts/017_kuebiko.png,NFTs,39,D39
+nfts,nfts-spring-guardian-40-left,,Spring Guardian,NFTs,Collectibles,1099,"Spring Disaster Protection, Blessed Spring Events",nfts/nfts/018_spring-guardian.png,NFTs,40,D40
+nfts,nfts-summer-guardian-41-left,,Summer Guardian,NFTs,Collectibles,1520,"Summer Disaster Protection, Blessed Summer Events",nfts/nfts/019_summer-guardian.png,NFTs,41,D41
+nfts,nfts-autumn-guardian-42-left,,Autumn Guardian,NFTs,Collectibles,998,"Autumn Disaster Protection, Blessed Autumn Events",nfts/nfts/020_autumn-guardian.png,NFTs,42,D42
+nfts,nfts-winter-guardian-43-left,,Winter Guardian,NFTs,Collectibles,999,"Winter Disaster Protection, Blessed Winter Events",nfts/nfts/021_winter-guardian.png,NFTs,43,D43
+nfts,nfts-basic-scarecrow-44-left,,Basic Scarecrow,NFTs,Collectibles,-,-20% in Basic Crop time - Effect on 9 Plots,nfts/nfts/022_basic-scarecrow.png,NFTs,44,D44
+nfts,nfts-lunar-calendar-47-left,,Lunar Calendar,NFTs,Collectibles,320,-10% in Crop time,nfts/nfts/025_lunar-calendar.png,NFTs,47,D47
+nfts,nfts-gnome-48-left,,Gnome,NFTs,Collectibles,995,+10 Medium or Advanced Crops - Effect on 1 Plot,nfts/nfts/026_gnome.png,NFTs,48,D48
+nfts,nfts-sir-goldensnout-49-left,,Sir Goldensnout,NFTs,Collectibles,640,+0.5 Crops - Effect on 12 Plots,nfts/nfts/027_sir-goldensnout.png,NFTs,49,D49
+nfts,nfts-stellar-sunflower-50-left,,Stellar Sunflower,NFTs,Collectibles,169,3% chance to get +10 Sunflowers,nfts/nfts/028_stellar-sunflower.png,NFTs,50,D50
+nfts,nfts-peeled-potato-51-left,,Peeled Potato,NFTs,Collectibles,95,20% chance to get +1 Potato,nfts/nfts/029_peeled-potato.png,NFTs,51,D51
+nfts,nfts-potent-potato-52-left,,Potent Potato,NFTs,Collectibles,109,3% chance to get +10 Potatoes,nfts/nfts/030_potent-potato.png,NFTs,52,D52
+nfts,nfts-victoria-sisters-53-left,,Victoria Sisters,NFTs,Collectibles,20.79,+20% Pumpkins,nfts/nfts/031_victoria-sisters.png,NFTs,53,D53
+nfts,nfts-lab-grown-pumpkin-54-left,,Lab Grown Pumpkin,NFTs,Collectibles,0,"+0,3 Pumpkins",nfts/nfts/032_lab-grown-pumpkin.png,NFTs,54,D54
+nfts,nfts-freya-fox-55-left,,Freya Fox,NFTs,Collectibles,240,+0.5 Pumpkins,nfts/nfts/033_freya-fox.png,NFTs,55,D55
+nfts,nfts-giant-zucchini-56-left,,Giant Zucchini,NFTs,Collectibles,99,2x Zuchinni Speed,nfts/nfts/034_giant-zucchini.png,NFTs,56,D56
+nfts,nfts-easter-bunny-57-left,,Easter Bunny,NFTs,Collectibles,25,+20% Carrots,nfts/nfts/035_easter-bunny.png,NFTs,57,D57
+nfts,nfts-pablo-the-bunny-58-left,,Pablo The Bunny,NFTs,Collectibles,34,+0.1 Carrot,nfts/nfts/036_pablo-the-bunny.png,NFTs,58,D58
+nfts,nfts-lab-grown-carrot-59-left,,Lab Grown Carrot,NFTs,Collectibles,0,"+0,2 Carrots",nfts/nfts/037_lab-grown-carrot.png,NFTs,59,D59
+nfts,nfts-giant-yam-60-left,,Giant Yam,NFTs,Collectibles,95.299,+0.5 Yams,nfts/nfts/038_giant-yam.png,NFTs,60,D60
+nfts,nfts-karkinos-61-left,,Karkinos,NFTs,Collectibles,16,+0.1 Cabbage (Doesn't work with Cabbage Boy),nfts/nfts/039_karkinos.png,NFTs,61,D61
+nfts,nfts-cabbage-boy-62-left,,Cabbage Boy,NFTs,Collectibles,88,+0.25 Cabbage or +0.5 Cabbage having Cabbage Girl,nfts/nfts/040_cabbage-boy.png,NFTs,62,D62
+nfts,nfts-cabbage-girl-63-left,,Cabbage Girl,NFTs,Collectibles,407,-50% in Cabbage time,nfts/nfts/041_cabbage-girl.png,NFTs,63,D63
+nfts,nfts-soybliss-64-left,,Soybliss,NFTs,Collectibles,220,+1 Soybean,nfts/nfts/042_soybliss.png,NFTs,64,D64
+nfts,nfts-golden-cauliflower-65-left,,Golden Cauliflower,NFTs,Collectibles,2400,+100% Cauliflower,nfts/nfts/043_golden-cauliflower.png,NFTs,65,D65
+nfts,nfts-mysterious-parsnip-66-left,,Mysterious Parsnip,NFTs,Collectibles,480,-50% in Parsnip time,nfts/nfts/044_mysterious-parsnip.png,NFTs,66,D66
+nfts,nfts-purple-trail-67-left,,Purple Trail,NFTs,Collectibles,29,+0.2 Eggplant,nfts/nfts/045_purple-trail.png,NFTs,67,D67
+nfts,nfts-obie-68-left,,Obie,NFTs,Collectibles,54,-25% in Eggplant time,nfts/nfts/046_obie.png,NFTs,68,D68
+nfts,nfts-maximus-69-left,,Maximus,NFTs,Collectibles,444,+1 Eggplant,nfts/nfts/047_maximus.png,NFTs,69,D69
+nfts,nfts-poppy-70-left,,Poppy,NFTs,Collectibles,85.99,+0.1 Corn,nfts/nfts/048_poppy.png,NFTs,70,D70
+nfts,nfts-queen-cornelia-71-left,,Queen Cornelia,NFTs,Collectibles,208,+1 Corn - Effect on 10 Plots,nfts/nfts/049_queen-cornelia.png,NFTs,71,D71
+nfts,nfts-kernaldo-72-left,,Kernaldo,NFTs,Collectibles,165,-25% in Corn time,nfts/nfts/050_kernaldo.png,NFTs,72,D72
+nfts,nfts-giant-onion-73-left,,Giant Onion,NFTs,Collectibles,1094,+3 Onions,nfts/nfts/051_giant-onion.png,NFTs,73,D73
+nfts,nfts-giant-turnip-74-left,,Giant Turnip,NFTs,Collectibles,383,2x Turnip Growth Speed,nfts/nfts/052_giant-turnip.png,NFTs,74,D74
+nfts,nfts-hoot-75-left,,Hoot,NFTs,Collectibles,6001,"+0.5 Radish, Wheat, Kale, Rice e Barley",nfts/nfts/053_hoot.png,NFTs,75,D75
+nfts,nfts-radical-radish-76-left,,Radical Radish,NFTs,Collectibles,95,3% chance to get +10 Radishes,nfts/nfts/054_radical-radish.png,NFTs,76,D76
+nfts,nfts-lab-grown-radish-77-left,,Lab Grown Radish,NFTs,Collectibles,0,"+0,4 Radishes",nfts/nfts/055_lab-grown-radish.png,NFTs,77,D77
+nfts,nfts-foliant-78-left,,Foliant,NFTs,Collectibles,110,+0.2 Kale,nfts/nfts/056_foliant.png,NFTs,78,D78
+nfts,nfts-giant-kale-79-left,,Giant Kale,NFTs,Collectibles,1040,+2 Kale,nfts/nfts/057_giant-kale.png,NFTs,79,D79
+nfts,nfts-giant-artichoke-80-left,,Giant Artichoke,NFTs,Collectibles,948,+2 Artichokes,nfts/nfts/058_giant-artichoke.png,NFTs,80,D80
+nfts,nfts-sheaf-of-plenty-81-left,,Sheaf of Plenty,NFTs,Collectibles,1633,+2 Barley,nfts/nfts/059_sheaf-of-plenty.png,NFTs,81,D81
+nfts,nfts-groovy-gramophone-82-left,,Groovy Gramophone,NFTs,Collectibles,3149,+100% Growth Speed on Crop Machine,nfts/nfts/060_groovy-gramophone.png,NFTs,82,D82
+nfts,nfts-fruit-tune-box-110-left,,Fruit Tune Box,NFTs,Collectibles,356,+20% Fruit Patch Growth Speed,nfts/nfts/083_fruit-tune-box.png,NFTs,110,D110
+nfts,nfts-cannonball-111-left,,Cannonball,NFTs,Collectibles,157.9999,-25% in Tomato growth time,nfts/nfts/084_cannonball.png,NFTs,111,D111
+nfts,nfts-tomato-clown-112-left,,Tomato Clown,NFTs,Collectibles,848,-50% in Tomato growth time,nfts/nfts/085_tomato-clown.png,NFTs,112,D112
+nfts,nfts-tomato-bombard-113-left,,Tomato Bombard,NFTs,Collectibles,1274,+1 Tomato,nfts/nfts/086_tomato-bombard.png,NFTs,113,D113
+nfts,nfts-lemon-shark-114-left,,Lemon Shark,NFTs,Collectibles,236,+0.2 Lemon,nfts/nfts/087_lemon-shark.png,NFTs,114,D114
+nfts,nfts-reveling-lemon-115-left,,Reveling Lemon,NFTs,Collectibles,150,+0.25 Lemon,nfts/nfts/088_reveling-lemon.png,NFTs,115,D115
+nfts,nfts-lemon-frog-116-left,,Lemon Frog,NFTs,Collectibles,87,-25% in Lemon growth time,nfts/nfts/089_lemon-frog.png,NFTs,116,D116
+nfts,nfts-lemon-tea-bath-117-left,,Lemon Tea Bath,NFTs,Collectibles,1794,-50% in Lemon growth time,nfts/nfts/090_lemon-tea-bath.png,NFTs,117,D117
+nfts,nfts-black-bearry-118-left,,Black Bearry,NFTs,Collectibles,492,+1 Blueberry,nfts/nfts/091_black-bearry.png,NFTs,118,D118
+nfts,nfts-squirrel-monkey-119-left,,Squirrel Monkey,NFTs,Collectibles,227,-50% in Orange growth time,nfts/nfts/092_squirrel-monkey.png,NFTs,119,D119
+nfts,nfts-lady-bug-120-left,,Lady Bug,NFTs,Collectibles,74,+0.25 Apple,nfts/nfts/093_lady-bug.png,NFTs,120,D120
+nfts,nfts-nana-121-left,,Nana,NFTs,Collectibles,67.5,-10% in Banana growth time,nfts/nfts/094_nana.png,NFTs,121,D121
+nfts,nfts-banana-chicken-122-left,,Banana Chicken,NFTs,Collectibles,68.5,+0.1 Banana,nfts/nfts/095_banana-chicken.png,NFTs,122,D122
+nfts,nfts-turbo-sprout-133-left,,Turbo Sprout,NFTs,Collectibles,6998,-50% of time on GH,nfts/nfts/101_turbo-sprout.png,NFTs,133,D133
+nfts,nfts-pharaoh-gnome-134-left,,Pharaoh Gnome,NFTs,Collectibles,0,+2 Crops and Fruits from GH,nfts/nfts/102_pharaoh-gnome.png,NFTs,134,D134
+nfts,nfts-vinny-135-left,,Vinny,NFTs,Collectibles,100,+0.25 Grape,nfts/nfts/103_vinny.png,NFTs,135,D135
+nfts,nfts-grape-granny-136-left,,Grape Granny,NFTs,Collectibles,885,+1 Grape,nfts/nfts/104_grape-granny.png,NFTs,136,D136
+nfts,nfts-rice-panda-137-left,,Rice Panda,NFTs,Collectibles,77.59,+0.25 Rice,nfts/nfts/105_rice-panda.png,NFTs,137,D137
+nfts,nfts-pet-bowls-147-left,,Pet Bowls,NFTs,Collectibles,4.1579,+10 Pet XP per food request,nfts/nfts/110_pet-bowls.png,NFTs,147,D147
+nfts,nfts-hungry-caterpillar-154-left,,Hungry Caterpillar,NFTs,Collectibles,368,Free flower seeds,nfts/nfts/112_hungry-caterpillar.png,NFTs,154,D154
+nfts,nfts-flower-fox-155-left,,Flower Fox,NFTs,Collectibles,130,-10% in the time for flowers to grow,nfts/nfts/113_flower-fox.png,NFTs,155,D155
+nfts,nfts-humming-bird-156-left,,Humming Bird,NFTs,Collectibles,852,20% chance to get +1 flower,nfts/nfts/114_humming-bird.png,NFTs,156,D156
+nfts,nfts-chicory-158-left,,Chicory,NFTs,Collectibles,47,10% chance to get +1 flower,nfts/nfts/116_chicory.png,NFTs,158,D158
+nfts,nfts-desert-rose-159-left,,Desert Rose,NFTs,Collectibles,63.9999,10% chance to get +1 flower,nfts/nfts/117_desert-rose.png,NFTs,159,D159
+nfts,nfts-queen-bee-160-left,,Queen Bee,NFTs,Collectibles,2848,-50% in the time for honey to be ready,nfts/nfts/118_queen-bee.png,NFTs,160,D160
+nfts,nfts-king-of-bears-161-left,,King of Bears,NFTs,Collectibles,404,+0.25 Honey,nfts/nfts/119_king-of-bears.png,NFTs,161,D161
+nfts,nfts-vip-access-bonus-13-right,,VIP ACCESS Bonus,NFTs,VIP ACCESS Bonus,,10% EXP Boost / +10% XP,nfts/nfts/125_vip-access-bonus.png,NFTs,13,L13
+nfts,nfts-woody-the-beaver-20-right,,Woody the Beaver,NFTs,Collectibles,660,+20% Wood,nfts/nfts/127_woody-the-beaver.png,NFTs,20,L20
+nfts,nfts-apprentice-beaver-21-right,,Apprentice Beaver,NFTs,Collectibles,1745,"+20% Wood, -50% in the time for trees",nfts/nfts/128_apprentice-beaver.png,NFTs,21,L21
+nfts,nfts-foreman-beaver-22-right,,Foreman Beaver,NFTs,Collectibles,0,"+20% Wood, -50% in the time for trees, cut without an axe",nfts/nfts/129_foreman-beaver.png,NFTs,22,L22
+nfts,nfts-wood-nymph-wendy-23-right,,Wood Nymph Wendy,NFTs,Collectibles,1199,+0.2 Wood,nfts/nfts/130_wood-nymph-wendy.png,NFTs,23,L23
+nfts,nfts-tiki-totem-24-right,,Tiki Totem,NFTs,Collectibles,180,+0.1 Wood,nfts/nfts/131_tiki-totem.png,NFTs,24,L24
+nfts,nfts-volcano-gnome-26-right,,Volcano Gnome,NFTs,Collectibles,0,+0.1 Minerals (stone - iron - gold),nfts/nfts/133_volcano-gnome.png,NFTs,26,L26
+nfts,nfts-emerald-turtle-27-right,,Emerald Turtle,NFTs,Collectibles,10998,"+0.5 stone, iron or gold - Effect on 8 nodes",nfts/nfts/134_emerald-turtle.png,NFTs,27,L27
+nfts,nfts-tunnel-mole-31-right,,Tunnel Mole,NFTs,Collectibles,220,+0.25 Stone,nfts/nfts/135_tunnel-mole.png,NFTs,31,L31
+nfts,nfts-rock-golem-32-right,,Rock Golem,NFTs,Collectibles,396,10% chance to get +2 Stones,nfts/nfts/136_rock-golem.png,NFTs,32,L32
+nfts,nfts-tin-turtle-33-right,,Tin Turtle,NFTs,Collectibles,259,+0.1 Stone - Effect on 8 nodes,nfts/nfts/137_tin-turtle.png,NFTs,33,L33
+nfts,nfts-quarry-35-right,,Quarry,NFTs,Collectibles,14697,Mine stone for free,nfts/nfts/139_quarry.png,NFTs,35,L35
+nfts,nfts-rocky-the-mole-36-right,,Rocky the Mole,NFTs,Collectibles,387,+0.25 Iron,nfts/nfts/140_rocky-the-mole.png,NFTs,36,L36
+nfts,nfts-iron-idol-37-right,,Iron Idol,NFTs,Collectibles,4697,+1 Iron,nfts/nfts/141_iron-idol.png,NFTs,37,L37
+nfts,nfts-nugget-39-right,,Nugget,NFTs,Collectibles,1107,+0.25 Gold,nfts/nfts/143_nugget.png,NFTs,39,L39
+nfts,nfts-crimson-carp-41-right,,Crimson Carp,NFTs,Collectibles,600,+0.05 Crimstone,nfts/nfts/145_crimson-carp.png,NFTs,41,L41
+nfts,nfts-crim-peckster-42-right,,Crim Peckster,NFTs,Collectibles,214,+0.1 Crimstone,nfts/nfts/146_crim-peckster.png,NFTs,42,L42
+nfts,nfts-knight-chicken-53-right,,Knight Chicken,NFTs,Collectibles,71.9699,+0.1 Oil,nfts/nfts/152_knight-chicken.png,NFTs,53,L53
+nfts,nfts-battle-fish-54-right,,Battle Fish,NFTs,Collectibles,206,+0.05 Oil,nfts/nfts/153_battle-fish.png,NFTs,54,L54
+nfts,nfts-obsidian-turtle-55-right,,Obsidian Turtle,NFTs,Collectibles,7497,+0.5 Obsidian,nfts/nfts/154_obsidian-turtle.png,NFTs,55,L55
+nfts,nfts-magma-stone-56-right,,Magma Stone,NFTs,Collectibles,Stella,"-15% Lava Pit Time, +0.15 Obsidian",nfts/nfts/155_magma-stone.png,NFTs,56,L56
+nfts,nfts-gold-egg-69-right,,Gold Egg,NFTs,Collectibles,8790,Feed the chickens without food,nfts/nfts/163_gold-egg.png,NFTs,69,L69
+nfts,nfts-chicken-coop-70-right,,Chicken Coop,NFTs,Collectibles,2777,"+1 Egg, +5 Base Chickens and +5 per upgrade",nfts/nfts/164_chicken-coop.png,NFTs,70,L70
+nfts,nfts-cluckulator-71-right,,Cluckulator,NFTs,Collectibles,940,-25% food to feed the chickens,nfts/nfts/165_cluckulator.png,NFTs,71,L71
+nfts,nfts-speed-chicken-73-right,,Speed Chicken,NFTs,Collectibles,24.4599,-10% in chicken production time,nfts/nfts/167_speed-chicken.png,NFTs,73,L73
+nfts,nfts-fat-chicken-74-right,,Fat Chicken,NFTs,Collectibles,47,-10% food needed for the chickens,nfts/nfts/168_fat-chicken.png,NFTs,74,L74
+nfts,nfts-rich-chicken-75-right,,Rich Chicken,NFTs,Collectibles,39.79,+0.1 Egg,nfts/nfts/169_rich-chicken.png,NFTs,75,L75
+nfts,nfts-undead-rooster-76-right,,Undead Rooster,NFTs,Collectibles,140,+0.1 Egg,nfts/nfts/170_undead-rooster.png,NFTs,76,L76
+nfts,nfts-ayam-cemani-77-right,,Ayam Cemani,NFTs,Collectibles,306,+0.2 Egg,nfts/nfts/171_ayam-cemani.png,NFTs,77,L77
+nfts,nfts-el-pollo-veloz-78-right,,El Pollo Veloz,NFTs,Collectibles,247,-2 hours in chicken production time,nfts/nfts/172_el-pollo-veloz.png,NFTs,78,L78
+nfts,nfts-alien-chicken-79-right,,Alien Chicken,NFTs,Collectibles,71,+0.1 Feather,nfts/nfts/173_alien-chicken.png,NFTs,79,L79
+nfts,nfts-janitor-chicken-80-right,,Janitor Chicken,NFTs,Collectibles,35.99,-5% chicken sleep time,nfts/nfts/174_janitor-chicken.png,NFTs,80,L80
+nfts,nfts-rooster-81-right,,Rooster,NFTs,Collectibles,223,Double the chances of getting Mutant Chickens,nfts/nfts/175_rooster.png,NFTs,81,L81
+nfts,nfts-summer-chicken-82-right,,Summer Chicken,NFTs,Collectibles,92,Chickens don't get sick in Summer,nfts/nfts/176_summer-chicken.png,NFTs,82,L82
+nfts,nfts-sleepy-chicken-83-right,,Sleepy Chicken,NFTs,Collectibles,44,Prevent chicken sickness during fall,nfts/nfts/177_sleepy-chicken.png,NFTs,83,L83
+nfts,nfts-barn-blueprint-84-right,,Barn Blueprint,NFTs,Collectibles,3094,+5 animals per level of the Barn,nfts/nfts/178_barn-blueprint.png,NFTs,84,L84
+nfts,nfts-baby-cow-85-right,,Baby Cow,NFTs,Collectibles,241,+10 cow xp from affection,nfts/nfts/179_baby-cow.png,NFTs,85,L85
+nfts,nfts-mammoth-86-right,,Mammoth,NFTs,Collectibles,142.8999,-25% in Cow Sleep Time,nfts/nfts/180_mammoth.png,NFTs,86,L86
+nfts,nfts-dr-cow-87-right,,Dr Cow,NFTs,Collectibles,485.9999,5% less feeding cost for cows,nfts/nfts/181_dr-cow.png,NFTs,87,L87
+nfts,nfts-golden-cow-88-right,,Golden Cow,NFTs,Collectibles,0,Feed the cows without food,nfts/nfts/182_golden-cow.png,NFTs,88,L88
+nfts,nfts-longhorn-cowfish-89-right,,Longhorn Cowfish,NFTs,Collectibles,329.9999,+0.2 Milk,nfts/nfts/183_longhorn-cowfish.png,NFTs,89,L89
+nfts,nfts-mootant-90-right,,Mootant,NFTs,Collectibles,900,+0.1 Leather,nfts/nfts/184_mootant.png,NFTs,90,L90
+nfts,nfts-moo-ver-91-right,,Moo-ver,NFTs,Collectibles,435,+0.25 Leather,nfts/nfts/185_moo-ver.png,NFTs,91,L91
+nfts,nfts-frozen-cow-92-right,,Frozen Cow,NFTs,Collectibles,123,Cows don't get sick in Winter,nfts/nfts/186_frozen-cow.png,NFTs,92,L92
+nfts,nfts-golden-sheep-93-right,,Golden Sheep,NFTs,Collectibles,11130,Feed the sheep without food,nfts/nfts/187_golden-sheep.png,NFTs,93,L93
+nfts,nfts-farm-dog-94-right,,Farm Dog,NFTs,Collectibles,3150,-25% in sheep production time,nfts/nfts/188_farm-dog.png,NFTs,94,L94
+nfts,nfts-toxic-tuft-95-right,,Toxic Tuft,NFTs,Collectibles,690,+0.1 Merino Wool,nfts/nfts/189_toxic-tuft.png,NFTs,95,L95
+nfts,nfts-astronaut-sheep-96-right,,Astronaut Sheep,NFTs,Collectibles,89,Increase Wool Yield +0.1,nfts/nfts/190_astronaut-sheep.png,NFTs,96,L96
+nfts,nfts-frozen-sheep-97-right,,Frozen Sheep,NFTs,Collectibles,154,Sheep don't get sick in Winter,nfts/nfts/191_frozen-sheep.png,NFTs,97,L97
+nfts,nfts-nurse-sheep-98-right,,Nurse Sheep,NFTs,Collectibles,129,Sheeps cannot get sick during summer,nfts/nfts/192_nurse-sheep.png,NFTs,98,L98
+nfts,nfts-maneki-neko-116-right,,Maneki Neko,NFTs,Collectibles,86,Get free food once a day,nfts/nfts/205_maneki-neko.png,NFTs,116,L116
+nfts,nfts-observatory-117-right,,Observatory,NFTs,Collectibles,199,+5% XP,nfts/nfts/206_observatory.png,NFTs,117,L117
+nfts,nfts-hungry-hare-118-right,,Hungry Hare,NFTs,Collectibles,50,2x more XP on Fermented Carrots,nfts/nfts/207_hungry-hare.png,NFTs,118,L118
+nfts,nfts-grain-grinder-119-right,,Grain Grinder,NFTs,Collectibles,193.3,+20% XP on Cakes,nfts/nfts/208_grain-grinder.png,NFTs,119,L119
+nfts,nfts-skill-shrimpy-120-right,,Skill Shrimpy,NFTs,Collectibles,354,+20% XP when eating fish or fish-derived foods,nfts/nfts/209_skill-shrimpy.png,NFTs,120,L120
+nfts,nfts-swiss-whiskers-121-right,,Swiss Whiskers,NFTs,Collectibles,627,+500 XP on recipes that use cheese,nfts/nfts/210_swiss-whiskers.png,NFTs,121,L121
+nfts,nfts-blossombeard-122-right,,Blossombeard,NFTs,Collectibles,-,+10% XP,nfts/nfts/211_blossombeard.png,NFTs,122,L122
+nfts,nfts-desert-gnome-123-right,,Desert Gnome,NFTs,Collectibles,-,-10% on kitchen time,nfts/nfts/212_desert-gnome.png,NFTs,123,L123
+nfts,nfts-golden-spatula-125-right,,Golden Spatula,NFTs,Collectibles,1998,+10% XP,nfts/nfts/213_golden-spatula.png,NFTs,125,L125
+nfts,nfts-pan-126-right,,Pan,NFTs,Collectibles,0,+25% XP,nfts/nfts/214_pan.png,NFTs,126,L126
+nfts,nfts-lunas-hat-127-right,,Luna's Hat,NFTs,Collectibles,0,-50% on the time of all kitchens,nfts/nfts/215_lunas-hat.png,NFTs,127,L127
+nfts,nfts-master-chefs-cleaver-128-right,,Master Chef's Cleaver,NFTs,Collectibles,3769,"15% Cooking Speed, 10% chance of +1 Food from cooking",nfts/nfts/216_master-chefs-cleaver.png,NFTs,128,L128
+nfts,nfts-chef-apron-130-right,,Chef Apron,NFTs,Collectibles,57,+20% on cake sales,nfts/nfts/218_chef-apron.png,NFTs,130,L130
+nfts,nfts-reelmasters-chair-135-right,,Reelmaster's Chair,NFTs,Collectibles,39.49,+5 Fishing Attempts,nfts/nfts/219_reelmasters-chair.png,NFTs,135,L135
+nfts,nfts-alba-136-right,,Alba,NFTs,Collectibles,250,50% chance to catch +1 basic fish,nfts/nfts/220_alba.png,NFTs,136,L136
+nfts,nfts-walrus-137-right,,Walrus,NFTs,Collectibles,2450,+1 fish,nfts/nfts/221_walrus.png,NFTs,137,L137
+nfts,nfts-jellyfish-138-right,,Jellyfish,NFTs,Collectibles,119.97,Increase fish catch by 1 in summer,nfts/nfts/222_jellyfish.png,NFTs,138,L138
+nfts,nfts-pink-dolphin-139-right,,Pink Dolphin,NFTs,Collectibles,105,Increase fish catch by 1 during spring,nfts/nfts/223_pink-dolphin.png,NFTs,139,L139
+nfts,nfts-poseidon-140-right,,Poseidon,NFTs,Collectibles,268.9,+1 Fish during Autumn,nfts/nfts/224_poseidon.png,NFTs,140,L140
+nfts,nfts-super-star-141-right,,Super Star,NFTs,Collectibles,0,+1 Fish during Winter,nfts/nfts/225_super-star.png,NFTs,141,L141
+nfts,nfts-knowledge-crab-142-right,,Knowledge Crab,NFTs,Collectibles,489,+0.2 on Sprout Mix fertilizer,nfts/nfts/226_knowledge-crab.png,NFTs,142,L142
+nfts,nfts-soil-krabby-143-right,,Soil Krabby,NFTs,Collectibles,129,-10% on composter time,nfts/nfts/227_soil-krabby.png,NFTs,143,L143
+nfts,nfts-pharaoh-chicken-156-right,,Pharaoh Chicken,NFTs,Collectibles,41.97,+1 in the Digging limit,nfts/nfts/235_pharaoh-chicken.png,NFTs,156,L156
+nfts,nfts-heart-of-davy-jones-157-right,,Heart of Davy Jones,NFTs,Collectibles,376,+20 in the Digging limit,nfts/nfts/236_heart-of-davy-jones.png,NFTs,157,L157
+nfts,nfts-treasure-map-158-right,,Treasure Map,NFTs,Collectibles,0,+20% in treasure sale,nfts/nfts/237_treasure-map.png,NFTs,158,L158
+nfts,nfts-camel-159-right,,Camel,NFTs,Collectibles,1532,+30% in treasure sale,nfts/nfts/238_camel.png,NFTs,159,L159
+nfts,nfts-grinxs-hammer-169-right,,Grinx's Hammer,NFTs,Collectibles,0,Spend 50% of the resources required to expand the island,nfts/nfts/243_grinxs-hammer.png,NFTs,169,L169
+nfts,nfts-carrot-sword-170-right,,Carrot Sword,NFTs,Collectibles,240,Increases your chances by 4x to obtain Mutant Crop,nfts/nfts/244_carrot-sword.png,NFTs,170,L170
+nfts,nfts-christmas-tree-171-right,,Christmas Tree,NFTs,Collectibles,0,Receive a gift at Christmas,nfts/nfts/245_christmas-tree.png,NFTs,171,L171
+nfts,nfts-mushroom-house-172-right,,Mushroom House,NFTs,Collectibles,35,+0.2 Wild Mushroom,nfts/nfts/246_mushroom-house.png,NFTs,172,L172
+nfts,nfts-giant-gold-bone-174-right,,Giant Gold Bone,NFTs,Collectibles,41.8,+2 Daily Cheers,nfts/nfts/248_giant-gold-bone.png,NFTs,174,L174
+nfts,nfts-lunar-temple-175-right,,Lunar Temple,NFTs,Collectibles,176.899,+1 help progress to player's monuments,nfts/nfts/249_lunar-temple.png,NFTs,175,L175
+nfts,nfts-cornucopia-176-right,,Cornucopia,NFTs,Collectibles,0,+1 Giant Fruit yield from village projects,nfts/nfts/250_cornucopia.png,NFTs,176,L176
+wearables,wearables-crimstone-spikes-hair-27-left,,Crimstone Spikes Hair,Wearables,Wearebles,Auction,Free crimstone mining,nfts/wearables/009_crimstone-spikes-hair.png,NFTs,27,D27
+wearables,wearables-paw-aura-28-left,,Paw Aura,Wearables,Wearebles,Auction,Free pet feeding,nfts/wearables/010_paw-aura.png,NFTs,28,D28
+wearables,wearables-victorias-apron-29-left,,Victoria's Apron,Wearables,Wearebles,Auction,33% chance to reset the pet request,nfts/wearables/011_victorias-apron.png,NFTs,29,D29
+wearables,wearables-beast-shoes-30-left,,Beast Shoes,Wearables,Wearebles,Auction,"+100 XP to medium food requests, +250 XP to hard food requests",nfts/wearables/012_beast-shoes.png,NFTs,30,D30
+wearables,wearables-corn-silk-hair-31-left,,Corn Silk Hair,Wearables,Wearebles,Stella,2+ Corn Yield,nfts/wearables/013_corn-silk-hair.png,NFTs,31,D31
+wearables,wearables-green-amulet-84-left,,Green Amulet,Wearables,Wearebles,5982,Chance to harvest 10x more crops,nfts/wearables/061_green-amulet.png,NFTs,84,D84
+wearables,wearables-infernal-pitchfork-85-left,,Infernal Pitchfork,Wearables,Wearebles,0,+3 Crops,nfts/wearables/062_infernal-pitchfork.png,NFTs,85,D85
+wearables,wearables-devil-or-angel-wings-86-left,,Devil or Angel Wings,Wearables,Wearebles,0,30% chance to harvest crop instantly,nfts/wearables/063_devil-or-angel-wings.png,NFTs,86,D86
+wearables,wearables-blossom-ward-87-left,,Blossom Ward,Wearables,Wearebles,2150,+1 Crop per plot in Spring,nfts/wearables/064_blossom-ward.png,NFTs,87,D87
+wearables,wearables-solflare-aegis-88-left,,Solflare Aegis,Wearables,Wearebles,3150,-50% in Crop time in Summer,nfts/wearables/065_solflare-aegis.png,NFTs,88,D88
+wearables,wearables-autumns-embrace-89-left,,Autumn's Embrace,Wearables,Wearebles,7690,-50% in Crop time in Autumn,nfts/wearables/066_autumns-embrace.png,NFTs,89,D89
+wearables,wearables-frozen-heart-90-left,,Frozen Heart,Wearables,Wearebles,1193,+1 Crop per plot in Winter,nfts/wearables/067_frozen-heart.png,NFTs,90,D90
+wearables,wearables-sunflower-shield-91-left,,Sunflower Shield,Wearables,Wearebles,998,Free Sunflower Seeds,nfts/wearables/068_sunflower-shield.png,NFTs,91,D91
+wearables,wearables-sunflower-amulet-92-left,,Sunflower Amulet,Wearables,Wearebles,45,+10% Sunflower,nfts/wearables/069_sunflower-amulet.png,NFTs,92,D92
+wearables,wearables-carrot-amulet-93-left,,Carrot Amulet,Wearables,Wearebles,36,-20% in Carrot growth time,nfts/wearables/070_carrot-amulet.png,NFTs,93,D93
+wearables,wearables-broccoli-hat-94-left,,Broccoli Hat,Wearables,Wearebles,226,2x Broccoli Speed,nfts/wearables/071_broccoli-hat.png,NFTs,94,D94
+wearables,wearables-tofu-mask-95-left,,Tofu Mask,Wearables,Wearebles,11.4795,+0.1 Soybean,nfts/wearables/072_tofu-mask.png,NFTs,95,D95
+wearables,wearables-beetroot-amulet-96-left,,Beetroot Amulet,Wearables,Wearebles,72,+20% Beetroot,nfts/wearables/073_beetroot-amulet.png,NFTs,96,D96
+wearables,wearables-red-pepper-onesie-97-left,,Red Pepper Onesie,Wearables,Wearebles,4,-25% harvest time for Pepper,nfts/wearables/074_red-pepper-onesie.png,NFTs,97,D97
+wearables,wearables-parsnip-98-left,,Parsnip,Wearables,Wearebles,697,+20% Parsnip,nfts/wearables/075_parsnip.png,NFTs,98,D98
+wearables,wearables-eggplant-onesie-99-left,,Eggplant Onesie,Wearables,Wearebles,24,+0.1 Eggplant,nfts/wearables/076_eggplant-onesie.png,NFTs,99,D99
+wearables,wearables-corn-onesie-100-left,,Corn Onesie,Wearables,Wearebles,64.6,+0.1 Corn,nfts/wearables/077_corn-onesie.png,NFTs,100,D100
+wearables,wearables-ladybug-suit-101-left,,Ladybug Suit,Wearables,Wearebles,26.8199,-25% Onion Seed Coin cost,nfts/wearables/078_ladybug-suit.png,NFTs,101,D101
+wearables,wearables-sickle-102-left,,Sickle,Wearables,Wearebles,3398,+2 Wheat,nfts/wearables/079_sickle.png,NFTs,102,D102
+wearables,wearables-faction-quiver-103-left,,"""Faction"" Quiver",Wearables,Wearebles,-,+0.25 Crops e Fruits,nfts/wearables/080_faction-quiver.png,NFTs,103,D103
+wearables,wearables-camel-onesie-124-left,,Camel Onesie,Wearables,Wearebles,99,+0.1 Fruits (except GH fruits),nfts/wearables/096_camel-onesie.png,NFTs,124,D124
+wearables,wearables-fruit-picker-apron-125-left,,Fruit Picker Apron,Wearables,Wearebles,0,"+0.1 Apple, Blueberry, Orange e Banana",nfts/wearables/097_fruit-picker-apron.png,NFTs,125,D125
+wearables,wearables-lemon-shield-126-left,,Lemon Shield,Wearables,Wearebles,1610,+1 Lemon,nfts/wearables/098_lemon-shield.png,NFTs,126,D126
+wearables,wearables-banana-onesie-127-left,,Banana Onesie,Wearables,Wearebles,62.48,-20% in Banana growth time,nfts/wearables/099_banana-onesie.png,NFTs,127,D127
+wearables,wearables-banana-amulet-128-left,,Banana Amulet,Wearables,Wearebles,378,+0.5 Bananas,nfts/wearables/100_banana-amulet.png,NFTs,128,D128
+wearables,wearables-grape-pants-139-left,,Grape Pants,Wearables,Wearebles,255,+0.2 Grapes,nfts/wearables/106_grape-pants.png,NFTs,139,D139
+wearables,wearables-non-la-hat-140-left,,Non La Hat,Wearables,Wearebles,999,+1 Rice,nfts/wearables/107_non-la-hat.png,NFTs,140,D140
+wearables,wearables-olive-royalty-shirt-141-left,,Olive Royalty Shirt,Wearables,Wearebles,49.5,+0.25 Olive,nfts/wearables/108_olive-royalty-shirt.png,NFTs,141,D141
+wearables,wearables-olive-shield-142-left,,Olive Shield,Wearables,Wearebles,557,+1 Olive,nfts/wearables/109_olive-shield.png,NFTs,142,D142
+wearables,wearables-squirrel-onesie-149-left,,Squirrel Onesie,Wearables,Wearebles,0,+1 Acorn,nfts/wearables/111_squirrel-onesie.png,NFTs,149,D149
+wearables,wearables-flower-crown-163-left,,Flower Crown,Wearables,Wearebles,4399,-50% in the time for flowers to grow,nfts/wearables/120_flower-crown.png,NFTs,163,D163
+wearables,wearables-bee-suit-164-left,,Bee Suit,Wearables,Wearebles,67.95,+0.1 Honey,nfts/wearables/121_bee-suit.png,NFTs,164,D164
+wearables,wearables-beekeeper-hat-165-left,,Beekeeper Hat,Wearables,Wearebles,198,+0.2 in honey production speed,nfts/wearables/122_beekeeper-hat.png,NFTs,165,D165
+wearables,wearables-honeycomb-shield-166-left,,Honeycomb Shield,Wearables,Wearebles,4499,+1 Honey,nfts/wearables/123_honeycomb-shield.png,NFTs,166,D166
+wearables,wearables-hornet-mask-167-left,,Hornet Mask,Wearables,Wearebles,857,2x chance Bee Swarm,nfts/wearables/124_hornet-mask.png,NFTs,167,D167
+wearables,wearables-faction-shield-44-right,,"""Faction"" Shield",Wearables,Wearebles,-,+0.25 Wood e Minerals,nfts/wearables/147_faction-shield.png,NFTs,44,L44
+wearables,wearables-pickaxe-shark-45-right,,Pickaxe Shark,Wearables,Wearebles,1411,+15% Gold Recovery Time and 10% chance of Instant Gold,nfts/wearables/148_pickaxe-shark.png,NFTs,45,L45
+wearables,wearables-crimstone-armor-46-right,,Crimstone Armor,Wearables,Wearebles,97.9999,+0.1 Crimstone,nfts/wearables/149_crimstone-armor.png,NFTs,46,L46
+wearables,wearables-crimstone-amulet-47-right,,Crimstone Amulet,Wearables,Wearebles,674,-20% in the time for Crimstone,nfts/wearables/150_crimstone-amulet.png,NFTs,47,L47
+wearables,wearables-crimstone-hammer-48-right,,Crimstone Hammer,Wearables,Wearebles,6491,+2 Crimstone on the 5th day,nfts/wearables/151_crimstone-hammer.png,NFTs,48,L48
+wearables,wearables-infernal-drill-58-right,,Infernal Drill,Wearables,Wearebles,0,Get Oil without needing an Oil Drill,nfts/wearables/156_infernal-drill.png,NFTs,58,L58
+wearables,wearables-oil-can-59-right,,Oil Can,Wearables,Wearebles,578,+2 Oil,nfts/wearables/157_oil-can.png,NFTs,59,L59
+wearables,wearables-oil-gallon-60-right,,Oil Gallon,Wearables,Wearebles,2297,+5 Oil,nfts/wearables/158_oil-gallon.png,NFTs,60,L60
+wearables,wearables-oil-overalls-61-right,,Oil Overalls,Wearables,Wearebles,4899,+10 Oil,nfts/wearables/159_oil-overalls.png,NFTs,61,L61
+wearables,wearables-dev-wrench-62-right,,Dev Wrench,Wearables,Wearebles,5500,-50% in the time for Oil regeneration,nfts/wearables/160_dev-wrench.png,NFTs,62,L62
+wearables,wearables-lava-swimwear-63-right,,Lava Swimwear,Wearables,Wearebles,8450,-50% Lava Pit resources,nfts/wearables/161_lava-swimwear.png,NFTs,63,L63
+wearables,wearables-obsidian-necklace-64-right,,Obsidian Necklace,Wearables,Wearebles,4100,2x Lava Pit Speed,nfts/wearables/162_obsidian-necklace.png,NFTs,64,L64
+wearables,wearables-cattlegrim-100-right,,Cattlegrim,Wearables,Wearebles,5700,+0.25 in animal production,nfts/wearables/193_cattlegrim.png,NFTs,100,L100
+wearables,wearables-medic-apron-101-right,,Medic Apron,Wearables,Wearebles,400,Half Price Medicine,nfts/wearables/194_medic-apron.png,NFTs,101,L101
+wearables,wearables-oracle-syringe-102-right,,Oracle Syringe,Wearables,Wearebles,2299,Heal animals for free,nfts/wearables/195_oracle-syringe.png,NFTs,102,L102
+wearables,wearables-chicken-suit-103-right,,Chicken Suit,Wearables,Wearebles,413,+1 Feather,nfts/wearables/196_chicken-suit.png,NFTs,103,L103
+wearables,wearables-infernal-bullwhip-104-right,,Infernal Bullwhip,Wearables,Wearebles,14800,-50% food for Barn animals,nfts/wearables/197_infernal-bullwhip.png,NFTs,104,L104
+wearables,wearables-milk-apron-105-right,,Milk Apron,Wearables,Wearebles,672,+0.5 Milk,nfts/wearables/198_milk-apron.png,NFTs,105,L105
+wearables,wearables-cowbell-necklace-106-right,,Cowbell Necklace,Wearables,Wearebles,5700,+2 Milk,nfts/wearables/199_cowbell-necklace.png,NFTs,106,L106
+wearables,wearables-training-whistle-107-right,,Training Whistle,Wearables,Wearebles,2190,+1 Leather,nfts/wearables/200_training-whistle.png,NFTs,107,L107
+wearables,wearables-dream-scarf-108-right,,Dream Scarf,Wearables,Wearebles,74,-20% in sheep production time,nfts/wearables/201_dream-scarf.png,NFTs,108,L108
+wearables,wearables-white-sheep-onesie-109-right,,White Sheep Onesie,Wearables,Wearebles,29,+0.25 Wool,nfts/wearables/202_white-sheep-onesie.png,NFTs,109,L109
+wearables,wearables-black-sheep-onesie-110-right,,Black Sheep Onesie,Wearables,Wearebles,3300,+2 Wool,nfts/wearables/203_black-sheep-onesie.png,NFTs,110,L110
+wearables,wearables-merino-jumper-111-right,,Merino Jumper,Wearables,Wearebles,430,+1 Merino Wool,nfts/wearables/204_merino-jumper.png,NFTs,111,L111
+wearables,wearables-turd-topper-145-right,,Turd Topper,Wearables,Wearebles,4.3999,+1 Fertiliser from Composters,nfts/wearables/228_turd-topper.png,NFTs,145,L145
+wearables,wearables-angler-waders-146-right,,Angler Waders,Wearables,Wearebles,-,+10 on the daily fishing limit,nfts/wearables/229_angler-waders.png,NFTs,146,L146
+wearables,wearables-sunflower-rod-147-right,,Sunflower Rod,Wearables,Wearebles,-,10% chance to catch +1 fish,nfts/wearables/230_sunflower-rod.png,NFTs,147,L147
+wearables,wearables-trident-148-right,,Trident,Wearables,Wearebles,-,20% chance to catch +1 fish,nfts/wearables/231_trident.png,NFTs,148,L148
+wearables,wearables-crab-hat-149-right,,Crab Hat,Wearables,Wearebles,333.9999,Bonus Fishing Bounty: 1,nfts/wearables/232_crab-hat.png,NFTs,149,L149
+wearables,wearables-saw-fish-150-right,,Saw Fish,Wearables,Wearebles,69,"+5 Fishing Attempts, +1 Worm from Composting",nfts/wearables/233_saw-fish.png,NFTs,150,L150
+wearables,wearables-ancient-rod-151-right,,Ancient Rod,Wearables,Wearebles,0,Fish without a rod,nfts/wearables/234_ancient-rod.png,NFTs,151,L151
+wearables,wearables-pirate-potion-161-right,,Pirate Potion,Wearables,Wearebles,-,Open pirate chest daily,nfts/wearables/239_pirate-potion.png,NFTs,161,L161
+wearables,wearables-bionic-drill-162-right,,Bionic Drill,Wearables,Wearebles,-,+5 in the Digging limit,nfts/wearables/240_bionic-drill.png,NFTs,162,L162
+wearables,wearables-ancient-shovel-163-right,,Ancient Shovel,Wearables,Wearebles,0,Dig without needing a shovel,nfts/wearables/241_ancient-shovel.png,NFTs,163,L163
+wearables,wearables-crab-trap-164-right,,Crab Trap,Wearables,Wearebles,259.9999,+1 Crab when finding one during excavations,nfts/wearables/242_crab-trap.png,NFTs,164,L164
+wearables,wearables-faction-crow-178-right,,"""Faction"" Crow",Wearables,Wearebles,-,+25% FLOWER and Coins on Deliveries,nfts/wearables/251_faction-crow.png,NFTs,178,L178
+wearables,wearables-mushroom-hat-179-right,,Mushroom Hat,Wearables,Wearebles,36,+0.1 Mushroom,nfts/wearables/252_mushroom-hat.png,NFTs,179,L179
+wearables,wearables-paw-shield-180-right,,Paw Shield,Wearables,Wearebles,846,+25% satisfaction for the Faction Pet and granted Marks,nfts/wearables/253_paw-shield.png,NFTs,180,L180
+wearables,wearables-architect-ruler-181-right,,Architect Ruler,Wearables,Wearebles,37,+25% Crafting Box Speed,nfts/wearables/254_architect-ruler.png,NFTs,181,L181
+wearables,wearables-sol-and-luna-182-right,,Sol & Luna,Wearables,Wearebles,874,-50% in Craft time,nfts/wearables/255_sol-and-luna.png,NFTs,182,L182
+wearables,wearables-lunas-crescent-183-right,,Luna's Crescent,Wearables,Wearebles,9998,-50% Power Skill Cooldown,nfts/wearables/256_lunas-crescent.png,NFTs,183,L183
+wearables,wearables-faction-medallion,factionMedallion,"""Faction"" Medallion",Wearables,Factions,-,-25% on kitchen time,nfts/wearables/faction-medallion.png,NFTs,129,L129
+blacksmith,blacksmith-warehouse,,Warehouse,Blacksmith,Blacksmith,7610,+20% seed stock,nfts/nfts/014_warehouse.png,NFTs,36,D36
+blacksmith,blacksmith-toolshed,,Toolshed,Blacksmith,Blacksmith,10222,+50% tool stock,nfts/nfts/126_toolshed.png,NFTs,19,L19
+blacksmith,blacksmith-immortal-pear,,Immortal Pear,Blacksmith,Blacksmith,0,+1 harvest on fruits,nfts/nfts/081_immortal-pear.png,NFTs,108,D108
+blacksmith,blacksmith-bale,,Bale,Blacksmith,Blacksmith,0,+0.1 Egg,nfts/nfts/166_bale.png,NFTs,72,L72
+blacksmith,blacksmith-scary-mike,,Scary Mike,Blacksmith,Blacksmith,0,"+0,2 x9 medium crops",nfts/nfts/023_scary-mike.png,NFTs,45,D45
+blacksmith,blacksmith-laurie-the-chuckle-crow,,Laurie the Chuckle Crow,Blacksmith,Blacksmith,0,"+0,2 x9 advanced crops",nfts/nfts/024_laurie-the-chuckle-crow.png,NFTs,46,D46
+blacksmith,blacksmith-stone-beetle,,Stone Beetle,Blacksmith,Blacksmith,0,+0.1 Stone,nfts/nfts/138_stone-beetle.png,NFTs,34,L34
+blacksmith,blacksmith-iron-beetle,,Iron Beetle,Blacksmith,Blacksmith,0,+0.1 Iron,nfts/nfts/142_iron-beetle.png,NFTs,38,L38
+blacksmith,blacksmith-gold-beetle,,Gold Beetle,Blacksmith,Blacksmith,0,+0.1 Gold,nfts/nfts/144_gold-beetle.png,NFTs,40,L40
+blacksmith,blacksmith-fairy-circle,,Fairy Circle,Blacksmith,Blacksmith,0,+0.2 Wild Mushroom,nfts/nfts/247_fairy-circle.png,NFTs,173,L173
+blacksmith,blacksmith-squirrel,,Squirrel,Blacksmith,Blacksmith,0,+0.1 Wood,nfts/nfts/132_squirrel.png,NFTs,25,L25
+blacksmith,blacksmith-macaw,,Macaw,Blacksmith,Blacksmith,0,+0.1 Fruit,nfts/nfts/082_macaw.png,NFTs,109,D109
+blacksmith,blacksmith-butterfly,,Butterfly,Blacksmith,Blacksmith,0,10% chance +1 Flower,nfts/nfts/115_butterfly.png,NFTs,157,D157
+blacksmith,blacksmith-salt-sculpture-level-1,saltSculpture1,Salt Sculpture LEVEL 1,Blacksmith,Salt Sculpture,4831,-5% salt charge replenishment time,nfts/blacksmith/salt_sculpture_01.png,Manual Blacksmith,,
+blacksmith,blacksmith-salt-sculpture-level-2,saltSculpture2,Salt Sculpture LEVEL 2,Blacksmith,Salt Sculpture,,+4% Prime Aging chance,nfts/blacksmith/salt_sculpture_01.png,Manual Blacksmith,,
+blacksmith,blacksmith-salt-sculpture-level-3,saltSculpture3,Salt Sculpture LEVEL 3,Blacksmith,Salt Sculpture,,+1 max salt harvest cap per node,nfts/blacksmith/salt_sculpture_02.png,Manual Blacksmith,,
+blacksmith,blacksmith-salt-sculpture-level-4,saltSculpture4,Salt Sculpture LEVEL 4,Blacksmith,Salt Sculpture,,-10% salt rake coin cost,nfts/blacksmith/salt_sculpture_02.png,Manual Blacksmith,,
+blacksmith,blacksmith-salt-sculpture-level-5,saltSculpture5,Salt Sculpture LEVEL 5,Blacksmith,Salt Sculpture,,-5% Aging Rack Time,nfts/blacksmith/salt_sculpture_03.png,Manual Blacksmith,,
+blacksmith,blacksmith-salt-sculpture-level-6,saltSculpture6,Salt Sculpture LEVEL 6,Blacksmith,Salt Sculpture,,+1 max salt harvest cap per node,nfts/blacksmith/salt_sculpture_03.png,Manual Blacksmith,,
+shrines,shrines-boar-shrine-15-left,,Boar Shrine,Shrines,Temporary Shrines,,-20% Cooking Time | (Lasts for 7days),nfts/shrines/295_boar-shrine.png,Shrine,15,C15
+shrines,shrines-hound-shrine-18-left,,Hound Shrine,Shrines,Temporary Shrines,,+100 Pet XP | (Lasts for 7days),nfts/shrines/296_hound-shrine.png,Shrine,18,C18
+shrines,shrines-sparrow-shrine-21-left,,Sparrow Shrine,Shrines,Temporary Shrines,,-25% Crop Growth Time | (Lasts for 7days),nfts/shrines/297_sparrow-shrine.png,Shrine,21,C21
+shrines,shrines-fox-shrine-24-left,,Fox Shrine,Shrines,Temporary Shrines,,-25% Crafting Box Time | 10% chance to instantly craft a recipe | (Lasts for 7days),nfts/shrines/298_fox-shrine.png,Shrine,24,C24
+shrines,shrines-toucan-shrine-27-left,,Toucan Shrine,Shrines,Temporary Shrines,,-25% Fruit Growth Time | (Lasts for 7days),nfts/shrines/299_toucan-shrine.png,Shrine,27,C27
+shrines,shrines-collie-shrine-30-left,,Collie Shrine,Shrines,Temporary Shrines,,-25% Cow Sleep Time | -25% Sheep Sleep Time | -5% Feed to feed barn animals | (Lasts for 7days),nfts/shrines/300_collie-shrine.png,Shrine,30,C30
+shrines,shrines-moth-shrine-33-left,,Moth Shrine,Shrines,Temporary Shrines,,-25% Flower Growth Time | 20% chance to get +1 Flower | (Lasts for 7days),nfts/shrines/301_moth-shrine.png,Shrine,33,C33
+shrines,shrines-badger-shrine-36-left,,Badger Shrine,Shrines,Temporary Shrines,,-25% Tree Recovery Time | -25% Stone Recovery Time | (Lasts for 7days),nfts/shrines/302_badger-shrine.png,Shrine,36,C36
+shrines,shrines-mole-shrine-15-right,,Mole Shrine,Shrines,Temporary Shrines,,-25% Iron Recovery Time | -25% Gold Recovery Time | -25% Crimstone Recovery Time | (Lasts for 7days),nfts/shrines/303_mole-shrine.png,Shrine,15,J15
+shrines,shrines-tortoise-shrine-18-right,,Tortoise Shrine,Shrines,Temporary Shrines,,-33% Greenhouse Growth Time | -10% Crop Machine Growth Time | (Lasts for 7days),nfts/shrines/304_tortoise-shrine.png,Shrine,18,J18
+shrines,shrines-stag-shrine-21-right,,Stag Shrine,Shrines,Temporary Shrines,,-25% Oil Recovery Time | +15 Oil every 3rd drill | (Lasts for 7days),nfts/shrines/305_stag-shrine.png,Shrine,21,J21
+shrines,shrines-bear-shrine-24-right,,Bear Shrine,Shrines,Temporary Shrines,,+0.5 Honey Production Speed | +20% chance of bee swarm | (Lasts for 7days),nfts/shrines/306_bear-shrine.png,Shrine,24,J24
+shrines,shrines-bantam-shrine-27-right,,Bantam Shrine,Shrines,Temporary Shrines,,-25% Chicken Sleep Time | -5% Feed to feed chickens | (Lasts for 7days),nfts/shrines/307_bantam-shrine.png,Shrine,27,J27
+shrines,shrines-legendary-shrine-30-right,,Legendary Shrine,Shrines,Temporary Shrines,,"+1 Crop Yield, +1 Fruit Patch Yield | +1 Wood +1 Stone +1 Flower | -50% Cooking Time | (Lasts for 1day)",nfts/shrines/308_legendary-shrine.png,Shrine,30,J30
+shrines,shrines-trading-shrine-33-right,,Trading Shrine,Shrines,Temporary Shrines,,-2.5% resource tax | (Lasts for 30days),nfts/shrines/309_trading-shrine.png,Shrine,33,J33
+shrines,shrines-obsidian-shrine-36-right,,Obsidian Shrine,Shrines,Temporary Shrines,,Bulk harvest all ready crops | and plant seeds | (Lasts for 14days),nfts/shrines/310_obsidian-shrine.png,Shrine,36,J36

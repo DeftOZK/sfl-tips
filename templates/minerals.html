@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block page_header %}
+  <header class="page-title-only compact-title">
+    <h1>Minerales</h1>
+  </header>
+{% endblock %}
+
+{% block content %}
+<section class="crops-builder minerals-builder" aria-label="Calculadora de minerales">
+  <div class="crop-heading">
+    <div>
+      <h2>Ganancias por recursos, minerales, salt y oil</h2>
+      <p>Calcula la ganancia usando nodos, herramientas, stock, restock configurable de 5, 10, 15 o 20 gemas, precios actuales y boosts seleccionados desde Skills/NFTs.</p>
+    </div>
+    <button class="button-secondary" id="resetMineralInputs" type="button">Restaurar nodos</button>
+  </div>
+
+  <div class="crop-summary" aria-label="Resumen de minerales">
+    <article><span>Ganancia neta diaria</span><strong id="mineralTotalFlower">0 FLOWER</strong></article>
+    <article><span>Gems de restock/día</span><strong id="mineralTotalGems">0</strong></article>
+    <article><span>Mejor recurso</span><strong id="mineralBestItem">—</strong></article>
+  </div>
+
+  <div class="mineral-market-panel" id="mineralMarketToggles" aria-label="Recursos comprados en market"></div>
+
+  <div class="crop-table-wrapper" id="mineralTableWrapper"></div>
+</section>
+
+<script>
+  window.MINERAL_ASSET_BASE = "{{ url_for('static', filename='assets/') }}";
+  window.MINERAL_GROUPS = {{ mineral_groups|tojson }};
+  window.SFL_HUB_BOOST_RULES = {{ boost_rules|tojson }};
+  window.MINERAL_PRICE_MAP = {{ mineral_price_map|tojson }};
+</script>
+<script src="{{ url_for('static', filename='js/minerals.js') }}"></script>
+{% endblock %}

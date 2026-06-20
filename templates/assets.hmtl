@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <section class="panel">
+    <div class="section-heading">
+      <div>
+        <h2>NFTs, Wearables y Buffs</h2>
+        <p>Más adelante aquí pondremos imágenes, filtros y efectos por item.</p>
+      </div>
+    </div>
+
+    <div class="category-grid">
+      {% for category in asset_categories %}
+        <article class="category-card">
+          <div class="category-icon">🎒</div>
+          <h3>{{ category }}</h3>
+          <p>Próximamente: imagen, descripción, buff y módulos afectados.</p>
+        </article>
+      {% endfor %}
+    </div>
+  </section>
+{% endblock %}

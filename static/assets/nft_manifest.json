@@ -1,0 +1,6185 @@
+{
+  "nfts": [
+    {
+      "id": "nfts-oaken-14-left",
+      "name": "Oaken",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 14,
+      "source_cell": "D14",
+      "selected_in_excel": true,
+      "price": "Stella",
+      "effect_text": "25% chance of 1+ acorn fetch yield",
+      "effect_values": [
+        {
+          "cell": "G14",
+          "raw": "0.25",
+          "number": 0.25
+        }
+      ],
+      "image": "nfts/nfts/001_oaken.png",
+      "source_media_path": "xl/media/image144.png",
+      "source_image_cell": "C14"
+    },
+    {
+      "id": "nfts-crimstone-clam-15-left",
+      "name": "Crimstone Clam",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 15,
+      "source_cell": "D15",
+      "selected_in_excel": false,
+      "price": "Stella",
+      "effect_text": "10% faster crimstone, 10% chance to instant respawn",
+      "effect_values": [
+        {
+          "cell": "G15",
+          "raw": "0.9",
+          "number": 0.9
+        },
+        {
+          "cell": "H15",
+          "raw": "1.1",
+          "number": 1.1
+        }
+      ],
+      "image": "nfts/nfts/002_crimstone-clam.png",
+      "source_media_path": "xl/media/image174.png",
+      "source_image_cell": "C15"
+    },
+    {
+      "id": "nfts-poseidons-throne-16-left",
+      "name": "Poseidon's Throne",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 16,
+      "source_cell": "D16",
+      "selected_in_excel": false,
+      "price": "Stella",
+      "effect_text": "1+ Weed and Dung Yield",
+      "effect_values": [],
+      "image": "nfts/nfts/003_poseidons-throne.png",
+      "source_media_path": "xl/media/image140.png",
+      "source_image_cell": "C16"
+    },
+    {
+      "id": "nfts-meerkat-17-left",
+      "name": "Meerkat",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 17,
+      "source_cell": "D17",
+      "selected_in_excel": false,
+      "price": "Stella",
+      "effect_text": "5+ digs, 1+ sand",
+      "effect_values": [],
+      "image": "nfts/nfts/004_meerkat.png",
+      "source_media_path": "xl/media/image133.png",
+      "source_image_cell": "C17"
+    },
+    {
+      "id": "nfts-nautilus-18-left",
+      "name": "Nautilus",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 18,
+      "source_cell": "D18",
+      "selected_in_excel": false,
+      "price": "Mutant",
+      "effect_text": "Adds +5 daily fishing attempts.",
+      "effect_values": [],
+      "image": "nfts/nfts/005_nautilus.png",
+      "source_media_path": "xl/media/image157.png",
+      "source_image_cell": "C18"
+    },
+    {
+      "id": "nfts-squid-chicken-19-left",
+      "name": "Squid Chicken",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 19,
+      "source_cell": "D19",
+      "selected_in_excel": false,
+      "price": "Mutant",
+      "effect_text": "+0.1 egg yield.",
+      "effect_values": [
+        {
+          "cell": "G19",
+          "raw": "0.1",
+          "number": 0.1
+        }
+      ],
+      "image": "nfts/nfts/006_squid-chicken.png",
+      "source_media_path": "xl/media/image231.png",
+      "source_image_cell": "C19"
+    },
+    {
+      "id": "nfts-mermaid-sheep-20-left",
+      "name": "Mermaid Sheep",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 20,
+      "source_cell": "D20",
+      "selected_in_excel": false,
+      "price": "Mutant",
+      "effect_text": "5% less feed required for sheep.",
+      "effect_values": [
+        {
+          "cell": "G20",
+          "raw": "0.95",
+          "number": 0.95
+        }
+      ],
+      "image": "nfts/nfts/007_mermaid-sheep.png",
+      "source_media_path": "xl/media/image185.png",
+      "source_image_cell": "C20"
+    },
+    {
+      "id": "nfts-anemone-flower-21-left",
+      "name": "Anemone Flower",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 21,
+      "source_cell": "D21",
+      "selected_in_excel": false,
+      "price": "Mutant",
+      "effect_text": "+1 free attempt in the Fishing Puzzle",
+      "effect_values": [
+        {
+          "cell": "G21",
+          "raw": "1.0",
+          "number": 1.0
+        }
+      ],
+      "image": "nfts/nfts/008_anemone-flower.png",
+      "source_media_path": "xl/media/image172.png",
+      "source_image_cell": "C21"
+    },
+    {
+      "id": "nfts-nancy-37-left",
+      "name": "Nancy",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 37,
+      "source_cell": "D37",
+      "selected_in_excel": true,
+      "price": "218",
+      "effect_text": "-15% in Crop time",
+      "effect_values": [
+        {
+          "cell": "G37",
+          "raw": "0.85",
+          "number": 0.85
+        }
+      ],
+      "image": "nfts/nfts/015_nancy.png",
+      "source_media_path": "xl/media/image208.png",
+      "source_image_cell": "C37"
+    },
+    {
+      "id": "nfts-scarecrow-38-left",
+      "name": "Scarecrow",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 38,
+      "source_cell": "D38",
+      "selected_in_excel": false,
+      "price": "1080",
+      "effect_text": "-15% in Crop time, +20% Crops",
+      "effect_values": [
+        {
+          "cell": "G38",
+          "raw": "1.2",
+          "number": 1.2
+        }
+      ],
+      "image": "nfts/nfts/016_scarecrow.png",
+      "source_media_path": "xl/media/image168.png",
+      "source_image_cell": "C38"
+    },
+    {
+      "id": "nfts-kuebiko-39-left",
+      "name": "Kuebiko",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 39,
+      "source_cell": "D39",
+      "selected_in_excel": false,
+      "price": "0",
+      "effect_text": "-15% in Crop time, +20% Crops and Free Seeds",
+      "effect_values": [
+        {
+          "cell": "G39",
+          "raw": "0.0",
+          "number": 0.0
+        }
+      ],
+      "image": "nfts/nfts/017_kuebiko.png",
+      "source_media_path": "xl/media/image151.png",
+      "source_image_cell": "C39"
+    },
+    {
+      "id": "nfts-spring-guardian-40-left",
+      "name": "Spring Guardian",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 40,
+      "source_cell": "D40",
+      "selected_in_excel": false,
+      "price": "1099",
+      "effect_text": "Spring Disaster Protection, Blessed Spring Events",
+      "effect_values": [
+        {
+          "cell": "G40",
+          "raw": "1",
+          "number": 1.0
+        },
+        {
+          "cell": "H40",
+          "raw": "0.5",
+          "number": 0.5
+        }
+      ],
+      "image": "nfts/nfts/018_spring-guardian.png",
+      "source_media_path": "xl/media/image192.png",
+      "source_image_cell": "C40"
+    },
+    {
+      "id": "nfts-summer-guardian-41-left",
+      "name": "Summer Guardian",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 41,
+      "source_cell": "D41",
+      "selected_in_excel": false,
+      "price": "1520",
+      "effect_text": "Summer Disaster Protection, Blessed Summer Events",
+      "effect_values": [
+        {
+          "cell": "G41",
+          "raw": "1",
+          "number": 1.0
+        },
+        {
+          "cell": "H41",
+          "raw": "0.5",
+          "number": 0.5
+        }
+      ],
+      "image": "nfts/nfts/019_summer-guardian.png",
+      "source_media_path": "xl/media/image266.png",
+      "source_image_cell": "C41"
+    },
+    {
+      "id": "nfts-autumn-guardian-42-left",
+      "name": "Autumn Guardian",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 42,
+      "source_cell": "D42",
+      "selected_in_excel": false,
+      "price": "998",
+      "effect_text": "Autumn Disaster Protection, Blessed Autumn Events",
+      "effect_values": [
+        {
+          "cell": "G42",
+          "raw": "1",
+          "number": 1.0
+        },
+        {
+          "cell": "H42",
+          "raw": "0.5",
+          "number": 0.5
+        }
+      ],
+      "image": "nfts/nfts/020_autumn-guardian.png",
+      "source_media_path": "xl/media/image191.png",
+      "source_image_cell": "C42"
+    },
+    {
+      "id": "nfts-winter-guardian-43-left",
+      "name": "Winter Guardian",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 43,
+      "source_cell": "D43",
+      "selected_in_excel": false,
+      "price": "999",
+      "effect_text": "Winter Disaster Protection, Blessed Winter Events",
+      "effect_values": [
+        {
+          "cell": "G43",
+          "raw": "1",
+          "number": 1.0
+        },
+        {
+          "cell": "H43",
+          "raw": "0.5",
+          "number": 0.5
+        }
+      ],
+      "image": "nfts/nfts/021_winter-guardian.png",
+      "source_media_path": "xl/media/image197.png",
+      "source_image_cell": "C43"
+    },
+    {
+      "id": "nfts-basic-scarecrow-44-left",
+      "name": "Basic Scarecrow",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 44,
+      "source_cell": "D44",
+      "selected_in_excel": true,
+      "price": "-",
+      "effect_text": "-20% in Basic Crop time - Effect on 9 Plots",
+      "effect_values": [
+        {
+          "cell": "G44",
+          "raw": "0.9987368421",
+          "number": 0.9987368421
+        }
+      ],
+      "image": "nfts/nfts/022_basic-scarecrow.png",
+      "source_media_path": "xl/media/image221.png",
+      "source_image_cell": "C44"
+    },
+    {
+      "id": "nfts-lunar-calendar-47-left",
+      "name": "Lunar Calendar",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 47,
+      "source_cell": "D47",
+      "selected_in_excel": false,
+      "price": "320",
+      "effect_text": "-10% in Crop time",
+      "effect_values": [
+        {
+          "cell": "G47",
+          "raw": "0.9",
+          "number": 0.9
+        }
+      ],
+      "image": "nfts/nfts/025_lunar-calendar.png",
+      "source_media_path": "xl/media/image183.png",
+      "source_image_cell": "C47"
+    },
+    {
+      "id": "nfts-gnome-48-left",
+      "name": "Gnome",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 48,
+      "source_cell": "D48",
+      "selected_in_excel": false,
+      "price": "995",
+      "effect_text": "+10 Medium or Advanced Crops - Effect on 1 Plot",
+      "effect_values": [
+        {
+          "cell": "G48",
+          "raw": "0.1754385965",
+          "number": 0.1754385965
+        }
+      ],
+      "image": "nfts/nfts/026_gnome.png",
+      "source_media_path": "xl/media/image200.png",
+      "source_image_cell": "C48"
+    },
+    {
+      "id": "nfts-sir-goldensnout-49-left",
+      "name": "Sir Goldensnout",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 49,
+      "source_cell": "D49",
+      "selected_in_excel": false,
+      "price": "640",
+      "effect_text": "+0.5 Crops - Effect on 12 Plots",
+      "effect_values": [
+        {
+          "cell": "G49",
+          "raw": "0.1052631579",
+          "number": 0.1052631579
+        }
+      ],
+      "image": "nfts/nfts/027_sir-goldensnout.png",
+      "source_media_path": "xl/media/image169.png",
+      "source_image_cell": "C49"
+    },
+    {
+      "id": "nfts-stellar-sunflower-50-left",
+      "name": "Stellar Sunflower",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 50,
+      "source_cell": "D50",
+      "selected_in_excel": false,
+      "price": "169",
+      "effect_text": "3% chance to get +10 Sunflowers",
+      "effect_values": [
+        {
+          "cell": "G50",
+          "raw": "0.3",
+          "number": 0.3
+        }
+      ],
+      "image": "nfts/nfts/028_stellar-sunflower.png",
+      "source_media_path": "xl/media/image239.png",
+      "source_image_cell": "C50"
+    },
+    {
+      "id": "nfts-peeled-potato-51-left",
+      "name": "Peeled Potato",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 51,
+      "source_cell": "D51",
+      "selected_in_excel": false,
+      "price": "95",
+      "effect_text": "20% chance to get +1 Potato",
+      "effect_values": [
+        {
+          "cell": "G51",
+          "raw": "0.2",
+          "number": 0.2
+        }
+      ],
+      "image": "nfts/nfts/029_peeled-potato.png",
+      "source_media_path": "xl/media/image178.png",
+      "source_image_cell": "C51"
+    },
+    {
+      "id": "nfts-potent-potato-52-left",
+      "name": "Potent Potato",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 52,
+      "source_cell": "D52",
+      "selected_in_excel": false,
+      "price": "109",
+      "effect_text": "3% chance to get +10 Potatoes",
+      "effect_values": [
+        {
+          "cell": "G52",
+          "raw": "0.3",
+          "number": 0.3
+        }
+      ],
+      "image": "nfts/nfts/030_potent-potato.png",
+      "source_media_path": "xl/media/image218.png",
+      "source_image_cell": "C52"
+    },
+    {
+      "id": "nfts-victoria-sisters-53-left",
+      "name": "Victoria Sisters",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 53,
+      "source_cell": "D53",
+      "selected_in_excel": false,
+      "price": "20.79",
+      "effect_text": "+20% Pumpkins",
+      "effect_values": [
+        {
+          "cell": "G53",
+          "raw": "1.2",
+          "number": 1.2
+        }
+      ],
+      "image": "nfts/nfts/031_victoria-sisters.png",
+      "source_media_path": "xl/media/image212.png",
+      "source_image_cell": "C53"
+    },
+    {
+      "id": "nfts-lab-grown-pumpkin-54-left",
+      "name": "Lab Grown Pumpkin",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 54,
+      "source_cell": "D54",
+      "selected_in_excel": false,
+      "price": "0",
+      "effect_text": "+0,3 Pumpkins",
+      "effect_values": [
+        {
+          "cell": "G54",
+          "raw": "0.3",
+          "number": 0.3
+        }
+      ],
+      "image": "nfts/nfts/032_lab-grown-pumpkin.png",
+      "source_media_path": "xl/media/image204.png",
+      "source_image_cell": "C54"
+    },
+    {
+      "id": "nfts-freya-fox-55-left",
+      "name": "Freya Fox",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 55,
+      "source_cell": "D55",
+      "selected_in_excel": false,
+      "price": "240",
+      "effect_text": "+0.5 Pumpkins",
+      "effect_values": [
+        {
+          "cell": "G55",
+          "raw": "0.5",
+          "number": 0.5
+        }
+      ],
+      "image": "nfts/nfts/033_freya-fox.png",
+      "source_media_path": "xl/media/image210.png",
+      "source_image_cell": "C55"
+    },
+    {
+      "id": "nfts-giant-zucchini-56-left",
+      "name": "Giant Zucchini",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 56,
+      "source_cell": "D56",
+      "selected_in_excel": false,
+      "price": "99",
+      "effect_text": "2x Zuchinni Speed",
+      "effect_values": [
+        {
+          "cell": "G56",
+          "raw": "0.5",
+          "number": 0.5
+        }
+      ],
+      "image": "nfts/nfts/034_giant-zucchini.png",
+      "source_media_path": "xl/media/image193.png",
+      "source_image_cell": "C56"
+    },
+    {
+      "id": "nfts-easter-bunny-57-left",
+      "name": "Easter Bunny",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 57,
+      "source_cell": "D57",
+      "selected_in_excel": false,
+      "price": "25",
+      "effect_text": "+20% Carrots",
+      "effect_values": [
+        {
+          "cell": "G57",
+          "raw": "1.2",
+          "number": 1.2
+        }
+      ],
+      "image": "nfts/nfts/035_easter-bunny.png",
+      "source_media_path": "xl/media/image217.png",
+      "source_image_cell": "C57"
+    },
+    {
+      "id": "nfts-pablo-the-bunny-58-left",
+      "name": "Pablo The Bunny",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 58,
+      "source_cell": "D58",
+      "selected_in_excel": false,
+      "price": "34",
+      "effect_text": "+0.1 Carrot",
+      "effect_values": [
+        {
+          "cell": "G58",
+          "raw": "0.1",
+          "number": 0.1
+        }
+      ],
+      "image": "nfts/nfts/036_pablo-the-bunny.png",
+      "source_media_path": "xl/media/image240.png",
+      "source_image_cell": "C58"
+    },
+    {
+      "id": "nfts-lab-grown-carrot-59-left",
+      "name": "Lab Grown Carrot",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 59,
+      "source_cell": "D59",
+      "selected_in_excel": false,
+      "price": "0",
+      "effect_text": "+0,2 Carrots",
+      "effect_values": [
+        {
+          "cell": "G59",
+          "raw": "0.2",
+          "number": 0.2
+        }
+      ],
+      "image": "nfts/nfts/037_lab-grown-carrot.png",
+      "source_media_path": "xl/media/image267.png",
+      "source_image_cell": "C59"
+    },
+    {
+      "id": "nfts-giant-yam-60-left",
+      "name": "Giant Yam",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 60,
+      "source_cell": "D60",
+      "selected_in_excel": false,
+      "price": "95.299",
+      "effect_text": "+0.5 Yams",
+      "effect_values": [
+        {
+          "cell": "G60",
+          "raw": "0.5",
+          "number": 0.5
+        }
+      ],
+      "image": "nfts/nfts/038_giant-yam.png",
+      "source_media_path": "xl/media/image248.png",
+      "source_image_cell": "C60"
+    },
+    {
+      "id": "nfts-karkinos-61-left",
+      "name": "Karkinos",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 61,
+      "source_cell": "D61",
+      "selected_in_excel": false,
+      "price": "16",
+      "effect_text": "+0.1 Cabbage (Doesn't work with Cabbage Boy)",
+      "effect_values": [
+        {
+          "cell": "G61",
+          "raw": "0.1",
+          "number": 0.1
+        }
+      ],
+      "image": "nfts/nfts/039_karkinos.png",
+      "source_media_path": "xl/media/image220.png",
+      "source_image_cell": "C61"
+    },
+    {
+      "id": "nfts-cabbage-boy-62-left",
+      "name": "Cabbage Boy",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 62,
+      "source_cell": "D62",
+      "selected_in_excel": false,
+      "price": "88",
+      "effect_text": "+0.25 Cabbage or +0.5 Cabbage having Cabbage Girl",
+      "effect_values": [
+        {
+          "cell": "G62",
+          "raw": "0.25",
+          "number": 0.25
+        },
+        {
+          "cell": "H62",
+          "raw": "0.5",
+          "number": 0.5
+        }
+      ],
+      "image": "nfts/nfts/040_cabbage-boy.png",
+      "source_media_path": "xl/media/image222.png",
+      "source_image_cell": "C62"
+    },
+    {
+      "id": "nfts-cabbage-girl-63-left",
+      "name": "Cabbage Girl",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 63,
+      "source_cell": "D63",
+      "selected_in_excel": false,
+      "price": "407",
+      "effect_text": "-50% in Cabbage time",
+      "effect_values": [
+        {
+          "cell": "G63",
+          "raw": "0.5",
+          "number": 0.5
+        }
+      ],
+      "image": "nfts/nfts/041_cabbage-girl.png",
+      "source_media_path": "xl/media/image254.png",
+      "source_image_cell": "C63"
+    },
+    {
+      "id": "nfts-soybliss-64-left",
+      "name": "Soybliss",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 64,
+      "source_cell": "D64",
+      "selected_in_excel": false,
+      "price": "220",
+      "effect_text": "+1 Soybean",
+      "effect_values": [
+        {
+          "cell": "G64",
+          "raw": "1.0",
+          "number": 1.0
+        }
+      ],
+      "image": "nfts/nfts/042_soybliss.png",
+      "source_media_path": "xl/media/image219.png",
+      "source_image_cell": "C64"
+    },
+    {
+      "id": "nfts-golden-cauliflower-65-left",
+      "name": "Golden Cauliflower",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 65,
+      "source_cell": "D65",
+      "selected_in_excel": false,
+      "price": "2400",
+      "effect_text": "+100% Cauliflower",
+      "effect_values": [
+        {
+          "cell": "G65",
+          "raw": "2.0",
+          "number": 2.0
+        }
+      ],
+      "image": "nfts/nfts/043_golden-cauliflower.png",
+      "source_media_path": "xl/media/image211.png",
+      "source_image_cell": "C65"
+    },
+    {
+      "id": "nfts-mysterious-parsnip-66-left",
+      "name": "Mysterious Parsnip",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 66,
+      "source_cell": "D66",
+      "selected_in_excel": false,
+      "price": "480",
+      "effect_text": "-50% in Parsnip time",
+      "effect_values": [
+        {
+          "cell": "G66",
+          "raw": "0.5",
+          "number": 0.5
+        }
+      ],
+      "image": "nfts/nfts/044_mysterious-parsnip.png",
+      "source_media_path": "xl/media/image213.png",
+      "source_image_cell": "C66"
+    },
+    {
+      "id": "nfts-purple-trail-67-left",
+      "name": "Purple Trail",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 67,
+      "source_cell": "D67",
+      "selected_in_excel": true,
+      "price": "29",
+      "effect_text": "+0.2 Eggplant",
+      "effect_values": [
+        {
+          "cell": "G67",
+          "raw": "0.2",
+          "number": 0.2
+        }
+      ],
+      "image": "nfts/nfts/045_purple-trail.png",
+      "source_media_path": "xl/media/image249.png",
+      "source_image_cell": "C67"
+    },
+    {
+      "id": "nfts-obie-68-left",
+      "name": "Obie",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 68,
+      "source_cell": "D68",
+      "selected_in_excel": true,
+      "price": "54",
+      "effect_text": "-25% in Eggplant time",
+      "effect_values": [
+        {
+          "cell": "G68",
+          "raw": "0.75",
+          "number": 0.75
+        }
+      ],
+      "image": "nfts/nfts/046_obie.png",
+      "source_media_path": "xl/media/image233.png",
+      "source_image_cell": "C68"
+    },
+    {
+      "id": "nfts-maximus-69-left",
+      "name": "Maximus",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 69,
+      "source_cell": "D69",
+      "selected_in_excel": false,
+      "price": "444",
+      "effect_text": "+1 Eggplant",
+      "effect_values": [
+        {
+          "cell": "G69",
+          "raw": "1.0",
+          "number": 1.0
+        }
+      ],
+      "image": "nfts/nfts/047_maximus.png",
+      "source_media_path": "xl/media/image259.png",
+      "source_image_cell": "C69"
+    },
+    {
+      "id": "nfts-poppy-70-left",
+      "name": "Poppy",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 70,
+      "source_cell": "D70",
+      "selected_in_excel": false,
+      "price": "85.99",
+      "effect_text": "+0.1 Corn",
+      "effect_values": [
+        {
+          "cell": "G70",
+          "raw": "0.1",
+          "number": 0.1
+        }
+      ],
+      "image": "nfts/nfts/048_poppy.png",
+      "source_media_path": "xl/media/image250.png",
+      "source_image_cell": "C70"
+    },
+    {
+      "id": "nfts-queen-cornelia-71-left",
+      "name": "Queen Cornelia",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 71,
+      "source_cell": "D71",
+      "selected_in_excel": false,
+      "price": "208",
+      "effect_text": "+1 Corn - Effect on 10 Plots",
+      "effect_values": [
+        {
+          "cell": "G71",
+          "raw": "0.1754385965",
+          "number": 0.1754385965
+        }
+      ],
+      "image": "nfts/nfts/049_queen-cornelia.png",
+      "source_media_path": "xl/media/image232.png",
+      "source_image_cell": "C71"
+    },
+    {
+      "id": "nfts-kernaldo-72-left",
+      "name": "Kernaldo",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 72,
+      "source_cell": "D72",
+      "selected_in_excel": false,
+      "price": "165",
+      "effect_text": "-25% in Corn time",
+      "effect_values": [
+        {
+          "cell": "G72",
+          "raw": "0.75",
+          "number": 0.75
+        }
+      ],
+      "image": "nfts/nfts/050_kernaldo.png",
+      "source_media_path": "xl/media/image275.png",
+      "source_image_cell": "C72"
+    },
+    {
+      "id": "nfts-giant-onion-73-left",
+      "name": "Giant Onion",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 73,
+      "source_cell": "D73",
+      "selected_in_excel": false,
+      "price": "1094",
+      "effect_text": "+3 Onions",
+      "effect_values": [
+        {
+          "cell": "G73",
+          "raw": "3.0",
+          "number": 3.0
+        }
+      ],
+      "image": "nfts/nfts/051_giant-onion.png",
+      "source_media_path": "xl/media/image236.png",
+      "source_image_cell": "C73"
+    },
+    {
+      "id": "nfts-giant-turnip-74-left",
+      "name": "Giant Turnip",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 74,
+      "source_cell": "D74",
+      "selected_in_excel": false,
+      "price": "383",
+      "effect_text": "2x Turnip Growth Speed",
+      "effect_values": [
+        {
+          "cell": "G74",
+          "raw": "0.5",
+          "number": 0.5
+        }
+      ],
+      "image": "nfts/nfts/052_giant-turnip.png",
+      "source_media_path": "xl/media/image235.png",
+      "source_image_cell": "C74"
+    },
+    {
+      "id": "nfts-hoot-75-left",
+      "name": "Hoot",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 75,
+      "source_cell": "D75",
+      "selected_in_excel": false,
+      "price": "6001",
+      "effect_text": "+0.5 Radish, Wheat, Kale, Rice e Barley",
+      "effect_values": [
+        {
+          "cell": "G75",
+          "raw": "0.5",
+          "number": 0.5
+        }
+      ],
+      "image": "nfts/nfts/053_hoot.png",
+      "source_media_path": "xl/media/image258.png",
+      "source_image_cell": "C75"
+    },
+    {
+      "id": "nfts-radical-radish-76-left",
+      "name": "Radical Radish",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 76,
+      "source_cell": "D76",
+      "selected_in_excel": false,
+      "price": "95",
+      "effect_text": "3% chance to get +10 Radishes",
+      "effect_values": [
+        {
+          "cell": "G76",
+          "raw": "0.3",
+          "number": 0.3
+        }
+      ],
+      "image": "nfts/nfts/054_radical-radish.png",
+      "source_media_path": "xl/media/image237.png",
+      "source_image_cell": "C76"
+    },
+    {
+      "id": "nfts-lab-grown-radish-77-left",
+      "name": "Lab Grown Radish",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 77,
+      "source_cell": "D77",
+      "selected_in_excel": true,
+      "price": "0",
+      "effect_text": "+0,4 Radishes",
+      "effect_values": [
+        {
+          "cell": "G77",
+          "raw": "0.4",
+          "number": 0.4
+        }
+      ],
+      "image": "nfts/nfts/055_lab-grown-radish.png",
+      "source_media_path": "xl/media/image227.png",
+      "source_image_cell": "C77"
+    },
+    {
+      "id": "nfts-foliant-78-left",
+      "name": "Foliant",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 78,
+      "source_cell": "D78",
+      "selected_in_excel": true,
+      "price": "110",
+      "effect_text": "+0.2 Kale",
+      "effect_values": [
+        {
+          "cell": "G78",
+          "raw": "0.2",
+          "number": 0.2
+        }
+      ],
+      "image": "nfts/nfts/056_foliant.png",
+      "source_media_path": "xl/media/image260.png",
+      "source_image_cell": "C78"
+    },
+    {
+      "id": "nfts-giant-kale-79-left",
+      "name": "Giant Kale",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 79,
+      "source_cell": "D79",
+      "selected_in_excel": false,
+      "price": "1040",
+      "effect_text": "+2 Kale",
+      "effect_values": [
+        {
+          "cell": "G79",
+          "raw": "2.0",
+          "number": 2.0
+        }
+      ],
+      "image": "nfts/nfts/057_giant-kale.png",
+      "source_media_path": "xl/media/image317.png",
+      "source_image_cell": "C79"
+    },
+    {
+      "id": "nfts-giant-artichoke-80-left",
+      "name": "Giant Artichoke",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 80,
+      "source_cell": "D80",
+      "selected_in_excel": false,
+      "price": "948",
+      "effect_text": "+2 Artichokes",
+      "effect_values": [
+        {
+          "cell": "G80",
+          "raw": "2.0",
+          "number": 2.0
+        }
+      ],
+      "image": "nfts/nfts/058_giant-artichoke.png",
+      "source_media_path": "xl/media/image276.png",
+      "source_image_cell": "C80"
+    },
+    {
+      "id": "nfts-sheaf-of-plenty-81-left",
+      "name": "Sheaf of Plenty",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 81,
+      "source_cell": "D81",
+      "selected_in_excel": false,
+      "price": "1633",
+      "effect_text": "+2 Barley",
+      "effect_values": [
+        {
+          "cell": "G81",
+          "raw": "2.0",
+          "number": 2.0
+        }
+      ],
+      "image": "nfts/nfts/059_sheaf-of-plenty.png",
+      "source_media_path": "xl/media/image263.png",
+      "source_image_cell": "C81"
+    },
+    {
+      "id": "nfts-groovy-gramophone-82-left",
+      "name": "Groovy Gramophone",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 82,
+      "source_cell": "D82",
+      "selected_in_excel": false,
+      "price": "3149",
+      "effect_text": "+100% Growth Speed on Crop Machine",
+      "effect_values": [
+        {
+          "cell": "G82",
+          "raw": "0.5",
+          "number": 0.5
+        }
+      ],
+      "image": "nfts/nfts/060_groovy-gramophone.png",
+      "source_media_path": "xl/media/image288.png",
+      "source_image_cell": "C82"
+    },
+    {
+      "id": "nfts-fruit-tune-box-110-left",
+      "name": "Fruit Tune Box",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 110,
+      "source_cell": "D110",
+      "selected_in_excel": false,
+      "price": "356",
+      "effect_text": "+20% Fruit Patch Growth Speed",
+      "effect_values": [
+        {
+          "cell": "G110",
+          "raw": "0.8",
+          "number": 0.8
+        }
+      ],
+      "image": "nfts/nfts/083_fruit-tune-box.png",
+      "source_media_path": "xl/media/image292.png",
+      "source_image_cell": "C110"
+    },
+    {
+      "id": "nfts-cannonball-111-left",
+      "name": "Cannonball",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 111,
+      "source_cell": "D111",
+      "selected_in_excel": false,
+      "price": "157.9999",
+      "effect_text": "-25% in Tomato growth time",
+      "effect_values": [
+        {
+          "cell": "G111",
+          "raw": "0.75",
+          "number": 0.75
+        }
+      ],
+      "image": "nfts/nfts/084_cannonball.png",
+      "source_media_path": "xl/media/image300.png",
+      "source_image_cell": "C111"
+    },
+    {
+      "id": "nfts-tomato-clown-112-left",
+      "name": "Tomato Clown",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 112,
+      "source_cell": "D112",
+      "selected_in_excel": false,
+      "price": "848",
+      "effect_text": "-50% in Tomato growth time",
+      "effect_values": [
+        {
+          "cell": "G112",
+          "raw": "0.5",
+          "number": 0.5
+        }
+      ],
+      "image": "nfts/nfts/085_tomato-clown.png",
+      "source_media_path": "xl/media/image408.png",
+      "source_image_cell": "C112"
+    },
+    {
+      "id": "nfts-tomato-bombard-113-left",
+      "name": "Tomato Bombard",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 113,
+      "source_cell": "D113",
+      "selected_in_excel": false,
+      "price": "1274",
+      "effect_text": "+1 Tomato",
+      "effect_values": [
+        {
+          "cell": "G113",
+          "raw": "1.0",
+          "number": 1.0
+        }
+      ],
+      "image": "nfts/nfts/086_tomato-bombard.png",
+      "source_media_path": "xl/media/image343.png",
+      "source_image_cell": "C113"
+    },
+    {
+      "id": "nfts-lemon-shark-114-left",
+      "name": "Lemon Shark",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 114,
+      "source_cell": "D114",
+      "selected_in_excel": false,
+      "price": "236",
+      "effect_text": "+0.2 Lemon",
+      "effect_values": [
+        {
+          "cell": "G114",
+          "raw": "0.2",
+          "number": 0.2
+        }
+      ],
+      "image": "nfts/nfts/087_lemon-shark.png",
+      "source_media_path": "xl/media/image327.png",
+      "source_image_cell": "C114"
+    },
+    {
+      "id": "nfts-reveling-lemon-115-left",
+      "name": "Reveling Lemon",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 115,
+      "source_cell": "D115",
+      "selected_in_excel": false,
+      "price": "150",
+      "effect_text": "+0.25 Lemon",
+      "effect_values": [
+        {
+          "cell": "G115",
+          "raw": "0.25",
+          "number": 0.25
+        }
+      ],
+      "image": "nfts/nfts/088_reveling-lemon.png",
+      "source_media_path": "xl/media/image322.png",
+      "source_image_cell": "C115"
+    },
+    {
+      "id": "nfts-lemon-frog-116-left",
+      "name": "Lemon Frog",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 116,
+      "source_cell": "D116",
+      "selected_in_excel": false,
+      "price": "87",
+      "effect_text": "-25% in Lemon growth time",
+      "effect_values": [
+        {
+          "cell": "G116",
+          "raw": "0.75",
+          "number": 0.75
+        }
+      ],
+      "image": "nfts/nfts/089_lemon-frog.png",
+      "source_media_path": "xl/media/image316.png",
+      "source_image_cell": "C116"
+    },
+    {
+      "id": "nfts-lemon-tea-bath-117-left",
+      "name": "Lemon Tea Bath",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 117,
+      "source_cell": "D117",
+      "selected_in_excel": false,
+      "price": "1794",
+      "effect_text": "-50% in Lemon growth time",
+      "effect_values": [
+        {
+          "cell": "G117",
+          "raw": "0.5",
+          "number": 0.5
+        }
+      ],
+      "image": "nfts/nfts/090_lemon-tea-bath.png",
+      "source_media_path": "xl/media/image320.png",
+      "source_image_cell": "C117"
+    },
+    {
+      "id": "nfts-black-bearry-118-left",
+      "name": "Black Bearry",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 118,
+      "source_cell": "D118",
+      "selected_in_excel": false,
+      "price": "492",
+      "effect_text": "+1 Blueberry",
+      "effect_values": [
+        {
+          "cell": "G118",
+          "raw": "1.0",
+          "number": 1.0
+        }
+      ],
+      "image": "nfts/nfts/091_black-bearry.png",
+      "source_media_path": "xl/media/image311.png",
+      "source_image_cell": "C118"
+    },
+    {
+      "id": "nfts-squirrel-monkey-119-left",
+      "name": "Squirrel Monkey",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 119,
+      "source_cell": "D119",
+      "selected_in_excel": true,
+      "price": "227",
+      "effect_text": "-50% in Orange growth time",
+      "effect_values": [
+        {
+          "cell": "G119",
+          "raw": "0.5",
+          "number": 0.5
+        }
+      ],
+      "image": "nfts/nfts/092_squirrel-monkey.png",
+      "source_media_path": "xl/media/image328.png",
+      "source_image_cell": "C119"
+    },
+    {
+      "id": "nfts-lady-bug-120-left",
+      "name": "Lady Bug",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 120,
+      "source_cell": "D120",
+      "selected_in_excel": false,
+      "price": "74",
+      "effect_text": "+0.25 Apple",
+      "effect_values": [
+        {
+          "cell": "G120",
+          "raw": "0.25",
+          "number": 0.25
+        }
+      ],
+      "image": "nfts/nfts/093_lady-bug.png",
+      "source_media_path": "xl/media/image325.png",
+      "source_image_cell": "C120"
+    },
+    {
+      "id": "nfts-nana-121-left",
+      "name": "Nana",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 121,
+      "source_cell": "D121",
+      "selected_in_excel": false,
+      "price": "67.5",
+      "effect_text": "-10% in Banana growth time",
+      "effect_values": [
+        {
+          "cell": "G121",
+          "raw": "0.9",
+          "number": 0.9
+        }
+      ],
+      "image": "nfts/nfts/094_nana.png",
+      "source_media_path": "xl/media/image347.png",
+      "source_image_cell": "C121"
+    },
+    {
+      "id": "nfts-banana-chicken-122-left",
+      "name": "Banana Chicken",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 122,
+      "source_cell": "D122",
+      "selected_in_excel": false,
+      "price": "68.5",
+      "effect_text": "+0.1 Banana",
+      "effect_values": [
+        {
+          "cell": "G122",
+          "raw": "0.1",
+          "number": 0.1
+        }
+      ],
+      "image": "nfts/nfts/095_banana-chicken.png",
+      "source_media_path": "xl/media/image357.png",
+      "source_image_cell": "C122"
+    },
+    {
+      "id": "nfts-turbo-sprout-133-left",
+      "name": "Turbo Sprout",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 133,
+      "source_cell": "D133",
+      "selected_in_excel": false,
+      "price": "6998",
+      "effect_text": "-50% of time on GH",
+      "effect_values": [
+        {
+          "cell": "G133",
+          "raw": "0.5",
+          "number": 0.5
+        }
+      ],
+      "image": "nfts/nfts/101_turbo-sprout.png",
+      "source_media_path": "xl/media/image387.png",
+      "source_image_cell": "C133"
+    },
+    {
+      "id": "nfts-pharaoh-gnome-134-left",
+      "name": "Pharaoh Gnome",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 134,
+      "source_cell": "D134",
+      "selected_in_excel": false,
+      "price": "0",
+      "effect_text": "+2 Crops and Fruits from GH",
+      "effect_values": [
+        {
+          "cell": "G134",
+          "raw": "2.0",
+          "number": 2.0
+        }
+      ],
+      "image": "nfts/nfts/102_pharaoh-gnome.png",
+      "source_media_path": "xl/media/image337.png",
+      "source_image_cell": "C134"
+    },
+    {
+      "id": "nfts-vinny-135-left",
+      "name": "Vinny",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 135,
+      "source_cell": "D135",
+      "selected_in_excel": true,
+      "price": "100",
+      "effect_text": "+0.25 Grape",
+      "effect_values": [
+        {
+          "cell": "G135",
+          "raw": "0.25",
+          "number": 0.25
+        }
+      ],
+      "image": "nfts/nfts/103_vinny.png",
+      "source_media_path": "xl/media/image363.png",
+      "source_image_cell": "C135"
+    },
+    {
+      "id": "nfts-grape-granny-136-left",
+      "name": "Grape Granny",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 136,
+      "source_cell": "D136",
+      "selected_in_excel": false,
+      "price": "885",
+      "effect_text": "+1 Grape",
+      "effect_values": [
+        {
+          "cell": "G136",
+          "raw": "1.0",
+          "number": 1.0
+        }
+      ],
+      "image": "nfts/nfts/104_grape-granny.png",
+      "source_media_path": "xl/media/image332.png",
+      "source_image_cell": "C136"
+    },
+    {
+      "id": "nfts-rice-panda-137-left",
+      "name": "Rice Panda",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 137,
+      "source_cell": "D137",
+      "selected_in_excel": false,
+      "price": "77.59",
+      "effect_text": "+0.25 Rice",
+      "effect_values": [
+        {
+          "cell": "G137",
+          "raw": "0.25",
+          "number": 0.25
+        }
+      ],
+      "image": "nfts/nfts/105_rice-panda.png",
+      "source_media_path": "xl/media/image351.png",
+      "source_image_cell": "C137"
+    },
+    {
+      "id": "nfts-pet-bowls-147-left",
+      "name": "Pet Bowls",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 147,
+      "source_cell": "D147",
+      "selected_in_excel": true,
+      "price": "4.1579",
+      "effect_text": "+10 Pet XP per food request",
+      "effect_values": [
+        {
+          "cell": "G147",
+          "raw": "10.0",
+          "number": 10.0
+        }
+      ],
+      "image": "nfts/nfts/110_pet-bowls.png",
+      "source_media_path": "xl/media/image362.png",
+      "source_image_cell": "C147"
+    },
+    {
+      "id": "nfts-hungry-caterpillar-154-left",
+      "name": "Hungry Caterpillar",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 154,
+      "source_cell": "D154",
+      "selected_in_excel": false,
+      "price": "368",
+      "effect_text": "Free flower seeds",
+      "effect_values": [],
+      "image": "nfts/nfts/112_hungry-caterpillar.png",
+      "source_media_path": "xl/media/image374.png",
+      "source_image_cell": "C154"
+    },
+    {
+      "id": "nfts-flower-fox-155-left",
+      "name": "Flower Fox",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 155,
+      "source_cell": "D155",
+      "selected_in_excel": false,
+      "price": "130",
+      "effect_text": "-10% in the time for flowers to grow",
+      "effect_values": [],
+      "image": "nfts/nfts/113_flower-fox.png",
+      "source_media_path": "xl/media/image376.png",
+      "source_image_cell": "C155"
+    },
+    {
+      "id": "nfts-humming-bird-156-left",
+      "name": "Humming Bird",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 156,
+      "source_cell": "D156",
+      "selected_in_excel": false,
+      "price": "852",
+      "effect_text": "20% chance to get +1 flower",
+      "effect_values": [],
+      "image": "nfts/nfts/114_humming-bird.png",
+      "source_media_path": "xl/media/image338.png",
+      "source_image_cell": "C156"
+    },
+    {
+      "id": "nfts-chicory-158-left",
+      "name": "Chicory",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 158,
+      "source_cell": "D158",
+      "selected_in_excel": true,
+      "price": "47",
+      "effect_text": "10% chance to get +1 flower",
+      "effect_values": [],
+      "image": "nfts/nfts/116_chicory.png",
+      "source_media_path": "xl/media/image422.png",
+      "source_image_cell": "C158"
+    },
+    {
+      "id": "nfts-desert-rose-159-left",
+      "name": "Desert Rose",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 159,
+      "source_cell": "D159",
+      "selected_in_excel": true,
+      "price": "63.9999",
+      "effect_text": "10% chance to get +1 flower",
+      "effect_values": [],
+      "image": "nfts/nfts/117_desert-rose.png",
+      "source_media_path": "xl/media/image370.png",
+      "source_image_cell": "C159"
+    },
+    {
+      "id": "nfts-queen-bee-160-left",
+      "name": "Queen Bee",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 160,
+      "source_cell": "D160",
+      "selected_in_excel": false,
+      "price": "2848",
+      "effect_text": "-50% in the time for honey to be ready",
+      "effect_values": [],
+      "image": "nfts/nfts/118_queen-bee.png",
+      "source_media_path": "xl/media/image386.png",
+      "source_image_cell": "C160"
+    },
+    {
+      "id": "nfts-king-of-bears-161-left",
+      "name": "King of Bears",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 161,
+      "source_cell": "D161",
+      "selected_in_excel": false,
+      "price": "404",
+      "effect_text": "+0.25 Honey",
+      "effect_values": [],
+      "image": "nfts/nfts/119_king-of-bears.png",
+      "source_media_path": "xl/media/image384.png",
+      "source_image_cell": "C161"
+    },
+    {
+      "id": "nfts-vip-access-bonus-13-right",
+      "name": "VIP ACCESS Bonus",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "VIP ACCESS Bonus",
+      "source_sheet": "NFTs",
+      "source_row": 13,
+      "source_cell": "L13",
+      "selected_in_excel": true,
+      "price": "",
+      "effect_text": "10% EXP Boost / +10% XP",
+      "effect_values": [
+        {
+          "cell": "O13",
+          "raw": "1.1",
+          "number": 1.1
+        }
+      ],
+      "image": "nfts/nfts/125_vip-access-bonus.png",
+      "source_media_path": "xl/media/image126.png",
+      "source_image_cell": "K13"
+    },
+    {
+      "id": "nfts-woody-the-beaver-20-right",
+      "name": "Woody the Beaver",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 20,
+      "source_cell": "L20",
+      "selected_in_excel": false,
+      "price": "660",
+      "effect_text": "+20% Wood",
+      "effect_values": [
+        {
+          "cell": "O20",
+          "raw": "1.2",
+          "number": 1.2
+        }
+      ],
+      "image": "nfts/nfts/127_woody-the-beaver.png",
+      "source_media_path": "xl/media/image132.png",
+      "source_image_cell": "K20"
+    },
+    {
+      "id": "nfts-apprentice-beaver-21-right",
+      "name": "Apprentice Beaver",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 21,
+      "source_cell": "L21",
+      "selected_in_excel": false,
+      "price": "1745",
+      "effect_text": "+20% Wood, -50% in the time for trees",
+      "effect_values": [
+        {
+          "cell": "O21",
+          "raw": "0.5",
+          "number": 0.5
+        }
+      ],
+      "image": "nfts/nfts/128_apprentice-beaver.png",
+      "source_media_path": "xl/media/image153.png",
+      "source_image_cell": "K21"
+    },
+    {
+      "id": "nfts-foreman-beaver-22-right",
+      "name": "Foreman Beaver",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 22,
+      "source_cell": "L22",
+      "selected_in_excel": false,
+      "price": "0",
+      "effect_text": "+20% Wood, -50% in the time for trees, cut without an axe",
+      "effect_values": [
+        {
+          "cell": "O22",
+          "raw": "0.0",
+          "number": 0.0
+        }
+      ],
+      "image": "nfts/nfts/129_foreman-beaver.png",
+      "source_media_path": "xl/media/image166.png",
+      "source_image_cell": "K22"
+    },
+    {
+      "id": "nfts-wood-nymph-wendy-23-right",
+      "name": "Wood Nymph Wendy",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 23,
+      "source_cell": "L23",
+      "selected_in_excel": false,
+      "price": "1199",
+      "effect_text": "+0.2 Wood",
+      "effect_values": [
+        {
+          "cell": "O23",
+          "raw": "0.2",
+          "number": 0.2
+        }
+      ],
+      "image": "nfts/nfts/130_wood-nymph-wendy.png",
+      "source_media_path": "xl/media/image194.png",
+      "source_image_cell": "K23"
+    },
+    {
+      "id": "nfts-tiki-totem-24-right",
+      "name": "Tiki Totem",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 24,
+      "source_cell": "L24",
+      "selected_in_excel": false,
+      "price": "180",
+      "effect_text": "+0.1 Wood",
+      "effect_values": [
+        {
+          "cell": "O24",
+          "raw": "0.1",
+          "number": 0.1
+        }
+      ],
+      "image": "nfts/nfts/131_tiki-totem.png",
+      "source_media_path": "xl/media/image161.png",
+      "source_image_cell": "K24"
+    },
+    {
+      "id": "nfts-volcano-gnome-26-right",
+      "name": "Volcano Gnome",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 26,
+      "source_cell": "L26",
+      "selected_in_excel": false,
+      "price": "0",
+      "effect_text": "+0.1 Minerals (stone - iron - gold)",
+      "effect_values": [
+        {
+          "cell": "O26",
+          "raw": "0.1",
+          "number": 0.1
+        }
+      ],
+      "image": "nfts/nfts/133_volcano-gnome.png",
+      "source_media_path": "xl/media/image181.png",
+      "source_image_cell": "K26"
+    },
+    {
+      "id": "nfts-emerald-turtle-27-right",
+      "name": "Emerald Turtle",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 27,
+      "source_cell": "L27",
+      "selected_in_excel": false,
+      "price": "10998",
+      "effect_text": "+0.5 stone, iron or gold - Effect on 8 nodes",
+      "effect_values": [],
+      "image": "nfts/nfts/134_emerald-turtle.png",
+      "source_media_path": "xl/media/image175.png",
+      "source_image_cell": "K27"
+    },
+    {
+      "id": "nfts-tunnel-mole-31-right",
+      "name": "Tunnel Mole",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 31,
+      "source_cell": "L31",
+      "selected_in_excel": true,
+      "price": "220",
+      "effect_text": "+0.25 Stone",
+      "effect_values": [
+        {
+          "cell": "O31",
+          "raw": "0.25",
+          "number": 0.25
+        }
+      ],
+      "image": "nfts/nfts/135_tunnel-mole.png",
+      "source_media_path": "xl/media/image163.png",
+      "source_image_cell": "K31"
+    },
+    {
+      "id": "nfts-rock-golem-32-right",
+      "name": "Rock Golem",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 32,
+      "source_cell": "L32",
+      "selected_in_excel": true,
+      "price": "396",
+      "effect_text": "10% chance to get +2 Stones",
+      "effect_values": [
+        {
+          "cell": "O32",
+          "raw": "0.2",
+          "number": 0.2
+        }
+      ],
+      "image": "nfts/nfts/136_rock-golem.png",
+      "source_media_path": "xl/media/image141.png",
+      "source_image_cell": "K32"
+    },
+    {
+      "id": "nfts-tin-turtle-33-right",
+      "name": "Tin Turtle",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 33,
+      "source_cell": "L33",
+      "selected_in_excel": false,
+      "price": "259",
+      "effect_text": "+0.1 Stone - Effect on 8 nodes",
+      "effect_values": [
+        {
+          "cell": "O33",
+          "raw": "0.04210526316",
+          "number": 0.04210526316
+        }
+      ],
+      "image": "nfts/nfts/137_tin-turtle.png",
+      "source_media_path": "xl/media/image176.png",
+      "source_image_cell": "K33"
+    },
+    {
+      "id": "nfts-quarry-35-right",
+      "name": "Quarry",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 35,
+      "source_cell": "L35",
+      "selected_in_excel": false,
+      "price": "14697",
+      "effect_text": "Mine stone for free",
+      "effect_values": [
+        {
+          "cell": "O35",
+          "raw": "0.0",
+          "number": 0.0
+        }
+      ],
+      "image": "nfts/nfts/139_quarry.png",
+      "source_media_path": "xl/media/image243.png",
+      "source_image_cell": "K35"
+    },
+    {
+      "id": "nfts-rocky-the-mole-36-right",
+      "name": "Rocky the Mole",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 36,
+      "source_cell": "L36",
+      "selected_in_excel": false,
+      "price": "387",
+      "effect_text": "+0.25 Iron",
+      "effect_values": [
+        {
+          "cell": "O36",
+          "raw": "0.25",
+          "number": 0.25
+        }
+      ],
+      "image": "nfts/nfts/140_rocky-the-mole.png",
+      "source_media_path": "xl/media/image187.png",
+      "source_image_cell": "K36"
+    },
+    {
+      "id": "nfts-iron-idol-37-right",
+      "name": "Iron Idol",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 37,
+      "source_cell": "L37",
+      "selected_in_excel": false,
+      "price": "4697",
+      "effect_text": "+1 Iron",
+      "effect_values": [
+        {
+          "cell": "O37",
+          "raw": "1.0",
+          "number": 1.0
+        }
+      ],
+      "image": "nfts/nfts/141_iron-idol.png",
+      "source_media_path": "xl/media/image203.png",
+      "source_image_cell": "K37"
+    },
+    {
+      "id": "nfts-nugget-39-right",
+      "name": "Nugget",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 39,
+      "source_cell": "L39",
+      "selected_in_excel": false,
+      "price": "1107",
+      "effect_text": "+0.25 Gold",
+      "effect_values": [
+        {
+          "cell": "O39",
+          "raw": "0.25",
+          "number": 0.25
+        }
+      ],
+      "image": "nfts/nfts/143_nugget.png",
+      "source_media_path": "xl/media/image207.png",
+      "source_image_cell": "K39"
+    },
+    {
+      "id": "nfts-crimson-carp-41-right",
+      "name": "Crimson Carp",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 41,
+      "source_cell": "L41",
+      "selected_in_excel": false,
+      "price": "600",
+      "effect_text": "+0.05 Crimstone",
+      "effect_values": [
+        {
+          "cell": "O41",
+          "raw": "0.05",
+          "number": 0.05
+        }
+      ],
+      "image": "nfts/nfts/145_crimson-carp.png",
+      "source_media_path": "xl/media/image241.png",
+      "source_image_cell": "K41"
+    },
+    {
+      "id": "nfts-crim-peckster-42-right",
+      "name": "Crim Peckster",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 42,
+      "source_cell": "L42",
+      "selected_in_excel": false,
+      "price": "214",
+      "effect_text": "+0.1 Crimstone",
+      "effect_values": [
+        {
+          "cell": "O42",
+          "raw": "0.1",
+          "number": 0.1
+        }
+      ],
+      "image": "nfts/nfts/146_crim-peckster.png",
+      "source_media_path": "xl/media/image268.png",
+      "source_image_cell": "K42"
+    },
+    {
+      "id": "nfts-knight-chicken-53-right",
+      "name": "Knight Chicken",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 53,
+      "source_cell": "L53",
+      "selected_in_excel": false,
+      "price": "71.9699",
+      "effect_text": "+0.1 Oil",
+      "effect_values": [
+        {
+          "cell": "O53",
+          "raw": "0.1",
+          "number": 0.1
+        }
+      ],
+      "image": "nfts/nfts/152_knight-chicken.png",
+      "source_media_path": "xl/media/image216.png",
+      "source_image_cell": "K53"
+    },
+    {
+      "id": "nfts-battle-fish-54-right",
+      "name": "Battle Fish",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 54,
+      "source_cell": "L54",
+      "selected_in_excel": false,
+      "price": "206",
+      "effect_text": "+0.05 Oil",
+      "effect_values": [
+        {
+          "cell": "O54",
+          "raw": "0.05",
+          "number": 0.05
+        }
+      ],
+      "image": "nfts/nfts/153_battle-fish.png",
+      "source_media_path": "xl/media/image189.png",
+      "source_image_cell": "K54"
+    },
+    {
+      "id": "nfts-obsidian-turtle-55-right",
+      "name": "Obsidian Turtle",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 55,
+      "source_cell": "L55",
+      "selected_in_excel": false,
+      "price": "7497",
+      "effect_text": "+0.5 Obsidian",
+      "effect_values": [
+        {
+          "cell": "O55",
+          "raw": "0.5",
+          "number": 0.5
+        }
+      ],
+      "image": "nfts/nfts/154_obsidian-turtle.png",
+      "source_media_path": "xl/media/image225.png",
+      "source_image_cell": "K55"
+    },
+    {
+      "id": "nfts-magma-stone-56-right",
+      "name": "Magma Stone",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 56,
+      "source_cell": "L56",
+      "selected_in_excel": false,
+      "price": "Stella",
+      "effect_text": "-15% Lava Pit Time, +0.15 Obsidian",
+      "effect_values": [
+        {
+          "cell": "O56",
+          "raw": "0.85",
+          "number": 0.85
+        },
+        {
+          "cell": "P56",
+          "raw": "0.15",
+          "number": 0.15
+        }
+      ],
+      "image": "nfts/nfts/155_magma-stone.png",
+      "source_media_path": "xl/media/image214.png",
+      "source_image_cell": "K56"
+    },
+    {
+      "id": "nfts-gold-egg-69-right",
+      "name": "Gold Egg",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 69,
+      "source_cell": "L69",
+      "selected_in_excel": false,
+      "price": "8790",
+      "effect_text": "Feed the chickens without food",
+      "effect_values": [
+        {
+          "cell": "O69",
+          "raw": "0.0",
+          "number": 0.0
+        }
+      ],
+      "image": "nfts/nfts/163_gold-egg.png",
+      "source_media_path": "xl/media/image256.png",
+      "source_image_cell": "K69"
+    },
+    {
+      "id": "nfts-chicken-coop-70-right",
+      "name": "Chicken Coop",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 70,
+      "source_cell": "L70",
+      "selected_in_excel": false,
+      "price": "2777",
+      "effect_text": "+1 Egg, +5 Base Chickens and +5 per upgrade",
+      "effect_values": [
+        {
+          "cell": "O70",
+          "raw": "1.0",
+          "number": 1.0
+        }
+      ],
+      "image": "nfts/nfts/164_chicken-coop.png",
+      "source_media_path": "xl/media/image261.png",
+      "source_image_cell": "K70"
+    },
+    {
+      "id": "nfts-cluckulator-71-right",
+      "name": "Cluckulator",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 71,
+      "source_cell": "L71",
+      "selected_in_excel": false,
+      "price": "940",
+      "effect_text": "-25% food to feed the chickens",
+      "effect_values": [
+        {
+          "cell": "O71",
+          "raw": "0.75",
+          "number": 0.75
+        }
+      ],
+      "image": "nfts/nfts/165_cluckulator.png",
+      "source_media_path": "xl/media/image242.png",
+      "source_image_cell": "K71"
+    },
+    {
+      "id": "nfts-speed-chicken-73-right",
+      "name": "Speed Chicken",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 73,
+      "source_cell": "L73",
+      "selected_in_excel": false,
+      "price": "24.4599",
+      "effect_text": "-10% in chicken production time",
+      "effect_values": [
+        {
+          "cell": "O73",
+          "raw": "0.9",
+          "number": 0.9
+        }
+      ],
+      "image": "nfts/nfts/167_speed-chicken.png",
+      "source_media_path": "xl/media/image253.png",
+      "source_image_cell": "K73"
+    },
+    {
+      "id": "nfts-fat-chicken-74-right",
+      "name": "Fat Chicken",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 74,
+      "source_cell": "L74",
+      "selected_in_excel": true,
+      "price": "47",
+      "effect_text": "-10% food needed for the chickens",
+      "effect_values": [
+        {
+          "cell": "O74",
+          "raw": "0.9",
+          "number": 0.9
+        }
+      ],
+      "image": "nfts/nfts/168_fat-chicken.png",
+      "source_media_path": "xl/media/image247.png",
+      "source_image_cell": "K74"
+    },
+    {
+      "id": "nfts-rich-chicken-75-right",
+      "name": "Rich Chicken",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 75,
+      "source_cell": "L75",
+      "selected_in_excel": false,
+      "price": "39.79",
+      "effect_text": "+0.1 Egg",
+      "effect_values": [
+        {
+          "cell": "O75",
+          "raw": "0.1",
+          "number": 0.1
+        }
+      ],
+      "image": "nfts/nfts/169_rich-chicken.png",
+      "source_media_path": "xl/media/image252.png",
+      "source_image_cell": "K75"
+    },
+    {
+      "id": "nfts-undead-rooster-76-right",
+      "name": "Undead Rooster",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 76,
+      "source_cell": "L76",
+      "selected_in_excel": false,
+      "price": "140",
+      "effect_text": "+0.1 Egg",
+      "effect_values": [
+        {
+          "cell": "O76",
+          "raw": "0.1",
+          "number": 0.1
+        }
+      ],
+      "image": "nfts/nfts/170_undead-rooster.png",
+      "source_media_path": "xl/media/image245.png",
+      "source_image_cell": "K76"
+    },
+    {
+      "id": "nfts-ayam-cemani-77-right",
+      "name": "Ayam Cemani",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 77,
+      "source_cell": "L77",
+      "selected_in_excel": false,
+      "price": "306",
+      "effect_text": "+0.2 Egg",
+      "effect_values": [
+        {
+          "cell": "O77",
+          "raw": "0.2",
+          "number": 0.2
+        }
+      ],
+      "image": "nfts/nfts/171_ayam-cemani.png",
+      "source_media_path": "xl/media/image251.png",
+      "source_image_cell": "K77"
+    },
+    {
+      "id": "nfts-el-pollo-veloz-78-right",
+      "name": "El Pollo Veloz",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 78,
+      "source_cell": "L78",
+      "selected_in_excel": false,
+      "price": "247",
+      "effect_text": "-2 hours in chicken production time",
+      "effect_values": [
+        {
+          "cell": "O78",
+          "raw": "0.08333333333333333",
+          "number": 0.08333333333333333
+        }
+      ],
+      "image": "nfts/nfts/172_el-pollo-veloz.png",
+      "source_media_path": "xl/media/image238.png",
+      "source_image_cell": "K78"
+    },
+    {
+      "id": "nfts-alien-chicken-79-right",
+      "name": "Alien Chicken",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 79,
+      "source_cell": "L79",
+      "selected_in_excel": false,
+      "price": "71",
+      "effect_text": "+0.1 Feather",
+      "effect_values": [
+        {
+          "cell": "O79",
+          "raw": "0.1",
+          "number": 0.1
+        }
+      ],
+      "image": "nfts/nfts/173_alien-chicken.png",
+      "source_media_path": "xl/media/image310.png",
+      "source_image_cell": "K79"
+    },
+    {
+      "id": "nfts-janitor-chicken-80-right",
+      "name": "Janitor Chicken",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 80,
+      "source_cell": "L80",
+      "selected_in_excel": false,
+      "price": "35.99",
+      "effect_text": "-5% chicken sleep time",
+      "effect_values": [
+        {
+          "cell": "O80",
+          "raw": "0.95",
+          "number": 0.95
+        }
+      ],
+      "image": "nfts/nfts/174_janitor-chicken.png",
+      "source_media_path": "xl/media/image294.png",
+      "source_image_cell": "K80"
+    },
+    {
+      "id": "nfts-rooster-81-right",
+      "name": "Rooster",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 81,
+      "source_cell": "L81",
+      "selected_in_excel": false,
+      "price": "223",
+      "effect_text": "Double the chances of getting Mutant Chickens",
+      "effect_values": [
+        {
+          "cell": "O81",
+          "raw": "?",
+          "number": null
+        }
+      ],
+      "image": "nfts/nfts/175_rooster.png",
+      "source_media_path": "xl/media/image264.png",
+      "source_image_cell": "K81"
+    },
+    {
+      "id": "nfts-summer-chicken-82-right",
+      "name": "Summer Chicken",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 82,
+      "source_cell": "L82",
+      "selected_in_excel": false,
+      "price": "92",
+      "effect_text": "Chickens don't get sick in Summer",
+      "effect_values": [],
+      "image": "nfts/nfts/176_summer-chicken.png",
+      "source_media_path": "xl/media/image293.png",
+      "source_image_cell": "K82"
+    },
+    {
+      "id": "nfts-sleepy-chicken-83-right",
+      "name": "Sleepy Chicken",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 83,
+      "source_cell": "L83",
+      "selected_in_excel": false,
+      "price": "44",
+      "effect_text": "Prevent chicken sickness during fall",
+      "effect_values": [],
+      "image": "nfts/nfts/177_sleepy-chicken.png",
+      "source_media_path": "xl/media/image272.png",
+      "source_image_cell": "K83"
+    },
+    {
+      "id": "nfts-barn-blueprint-84-right",
+      "name": "Barn Blueprint",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 84,
+      "source_cell": "L84",
+      "selected_in_excel": false,
+      "price": "3094",
+      "effect_text": "+5 animals per level of the Barn",
+      "effect_values": [
+        {
+          "cell": "O84",
+          "raw": "5.0",
+          "number": 5.0
+        }
+      ],
+      "image": "nfts/nfts/178_barn-blueprint.png",
+      "source_media_path": "xl/media/image273.png",
+      "source_image_cell": "K84"
+    },
+    {
+      "id": "nfts-baby-cow-85-right",
+      "name": "Baby Cow",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 85,
+      "source_cell": "L85",
+      "selected_in_excel": false,
+      "price": "241",
+      "effect_text": "+10 cow xp from affection",
+      "effect_values": [
+        {
+          "cell": "O85",
+          "raw": "10.0",
+          "number": 10.0
+        }
+      ],
+      "image": "nfts/nfts/179_baby-cow.png",
+      "source_media_path": "xl/media/image270.png",
+      "source_image_cell": "K85"
+    },
+    {
+      "id": "nfts-mammoth-86-right",
+      "name": "Mammoth",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 86,
+      "source_cell": "L86",
+      "selected_in_excel": false,
+      "price": "142.8999",
+      "effect_text": "-25% in Cow Sleep Time",
+      "effect_values": [
+        {
+          "cell": "O86",
+          "raw": "0.75",
+          "number": 0.75
+        }
+      ],
+      "image": "nfts/nfts/180_mammoth.png",
+      "source_media_path": "xl/media/image280.png",
+      "source_image_cell": "K86"
+    },
+    {
+      "id": "nfts-dr-cow-87-right",
+      "name": "Dr Cow",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 87,
+      "source_cell": "L87",
+      "selected_in_excel": false,
+      "price": "485.9999",
+      "effect_text": "5% less feeding cost for cows",
+      "effect_values": [
+        {
+          "cell": "O87",
+          "raw": "0.95",
+          "number": 0.95
+        }
+      ],
+      "image": "nfts/nfts/181_dr-cow.png",
+      "source_media_path": "xl/media/image283.png",
+      "source_image_cell": "K87"
+    },
+    {
+      "id": "nfts-golden-cow-88-right",
+      "name": "Golden Cow",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 88,
+      "source_cell": "L88",
+      "selected_in_excel": false,
+      "price": "0",
+      "effect_text": "Feed the cows without food",
+      "effect_values": [
+        {
+          "cell": "O88",
+          "raw": "0.0",
+          "number": 0.0
+        }
+      ],
+      "image": "nfts/nfts/182_golden-cow.png",
+      "source_media_path": "xl/media/image255.png",
+      "source_image_cell": "K88"
+    },
+    {
+      "id": "nfts-longhorn-cowfish-89-right",
+      "name": "Longhorn Cowfish",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 89,
+      "source_cell": "L89",
+      "selected_in_excel": false,
+      "price": "329.9999",
+      "effect_text": "+0.2 Milk",
+      "effect_values": [
+        {
+          "cell": "O89",
+          "raw": "0.2",
+          "number": 0.2
+        }
+      ],
+      "image": "nfts/nfts/183_longhorn-cowfish.png",
+      "source_media_path": "xl/media/image279.png",
+      "source_image_cell": "K89"
+    },
+    {
+      "id": "nfts-mootant-90-right",
+      "name": "Mootant",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 90,
+      "source_cell": "L90",
+      "selected_in_excel": false,
+      "price": "900",
+      "effect_text": "+0.1 Leather",
+      "effect_values": [
+        {
+          "cell": "O90",
+          "raw": "0.1",
+          "number": 0.1
+        }
+      ],
+      "image": "nfts/nfts/184_mootant.png",
+      "source_media_path": "xl/media/image318.png",
+      "source_image_cell": "K90"
+    },
+    {
+      "id": "nfts-moo-ver-91-right",
+      "name": "Moo-ver",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 91,
+      "source_cell": "L91",
+      "selected_in_excel": false,
+      "price": "435",
+      "effect_text": "+0.25 Leather",
+      "effect_values": [
+        {
+          "cell": "O91",
+          "raw": "0.25",
+          "number": 0.25
+        }
+      ],
+      "image": "nfts/nfts/185_moo-ver.png",
+      "source_media_path": "xl/media/image350.png",
+      "source_image_cell": "K91"
+    },
+    {
+      "id": "nfts-frozen-cow-92-right",
+      "name": "Frozen Cow",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 92,
+      "source_cell": "L92",
+      "selected_in_excel": false,
+      "price": "123",
+      "effect_text": "Cows don't get sick in Winter",
+      "effect_values": [],
+      "image": "nfts/nfts/186_frozen-cow.png",
+      "source_media_path": "xl/media/image304.png",
+      "source_image_cell": "K92"
+    },
+    {
+      "id": "nfts-golden-sheep-93-right",
+      "name": "Golden Sheep",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 93,
+      "source_cell": "L93",
+      "selected_in_excel": false,
+      "price": "11130",
+      "effect_text": "Feed the sheep without food",
+      "effect_values": [
+        {
+          "cell": "O93",
+          "raw": "0.0",
+          "number": 0.0
+        }
+      ],
+      "image": "nfts/nfts/187_golden-sheep.png",
+      "source_media_path": "xl/media/image278.png",
+      "source_image_cell": "K93"
+    },
+    {
+      "id": "nfts-farm-dog-94-right",
+      "name": "Farm Dog",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 94,
+      "source_cell": "L94",
+      "selected_in_excel": false,
+      "price": "3150",
+      "effect_text": "-25% in sheep production time",
+      "effect_values": [
+        {
+          "cell": "O94",
+          "raw": "0.75",
+          "number": 0.75
+        }
+      ],
+      "image": "nfts/nfts/188_farm-dog.png",
+      "source_media_path": "xl/media/image285.png",
+      "source_image_cell": "K94"
+    },
+    {
+      "id": "nfts-toxic-tuft-95-right",
+      "name": "Toxic Tuft",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 95,
+      "source_cell": "L95",
+      "selected_in_excel": false,
+      "price": "690",
+      "effect_text": "+0.1 Merino Wool",
+      "effect_values": [
+        {
+          "cell": "O95",
+          "raw": "0.1",
+          "number": 0.1
+        }
+      ],
+      "image": "nfts/nfts/189_toxic-tuft.png",
+      "source_media_path": "xl/media/image265.png",
+      "source_image_cell": "K95"
+    },
+    {
+      "id": "nfts-astronaut-sheep-96-right",
+      "name": "Astronaut Sheep",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 96,
+      "source_cell": "L96",
+      "selected_in_excel": false,
+      "price": "89",
+      "effect_text": "Increase Wool Yield +0.1",
+      "effect_values": [
+        {
+          "cell": "O96",
+          "raw": "0.1",
+          "number": 0.1
+        }
+      ],
+      "image": "nfts/nfts/190_astronaut-sheep.png",
+      "source_media_path": "xl/media/image291.png",
+      "source_image_cell": "K96"
+    },
+    {
+      "id": "nfts-frozen-sheep-97-right",
+      "name": "Frozen Sheep",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 97,
+      "source_cell": "L97",
+      "selected_in_excel": false,
+      "price": "154",
+      "effect_text": "Sheep don't get sick in Winter",
+      "effect_values": [],
+      "image": "nfts/nfts/191_frozen-sheep.png",
+      "source_media_path": "xl/media/image330.png",
+      "source_image_cell": "K97"
+    },
+    {
+      "id": "nfts-nurse-sheep-98-right",
+      "name": "Nurse Sheep",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 98,
+      "source_cell": "L98",
+      "selected_in_excel": false,
+      "price": "129",
+      "effect_text": "Sheeps cannot get sick during summer",
+      "effect_values": [],
+      "image": "nfts/nfts/192_nurse-sheep.png",
+      "source_media_path": "xl/media/image297.png",
+      "source_image_cell": "K98"
+    },
+    {
+      "id": "nfts-maneki-neko-116-right",
+      "name": "Maneki Neko",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 116,
+      "source_cell": "L116",
+      "selected_in_excel": false,
+      "price": "86",
+      "effect_text": "Get free food once a day",
+      "effect_values": [],
+      "image": "nfts/nfts/205_maneki-neko.png",
+      "source_media_path": "xl/media/image345.png",
+      "source_image_cell": "K116"
+    },
+    {
+      "id": "nfts-observatory-117-right",
+      "name": "Observatory",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 117,
+      "source_cell": "L117",
+      "selected_in_excel": false,
+      "price": "199",
+      "effect_text": "+5% XP",
+      "effect_values": [
+        {
+          "cell": "O117",
+          "raw": "1.05",
+          "number": 1.05
+        }
+      ],
+      "image": "nfts/nfts/206_observatory.png",
+      "source_media_path": "xl/media/image306.png",
+      "source_image_cell": "K117"
+    },
+    {
+      "id": "nfts-hungry-hare-118-right",
+      "name": "Hungry Hare",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 118,
+      "source_cell": "L118",
+      "selected_in_excel": false,
+      "price": "50",
+      "effect_text": "2x more XP on Fermented Carrots",
+      "effect_values": [
+        {
+          "cell": "O118",
+          "raw": "2.0",
+          "number": 2.0
+        }
+      ],
+      "image": "nfts/nfts/207_hungry-hare.png",
+      "source_media_path": "xl/media/image308.png",
+      "source_image_cell": "K118"
+    },
+    {
+      "id": "nfts-grain-grinder-119-right",
+      "name": "Grain Grinder",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 119,
+      "source_cell": "L119",
+      "selected_in_excel": false,
+      "price": "193.3",
+      "effect_text": "+20% XP on Cakes",
+      "effect_values": [
+        {
+          "cell": "O119",
+          "raw": "1.2",
+          "number": 1.2
+        }
+      ],
+      "image": "nfts/nfts/208_grain-grinder.png",
+      "source_media_path": "xl/media/image336.png",
+      "source_image_cell": "K119"
+    },
+    {
+      "id": "nfts-skill-shrimpy-120-right",
+      "name": "Skill Shrimpy",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 120,
+      "source_cell": "L120",
+      "selected_in_excel": false,
+      "price": "354",
+      "effect_text": "+20% XP when eating fish or fish-derived foods",
+      "effect_values": [
+        {
+          "cell": "O120",
+          "raw": "1.2",
+          "number": 1.2
+        }
+      ],
+      "image": "nfts/nfts/209_skill-shrimpy.png",
+      "source_media_path": "xl/media/image309.png",
+      "source_image_cell": "K120"
+    },
+    {
+      "id": "nfts-swiss-whiskers-121-right",
+      "name": "Swiss Whiskers",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 121,
+      "source_cell": "L121",
+      "selected_in_excel": false,
+      "price": "627",
+      "effect_text": "+500 XP on recipes that use cheese",
+      "effect_values": [
+        {
+          "cell": "O121",
+          "raw": "500",
+          "number": 500.0
+        }
+      ],
+      "image": "nfts/nfts/210_swiss-whiskers.png",
+      "source_media_path": "xl/media/image326.png",
+      "source_image_cell": "K121"
+    },
+    {
+      "id": "nfts-blossombeard-122-right",
+      "name": "Blossombeard",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 122,
+      "source_cell": "L122",
+      "selected_in_excel": true,
+      "price": "-",
+      "effect_text": "+10% XP",
+      "effect_values": [
+        {
+          "cell": "O122",
+          "raw": "1.1",
+          "number": 1.1
+        }
+      ],
+      "image": "nfts/nfts/211_blossombeard.png",
+      "source_media_path": "xl/media/image303.png",
+      "source_image_cell": "K122"
+    },
+    {
+      "id": "nfts-desert-gnome-123-right",
+      "name": "Desert Gnome",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 123,
+      "source_cell": "L123",
+      "selected_in_excel": true,
+      "price": "-",
+      "effect_text": "-10% on kitchen time",
+      "effect_values": [
+        {
+          "cell": "O123",
+          "raw": "0.9",
+          "number": 0.9
+        }
+      ],
+      "image": "nfts/nfts/212_desert-gnome.png",
+      "source_media_path": "xl/media/image323.png",
+      "source_image_cell": "K123"
+    },
+    {
+      "id": "nfts-golden-spatula-125-right",
+      "name": "Golden Spatula",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 125,
+      "source_cell": "L125",
+      "selected_in_excel": false,
+      "price": "1998",
+      "effect_text": "+10% XP",
+      "effect_values": [
+        {
+          "cell": "O125",
+          "raw": "1.1",
+          "number": 1.1
+        }
+      ],
+      "image": "nfts/nfts/213_golden-spatula.png",
+      "source_media_path": "xl/media/image361.png",
+      "source_image_cell": "K125"
+    },
+    {
+      "id": "nfts-pan-126-right",
+      "name": "Pan",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 126,
+      "source_cell": "L126",
+      "selected_in_excel": false,
+      "price": "0",
+      "effect_text": "+25% XP",
+      "effect_values": [
+        {
+          "cell": "O126",
+          "raw": "1.25",
+          "number": 1.25
+        }
+      ],
+      "image": "nfts/nfts/214_pan.png",
+      "source_media_path": "xl/media/image314.png",
+      "source_image_cell": "K126"
+    },
+    {
+      "id": "nfts-lunas-hat-127-right",
+      "name": "Luna's Hat",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 127,
+      "source_cell": "L127",
+      "selected_in_excel": false,
+      "price": "0",
+      "effect_text": "-50% on the time of all kitchens",
+      "effect_values": [
+        {
+          "cell": "O127",
+          "raw": "0.5",
+          "number": 0.5
+        }
+      ],
+      "image": "nfts/nfts/215_lunas-hat.png",
+      "source_media_path": "xl/media/image334.png",
+      "source_image_cell": "K127"
+    },
+    {
+      "id": "nfts-master-chefs-cleaver-128-right",
+      "name": "Master Chef's Cleaver",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 128,
+      "source_cell": "L128",
+      "selected_in_excel": false,
+      "price": "3769",
+      "effect_text": "15% Cooking Speed, 10% chance of +1 Food from cooking",
+      "effect_values": [
+        {
+          "cell": "O128",
+          "raw": "0.85",
+          "number": 0.85
+        },
+        {
+          "cell": "P128",
+          "raw": "0.1",
+          "number": 0.1
+        }
+      ],
+      "image": "nfts/nfts/216_master-chefs-cleaver.png",
+      "source_media_path": "xl/media/image355.png",
+      "source_image_cell": "K128"
+    },
+    {
+      "id": "nfts-chef-apron-130-right",
+      "name": "Chef Apron",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 130,
+      "source_cell": "L130",
+      "selected_in_excel": false,
+      "price": "57",
+      "effect_text": "+20% on cake sales",
+      "effect_values": [],
+      "image": "nfts/nfts/218_chef-apron.png",
+      "source_media_path": "xl/media/image319.png",
+      "source_image_cell": "K130"
+    },
+    {
+      "id": "nfts-reelmasters-chair-135-right",
+      "name": "Reelmaster's Chair",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 135,
+      "source_cell": "L135",
+      "selected_in_excel": false,
+      "price": "39.49",
+      "effect_text": "+5 Fishing Attempts",
+      "effect_values": [
+        {
+          "cell": "O135",
+          "raw": "5.0",
+          "number": 5.0
+        }
+      ],
+      "image": "nfts/nfts/219_reelmasters-chair.png",
+      "source_media_path": "xl/media/image329.png",
+      "source_image_cell": "K135"
+    },
+    {
+      "id": "nfts-alba-136-right",
+      "name": "Alba",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 136,
+      "source_cell": "L136",
+      "selected_in_excel": false,
+      "price": "250",
+      "effect_text": "50% chance to catch +1 basic fish",
+      "effect_values": [],
+      "image": "nfts/nfts/220_alba.png",
+      "source_media_path": "xl/media/image375.png",
+      "source_image_cell": "K136"
+    },
+    {
+      "id": "nfts-walrus-137-right",
+      "name": "Walrus",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 137,
+      "source_cell": "L137",
+      "selected_in_excel": false,
+      "price": "2450",
+      "effect_text": "+1 fish",
+      "effect_values": [],
+      "image": "nfts/nfts/221_walrus.png",
+      "source_media_path": "xl/media/image366.png",
+      "source_image_cell": "K137"
+    },
+    {
+      "id": "nfts-jellyfish-138-right",
+      "name": "Jellyfish",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 138,
+      "source_cell": "L138",
+      "selected_in_excel": false,
+      "price": "119.97",
+      "effect_text": "Increase fish catch by 1 in summer",
+      "effect_values": [
+        {
+          "cell": "O138",
+          "raw": "1.0",
+          "number": 1.0
+        }
+      ],
+      "image": "nfts/nfts/222_jellyfish.png",
+      "source_media_path": "xl/media/image335.png",
+      "source_image_cell": "K138"
+    },
+    {
+      "id": "nfts-pink-dolphin-139-right",
+      "name": "Pink Dolphin",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 139,
+      "source_cell": "L139",
+      "selected_in_excel": false,
+      "price": "105",
+      "effect_text": "Increase fish catch by 1 during spring",
+      "effect_values": [
+        {
+          "cell": "O139",
+          "raw": "1.0",
+          "number": 1.0
+        }
+      ],
+      "image": "nfts/nfts/223_pink-dolphin.png",
+      "source_media_path": "xl/media/image360.png",
+      "source_image_cell": "K139"
+    },
+    {
+      "id": "nfts-poseidon-140-right",
+      "name": "Poseidon",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 140,
+      "source_cell": "L140",
+      "selected_in_excel": false,
+      "price": "268.9",
+      "effect_text": "+1 Fish during Autumn",
+      "effect_values": [
+        {
+          "cell": "O140",
+          "raw": "1.0",
+          "number": 1.0
+        }
+      ],
+      "image": "nfts/nfts/224_poseidon.png",
+      "source_media_path": "xl/media/image382.png",
+      "source_image_cell": "K140"
+    },
+    {
+      "id": "nfts-super-star-141-right",
+      "name": "Super Star",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 141,
+      "source_cell": "L141",
+      "selected_in_excel": false,
+      "price": "0",
+      "effect_text": "+1 Fish during Winter",
+      "effect_values": [
+        {
+          "cell": "O141",
+          "raw": "1.0",
+          "number": 1.0
+        }
+      ],
+      "image": "nfts/nfts/225_super-star.png",
+      "source_media_path": "xl/media/image365.png",
+      "source_image_cell": "K141"
+    },
+    {
+      "id": "nfts-knowledge-crab-142-right",
+      "name": "Knowledge Crab",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 142,
+      "source_cell": "L142",
+      "selected_in_excel": false,
+      "price": "489",
+      "effect_text": "+0.2 on Sprout Mix fertilizer",
+      "effect_values": [],
+      "image": "nfts/nfts/226_knowledge-crab.png",
+      "source_media_path": "xl/media/image388.png",
+      "source_image_cell": "K142"
+    },
+    {
+      "id": "nfts-soil-krabby-143-right",
+      "name": "Soil Krabby",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 143,
+      "source_cell": "L143",
+      "selected_in_excel": false,
+      "price": "129",
+      "effect_text": "-10% on composter time",
+      "effect_values": [],
+      "image": "nfts/nfts/227_soil-krabby.png",
+      "source_media_path": "xl/media/image380.png",
+      "source_image_cell": "K143"
+    },
+    {
+      "id": "nfts-pharaoh-chicken-156-right",
+      "name": "Pharaoh Chicken",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 156,
+      "source_cell": "L156",
+      "selected_in_excel": false,
+      "price": "41.97",
+      "effect_text": "+1 in the Digging limit",
+      "effect_values": [
+        {
+          "cell": "O156",
+          "raw": "1.0",
+          "number": 1.0
+        }
+      ],
+      "image": "nfts/nfts/235_pharaoh-chicken.png",
+      "source_media_path": "xl/media/image402.png",
+      "source_image_cell": "K156"
+    },
+    {
+      "id": "nfts-heart-of-davy-jones-157-right",
+      "name": "Heart of Davy Jones",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 157,
+      "source_cell": "L157",
+      "selected_in_excel": false,
+      "price": "376",
+      "effect_text": "+20 in the Digging limit",
+      "effect_values": [
+        {
+          "cell": "O157",
+          "raw": "20.0",
+          "number": 20.0
+        }
+      ],
+      "image": "nfts/nfts/236_heart-of-davy-jones.png",
+      "source_media_path": "xl/media/image394.png",
+      "source_image_cell": "K157"
+    },
+    {
+      "id": "nfts-treasure-map-158-right",
+      "name": "Treasure Map",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 158,
+      "source_cell": "L158",
+      "selected_in_excel": true,
+      "price": "0",
+      "effect_text": "+20% in treasure sale",
+      "effect_values": [
+        {
+          "cell": "O158",
+          "raw": "1.2",
+          "number": 1.2
+        }
+      ],
+      "image": "nfts/nfts/237_treasure-map.png",
+      "source_media_path": "xl/media/image364.png",
+      "source_image_cell": "K158"
+    },
+    {
+      "id": "nfts-camel-159-right",
+      "name": "Camel",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 159,
+      "source_cell": "L159",
+      "selected_in_excel": false,
+      "price": "1532",
+      "effect_text": "+30% in treasure sale",
+      "effect_values": [
+        {
+          "cell": "O159",
+          "raw": "1.3",
+          "number": 1.3
+        }
+      ],
+      "image": "nfts/nfts/238_camel.png",
+      "source_media_path": "xl/media/image441.png",
+      "source_image_cell": "K159"
+    },
+    {
+      "id": "nfts-grinxs-hammer-169-right",
+      "name": "Grinx's Hammer",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 169,
+      "source_cell": "L169",
+      "selected_in_excel": false,
+      "price": "0",
+      "effect_text": "Spend 50% of the resources required to expand the island",
+      "effect_values": [],
+      "image": "nfts/nfts/243_grinxs-hammer.png",
+      "source_media_path": "xl/media/image431.png",
+      "source_image_cell": "K169"
+    },
+    {
+      "id": "nfts-carrot-sword-170-right",
+      "name": "Carrot Sword",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 170,
+      "source_cell": "L170",
+      "selected_in_excel": false,
+      "price": "240",
+      "effect_text": "Increases your chances by 4x to obtain Mutant Crop",
+      "effect_values": [],
+      "image": "nfts/nfts/244_carrot-sword.png",
+      "source_media_path": "xl/media/image425.png",
+      "source_image_cell": "K170"
+    },
+    {
+      "id": "nfts-christmas-tree-171-right",
+      "name": "Christmas Tree",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 171,
+      "source_cell": "L171",
+      "selected_in_excel": false,
+      "price": "0",
+      "effect_text": "Receive a gift at Christmas",
+      "effect_values": [],
+      "image": "nfts/nfts/245_christmas-tree.png",
+      "source_media_path": "xl/media/image409.png",
+      "source_image_cell": "K171"
+    },
+    {
+      "id": "nfts-mushroom-house-172-right",
+      "name": "Mushroom House",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 172,
+      "source_cell": "L172",
+      "selected_in_excel": false,
+      "price": "35",
+      "effect_text": "+0.2 Wild Mushroom",
+      "effect_values": [],
+      "image": "nfts/nfts/246_mushroom-house.png",
+      "source_media_path": "xl/media/image391.png",
+      "source_image_cell": "K172"
+    },
+    {
+      "id": "nfts-giant-gold-bone-174-right",
+      "name": "Giant Gold Bone",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 174,
+      "source_cell": "L174",
+      "selected_in_excel": false,
+      "price": "41.8",
+      "effect_text": "+2 Daily Cheers",
+      "effect_values": [],
+      "image": "nfts/nfts/248_giant-gold-bone.png",
+      "source_media_path": "xl/media/image393.png",
+      "source_image_cell": "K174"
+    },
+    {
+      "id": "nfts-lunar-temple-175-right",
+      "name": "Lunar Temple",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 175,
+      "source_cell": "L175",
+      "selected_in_excel": false,
+      "price": "176.899",
+      "effect_text": "+1 help progress to player's monuments",
+      "effect_values": [],
+      "image": "nfts/nfts/249_lunar-temple.png",
+      "source_media_path": "xl/media/image396.png",
+      "source_image_cell": "K175"
+    },
+    {
+      "id": "nfts-cornucopia-176-right",
+      "name": "Cornucopia",
+      "group": "nfts",
+      "tab": "NFTs",
+      "section": "Collectibles",
+      "source_sheet": "NFTs",
+      "source_row": 176,
+      "source_cell": "L176",
+      "selected_in_excel": false,
+      "price": "0",
+      "effect_text": "+1 Giant Fruit yield from village projects",
+      "effect_values": [],
+      "image": "nfts/nfts/250_cornucopia.png",
+      "source_media_path": "xl/media/image398.png",
+      "source_image_cell": "K176"
+    }
+  ],
+  "wearables": [
+    {
+      "id": "wearables-crimstone-spikes-hair-27-left",
+      "name": "Crimstone Spikes Hair",
+      "group": "wearables",
+      "tab": "Wearables",
+      "section": "Wearebles",
+      "source_sheet": "NFTs",
+      "source_row": 27,
+      "source_cell": "D27",
+      "selected_in_excel": false,
+      "price": "Auction",
+      "effect_text": "Free crimstone mining",
+      "effect_values": [
+        {
+          "cell": "G27",
+          "raw": "0.0",
+          "number": 0.0
+        }
+      ],
+      "image": "nfts/wearables/009_crimstone-spikes-hair.png",
+      "source_media_path": "xl/media/image146.png",
+      "source_image_cell": "C27"
+    },
+    {
+      "id": "wearables-paw-aura-28-left",
+      "name": "Paw Aura",
+      "group": "wearables",
+      "tab": "Wearables",
+      "section": "Wearebles",
+      "source_sheet": "NFTs",
+      "source_row": 28,
+      "source_cell": "D28",
+      "selected_in_excel": false,
+      "price": "Auction",
+      "effect_text": "Free pet feeding",
+      "effect_values": [
+        {
+          "cell": "G28",
+          "raw": "0.0",
+          "number": 0.0
+        }
+      ],
+      "image": "nfts/wearables/010_paw-aura.png",
+      "source_media_path": "xl/media/image138.png",
+      "source_image_cell": "C28"
+    },
+    {
+      "id": "wearables-victorias-apron-29-left",
+      "name": "Victoria's Apron",
+      "group": "wearables",
+      "tab": "Wearables",
+      "section": "Wearebles",
+      "source_sheet": "NFTs",
+      "source_row": 29,
+      "source_cell": "D29",
+      "selected_in_excel": false,
+      "price": "Auction",
+      "effect_text": "33% chance to reset the pet request",
+      "effect_values": [],
+      "image": "nfts/wearables/011_victorias-apron.png",
+      "source_media_path": "xl/media/image137.png",
+      "source_image_cell": "C29"
+    },
+    {
+      "id": "wearables-beast-shoes-30-left",
+      "name": "Beast Shoes",
+      "group": "wearables",
+      "tab": "Wearables",
+      "section": "Wearebles",
+      "source_sheet": "NFTs",
+      "source_row": 30,
+      "source_cell": "D30",
+      "selected_in_excel": false,
+      "price": "Auction",
+      "effect_text": "+100 XP to medium food requests, +250 XP to hard food requests",
+      "effect_values": [
+        {
+          "cell": "G30",
+          "raw": "100.0",
+          "number": 100.0
+        },
+        {
+          "cell": "H30",
+          "raw": "250.0",
+          "number": 250.0
+        }
+      ],
+      "image": "nfts/wearables/012_beast-shoes.png",
+      "source_media_path": "xl/media/image164.png",
+      "source_image_cell": "C30"
+    },
+    {
+      "id": "wearables-corn-silk-hair-31-left",
+      "name": "Corn Silk Hair",
+      "group": "wearables",
+      "tab": "Wearables",
+      "section": "Wearebles",
+      "source_sheet": "NFTs",
+      "source_row": 31,
+      "source_cell": "D31",
+      "selected_in_excel": false,
+      "price": "Stella",
+      "effect_text": "2+ Corn Yield",
+      "effect_values": [
+        {
+          "cell": "G31",
+          "raw": "2.0",
+          "number": 2.0
+        }
+      ],
+      "image": "nfts/wearables/013_corn-silk-hair.png",
+      "source_media_path": "xl/media/image160.png",
+      "source_image_cell": "C31"
+    },
+    {
+      "id": "wearables-green-amulet-84-left",
+      "name": "Green Amulet",
+      "group": "wearables",
+      "tab": "Wearables",
+      "section": "Wearebles",
+      "source_sheet": "NFTs",
+      "source_row": 84,
+      "source_cell": "D84",
+      "selected_in_excel": false,
+      "price": "5982",
+      "effect_text": "Chance to harvest 10x more crops",
+      "effect_values": [
+        {
+          "cell": "G84",
+          "raw": "1.9",
+          "number": 1.9
+        }
+      ],
+      "image": "nfts/wearables/061_green-amulet.png",
+      "source_media_path": "xl/media/image244.png",
+      "source_image_cell": "C84"
+    },
+    {
+      "id": "wearables-infernal-pitchfork-85-left",
+      "name": "Infernal Pitchfork",
+      "group": "wearables",
+      "tab": "Wearables",
+      "section": "Wearebles",
+      "source_sheet": "NFTs",
+      "source_row": 85,
+      "source_cell": "D85",
+      "selected_in_excel": false,
+      "price": "0",
+      "effect_text": "+3 Crops",
+      "effect_values": [
+        {
+          "cell": "G85",
+          "raw": "3.0",
+          "number": 3.0
+        }
+      ],
+      "image": "nfts/wearables/062_infernal-pitchfork.png",
+      "source_media_path": "xl/media/image269.png",
+      "source_image_cell": "C85"
+    },
+    {
+      "id": "wearables-devil-or-angel-wings-86-left",
+      "name": "Devil or Angel Wings",
+      "group": "wearables",
+      "tab": "Wearables",
+      "section": "Wearebles",
+      "source_sheet": "NFTs",
+      "source_row": 86,
+      "source_cell": "D86",
+      "selected_in_excel": false,
+      "price": "0",
+      "effect_text": "30% chance to harvest crop instantly",
+      "effect_values": [
+        {
+          "cell": "G86",
+          "raw": "1.3",
+          "number": 1.3
+        }
+      ],
+      "image": "nfts/wearables/063_devil-or-angel-wings.png",
+      "source_media_path": "xl/media/image282.png",
+      "source_image_cell": "C86"
+    },
+    {
+      "id": "wearables-blossom-ward-87-left",
+      "name": "Blossom Ward",
+      "group": "wearables",
+      "tab": "Wearables",
+      "section": "Wearebles",
+      "source_sheet": "NFTs",
+      "source_row": 87,
+      "source_cell": "D87",
+      "selected_in_excel": false,
+      "price": "2150",
+      "effect_text": "+1 Crop per plot in Spring",
+      "effect_values": [
+        {
+          "cell": "G87",
+          "raw": "1",
+          "number": 1.0
+        },
+        {
+          "cell": "H87",
+          "raw": "1",
+          "number": 1.0
+        }
+      ],
+      "image": "nfts/wearables/064_blossom-ward.png",
+      "source_media_path": "xl/media/image262.png",
+      "source_image_cell": "C87"
+    },
+    {
+      "id": "wearables-solflare-aegis-88-left",
+      "name": "Solflare Aegis",
+      "group": "wearables",
+      "tab": "Wearables",
+      "section": "Wearebles",
+      "source_sheet": "NFTs",
+      "source_row": 88,
+      "source_cell": "D88",
+      "selected_in_excel": false,
+      "price": "3150",
+      "effect_text": "-50% in Crop time in Summer",
+      "effect_values": [
+        {
+          "cell": "G88",
+          "raw": "1",
+          "number": 1.0
+        },
+        {
+          "cell": "H88",
+          "raw": "1",
+          "number": 1.0
+        }
+      ],
+      "image": "nfts/wearables/065_solflare-aegis.png",
+      "source_media_path": "xl/media/image274.png",
+      "source_image_cell": "C88"
+    },
+    {
+      "id": "wearables-autumns-embrace-89-left",
+      "name": "Autumn's Embrace",
+      "group": "wearables",
+      "tab": "Wearables",
+      "section": "Wearebles",
+      "source_sheet": "NFTs",
+      "source_row": 89,
+      "source_cell": "D89",
+      "selected_in_excel": false,
+      "price": "7690",
+      "effect_text": "-50% in Crop time in Autumn",
+      "effect_values": [
+        {
+          "cell": "G89",
+          "raw": "1",
+          "number": 1.0
+        },
+        {
+          "cell": "H89",
+          "raw": "1",
+          "number": 1.0
+        }
+      ],
+      "image": "nfts/wearables/066_autumns-embrace.png",
+      "source_media_path": "xl/media/image290.png",
+      "source_image_cell": "C89"
+    },
+    {
+      "id": "wearables-frozen-heart-90-left",
+      "name": "Frozen Heart",
+      "group": "wearables",
+      "tab": "Wearables",
+      "section": "Wearebles",
+      "source_sheet": "NFTs",
+      "source_row": 90,
+      "source_cell": "D90",
+      "selected_in_excel": false,
+      "price": "1193",
+      "effect_text": "+1 Crop per plot in Winter",
+      "effect_values": [
+        {
+          "cell": "G90",
+          "raw": "0",
+          "number": 0.0
+        },
+        {
+          "cell": "H90",
+          "raw": "0",
+          "number": 0.0
+        }
+      ],
+      "image": "nfts/wearables/067_frozen-heart.png",
+      "source_media_path": "xl/media/image271.png",
+      "source_image_cell": "C90"
+    },
+    {
+      "id": "wearables-sunflower-shield-91-left",
+      "name": "Sunflower Shield",
+      "group": "wearables",
+      "tab": "Wearables",
+      "section": "Wearebles",
+      "source_sheet": "NFTs",
+      "source_row": 91,
+      "source_cell": "D91",
+      "selected_in_excel": false,
+      "price": "998",
+      "effect_text": "Free Sunflower Seeds",
+      "effect_values": [
+        {
+          "cell": "G91",
+          "raw": "0.0",
+          "number": 0.0
+        }
+      ],
+      "image": "nfts/wearables/068_sunflower-shield.png",
+      "source_media_path": "xl/media/image257.png",
+      "source_image_cell": "C91"
+    },
+    {
+      "id": "wearables-sunflower-amulet-92-left",
+      "name": "Sunflower Amulet",
+      "group": "wearables",
+      "tab": "Wearables",
+      "section": "Wearebles",
+      "source_sheet": "NFTs",
+      "source_row": 92,
+      "source_cell": "D92",
+      "selected_in_excel": false,
+      "price": "45",
+      "effect_text": "+10% Sunflower",
+      "effect_values": [
+        {
+          "cell": "G92",
+          "raw": "1.1",
+          "number": 1.1
+        }
+      ],
+      "image": "nfts/wearables/069_sunflower-amulet.png",
+      "source_media_path": "xl/media/image277.png",
+      "source_image_cell": "C92"
+    },
+    {
+      "id": "wearables-carrot-amulet-93-left",
+      "name": "Carrot Amulet",
+      "group": "wearables",
+      "tab": "Wearables",
+      "section": "Wearebles",
+      "source_sheet": "NFTs",
+      "source_row": 93,
+      "source_cell": "D93",
+      "selected_in_excel": false,
+      "price": "36",
+      "effect_text": "-20% in Carrot growth time",
+      "effect_values": [
+        {
+          "cell": "G93",
+          "raw": "0.8",
+          "number": 0.8
+        }
+      ],
+      "image": "nfts/wearables/070_carrot-amulet.png",
+      "source_media_path": "xl/media/image341.png",
+      "source_image_cell": "C93"
+    },
+    {
+      "id": "wearables-broccoli-hat-94-left",
+      "name": "Broccoli Hat",
+      "group": "wearables",
+      "tab": "Wearables",
+      "section": "Wearebles",
+      "source_sheet": "NFTs",
+      "source_row": 94,
+      "source_cell": "D94",
+      "selected_in_excel": false,
+      "price": "226",
+      "effect_text": "2x Broccoli Speed",
+      "effect_values": [
+        {
+          "cell": "G94",
+          "raw": "0.5",
+          "number": 0.5
+        }
+      ],
+      "image": "nfts/wearables/071_broccoli-hat.png",
+      "source_media_path": "xl/media/image295.png",
+      "source_image_cell": "C94"
+    },
+    {
+      "id": "wearables-tofu-mask-95-left",
+      "name": "Tofu Mask",
+      "group": "wearables",
+      "tab": "Wearables",
+      "section": "Wearebles",
+      "source_sheet": "NFTs",
+      "source_row": 95,
+      "source_cell": "D95",
+      "selected_in_excel": false,
+      "price": "11.4795",
+      "effect_text": "+0.1 Soybean",
+      "effect_values": [
+        {
+          "cell": "G95",
+          "raw": "0.1",
+          "number": 0.1
+        }
+      ],
+      "image": "nfts/wearables/072_tofu-mask.png",
+      "source_media_path": "xl/media/image281.png",
+      "source_image_cell": "C95"
+    },
+    {
+      "id": "wearables-beetroot-amulet-96-left",
+      "name": "Beetroot Amulet",
+      "group": "wearables",
+      "tab": "Wearables",
+      "section": "Wearebles",
+      "source_sheet": "NFTs",
+      "source_row": 96,
+      "source_cell": "D96",
+      "selected_in_excel": false,
+      "price": "72",
+      "effect_text": "+20% Beetroot",
+      "effect_values": [
+        {
+          "cell": "G96",
+          "raw": "1.2",
+          "number": 1.2
+        }
+      ],
+      "image": "nfts/wearables/073_beetroot-amulet.png",
+      "source_media_path": "xl/media/image324.png",
+      "source_image_cell": "C96"
+    },
+    {
+      "id": "wearables-red-pepper-onesie-97-left",
+      "name": "Red Pepper Onesie",
+      "group": "wearables",
+      "tab": "Wearables",
+      "section": "Wearebles",
+      "source_sheet": "NFTs",
+      "source_row": 97,
+      "source_cell": "D97",
+      "selected_in_excel": true,
+      "price": "4",
+      "effect_text": "-25% harvest time for Pepper",
+      "effect_values": [
+        {
+          "cell": "G97",
+          "raw": "0.75",
+          "number": 0.75
+        }
+      ],
+      "image": "nfts/wearables/074_red-pepper-onesie.png",
+      "source_media_path": "xl/media/image289.png",
+      "source_image_cell": "C97"
+    },
+    {
+      "id": "wearables-parsnip-98-left",
+      "name": "Parsnip",
+      "group": "wearables",
+      "tab": "Wearables",
+      "section": "Wearebles",
+      "source_sheet": "NFTs",
+      "source_row": 98,
+      "source_cell": "D98",
+      "selected_in_excel": false,
+      "price": "697",
+      "effect_text": "+20% Parsnip",
+      "effect_values": [
+        {
+          "cell": "G98",
+          "raw": "1.2",
+          "number": 1.2
+        }
+      ],
+      "image": "nfts/wearables/075_parsnip.png",
+      "source_media_path": "xl/media/image313.png",
+      "source_image_cell": "C98"
+    },
+    {
+      "id": "wearables-eggplant-onesie-99-left",
+      "name": "Eggplant Onesie",
+      "group": "wearables",
+      "tab": "Wearables",
+      "section": "Wearebles",
+      "source_sheet": "NFTs",
+      "source_row": 99,
+      "source_cell": "D99",
+      "selected_in_excel": true,
+      "price": "24",
+      "effect_text": "+0.1 Eggplant",
+      "effect_values": [
+        {
+          "cell": "G99",
+          "raw": "0.1",
+          "number": 0.1
+        }
+      ],
+      "image": "nfts/wearables/076_eggplant-onesie.png",
+      "source_media_path": "xl/media/image340.png",
+      "source_image_cell": "C99"
+    },
+    {
+      "id": "wearables-corn-onesie-100-left",
+      "name": "Corn Onesie",
+      "group": "wearables",
+      "tab": "Wearables",
+      "section": "Wearebles",
+      "source_sheet": "NFTs",
+      "source_row": 100,
+      "source_cell": "D100",
+      "selected_in_excel": true,
+      "price": "64.6",
+      "effect_text": "+0.1 Corn",
+      "effect_values": [
+        {
+          "cell": "G100",
+          "raw": "0.1",
+          "number": 0.1
+        }
+      ],
+      "image": "nfts/wearables/077_corn-onesie.png",
+      "source_media_path": "xl/media/image302.png",
+      "source_image_cell": "C100"
+    },
+    {
+      "id": "wearables-ladybug-suit-101-left",
+      "name": "Ladybug Suit",
+      "group": "wearables",
+      "tab": "Wearables",
+      "section": "Wearebles",
+      "source_sheet": "NFTs",
+      "source_row": 101,
+      "source_cell": "D101",
+      "selected_in_excel": false,
+      "price": "26.8199",
+      "effect_text": "-25% Onion Seed Coin cost",
+      "effect_values": [
+        {
+          "cell": "G101",
+          "raw": "0.75",
+          "number": 0.75
+        }
+      ],
+      "image": "nfts/wearables/078_ladybug-suit.png",
+      "source_media_path": "xl/media/image296.png",
+      "source_image_cell": "C101"
+    },
+    {
+      "id": "wearables-sickle-102-left",
+      "name": "Sickle",
+      "group": "wearables",
+      "tab": "Wearables",
+      "section": "Wearebles",
+      "source_sheet": "NFTs",
+      "source_row": 102,
+      "source_cell": "D102",
+      "selected_in_excel": false,
+      "price": "3398",
+      "effect_text": "+2 Wheat",
+      "effect_values": [
+        {
+          "cell": "G102",
+          "raw": "2.0",
+          "number": 2.0
+        }
+      ],
+      "image": "nfts/wearables/079_sickle.png",
+      "source_media_path": "xl/media/image356.png",
+      "source_image_cell": "C102"
+    },
+    {
+      "id": "wearables-faction-quiver-103-left",
+      "name": "\"Faction\" Quiver",
+      "group": "wearables",
+      "tab": "Wearables",
+      "section": "Wearebles",
+      "source_sheet": "NFTs",
+      "source_row": 103,
+      "source_cell": "D103",
+      "selected_in_excel": false,
+      "price": "-",
+      "effect_text": "+0.25 Crops e Fruits",
+      "effect_values": [
+        {
+          "cell": "G103",
+          "raw": "0.25",
+          "number": 0.25
+        }
+      ],
+      "image": "nfts/wearables/080_faction-quiver.png",
+      "source_media_path": "xl/media/image307.png",
+      "source_image_cell": "C103"
+    },
+    {
+      "id": "wearables-camel-onesie-124-left",
+      "name": "Camel Onesie",
+      "group": "wearables",
+      "tab": "Wearables",
+      "section": "Wearebles",
+      "source_sheet": "NFTs",
+      "source_row": 124,
+      "source_cell": "D124",
+      "selected_in_excel": true,
+      "price": "99",
+      "effect_text": "+0.1 Fruits (except GH fruits)",
+      "effect_values": [
+        {
+          "cell": "G124",
+          "raw": "0.1",
+          "number": 0.1
+        }
+      ],
+      "image": "nfts/wearables/096_camel-onesie.png",
+      "source_media_path": "xl/media/image321.png",
+      "source_image_cell": "C124"
+    },
+    {
+      "id": "wearables-fruit-picker-apron-125-left",
+      "name": "Fruit Picker Apron",
+      "group": "wearables",
+      "tab": "Wearables",
+      "section": "Wearebles",
+      "source_sheet": "NFTs",
+      "source_row": 125,
+      "source_cell": "D125",
+      "selected_in_excel": true,
+      "price": "0",
+      "effect_text": "+0.1 Apple, Blueberry, Orange e Banana",
+      "effect_values": [
+        {
+          "cell": "G125",
+          "raw": "0.1",
+          "number": 0.1
+        }
+      ],
+      "image": "nfts/wearables/097_fruit-picker-apron.png",
+      "source_media_path": "xl/media/image352.png",
+      "source_image_cell": "C125"
+    },
+    {
+      "id": "wearables-lemon-shield-126-left",
+      "name": "Lemon Shield",
+      "group": "wearables",
+      "tab": "Wearables",
+      "section": "Wearebles",
+      "source_sheet": "NFTs",
+      "source_row": 126,
+      "source_cell": "D126",
+      "selected_in_excel": false,
+      "price": "1610",
+      "effect_text": "+1 Lemon",
+      "effect_values": [
+        {
+          "cell": "G126",
+          "raw": "1.0",
+          "number": 1.0
+        }
+      ],
+      "image": "nfts/wearables/098_lemon-shield.png",
+      "source_media_path": "xl/media/image339.png",
+      "source_image_cell": "C126"
+    },
+    {
+      "id": "wearables-banana-onesie-127-left",
+      "name": "Banana Onesie",
+      "group": "wearables",
+      "tab": "Wearables",
+      "section": "Wearebles",
+      "source_sheet": "NFTs",
+      "source_row": 127,
+      "source_cell": "D127",
+      "selected_in_excel": false,
+      "price": "62.48",
+      "effect_text": "-20% in Banana growth time",
+      "effect_values": [
+        {
+          "cell": "G127",
+          "raw": "0.8",
+          "number": 0.8
+        }
+      ],
+      "image": "nfts/wearables/099_banana-onesie.png",
+      "source_media_path": "xl/media/image367.png",
+      "source_image_cell": "C127"
+    },
+    {
+      "id": "wearables-banana-amulet-128-left",
+      "name": "Banana Amulet",
+      "group": "wearables",
+      "tab": "Wearables",
+      "section": "Wearebles",
+      "source_sheet": "NFTs",
+      "source_row": 128,
+      "source_cell": "D128",
+      "selected_in_excel": false,
+      "price": "378",
+      "effect_text": "+0.5 Bananas",
+      "effect_values": [
+        {
+          "cell": "G128",
+          "raw": "0.5",
+          "number": 0.5
+        }
+      ],
+      "image": "nfts/wearables/100_banana-amulet.png",
+      "source_media_path": "xl/media/image353.png",
+      "source_image_cell": "C128"
+    },
+    {
+      "id": "wearables-grape-pants-139-left",
+      "name": "Grape Pants",
+      "group": "wearables",
+      "tab": "Wearables",
+      "section": "Wearebles",
+      "source_sheet": "NFTs",
+      "source_row": 139,
+      "source_cell": "D139",
+      "selected_in_excel": false,
+      "price": "255",
+      "effect_text": "+0.2 Grapes",
+      "effect_values": [
+        {
+          "cell": "G139",
+          "raw": "0.2",
+          "number": 0.2
+        }
+      ],
+      "image": "nfts/wearables/106_grape-pants.png",
+      "source_media_path": "xl/media/image344.png",
+      "source_image_cell": "C139"
+    },
+    {
+      "id": "wearables-non-la-hat-140-left",
+      "name": "Non La Hat",
+      "group": "wearables",
+      "tab": "Wearables",
+      "section": "Wearebles",
+      "source_sheet": "NFTs",
+      "source_row": 140,
+      "source_cell": "D140",
+      "selected_in_excel": false,
+      "price": "999",
+      "effect_text": "+1 Rice",
+      "effect_values": [
+        {
+          "cell": "G140",
+          "raw": "1.0",
+          "number": 1.0
+        }
+      ],
+      "image": "nfts/wearables/107_non-la-hat.png",
+      "source_media_path": "xl/media/image395.png",
+      "source_image_cell": "C140"
+    },
+    {
+      "id": "wearables-olive-royalty-shirt-141-left",
+      "name": "Olive Royalty Shirt",
+      "group": "wearables",
+      "tab": "Wearables",
+      "section": "Wearebles",
+      "source_sheet": "NFTs",
+      "source_row": 141,
+      "source_cell": "D141",
+      "selected_in_excel": true,
+      "price": "49.5",
+      "effect_text": "+0.25 Olive",
+      "effect_values": [
+        {
+          "cell": "G141",
+          "raw": "0.25",
+          "number": 0.25
+        }
+      ],
+      "image": "nfts/wearables/108_olive-royalty-shirt.png",
+      "source_media_path": "xl/media/image369.png",
+      "source_image_cell": "C141"
+    },
+    {
+      "id": "wearables-olive-shield-142-left",
+      "name": "Olive Shield",
+      "group": "wearables",
+      "tab": "Wearables",
+      "section": "Wearebles",
+      "source_sheet": "NFTs",
+      "source_row": 142,
+      "source_cell": "D142",
+      "selected_in_excel": false,
+      "price": "557",
+      "effect_text": "+1 Olive",
+      "effect_values": [
+        {
+          "cell": "G142",
+          "raw": "1.0",
+          "number": 1.0
+        }
+      ],
+      "image": "nfts/wearables/109_olive-shield.png",
+      "source_media_path": "xl/media/image331.png",
+      "source_image_cell": "C142"
+    },
+    {
+      "id": "wearables-squirrel-onesie-149-left",
+      "name": "Squirrel Onesie",
+      "group": "wearables",
+      "tab": "Wearables",
+      "section": "Wearebles",
+      "source_sheet": "NFTs",
+      "source_row": 149,
+      "source_cell": "D149",
+      "selected_in_excel": false,
+      "price": "0",
+      "effect_text": "+1 Acorn",
+      "effect_values": [
+        {
+          "cell": "G149",
+          "raw": "1.0",
+          "number": 1.0
+        }
+      ],
+      "image": "nfts/wearables/111_squirrel-onesie.png",
+      "source_media_path": "xl/media/image381.png",
+      "source_image_cell": "C149"
+    },
+    {
+      "id": "wearables-flower-crown-163-left",
+      "name": "Flower Crown",
+      "group": "wearables",
+      "tab": "Wearables",
+      "section": "Wearebles",
+      "source_sheet": "NFTs",
+      "source_row": 163,
+      "source_cell": "D163",
+      "selected_in_excel": false,
+      "price": "4399",
+      "effect_text": "-50% in the time for flowers to grow",
+      "effect_values": [],
+      "image": "nfts/wearables/120_flower-crown.png",
+      "source_media_path": "xl/media/image404.png",
+      "source_image_cell": "C163"
+    },
+    {
+      "id": "wearables-bee-suit-164-left",
+      "name": "Bee Suit",
+      "group": "wearables",
+      "tab": "Wearables",
+      "section": "Wearebles",
+      "source_sheet": "NFTs",
+      "source_row": 164,
+      "source_cell": "D164",
+      "selected_in_excel": false,
+      "price": "67.95",
+      "effect_text": "+0.1 Honey",
+      "effect_values": [],
+      "image": "nfts/wearables/121_bee-suit.png",
+      "source_media_path": "xl/media/image397.png",
+      "source_image_cell": "C164"
+    },
+    {
+      "id": "wearables-beekeeper-hat-165-left",
+      "name": "Beekeeper Hat",
+      "group": "wearables",
+      "tab": "Wearables",
+      "section": "Wearebles",
+      "source_sheet": "NFTs",
+      "source_row": 165,
+      "source_cell": "D165",
+      "selected_in_excel": false,
+      "price": "198",
+      "effect_text": "+0.2 in honey production speed",
+      "effect_values": [],
+      "image": "nfts/wearables/122_beekeeper-hat.png",
+      "source_media_path": "xl/media/image400.png",
+      "source_image_cell": "C165"
+    },
+    {
+      "id": "wearables-honeycomb-shield-166-left",
+      "name": "Honeycomb Shield",
+      "group": "wearables",
+      "tab": "Wearables",
+      "section": "Wearebles",
+      "source_sheet": "NFTs",
+      "source_row": 166,
+      "source_cell": "D166",
+      "selected_in_excel": false,
+      "price": "4499",
+      "effect_text": "+1 Honey",
+      "effect_values": [],
+      "image": "nfts/wearables/123_honeycomb-shield.png",
+      "source_media_path": "xl/media/image435.png",
+      "source_image_cell": "C166"
+    },
+    {
+      "id": "wearables-hornet-mask-167-left",
+      "name": "Hornet Mask",
+      "group": "wearables",
+      "tab": "Wearables",
+      "section": "Wearebles",
+      "source_sheet": "NFTs",
+      "source_row": 167,
+      "source_cell": "D167",
+      "selected_in_excel": false,
+      "price": "857",
+      "effect_text": "2x chance Bee Swarm",
+      "effect_values": [],
+      "image": "nfts/wearables/124_hornet-mask.png",
+      "source_media_path": "xl/media/image416.png",
+      "source_image_cell": "C167"
+    },
+    {
+      "id": "wearables-faction-shield-44-right",
+      "name": "\"Faction\" Shield",
+      "group": "wearables",
+      "tab": "Wearables",
+      "section": "Wearebles",
+      "source_sheet": "NFTs",
+      "source_row": 44,
+      "source_cell": "L44",
+      "selected_in_excel": false,
+      "price": "-",
+      "effect_text": "+0.25 Wood e Minerals",
+      "effect_values": [
+        {
+          "cell": "O44",
+          "raw": "0.25",
+          "number": 0.25
+        }
+      ],
+      "image": "nfts/wearables/147_faction-shield.png",
+      "source_media_path": "xl/media/image202.png",
+      "source_image_cell": "K44"
+    },
+    {
+      "id": "wearables-pickaxe-shark-45-right",
+      "name": "Pickaxe Shark",
+      "group": "wearables",
+      "tab": "Wearables",
+      "section": "Wearebles",
+      "source_sheet": "NFTs",
+      "source_row": 45,
+      "source_cell": "L45",
+      "selected_in_excel": false,
+      "price": "1411",
+      "effect_text": "+15% Gold Recovery Time and 10% chance of Instant Gold",
+      "effect_values": [
+        {
+          "cell": "O45",
+          "raw": "0.85",
+          "number": 0.85
+        },
+        {
+          "cell": "P45",
+          "raw": "1.1",
+          "number": 1.1
+        }
+      ],
+      "image": "nfts/wearables/148_pickaxe-shark.png",
+      "source_media_path": "xl/media/image224.png",
+      "source_image_cell": "K45"
+    },
+    {
+      "id": "wearables-crimstone-armor-46-right",
+      "name": "Crimstone Armor",
+      "group": "wearables",
+      "tab": "Wearables",
+      "section": "Wearebles",
+      "source_sheet": "NFTs",
+      "source_row": 46,
+      "source_cell": "L46",
+      "selected_in_excel": true,
+      "price": "97.9999",
+      "effect_text": "+0.1 Crimstone",
+      "effect_values": [
+        {
+          "cell": "O46",
+          "raw": "0.1",
+          "number": 0.1
+        }
+      ],
+      "image": "nfts/wearables/149_crimstone-armor.png",
+      "source_media_path": "xl/media/image201.png",
+      "source_image_cell": "K46"
+    },
+    {
+      "id": "wearables-crimstone-amulet-47-right",
+      "name": "Crimstone Amulet",
+      "group": "wearables",
+      "tab": "Wearables",
+      "section": "Wearebles",
+      "source_sheet": "NFTs",
+      "source_row": 47,
+      "source_cell": "L47",
+      "selected_in_excel": false,
+      "price": "674",
+      "effect_text": "-20% in the time for Crimstone",
+      "effect_values": [
+        {
+          "cell": "O47",
+          "raw": "0.8",
+          "number": 0.8
+        }
+      ],
+      "image": "nfts/wearables/150_crimstone-amulet.png",
+      "source_media_path": "xl/media/image215.png",
+      "source_image_cell": "K47"
+    },
+    {
+      "id": "wearables-crimstone-hammer-48-right",
+      "name": "Crimstone Hammer",
+      "group": "wearables",
+      "tab": "Wearables",
+      "section": "Wearebles",
+      "source_sheet": "NFTs",
+      "source_row": 48,
+      "source_cell": "L48",
+      "selected_in_excel": false,
+      "price": "6491",
+      "effect_text": "+2 Crimstone on the 5th day",
+      "effect_values": [
+        {
+          "cell": "O48",
+          "raw": "0.4",
+          "number": 0.4
+        }
+      ],
+      "image": "nfts/wearables/151_crimstone-hammer.png",
+      "source_media_path": "xl/media/image173.png",
+      "source_image_cell": "K48"
+    },
+    {
+      "id": "wearables-infernal-drill-58-right",
+      "name": "Infernal Drill",
+      "group": "wearables",
+      "tab": "Wearables",
+      "section": "Wearebles",
+      "source_sheet": "NFTs",
+      "source_row": 58,
+      "source_cell": "L58",
+      "selected_in_excel": false,
+      "price": "0",
+      "effect_text": "Get Oil without needing an Oil Drill",
+      "effect_values": [
+        {
+          "cell": "O58",
+          "raw": "0.0",
+          "number": 0.0
+        }
+      ],
+      "image": "nfts/wearables/156_infernal-drill.png",
+      "source_media_path": "xl/media/image209.png",
+      "source_image_cell": "K58"
+    },
+    {
+      "id": "wearables-oil-can-59-right",
+      "name": "Oil Can",
+      "group": "wearables",
+      "tab": "Wearables",
+      "section": "Wearebles",
+      "source_sheet": "NFTs",
+      "source_row": 59,
+      "source_cell": "L59",
+      "selected_in_excel": false,
+      "price": "578",
+      "effect_text": "+2 Oil",
+      "effect_values": [
+        {
+          "cell": "O59",
+          "raw": "2.0",
+          "number": 2.0
+        }
+      ],
+      "image": "nfts/wearables/157_oil-can.png",
+      "source_media_path": "xl/media/image226.png",
+      "source_image_cell": "K59"
+    },
+    {
+      "id": "wearables-oil-gallon-60-right",
+      "name": "Oil Gallon",
+      "group": "wearables",
+      "tab": "Wearables",
+      "section": "Wearebles",
+      "source_sheet": "NFTs",
+      "source_row": 60,
+      "source_cell": "L60",
+      "selected_in_excel": false,
+      "price": "2297",
+      "effect_text": "+5 Oil",
+      "effect_values": [
+        {
+          "cell": "O60",
+          "raw": "5.0",
+          "number": 5.0
+        }
+      ],
+      "image": "nfts/wearables/158_oil-gallon.png",
+      "source_media_path": "xl/media/image223.png",
+      "source_image_cell": "K60"
+    },
+    {
+      "id": "wearables-oil-overalls-61-right",
+      "name": "Oil Overalls",
+      "group": "wearables",
+      "tab": "Wearables",
+      "section": "Wearebles",
+      "source_sheet": "NFTs",
+      "source_row": 61,
+      "source_cell": "L61",
+      "selected_in_excel": false,
+      "price": "4899",
+      "effect_text": "+10 Oil",
+      "effect_values": [
+        {
+          "cell": "O61",
+          "raw": "10.0",
+          "number": 10.0
+        }
+      ],
+      "image": "nfts/wearables/159_oil-overalls.png",
+      "source_media_path": "xl/media/image228.png",
+      "source_image_cell": "K61"
+    },
+    {
+      "id": "wearables-dev-wrench-62-right",
+      "name": "Dev Wrench",
+      "group": "wearables",
+      "tab": "Wearables",
+      "section": "Wearebles",
+      "source_sheet": "NFTs",
+      "source_row": 62,
+      "source_cell": "L62",
+      "selected_in_excel": false,
+      "price": "5500",
+      "effect_text": "-50% in the time for Oil regeneration",
+      "effect_values": [
+        {
+          "cell": "O62",
+          "raw": "0.5",
+          "number": 0.5
+        }
+      ],
+      "image": "nfts/wearables/160_dev-wrench.png",
+      "source_media_path": "xl/media/image229.png",
+      "source_image_cell": "K62"
+    },
+    {
+      "id": "wearables-lava-swimwear-63-right",
+      "name": "Lava Swimwear",
+      "group": "wearables",
+      "tab": "Wearables",
+      "section": "Wearebles",
+      "source_sheet": "NFTs",
+      "source_row": 63,
+      "source_cell": "L63",
+      "selected_in_excel": false,
+      "price": "8450",
+      "effect_text": "-50% Lava Pit resources",
+      "effect_values": [
+        {
+          "cell": "O63",
+          "raw": "0.5",
+          "number": 0.5
+        }
+      ],
+      "image": "nfts/wearables/161_lava-swimwear.png",
+      "source_media_path": "xl/media/image286.png",
+      "source_image_cell": "K63"
+    },
+    {
+      "id": "wearables-obsidian-necklace-64-right",
+      "name": "Obsidian Necklace",
+      "group": "wearables",
+      "tab": "Wearables",
+      "section": "Wearebles",
+      "source_sheet": "NFTs",
+      "source_row": 64,
+      "source_cell": "L64",
+      "selected_in_excel": false,
+      "price": "4100",
+      "effect_text": "2x Lava Pit Speed",
+      "effect_values": [
+        {
+          "cell": "O64",
+          "raw": "0.5",
+          "number": 0.5
+        }
+      ],
+      "image": "nfts/wearables/162_obsidian-necklace.png",
+      "source_media_path": "xl/media/image206.png",
+      "source_image_cell": "K64"
+    },
+    {
+      "id": "wearables-cattlegrim-100-right",
+      "name": "Cattlegrim",
+      "group": "wearables",
+      "tab": "Wearables",
+      "section": "Wearebles",
+      "source_sheet": "NFTs",
+      "source_row": 100,
+      "source_cell": "L100",
+      "selected_in_excel": false,
+      "price": "5700",
+      "effect_text": "+0.25 in animal production",
+      "effect_values": [
+        {
+          "cell": "O100",
+          "raw": "0.25",
+          "number": 0.25
+        }
+      ],
+      "image": "nfts/wearables/193_cattlegrim.png",
+      "source_media_path": "xl/media/image359.png",
+      "source_image_cell": "K100"
+    },
+    {
+      "id": "wearables-medic-apron-101-right",
+      "name": "Medic Apron",
+      "group": "wearables",
+      "tab": "Wearables",
+      "section": "Wearebles",
+      "source_sheet": "NFTs",
+      "source_row": 101,
+      "source_cell": "L101",
+      "selected_in_excel": false,
+      "price": "400",
+      "effect_text": "Half Price Medicine",
+      "effect_values": [
+        {
+          "cell": "O101",
+          "raw": "0.5",
+          "number": 0.5
+        }
+      ],
+      "image": "nfts/wearables/194_medic-apron.png",
+      "source_media_path": "xl/media/image305.png",
+      "source_image_cell": "K101"
+    },
+    {
+      "id": "wearables-oracle-syringe-102-right",
+      "name": "Oracle Syringe",
+      "group": "wearables",
+      "tab": "Wearables",
+      "section": "Wearebles",
+      "source_sheet": "NFTs",
+      "source_row": 102,
+      "source_cell": "L102",
+      "selected_in_excel": false,
+      "price": "2299",
+      "effect_text": "Heal animals for free",
+      "effect_values": [
+        {
+          "cell": "O102",
+          "raw": "0.0",
+          "number": 0.0
+        }
+      ],
+      "image": "nfts/wearables/195_oracle-syringe.png",
+      "source_media_path": "xl/media/image301.png",
+      "source_image_cell": "K102"
+    },
+    {
+      "id": "wearables-chicken-suit-103-right",
+      "name": "Chicken Suit",
+      "group": "wearables",
+      "tab": "Wearables",
+      "section": "Wearebles",
+      "source_sheet": "NFTs",
+      "source_row": 103,
+      "source_cell": "L103",
+      "selected_in_excel": false,
+      "price": "413",
+      "effect_text": "+1 Feather",
+      "effect_values": [
+        {
+          "cell": "O103",
+          "raw": "1.0",
+          "number": 1.0
+        }
+      ],
+      "image": "nfts/wearables/196_chicken-suit.png",
+      "source_media_path": "xl/media/image284.png",
+      "source_image_cell": "K103"
+    },
+    {
+      "id": "wearables-infernal-bullwhip-104-right",
+      "name": "Infernal Bullwhip",
+      "group": "wearables",
+      "tab": "Wearables",
+      "section": "Wearebles",
+      "source_sheet": "NFTs",
+      "source_row": 104,
+      "source_cell": "L104",
+      "selected_in_excel": false,
+      "price": "14800",
+      "effect_text": "-50% food for Barn animals",
+      "effect_values": [
+        {
+          "cell": "O104",
+          "raw": "0.5",
+          "number": 0.5
+        }
+      ],
+      "image": "nfts/wearables/197_infernal-bullwhip.png",
+      "source_media_path": "xl/media/image315.png",
+      "source_image_cell": "K104"
+    },
+    {
+      "id": "wearables-milk-apron-105-right",
+      "name": "Milk Apron",
+      "group": "wearables",
+      "tab": "Wearables",
+      "section": "Wearebles",
+      "source_sheet": "NFTs",
+      "source_row": 105,
+      "source_cell": "L105",
+      "selected_in_excel": false,
+      "price": "672",
+      "effect_text": "+0.5 Milk",
+      "effect_values": [
+        {
+          "cell": "O105",
+          "raw": "0.5",
+          "number": 0.5
+        }
+      ],
+      "image": "nfts/wearables/198_milk-apron.png",
+      "source_media_path": "xl/media/image342.png",
+      "source_image_cell": "K105"
+    },
+    {
+      "id": "wearables-cowbell-necklace-106-right",
+      "name": "Cowbell Necklace",
+      "group": "wearables",
+      "tab": "Wearables",
+      "section": "Wearebles",
+      "source_sheet": "NFTs",
+      "source_row": 106,
+      "source_cell": "L106",
+      "selected_in_excel": false,
+      "price": "5700",
+      "effect_text": "+2 Milk",
+      "effect_values": [
+        {
+          "cell": "O106",
+          "raw": "2.0",
+          "number": 2.0
+        }
+      ],
+      "image": "nfts/wearables/199_cowbell-necklace.png",
+      "source_media_path": "xl/media/image298.png",
+      "source_image_cell": "K106"
+    },
+    {
+      "id": "wearables-training-whistle-107-right",
+      "name": "Training Whistle",
+      "group": "wearables",
+      "tab": "Wearables",
+      "section": "Wearebles",
+      "source_sheet": "NFTs",
+      "source_row": 107,
+      "source_cell": "L107",
+      "selected_in_excel": false,
+      "price": "2190",
+      "effect_text": "+1 Leather",
+      "effect_values": [
+        {
+          "cell": "O107",
+          "raw": "1.0",
+          "number": 1.0
+        }
+      ],
+      "image": "nfts/wearables/200_training-whistle.png",
+      "source_media_path": "xl/media/image312.png",
+      "source_image_cell": "K107"
+    },
+    {
+      "id": "wearables-dream-scarf-108-right",
+      "name": "Dream Scarf",
+      "group": "wearables",
+      "tab": "Wearables",
+      "section": "Wearebles",
+      "source_sheet": "NFTs",
+      "source_row": 108,
+      "source_cell": "L108",
+      "selected_in_excel": false,
+      "price": "74",
+      "effect_text": "-20% in sheep production time",
+      "effect_values": [
+        {
+          "cell": "O108",
+          "raw": "0.8",
+          "number": 0.8
+        }
+      ],
+      "image": "nfts/wearables/201_dream-scarf.png",
+      "source_media_path": "xl/media/image333.png",
+      "source_image_cell": "K108"
+    },
+    {
+      "id": "wearables-white-sheep-onesie-109-right",
+      "name": "White Sheep Onesie",
+      "group": "wearables",
+      "tab": "Wearables",
+      "section": "Wearebles",
+      "source_sheet": "NFTs",
+      "source_row": 109,
+      "source_cell": "L109",
+      "selected_in_excel": true,
+      "price": "29",
+      "effect_text": "+0.25 Wool",
+      "effect_values": [
+        {
+          "cell": "O109",
+          "raw": "0.25",
+          "number": 0.25
+        }
+      ],
+      "image": "nfts/wearables/202_white-sheep-onesie.png",
+      "source_media_path": "xl/media/image299.png",
+      "source_image_cell": "K109"
+    },
+    {
+      "id": "wearables-black-sheep-onesie-110-right",
+      "name": "Black Sheep Onesie",
+      "group": "wearables",
+      "tab": "Wearables",
+      "section": "Wearebles",
+      "source_sheet": "NFTs",
+      "source_row": 110,
+      "source_cell": "L110",
+      "selected_in_excel": false,
+      "price": "3300",
+      "effect_text": "+2 Wool",
+      "effect_values": [
+        {
+          "cell": "O110",
+          "raw": "2.0",
+          "number": 2.0
+        }
+      ],
+      "image": "nfts/wearables/203_black-sheep-onesie.png",
+      "source_media_path": "xl/media/image383.png",
+      "source_image_cell": "K110"
+    },
+    {
+      "id": "wearables-merino-jumper-111-right",
+      "name": "Merino Jumper",
+      "group": "wearables",
+      "tab": "Wearables",
+      "section": "Wearebles",
+      "source_sheet": "NFTs",
+      "source_row": 111,
+      "source_cell": "L111",
+      "selected_in_excel": false,
+      "price": "430",
+      "effect_text": "+1 Merino Wool",
+      "effect_values": [
+        {
+          "cell": "O111",
+          "raw": "1.0",
+          "number": 1.0
+        }
+      ],
+      "image": "nfts/wearables/204_merino-jumper.png",
+      "source_media_path": "xl/media/image349.png",
+      "source_image_cell": "K111"
+    },
+    {
+      "id": "wearables-turd-topper-145-right",
+      "name": "Turd Topper",
+      "group": "wearables",
+      "tab": "Wearables",
+      "section": "Wearebles",
+      "source_sheet": "NFTs",
+      "source_row": 145,
+      "source_cell": "L145",
+      "selected_in_excel": true,
+      "price": "4.3999",
+      "effect_text": "+1 Fertiliser from Composters",
+      "effect_values": [],
+      "image": "nfts/wearables/228_turd-topper.png",
+      "source_media_path": "xl/media/image368.png",
+      "source_image_cell": "K145"
+    },
+    {
+      "id": "wearables-angler-waders-146-right",
+      "name": "Angler Waders",
+      "group": "wearables",
+      "tab": "Wearables",
+      "section": "Wearebles",
+      "source_sheet": "NFTs",
+      "source_row": 146,
+      "source_cell": "L146",
+      "selected_in_excel": true,
+      "price": "-",
+      "effect_text": "+10 on the daily fishing limit",
+      "effect_values": [],
+      "image": "nfts/wearables/229_angler-waders.png",
+      "source_media_path": "xl/media/image373.png",
+      "source_image_cell": "K146"
+    },
+    {
+      "id": "wearables-sunflower-rod-147-right",
+      "name": "Sunflower Rod",
+      "group": "wearables",
+      "tab": "Wearables",
+      "section": "Wearebles",
+      "source_sheet": "NFTs",
+      "source_row": 147,
+      "source_cell": "L147",
+      "selected_in_excel": true,
+      "price": "-",
+      "effect_text": "10% chance to catch +1 fish",
+      "effect_values": [],
+      "image": "nfts/wearables/230_sunflower-rod.png",
+      "source_media_path": "xl/media/image379.png",
+      "source_image_cell": "K147"
+    },
+    {
+      "id": "wearables-trident-148-right",
+      "name": "Trident",
+      "group": "wearables",
+      "tab": "Wearables",
+      "section": "Wearebles",
+      "source_sheet": "NFTs",
+      "source_row": 148,
+      "source_cell": "L148",
+      "selected_in_excel": true,
+      "price": "-",
+      "effect_text": "20% chance to catch +1 fish",
+      "effect_values": [],
+      "image": "nfts/wearables/231_trident.png",
+      "source_media_path": "xl/media/image372.png",
+      "source_image_cell": "K148"
+    },
+    {
+      "id": "wearables-crab-hat-149-right",
+      "name": "Crab Hat",
+      "group": "wearables",
+      "tab": "Wearables",
+      "section": "Wearebles",
+      "source_sheet": "NFTs",
+      "source_row": 149,
+      "source_cell": "L149",
+      "selected_in_excel": false,
+      "price": "333.9999",
+      "effect_text": "Bonus Fishing Bounty: 1",
+      "effect_values": [
+        {
+          "cell": "O149",
+          "raw": "1.0",
+          "number": 1.0
+        }
+      ],
+      "image": "nfts/wearables/232_crab-hat.png",
+      "source_media_path": "xl/media/image378.png",
+      "source_image_cell": "K149"
+    },
+    {
+      "id": "wearables-saw-fish-150-right",
+      "name": "Saw Fish",
+      "group": "wearables",
+      "tab": "Wearables",
+      "section": "Wearebles",
+      "source_sheet": "NFTs",
+      "source_row": 150,
+      "source_cell": "L150",
+      "selected_in_excel": false,
+      "price": "69",
+      "effect_text": "+5 Fishing Attempts, +1 Worm from Composting",
+      "effect_values": [],
+      "image": "nfts/wearables/233_saw-fish.png",
+      "source_media_path": "xl/media/image358.png",
+      "source_image_cell": "K150"
+    },
+    {
+      "id": "wearables-ancient-rod-151-right",
+      "name": "Ancient Rod",
+      "group": "wearables",
+      "tab": "Wearables",
+      "section": "Wearebles",
+      "source_sheet": "NFTs",
+      "source_row": 151,
+      "source_cell": "L151",
+      "selected_in_excel": false,
+      "price": "0",
+      "effect_text": "Fish without a rod",
+      "effect_values": [],
+      "image": "nfts/wearables/234_ancient-rod.png",
+      "source_media_path": "xl/media/image421.png",
+      "source_image_cell": "K151"
+    },
+    {
+      "id": "wearables-pirate-potion-161-right",
+      "name": "Pirate Potion",
+      "group": "wearables",
+      "tab": "Wearables",
+      "section": "Wearebles",
+      "source_sheet": "NFTs",
+      "source_row": 161,
+      "source_cell": "L161",
+      "selected_in_excel": true,
+      "price": "-",
+      "effect_text": "Open pirate chest daily",
+      "effect_values": [],
+      "image": "nfts/wearables/239_pirate-potion.png",
+      "source_media_path": "xl/media/image348.png",
+      "source_image_cell": "K161"
+    },
+    {
+      "id": "wearables-bionic-drill-162-right",
+      "name": "Bionic Drill",
+      "group": "wearables",
+      "tab": "Wearables",
+      "section": "Wearebles",
+      "source_sheet": "NFTs",
+      "source_row": 162,
+      "source_cell": "L162",
+      "selected_in_excel": false,
+      "price": "-",
+      "effect_text": "+5 in the Digging limit",
+      "effect_values": [
+        {
+          "cell": "O162",
+          "raw": "5.0",
+          "number": 5.0
+        }
+      ],
+      "image": "nfts/wearables/240_bionic-drill.png",
+      "source_media_path": "xl/media/image411.png",
+      "source_image_cell": "K162"
+    },
+    {
+      "id": "wearables-ancient-shovel-163-right",
+      "name": "Ancient Shovel",
+      "group": "wearables",
+      "tab": "Wearables",
+      "section": "Wearebles",
+      "source_sheet": "NFTs",
+      "source_row": 163,
+      "source_cell": "L163",
+      "selected_in_excel": false,
+      "price": "0",
+      "effect_text": "Dig without needing a shovel",
+      "effect_values": [
+        {
+          "cell": "O163",
+          "raw": "0.0",
+          "number": 0.0
+        }
+      ],
+      "image": "nfts/wearables/241_ancient-shovel.png",
+      "source_media_path": "xl/media/image389.png",
+      "source_image_cell": "K163"
+    },
+    {
+      "id": "wearables-crab-trap-164-right",
+      "name": "Crab Trap",
+      "group": "wearables",
+      "tab": "Wearables",
+      "section": "Wearebles",
+      "source_sheet": "NFTs",
+      "source_row": 164,
+      "source_cell": "L164",
+      "selected_in_excel": false,
+      "price": "259.9999",
+      "effect_text": "+1 Crab when finding one during excavations",
+      "effect_values": [
+        {
+          "cell": "O164",
+          "raw": "1.0",
+          "number": 1.0
+        }
+      ],
+      "image": "nfts/wearables/242_crab-trap.png",
+      "source_media_path": "xl/media/image371.png",
+      "source_image_cell": "K164"
+    },
+    {
+      "id": "wearables-faction-crow-178-right",
+      "name": "\"Faction\" Crow",
+      "group": "wearables",
+      "tab": "Wearables",
+      "section": "Wearebles",
+      "source_sheet": "NFTs",
+      "source_row": 178,
+      "source_cell": "L178",
+      "selected_in_excel": false,
+      "price": "-",
+      "effect_text": "+25% FLOWER and Coins on Deliveries",
+      "effect_values": [],
+      "image": "nfts/wearables/251_faction-crow.png",
+      "source_media_path": "xl/media/image438.png",
+      "source_image_cell": "K178"
+    },
+    {
+      "id": "wearables-mushroom-hat-179-right",
+      "name": "Mushroom Hat",
+      "group": "wearables",
+      "tab": "Wearables",
+      "section": "Wearebles",
+      "source_sheet": "NFTs",
+      "source_row": 179,
+      "source_cell": "L179",
+      "selected_in_excel": false,
+      "price": "36",
+      "effect_text": "+0.1 Mushroom",
+      "effect_values": [],
+      "image": "nfts/wearables/252_mushroom-hat.png",
+      "source_media_path": "xl/media/image423.png",
+      "source_image_cell": "K179"
+    },
+    {
+      "id": "wearables-paw-shield-180-right",
+      "name": "Paw Shield",
+      "group": "wearables",
+      "tab": "Wearables",
+      "section": "Wearebles",
+      "source_sheet": "NFTs",
+      "source_row": 180,
+      "source_cell": "L180",
+      "selected_in_excel": false,
+      "price": "846",
+      "effect_text": "+25% satisfaction for the Faction Pet and granted Marks",
+      "effect_values": [],
+      "image": "nfts/wearables/253_paw-shield.png",
+      "source_media_path": "xl/media/image407.png",
+      "source_image_cell": "K180"
+    },
+    {
+      "id": "wearables-architect-ruler-181-right",
+      "name": "Architect Ruler",
+      "group": "wearables",
+      "tab": "Wearables",
+      "section": "Wearebles",
+      "source_sheet": "NFTs",
+      "source_row": 181,
+      "source_cell": "L181",
+      "selected_in_excel": false,
+      "price": "37",
+      "effect_text": "+25% Crafting Box Speed",
+      "effect_values": [
+        {
+          "cell": "O181",
+          "raw": "0.75",
+          "number": 0.75
+        }
+      ],
+      "image": "nfts/wearables/254_architect-ruler.png",
+      "source_media_path": "xl/media/image424.png",
+      "source_image_cell": "K181"
+    },
+    {
+      "id": "wearables-sol-and-luna-182-right",
+      "name": "Sol & Luna",
+      "group": "wearables",
+      "tab": "Wearables",
+      "section": "Wearebles",
+      "source_sheet": "NFTs",
+      "source_row": 182,
+      "source_cell": "L182",
+      "selected_in_excel": false,
+      "price": "874",
+      "effect_text": "-50% in Craft time",
+      "effect_values": [
+        {
+          "cell": "O182",
+          "raw": "0.5",
+          "number": 0.5
+        }
+      ],
+      "image": "nfts/wearables/255_sol-and-luna.png",
+      "source_media_path": "xl/media/image401.png",
+      "source_image_cell": "K182"
+    },
+    {
+      "id": "wearables-lunas-crescent-183-right",
+      "name": "Luna's Crescent",
+      "group": "wearables",
+      "tab": "Wearables",
+      "section": "Wearebles",
+      "source_sheet": "NFTs",
+      "source_row": 183,
+      "source_cell": "L183",
+      "selected_in_excel": false,
+      "price": "9998",
+      "effect_text": "-50% Power Skill Cooldown",
+      "effect_values": [],
+      "image": "nfts/wearables/256_lunas-crescent.png",
+      "source_media_path": "xl/media/image399.png",
+      "source_image_cell": "K183"
+    },
+    {
+      "id": "wearables-faction-medallion",
+      "name": "\"Faction\" Medallion",
+      "group": "wearables",
+      "tab": "Wearables",
+      "section": "Factions",
+      "source_sheet": "NFTs",
+      "source_row": 129,
+      "source_cell": "L129",
+      "selected_in_excel": false,
+      "price": "-",
+      "effect_text": "-25% on kitchen time",
+      "effect_values": [
+        {
+          "cell": "O129",
+          "raw": "0.75",
+          "number": 0.75
+        }
+      ],
+      "image": "nfts/wearables/faction-medallion.png",
+      "source_media_path": "xl/media/image346.png",
+      "source_image_cell": "K129",
+      "sflHubId": "factionMedallion",
+      "idName": "factionMedallion"
+    }
+  ],
+  "blacksmith": [
+    {
+      "id": "blacksmith-warehouse",
+      "name": "Warehouse",
+      "group": "blacksmith",
+      "tab": "Blacksmith",
+      "section": "Blacksmith",
+      "source_sheet": "NFTs",
+      "source_row": 36,
+      "source_cell": "D36",
+      "selected_in_excel": true,
+      "price": "7610",
+      "effect_text": "+20% seed stock",
+      "effect_values": [
+        {
+          "kind": "percent",
+          "raw": "+20%",
+          "number": 0.2
+        }
+      ],
+      "image": "nfts/nfts/014_warehouse.png",
+      "source_media_path": "xl/media/image182.png",
+      "source_image_cell": "C36"
+    },
+    {
+      "id": "blacksmith-toolshed",
+      "name": "Toolshed",
+      "group": "blacksmith",
+      "tab": "Blacksmith",
+      "section": "Blacksmith",
+      "source_sheet": "NFTs",
+      "source_row": 19,
+      "source_cell": "L19",
+      "selected_in_excel": true,
+      "price": "10222",
+      "effect_text": "+50% tool stock",
+      "effect_values": [
+        {
+          "kind": "percent",
+          "raw": "+50%",
+          "number": 0.5
+        }
+      ],
+      "image": "nfts/nfts/126_toolshed.png",
+      "source_media_path": "xl/media/image230.png",
+      "source_image_cell": "K19"
+    },
+    {
+      "id": "blacksmith-immortal-pear",
+      "name": "Immortal Pear",
+      "group": "blacksmith",
+      "tab": "Blacksmith",
+      "section": "Blacksmith",
+      "source_sheet": "NFTs",
+      "source_row": 108,
+      "source_cell": "D108",
+      "selected_in_excel": true,
+      "price": "0",
+      "effect_text": "+1 harvest on fruits",
+      "effect_values": [
+        {
+          "kind": "flat",
+          "raw": "+1",
+          "number": 1.0
+        }
+      ],
+      "image": "nfts/nfts/081_immortal-pear.png",
+      "source_media_path": "xl/media/image287.png",
+      "source_image_cell": "C108"
+    },
+    {
+      "id": "blacksmith-bale",
+      "name": "Bale",
+      "group": "blacksmith",
+      "tab": "Blacksmith",
+      "section": "Blacksmith",
+      "source_sheet": "NFTs",
+      "source_row": 72,
+      "source_cell": "L72",
+      "selected_in_excel": true,
+      "price": "0",
+      "effect_text": "+0.1 Egg",
+      "effect_values": [
+        {
+          "kind": "flat",
+          "raw": "+0.1",
+          "number": 0.1
+        }
+      ],
+      "image": "nfts/nfts/166_bale.png",
+      "source_media_path": "xl/media/image246.png",
+      "source_image_cell": "K72"
+    },
+    {
+      "id": "blacksmith-scary-mike",
+      "name": "Scary Mike",
+      "group": "blacksmith",
+      "tab": "Blacksmith",
+      "section": "Blacksmith",
+      "source_sheet": "NFTs",
+      "source_row": 45,
+      "source_cell": "D45",
+      "selected_in_excel": true,
+      "price": "0",
+      "effect_text": "+0,2 x9 medium crops",
+      "effect_values": [
+        {
+          "kind": "multiplier",
+          "raw": "+0,2 x",
+          "number": 0.2
+        },
+        {
+          "kind": "flat",
+          "raw": "+0,2",
+          "number": 0.2
+        }
+      ],
+      "image": "nfts/nfts/023_scary-mike.png",
+      "source_media_path": "xl/media/image186.png",
+      "source_image_cell": "C45"
+    },
+    {
+      "id": "blacksmith-laurie-the-chuckle-crow",
+      "name": "Laurie the Chuckle Crow",
+      "group": "blacksmith",
+      "tab": "Blacksmith",
+      "section": "Blacksmith",
+      "source_sheet": "NFTs",
+      "source_row": 46,
+      "source_cell": "D46",
+      "selected_in_excel": true,
+      "price": "0",
+      "effect_text": "+0,2 x9 advanced crops",
+      "effect_values": [
+        {
+          "kind": "multiplier",
+          "raw": "+0,2 x",
+          "number": 0.2
+        },
+        {
+          "kind": "flat",
+          "raw": "+0,2",
+          "number": 0.2
+        }
+      ],
+      "image": "nfts/nfts/024_laurie-the-chuckle-crow.png",
+      "source_media_path": "xl/media/image205.png",
+      "source_image_cell": "C46"
+    },
+    {
+      "id": "blacksmith-stone-beetle",
+      "name": "Stone Beetle",
+      "group": "blacksmith",
+      "tab": "Blacksmith",
+      "section": "Blacksmith",
+      "source_sheet": "NFTs",
+      "source_row": 34,
+      "source_cell": "L34",
+      "selected_in_excel": true,
+      "price": "0",
+      "effect_text": "+0.1 Stone",
+      "effect_values": [
+        {
+          "kind": "flat",
+          "raw": "+0.1",
+          "number": 0.1
+        }
+      ],
+      "image": "nfts/nfts/138_stone-beetle.png",
+      "source_media_path": "xl/media/image234.png",
+      "source_image_cell": "K34"
+    },
+    {
+      "id": "blacksmith-iron-beetle",
+      "name": "Iron Beetle",
+      "group": "blacksmith",
+      "tab": "Blacksmith",
+      "section": "Blacksmith",
+      "source_sheet": "NFTs",
+      "source_row": 38,
+      "source_cell": "L38",
+      "selected_in_excel": false,
+      "price": "0",
+      "effect_text": "+0.1 Iron",
+      "effect_values": [
+        {
+          "kind": "flat",
+          "raw": "+0.1",
+          "number": 0.1
+        }
+      ],
+      "image": "nfts/nfts/142_iron-beetle.png",
+      "source_media_path": "xl/media/image180.png",
+      "source_image_cell": "K38"
+    },
+    {
+      "id": "blacksmith-gold-beetle",
+      "name": "Gold Beetle",
+      "group": "blacksmith",
+      "tab": "Blacksmith",
+      "section": "Blacksmith",
+      "source_sheet": "NFTs",
+      "source_row": 40,
+      "source_cell": "L40",
+      "selected_in_excel": true,
+      "price": "0",
+      "effect_text": "+0.1 Gold",
+      "effect_values": [
+        {
+          "kind": "flat",
+          "raw": "+0.1",
+          "number": 0.1
+        }
+      ],
+      "image": "nfts/nfts/144_gold-beetle.png",
+      "source_media_path": "xl/media/image196.png",
+      "source_image_cell": "K40"
+    },
+    {
+      "id": "blacksmith-fairy-circle",
+      "name": "Fairy Circle",
+      "group": "blacksmith",
+      "tab": "Blacksmith",
+      "section": "Blacksmith",
+      "source_sheet": "NFTs",
+      "source_row": 173,
+      "source_cell": "L173",
+      "selected_in_excel": true,
+      "price": "0",
+      "effect_text": "+0.2 Wild Mushroom",
+      "effect_values": [
+        {
+          "kind": "flat",
+          "raw": "+0.2",
+          "number": 0.2
+        }
+      ],
+      "image": "nfts/nfts/247_fairy-circle.png",
+      "source_media_path": "xl/media/image418.png",
+      "source_image_cell": "K173"
+    },
+    {
+      "id": "blacksmith-squirrel",
+      "name": "Squirrel",
+      "group": "blacksmith",
+      "tab": "Blacksmith",
+      "section": "Blacksmith",
+      "source_sheet": "NFTs",
+      "source_row": 25,
+      "source_cell": "L25",
+      "selected_in_excel": true,
+      "price": "0",
+      "effect_text": "+0.1 Wood",
+      "effect_values": [
+        {
+          "kind": "flat",
+          "raw": "+0.1",
+          "number": 0.1
+        }
+      ],
+      "image": "nfts/nfts/132_squirrel.png",
+      "source_media_path": "xl/media/image195.png",
+      "source_image_cell": "K25"
+    },
+    {
+      "id": "blacksmith-macaw",
+      "name": "Macaw",
+      "group": "blacksmith",
+      "tab": "Blacksmith",
+      "section": "Blacksmith",
+      "source_sheet": "NFTs",
+      "source_row": 109,
+      "source_cell": "D109",
+      "selected_in_excel": true,
+      "price": "0",
+      "effect_text": "+0.1 Fruit",
+      "effect_values": [
+        {
+          "kind": "flat",
+          "raw": "+0.1",
+          "number": 0.1
+        }
+      ],
+      "image": "nfts/nfts/082_macaw.png",
+      "source_media_path": "xl/media/image354.png",
+      "source_image_cell": "C109"
+    },
+    {
+      "id": "blacksmith-butterfly",
+      "name": "Butterfly",
+      "group": "blacksmith",
+      "tab": "Blacksmith",
+      "section": "Blacksmith",
+      "source_sheet": "NFTs",
+      "source_row": 157,
+      "source_cell": "D157",
+      "selected_in_excel": true,
+      "price": "0",
+      "effect_text": "10% chance +1 Flower",
+      "effect_values": [
+        {
+          "kind": "percent",
+          "raw": "10%",
+          "number": 0.1
+        },
+        {
+          "kind": "flat",
+          "raw": "+1",
+          "number": 1.0
+        }
+      ],
+      "image": "nfts/nfts/115_butterfly.png",
+      "source_media_path": "xl/media/image420.png",
+      "source_image_cell": "C157"
+    },
+    {
+      "id": "blacksmith-salt-sculpture-level-1",
+      "sflHubId": "saltSculpture1",
+      "idName": "saltSculpture1",
+      "name": "Salt Sculpture LEVEL 1",
+      "group": "blacksmith",
+      "tab": "Blacksmith",
+      "section": "Salt Sculpture",
+      "source_sheet": "Manual Blacksmith",
+      "source_row": "",
+      "source_cell": "",
+      "selected_in_excel": false,
+      "price": "4831",
+      "effect_text": "-5% salt charge replenishment time",
+      "effect_values": [],
+      "image": "nfts/blacksmith/salt_sculpture_01.png",
+      "source_media_path": "",
+      "source_image_cell": ""
+    },
+    {
+      "id": "blacksmith-salt-sculpture-level-2",
+      "sflHubId": "saltSculpture2",
+      "idName": "saltSculpture2",
+      "name": "Salt Sculpture LEVEL 2",
+      "group": "blacksmith",
+      "tab": "Blacksmith",
+      "section": "Salt Sculpture",
+      "source_sheet": "Manual Blacksmith",
+      "source_row": "",
+      "source_cell": "",
+      "selected_in_excel": false,
+      "price": "",
+      "effect_text": "+4% Prime Aging chance",
+      "effect_values": [],
+      "image": "nfts/blacksmith/salt_sculpture_01.png",
+      "source_media_path": "",
+      "source_image_cell": ""
+    },
+    {
+      "id": "blacksmith-salt-sculpture-level-3",
+      "sflHubId": "saltSculpture3",
+      "idName": "saltSculpture3",
+      "name": "Salt Sculpture LEVEL 3",
+      "group": "blacksmith",
+      "tab": "Blacksmith",
+      "section": "Salt Sculpture",
+      "source_sheet": "Manual Blacksmith",
+      "source_row": "",
+      "source_cell": "",
+      "selected_in_excel": false,
+      "price": "",
+      "effect_text": "+1 max salt harvest cap per node",
+      "effect_values": [],
+      "image": "nfts/blacksmith/salt_sculpture_02.png",
+      "source_media_path": "",
+      "source_image_cell": ""
+    },
+    {
+      "id": "blacksmith-salt-sculpture-level-4",
+      "sflHubId": "saltSculpture4",
+      "idName": "saltSculpture4",
+      "name": "Salt Sculpture LEVEL 4",
+      "group": "blacksmith",
+      "tab": "Blacksmith",
+      "section": "Salt Sculpture",
+      "source_sheet": "Manual Blacksmith",
+      "source_row": "",
+      "source_cell": "",
+      "selected_in_excel": false,
+      "price": "",
+      "effect_text": "-10% salt rake coin cost",
+      "effect_values": [],
+      "image": "nfts/blacksmith/salt_sculpture_02.png",
+      "source_media_path": "",
+      "source_image_cell": ""
+    },
+    {
+      "id": "blacksmith-salt-sculpture-level-5",
+      "sflHubId": "saltSculpture5",
+      "idName": "saltSculpture5",
+      "name": "Salt Sculpture LEVEL 5",
+      "group": "blacksmith",
+      "tab": "Blacksmith",
+      "section": "Salt Sculpture",
+      "source_sheet": "Manual Blacksmith",
+      "source_row": "",
+      "source_cell": "",
+      "selected_in_excel": false,
+      "price": "",
+      "effect_text": "-5% Aging Rack Time",
+      "effect_values": [],
+      "image": "nfts/blacksmith/salt_sculpture_03.png",
+      "source_media_path": "",
+      "source_image_cell": ""
+    },
+    {
+      "id": "blacksmith-salt-sculpture-level-6",
+      "sflHubId": "saltSculpture6",
+      "idName": "saltSculpture6",
+      "name": "Salt Sculpture LEVEL 6",
+      "group": "blacksmith",
+      "tab": "Blacksmith",
+      "section": "Salt Sculpture",
+      "source_sheet": "Manual Blacksmith",
+      "source_row": "",
+      "source_cell": "",
+      "selected_in_excel": false,
+      "price": "",
+      "effect_text": "+1 max salt harvest cap per node",
+      "effect_values": [],
+      "image": "nfts/blacksmith/salt_sculpture_03.png",
+      "source_media_path": "",
+      "source_image_cell": ""
+    }
+  ],
+  "shrines": [
+    {
+      "id": "shrines-boar-shrine-15-left",
+      "name": "Boar Shrine",
+      "group": "shrines",
+      "tab": "Shrines",
+      "section": "Temporary Shrines",
+      "source_sheet": "Shrine",
+      "source_row": 15,
+      "source_cell": "C15",
+      "selected_in_excel": false,
+      "price": "",
+      "effect_text": "-20% Cooking Time | (Lasts for 7days)",
+      "effect_values": [
+        {
+          "cell": "H15",
+          "raw": "0.8",
+          "number": 0.8
+        }
+      ],
+      "image": "nfts/shrines/295_boar-shrine.png",
+      "source_media_path": "xl/media/image385.png",
+      "source_image_cell": "C16"
+    },
+    {
+      "id": "shrines-hound-shrine-18-left",
+      "name": "Hound Shrine",
+      "group": "shrines",
+      "tab": "Shrines",
+      "section": "Temporary Shrines",
+      "source_sheet": "Shrine",
+      "source_row": 18,
+      "source_cell": "C18",
+      "selected_in_excel": false,
+      "price": "",
+      "effect_text": "+100 Pet XP | (Lasts for 7days)",
+      "effect_values": [
+        {
+          "cell": "H18",
+          "raw": "100.0",
+          "number": 100.0
+        }
+      ],
+      "image": "nfts/shrines/296_hound-shrine.png",
+      "source_media_path": "xl/media/image377.png",
+      "source_image_cell": "C19"
+    },
+    {
+      "id": "shrines-sparrow-shrine-21-left",
+      "name": "Sparrow Shrine",
+      "group": "shrines",
+      "tab": "Shrines",
+      "section": "Temporary Shrines",
+      "source_sheet": "Shrine",
+      "source_row": 21,
+      "source_cell": "C21",
+      "selected_in_excel": false,
+      "price": "",
+      "effect_text": "-25% Crop Growth Time | (Lasts for 7days)",
+      "effect_values": [
+        {
+          "cell": "H21",
+          "raw": "0.75",
+          "number": 0.75
+        }
+      ],
+      "image": "nfts/shrines/297_sparrow-shrine.png",
+      "source_media_path": "xl/media/image414.png",
+      "source_image_cell": "C22"
+    },
+    {
+      "id": "shrines-fox-shrine-24-left",
+      "name": "Fox Shrine",
+      "group": "shrines",
+      "tab": "Shrines",
+      "section": "Temporary Shrines",
+      "source_sheet": "Shrine",
+      "source_row": 24,
+      "source_cell": "C24",
+      "selected_in_excel": false,
+      "price": "",
+      "effect_text": "-25% Crafting Box Time | 10% chance to instantly craft a recipe | (Lasts for 7days)",
+      "effect_values": [
+        {
+          "cell": "H24",
+          "raw": "0.75",
+          "number": 0.75
+        }
+      ],
+      "image": "nfts/shrines/298_fox-shrine.png",
+      "source_media_path": "xl/media/image403.png",
+      "source_image_cell": "C25"
+    },
+    {
+      "id": "shrines-toucan-shrine-27-left",
+      "name": "Toucan Shrine",
+      "group": "shrines",
+      "tab": "Shrines",
+      "section": "Temporary Shrines",
+      "source_sheet": "Shrine",
+      "source_row": 27,
+      "source_cell": "C27",
+      "selected_in_excel": false,
+      "price": "",
+      "effect_text": "-25% Fruit Growth Time | (Lasts for 7days)",
+      "effect_values": [
+        {
+          "cell": "H27",
+          "raw": "0.75",
+          "number": 0.75
+        }
+      ],
+      "image": "nfts/shrines/299_toucan-shrine.png",
+      "source_media_path": "xl/media/image430.png",
+      "source_image_cell": "C28"
+    },
+    {
+      "id": "shrines-collie-shrine-30-left",
+      "name": "Collie Shrine",
+      "group": "shrines",
+      "tab": "Shrines",
+      "section": "Temporary Shrines",
+      "source_sheet": "Shrine",
+      "source_row": 30,
+      "source_cell": "C30",
+      "selected_in_excel": false,
+      "price": "",
+      "effect_text": "-25% Cow Sleep Time | -25% Sheep Sleep Time | -5% Feed to feed barn animals | (Lasts for 7days)",
+      "effect_values": [
+        {
+          "cell": "H30",
+          "raw": "0.75",
+          "number": 0.75
+        }
+      ],
+      "image": "nfts/shrines/300_collie-shrine.png",
+      "source_media_path": "xl/media/image440.png",
+      "source_image_cell": "C31"
+    },
+    {
+      "id": "shrines-moth-shrine-33-left",
+      "name": "Moth Shrine",
+      "group": "shrines",
+      "tab": "Shrines",
+      "section": "Temporary Shrines",
+      "source_sheet": "Shrine",
+      "source_row": 33,
+      "source_cell": "C33",
+      "selected_in_excel": false,
+      "price": "",
+      "effect_text": "-25% Flower Growth Time | 20% chance to get +1 Flower | (Lasts for 7days)",
+      "effect_values": [
+        {
+          "cell": "H33",
+          "raw": "0.75",
+          "number": 0.75
+        }
+      ],
+      "image": "nfts/shrines/301_moth-shrine.png",
+      "source_media_path": "xl/media/image448.png",
+      "source_image_cell": "C34"
+    },
+    {
+      "id": "shrines-badger-shrine-36-left",
+      "name": "Badger Shrine",
+      "group": "shrines",
+      "tab": "Shrines",
+      "section": "Temporary Shrines",
+      "source_sheet": "Shrine",
+      "source_row": 36,
+      "source_cell": "C36",
+      "selected_in_excel": false,
+      "price": "",
+      "effect_text": "-25% Tree Recovery Time | -25% Stone Recovery Time | (Lasts for 7days)",
+      "effect_values": [
+        {
+          "cell": "H36",
+          "raw": "0.75",
+          "number": 0.75
+        }
+      ],
+      "image": "nfts/shrines/302_badger-shrine.png",
+      "source_media_path": "xl/media/image446.png",
+      "source_image_cell": "C37"
+    },
+    {
+      "id": "shrines-mole-shrine-15-right",
+      "name": "Mole Shrine",
+      "group": "shrines",
+      "tab": "Shrines",
+      "section": "Temporary Shrines",
+      "source_sheet": "Shrine",
+      "source_row": 15,
+      "source_cell": "J15",
+      "selected_in_excel": false,
+      "price": "",
+      "effect_text": "-25% Iron Recovery Time | -25% Gold Recovery Time | -25% Crimstone Recovery Time | (Lasts for 7days)",
+      "effect_values": [
+        {
+          "cell": "O15",
+          "raw": "0.75",
+          "number": 0.75
+        }
+      ],
+      "image": "nfts/shrines/303_mole-shrine.png",
+      "source_media_path": "xl/media/image390.png",
+      "source_image_cell": "J16"
+    },
+    {
+      "id": "shrines-tortoise-shrine-18-right",
+      "name": "Tortoise Shrine",
+      "group": "shrines",
+      "tab": "Shrines",
+      "section": "Temporary Shrines",
+      "source_sheet": "Shrine",
+      "source_row": 18,
+      "source_cell": "J18",
+      "selected_in_excel": false,
+      "price": "",
+      "effect_text": "-33% Greenhouse Growth Time | -10% Crop Machine Growth Time | (Lasts for 7days)",
+      "effect_values": [
+        {
+          "cell": "O18",
+          "raw": "0.67",
+          "number": 0.67
+        }
+      ],
+      "image": "nfts/shrines/304_tortoise-shrine.png",
+      "source_media_path": "xl/media/image452.png",
+      "source_image_cell": "J19"
+    },
+    {
+      "id": "shrines-stag-shrine-21-right",
+      "name": "Stag Shrine",
+      "group": "shrines",
+      "tab": "Shrines",
+      "section": "Temporary Shrines",
+      "source_sheet": "Shrine",
+      "source_row": 21,
+      "source_cell": "J21",
+      "selected_in_excel": false,
+      "price": "",
+      "effect_text": "-25% Oil Recovery Time | +15 Oil every 3rd drill | (Lasts for 7days)",
+      "effect_values": [
+        {
+          "cell": "O21",
+          "raw": "0.75",
+          "number": 0.75
+        }
+      ],
+      "image": "nfts/shrines/305_stag-shrine.png",
+      "source_media_path": "xl/media/image419.png",
+      "source_image_cell": "J22"
+    },
+    {
+      "id": "shrines-bear-shrine-24-right",
+      "name": "Bear Shrine",
+      "group": "shrines",
+      "tab": "Shrines",
+      "section": "Temporary Shrines",
+      "source_sheet": "Shrine",
+      "source_row": 24,
+      "source_cell": "J24",
+      "selected_in_excel": false,
+      "price": "",
+      "effect_text": "+0.5 Honey Production Speed | +20% chance of bee swarm | (Lasts for 7days)",
+      "effect_values": [
+        {
+          "cell": "O24",
+          "raw": "0.5",
+          "number": 0.5
+        }
+      ],
+      "image": "nfts/shrines/306_bear-shrine.png",
+      "source_media_path": "xl/media/image447.png",
+      "source_image_cell": "J25"
+    },
+    {
+      "id": "shrines-bantam-shrine-27-right",
+      "name": "Bantam Shrine",
+      "group": "shrines",
+      "tab": "Shrines",
+      "section": "Temporary Shrines",
+      "source_sheet": "Shrine",
+      "source_row": 27,
+      "source_cell": "J27",
+      "selected_in_excel": false,
+      "price": "",
+      "effect_text": "-25% Chicken Sleep Time | -5% Feed to feed chickens | (Lasts for 7days)",
+      "effect_values": [
+        {
+          "cell": "O27",
+          "raw": "0.75",
+          "number": 0.75
+        }
+      ],
+      "image": "nfts/shrines/307_bantam-shrine.png",
+      "source_media_path": "xl/media/image430.png",
+      "source_image_cell": "J28"
+    },
+    {
+      "id": "shrines-legendary-shrine-30-right",
+      "name": "Legendary Shrine",
+      "group": "shrines",
+      "tab": "Shrines",
+      "section": "Temporary Shrines",
+      "source_sheet": "Shrine",
+      "source_row": 30,
+      "source_cell": "J30",
+      "selected_in_excel": false,
+      "price": "",
+      "effect_text": "+1 Crop Yield, +1 Fruit Patch Yield | +1 Wood +1 Stone +1 Flower | -50% Cooking Time | (Lasts for 1day)",
+      "effect_values": [
+        {
+          "cell": "O30",
+          "raw": "1.0",
+          "number": 1.0
+        }
+      ],
+      "image": "nfts/shrines/308_legendary-shrine.png",
+      "source_media_path": "xl/media/image432.png",
+      "source_image_cell": "J31"
+    },
+    {
+      "id": "shrines-trading-shrine-33-right",
+      "name": "Trading Shrine",
+      "group": "shrines",
+      "tab": "Shrines",
+      "section": "Temporary Shrines",
+      "source_sheet": "Shrine",
+      "source_row": 33,
+      "source_cell": "J33",
+      "selected_in_excel": false,
+      "price": "",
+      "effect_text": "-2.5% resource tax | (Lasts for 30days)",
+      "effect_values": [
+        {
+          "cell": "O33",
+          "raw": "0.025",
+          "number": 0.025
+        }
+      ],
+      "image": "nfts/shrines/309_trading-shrine.png",
+      "source_media_path": "xl/media/image445.png",
+      "source_image_cell": "J34"
+    },
+    {
+      "id": "shrines-obsidian-shrine-36-right",
+      "name": "Obsidian Shrine",
+      "group": "shrines",
+      "tab": "Shrines",
+      "section": "Temporary Shrines",
+      "source_sheet": "Shrine",
+      "source_row": 36,
+      "source_cell": "J36",
+      "selected_in_excel": false,
+      "price": "",
+      "effect_text": "Bulk harvest all ready crops | and plant seeds | (Lasts for 14days)",
+      "effect_values": [],
+      "image": "nfts/shrines/310_obsidian-shrine.png",
+      "source_media_path": "xl/media/image437.png",
+      "source_image_cell": "J37"
+    }
+  ]
+}

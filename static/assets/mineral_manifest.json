@@ -1,0 +1,174 @@
+{
+  "groups": {
+    "minerals": [
+      {
+        "id": "wood",
+        "name": "Wood",
+        "section": "Basic resources",
+        "base_time_seconds": 7200,
+        "base_yield_per_node": 1,
+        "native_yield_add": 0.2,
+        "tool": "Axe",
+        "tool_id": "axe",
+        "tool_image": "minerals/axe.png",
+        "tool_stock": 200,
+        "tool_cost_coins": 20,
+        "tool_resources": {},
+        "market_fallback_flower": 0.01588,
+        "sort_order": 1,
+        "image": "minerals/wood.png",
+        "node_tiers": [
+          "t1",
+          "t2",
+          "t3"
+        ]
+      },
+      {
+        "id": "stone",
+        "name": "Stone",
+        "section": "Basic resources",
+        "base_time_seconds": 14400,
+        "base_yield_per_node": 1,
+        "native_yield_add": 0.2,
+        "tool": "Pickaxe",
+        "tool_id": "pickaxe",
+        "tool_image": "minerals/pickaxe.png",
+        "tool_stock": 60,
+        "tool_cost_coins": 20,
+        "tool_resources": {
+          "Wood": 3
+        },
+        "market_fallback_flower": 0.0258,
+        "sort_order": 2,
+        "image": "minerals/stone.png",
+        "node_tiers": [
+          "t1",
+          "t2",
+          "t3"
+        ]
+      },
+      {
+        "id": "iron",
+        "name": "Iron",
+        "section": "Ores",
+        "base_time_seconds": 28800,
+        "base_yield_per_node": 1,
+        "native_yield_add": 0.2,
+        "tool": "Stone Pickaxe",
+        "tool_id": "stone_pickaxe",
+        "tool_image": "minerals/stone_pickaxe.png",
+        "tool_stock": 20,
+        "tool_cost_coins": 20,
+        "tool_resources": {
+          "Wood": 3,
+          "Stone": 5
+        },
+        "market_fallback_flower": 0.093773,
+        "sort_order": 3,
+        "image": "minerals/iron.png",
+        "node_tiers": [
+          "t1",
+          "t2",
+          "t3"
+        ]
+      },
+      {
+        "id": "gold",
+        "name": "Gold",
+        "section": "Ores",
+        "base_time_seconds": 86400,
+        "base_yield_per_node": 1,
+        "native_yield_add": 0.2,
+        "tool": "Iron Pickaxe",
+        "tool_id": "iron_pickaxe",
+        "tool_image": "minerals/iron_pickaxe.png",
+        "tool_stock": 5,
+        "tool_cost_coins": 80,
+        "tool_resources": {
+          "Wood": 3,
+          "Iron": 5
+        },
+        "market_fallback_flower": 0.32,
+        "sort_order": 4,
+        "image": "minerals/gold.png",
+        "node_tiers": [
+          "t1",
+          "t2",
+          "t3"
+        ]
+      },
+      {
+        "id": "crimstone",
+        "name": "Crimstone",
+        "section": "Rare resources",
+        "base_time_seconds": 86400,
+        "base_yield_per_node": 1.4,
+        "native_yield_add": 0,
+        "tool": "Gold Pickaxe",
+        "tool_id": "gold_pickaxe",
+        "tool_image": "minerals/gold_pickaxe.png",
+        "tool_stock": 5,
+        "tool_cost_coins": 100,
+        "tool_resources": {
+          "Wood": 3,
+          "Gold": 3
+        },
+        "market_fallback_flower": 0.72,
+        "sort_order": 5,
+        "image": "minerals/crimstone.png",
+        "node_tiers": [
+          "t1"
+        ]
+      },
+      {
+        "id": "oil",
+        "name": "Oil",
+        "section": "Rare resources",
+        "base_time_seconds": 72000,
+        "base_yield_per_node": 16.66666667,
+        "native_yield_add": 0,
+        "tool": "Oil Drill",
+        "tool_id": "oil_drill",
+        "tool_image": "minerals/oil_drill.png",
+        "tool_stock": 5,
+        "tool_cost_coins": 100,
+        "tool_resources": {
+          "Wood": 20,
+          "Iron": 9,
+          "Leather": 10
+        },
+        "market_fallback_flower": 0,
+        "sort_order": 6,
+        "image": "minerals/oil.png",
+        "special_note": "Oil usa el promedio 10, 10 y 30 = 16.67 por herramienta/día.",
+        "node_tiers": [
+          "t1"
+        ]
+      },
+      {
+        "id": "salt",
+        "name": "Salt",
+        "section": "Rare resources",
+        "base_time_seconds": 25200,
+        "base_yield_per_node": 10,
+        "native_yield_add": 0,
+        "tool": "Salt Rake",
+        "tool_id": "salt_rake",
+        "tool_image": "minerals/salt_rake.png",
+        "tool_stock": 50,
+        "tool_cost_coins": 20,
+        "tool_resources": {
+          "Wood": 3
+        },
+        "market_fallback_flower": 0,
+        "sort_order": 7,
+        "image": "minerals/salt.png",
+        "special_note": "Salt usa Salt Rake, tarda 7h y produce 10 Salt base por nodo.",
+        "node_tiers": [
+          "t1"
+        ]
+      }
+    ]
+  },
+  "source": "Base values from SFL Hub recursos.js and images extracted from A(8).xlsx"
+}

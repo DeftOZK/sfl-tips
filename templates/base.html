@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ title|default('Sunflower Land Toolkit') }}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+  <script src="{{ url_for('static', filename='js/build_state.js') }}"></script>
+</head>
+<body>
+  <div class="app-layout">
+    <aside class="app-sidebar" aria-label="Navegación principal">
+      <a class="sidebar-brand" href="/">
+        <span class="brand-mark">SFL</span>
+        <span>
+          <strong>Sunflower Land</strong>
+          <small>Toolkit</small>
+        </span>
+      </a>
+
+      <nav class="sidebar-nav">
+        <a class="sidebar-link" href="/" data-path="/">
+          <span class="sidebar-icon">◎</span>
+          <span>Precios</span>
+        </a>
+        <a class="sidebar-link" href="/skills" data-path="/skills">
+          <span class="sidebar-icon">✦</span>
+          <span>Skills</span>
+        </a>
+        <a class="sidebar-link" href="/nfts" data-path="/nfts">
+          <span class="sidebar-icon">◆</span>
+          <span>NFTs</span>
+        </a>
+        <a class="sidebar-link" href="/crops" data-path="/crops">
+          <span class="sidebar-icon">☘</span>
+          <span>Crops</span>
+        </a>
+        <a class="sidebar-link" href="/minerals" data-path="/minerals">
+          <span class="sidebar-icon">◆</span>
+          <span>Minerales</span>
+        </a>
+      </nav>
+    </aside>
+
+    <main class="page-shell">
+      <button class="settings-trigger" id="openGlobalSettings" type="button" aria-haspopup="dialog">
+        <span>⚙</span>
+        <span>Ajustes</span>
+      </button>
+      {% block page_header %}{% endblock %}
+      {% block content %}{% endblock %}
+    </main>
+  </div>
+
+  <div class="settings-modal" id="globalSettingsModal" hidden>
+    <button class="settings-backdrop" id="globalSettingsBackdrop" type="button" aria-label="Cerrar ajustes"></button>
+    <section class="settings-dialog" role="dialog" aria-modal="true" aria-labelledby="globalSettingsTitle">
+      <div class="settings-dialog-header">
+        <div>
+          <p class="settings-kicker">Configuración global</p>
+          <h2 id="globalSettingsTitle">Datos para cálculos</h2>
+        </div>
+        <button class="settings-close" id="closeGlobalSettings" type="button" aria-label="Cerrar">×</button>
+      </div>
+
+      <form id="globalSettingsForm" class="settings-form">
+        <label>
+          <span>Island Type</span>
+          <select id="globalIslandType">
+            <option value="Basic">Basic</option>
+            <option value="Spring">Spring</option>
+            <option value="Desert">Desert</option>
+            <option value="Volcano">Volcano</option>
+          </select>
+        </label>
+
+        <label>
+          <span>Season</span>
+          <select id="globalSeason">
+            <option value="Spring">Spring</option>
+            <option value="Summer">Summer</option>
+            <option value="Autumn">Autumn</option>
+            <option value="Winter">Winter</option>
+          </select>
+        </label>
+
+        <label>
+          <span>VIP?</span>
+          <select id="globalVip">
+            <option value="true">Sí</option>
+            <option value="false">No</option>
+          </select>
+        </label>
+
+        <label>
+          <span>Gem Pack</span>
+          <select id="globalGemPack">
+            <option value="100-0.90">100 Gems - $0.90</option>
+            <option value="650-4.54">650 Gems - $4.54</option>
+            <option value="1350-9.09">1350 Gems - $9.09</option>
+            <option value="2800-18.19">2800 Gems - $18.19</option>
+            <option value="7400-45.49">7400 Gems - $45.49</option>
+            <option value="15500-90.99">15500 Gems - $90.99</option>
+            <option value="200000-909.99">200000 Gems - $909.99</option>
+          </select>
+        </label>
+
+        <label>
+          <span>Gemas por restock</span>
+          <select id="globalGemsPerRestock">
+            <option value="5">5 gems</option>
+            <option value="10">10 gems</option>
+            <option value="15">15 gems</option>
+            <option value="20">20 gems</option>
+          </select>
+        </label>
+
+        <label>
+          <span>Coins por 1 FLOWER</span>
+          <input id="globalCoinsPerFlower" type="number" min="1" step="1" inputmode="decimal">
+        </label>
+
+        <label>
+          <span>Horas conectado al día</span>
+          <select id="globalActiveHoursPerDay">
+            <option value="0">0 h</option>
+            <option value="1">1 h</option>
+            <option value="2">2 h</option>
+            <option value="3">3 h</option>
+            <option value="4">4 h</option>
+            <option value="5">5 h</option>
+            <option value="6">6 h</option>
+            <option value="7">7 h</option>
+            <option value="8">8 h</option>
+            <option value="9">9 h</option>
+            <option value="10">10 h</option>
+            <option value="11">11 h</option>
+            <option value="12">12 h</option>
+            <option value="13">13 h</option>
+            <option value="14">14 h</option>
+            <option value="15">15 h</option>
+            <option value="16">16 h</option>
+            <option value="17">17 h</option>
+            <option value="18">18 h</option>
+            <option value="19">19 h</option>
+            <option value="20">20 h</option>
+            <option value="21">21 h</option>
+            <option value="22">22 h</option>
+            <option value="23">23 h</option>
+            <option value="24">24 h</option>
+          </select>
+        </label>
+
+        <label class="settings-checkbox">
+          <input id="globalIncludeRestock" type="checkbox">
+          <span>Descontar costo de restock en cálculos</span>
+        </label>
+
+        <div class="settings-actions">
+          <button class="button-secondary" id="cancelGlobalSettings" type="button">Cancelar</button>
+          <button class="button-primary" type="submit">Guardar</button>
+        </div>
+      </form>
+    </section>
+  </div>
+
+  <script src="{{ url_for('static', filename='js/global_settings.js') }}"></script>
+  <script>
+    const currentPath = window.location.pathname;
+    document.querySelectorAll('.sidebar-link').forEach(link => {
+      const path = link.dataset.path;
+      link.classList.toggle('is-active', path === '/' ? currentPath === '/' : currentPath.startsWith(path));
+    });
+  </script>
+</body>
+</html>

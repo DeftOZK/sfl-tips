@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Propuestas visuales SFL Tips</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; padding: 32px; background: #0f172a; font-family: Inter, system-ui, sans-serif; color: #e5e7eb; }
+    h1 { margin: 0 0 22px; font-size: clamp(2rem, 5vw, 4rem); letter-spacing: -0.06em; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px; }
+    .card { border: 1px solid var(--border); border-radius: 22px; background: var(--surface); color: var(--text); overflow: hidden; box-shadow: 0 18px 40px rgba(0,0,0,.16); font-family: var(--font); }
+    .top { padding: 18px; background: var(--panel); border-bottom: 1px solid var(--border); }
+    .top small { color: var(--muted); font-weight: 800; text-transform: uppercase; letter-spacing: .08em; }
+    .top h2 { margin: 6px 0 0; font-size: 1.35rem; letter-spacing: -0.04em; }
+    .body { padding: 16px; display: grid; gap: 10px; }
+    .skill { display: grid; grid-template-columns: 32px 1fr auto; gap: 10px; align-items: center; padding: 10px; border: 1px solid var(--border); border-radius: 14px; background: var(--card); }
+    .icon { width: 32px; height: 32px; border-radius: 10px; background: var(--accent); }
+    .name { font-weight: 850; }
+    .desc { color: var(--muted); font-size: .8rem; }
+    .pill { border-radius: 999px; background: var(--accent); color: var(--accentText); padding: 4px 8px; font-size: .72rem; font-weight: 900; }
+    .swatches { display: flex; gap: 7px; padding: 0 16px 16px; }
+    .swatch { width: 28px; height: 28px; border-radius: 999px; border: 1px solid rgba(0,0,0,.12); }
+    .t1 { --font: Inter, system-ui, sans-serif; --surface:#f8fafc; --panel:#ffffff; --card:#ffffff; --text:#0f172a; --muted:#64748b; --border:#dbe3ef; --accent:#facc15; --accentText:#3f2f00; }
+    .t2 { --font: "Space Grotesk", Inter, system-ui, sans-serif; --surface:#101828; --panel:#182230; --card:#111827; --text:#f8fafc; --muted:#98a2b3; --border:#2d3748; --accent:#38bdf8; --accentText:#062635; }
+    .t3 { --font: Nunito, Inter, system-ui, sans-serif; --surface:#fff7ed; --panel:#ffedd5; --card:#ffffff; --text:#431407; --muted:#9a3412; --border:#fed7aa; --accent:#fb923c; --accentText:#431407; }
+    .t4 { --font: Manrope, Inter, system-ui, sans-serif; --surface:#f0fdf4; --panel:#dcfce7; --card:#ffffff; --text:#052e16; --muted:#166534; --border:#bbf7d0; --accent:#22c55e; --accentText:#052e16; }
+    .t5 { --font: "IBM Plex Sans", Inter, system-ui, sans-serif; --surface:#f5f3ff; --panel:#ede9fe; --card:#ffffff; --text:#2e1065; --muted:#6d28d9; --border:#ddd6fe; --accent:#8b5cf6; --accentText:#ffffff; }
+    .t6 { --font: Sora, Inter, system-ui, sans-serif; --surface:#ecfeff; --panel:#cffafe; --card:#ffffff; --text:#083344; --muted:#0e7490; --border:#a5f3fc; --accent:#06b6d4; --accentText:#083344; }
+    .t7 { --font: "Aptos", Inter, system-ui, sans-serif; --surface:#fafaf9; --panel:#f5f5f4; --card:#ffffff; --text:#1c1917; --muted:#78716c; --border:#e7e5e4; --accent:#a3e635; --accentText:#1a2e05; }
+    .t8 { --font: "DM Sans", Inter, system-ui, sans-serif; --surface:#fff1f2; --panel:#ffe4e6; --card:#ffffff; --text:#4c0519; --muted:#be123c; --border:#fecdd3; --accent:#f43f5e; --accentText:#ffffff; }
+    .t9 { --font: "Atkinson Hyperlegible", Inter, system-ui, sans-serif; --surface:#eef2ff; --panel:#e0e7ff; --card:#ffffff; --text:#172554; --muted:#4338ca; --border:#c7d2fe; --accent:#6366f1; --accentText:#ffffff; }
+    .t10 { --font: "JetBrains Mono", ui-monospace, monospace; --surface:#0b1220; --panel:#111827; --card:#101827; --text:#d1fae5; --muted:#6ee7b7; --border:#1f3a32; --accent:#10b981; --accentText:#031b12; }
+  </style>
+</head>
+<body>
+  <h1>10 propuestas simples</h1>
+  <section class="grid">
+    <article class="card t1"><div class="top"><small>01 · Sunflower Light</small><h2>Inter + amarillo</h2></div><div class="body"><div class="skill"><span class="icon"></span><span><span class="name">Green Thumb</span><br><span class="desc">Cards claras, borde limpio.</span></span><span class="pill">1 pt</span></div></div><div class="swatches"><span class="swatch" style="background:#f8fafc"></span><span class="swatch" style="background:#0f172a"></span><span class="swatch" style="background:#facc15"></span></div></article>
+    <article class="card t2"><div class="top"><small>02 · Slate Modular</small><h2>Space Grotesk + cyan</h2></div><div class="body"><div class="skill"><span class="icon"></span><span><span class="name">Tree Charge</span><br><span class="desc">Oscuro consistente.</span></span><span class="pill">1 pt</span></div></div><div class="swatches"><span class="swatch" style="background:#101828"></span><span class="swatch" style="background:#f8fafc"></span><span class="swatch" style="background:#38bdf8"></span></div></article>
+    <article class="card t3"><div class="top"><small>03 · Harvest</small><h2>Nunito + naranja</h2></div><div class="body"><div class="skill"><span class="icon"></span><span><span class="name">Young Farmer</span><br><span class="desc">Cálido y farming.</span></span><span class="pill">1 pt</span></div></div><div class="swatches"><span class="swatch" style="background:#fff7ed"></span><span class="swatch" style="background:#431407"></span><span class="swatch" style="background:#fb923c"></span></div></article>
+    <article class="card t4"><div class="top"><small>04 · Crop Clean</small><h2>Manrope + verde</h2></div><div class="body"><div class="skill"><span class="icon"></span><span><span class="name">Strong Roots</span><br><span class="desc">Natural y suave.</span></span><span class="pill">2 pts</span></div></div><div class="swatches"><span class="swatch" style="background:#f0fdf4"></span><span class="swatch" style="background:#052e16"></span><span class="swatch" style="background:#22c55e"></span></div></article>
+    <article class="card t5"><div class="top"><small>05 · Lavender UI</small><h2>IBM Plex Sans + violeta</h2></div><div class="body"><div class="skill"><span class="icon"></span><span><span class="name">Midas Rush</span><br><span class="desc">Más tech, menos juego.</span></span><span class="pill">3 pts</span></div></div><div class="swatches"><span class="swatch" style="background:#f5f3ff"></span><span class="swatch" style="background:#2e1065"></span><span class="swatch" style="background:#8b5cf6"></span></div></article>
+    <article class="card t6"><div class="top"><small>06 · Aqua Farm</small><h2>Sora + cyan</h2></div><div class="body"><div class="skill"><span class="icon"></span><span><span class="name">Fishy Fortune</span><br><span class="desc">Fresco y ligero.</span></span><span class="pill">2 pts</span></div></div><div class="swatches"><span class="swatch" style="background:#ecfeff"></span><span class="swatch" style="background:#083344"></span><span class="swatch" style="background:#06b6d4"></span></div></article>
+    <article class="card t7"><div class="top"><small>07 · Stone Lime</small><h2>Aptos + lima</h2></div><div class="body"><div class="skill"><span class="icon"></span><span><span class="name">Rock'N'Roll</span><br><span class="desc">Neutral con acento vivo.</span></span><span class="pill">1 pt</span></div></div><div class="swatches"><span class="swatch" style="background:#fafaf9"></span><span class="swatch" style="background:#1c1917"></span><span class="swatch" style="background:#a3e635"></span></div></article>
+    <article class="card t8"><div class="top"><small>08 · Berry</small><h2>DM Sans + rose</h2></div><div class="body"><div class="skill"><span class="icon"></span><span><span class="name">Petalled Perk</span><br><span class="desc">Diferente sin saturar.</span></span><span class="pill">2 pts</span></div></div><div class="swatches"><span class="swatch" style="background:#fff1f2"></span><span class="swatch" style="background:#4c0519"></span><span class="swatch" style="background:#f43f5e"></span></div></article>
+    <article class="card t9"><div class="top"><small>09 · Indigo Product</small><h2>Atkinson + índigo</h2></div><div class="body"><div class="skill"><span class="icon"></span><span><span class="name">Oil Gadget</span><br><span class="desc">Muy legible.</span></span><span class="pill">1 pt</span></div></div><div class="swatches"><span class="swatch" style="background:#eef2ff"></span><span class="swatch" style="background:#172554"></span><span class="swatch" style="background:#6366f1"></span></div></article>
+    <article class="card t10"><div class="top"><small>10 · Terminal Farm</small><h2>JetBrains Mono + emerald</h2></div><div class="body"><div class="skill"><span class="icon"></span><span><span class="name">Composting Revamp</span><br><span class="desc">Más técnico/modular.</span></span><span class="pill">3 pts</span></div></div><div class="swatches"><span class="swatch" style="background:#0b1220"></span><span class="swatch" style="background:#d1fae5"></span><span class="swatch" style="background:#10b981"></span></div></article>
+  </section>
+</body>
+</html>

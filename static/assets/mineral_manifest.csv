@@ -1,0 +1,8 @@
+id,name,section,base_time_seconds,base_yield_per_node,native_yield_add,tool,tool_id,tool_image,tool_stock,tool_cost_coins,tool_resources,market_fallback_flower,sort_order,image,special_note,node_tiers
+wood,Wood,Basic resources,7200,1,0.2,Axe,axe,minerals/axe.png,200,20,{},0.01588,1,minerals/wood.png,,"[""t1"", ""t2"", ""t3""]"
+stone,Stone,Basic resources,14400,1,0.2,Pickaxe,pickaxe,minerals/pickaxe.png,60,20,"{""Wood"": 3}",0.0258,2,minerals/stone.png,,"[""t1"", ""t2"", ""t3""]"
+iron,Iron,Ores,28800,1,0.2,Stone Pickaxe,stone_pickaxe,minerals/stone_pickaxe.png,20,20,"{""Wood"": 3, ""Stone"": 5}",0.093773,3,minerals/iron.png,,"[""t1"", ""t2"", ""t3""]"
+gold,Gold,Ores,86400,1,0.2,Iron Pickaxe,iron_pickaxe,minerals/iron_pickaxe.png,5,80,"{""Wood"": 3, ""Iron"": 5}",0.32,4,minerals/gold.png,,"[""t1"", ""t2"", ""t3""]"
+crimstone,Crimstone,Rare resources,86400,1.4,0,Gold Pickaxe,gold_pickaxe,minerals/gold_pickaxe.png,5,100,"{""Wood"": 3, ""Gold"": 3}",0.72,5,minerals/crimstone.png,,"[""t1""]"
+oil,Oil,Rare resources,72000,16.66666667,0,Oil Drill,oil_drill,minerals/oil_drill.png,5,100,"{""Wood"": 20, ""Iron"": 9, ""Leather"": 10}",0,6,minerals/oil.png,"Oil usa el promedio 10, 10 y 30 = 16.67 por herramienta/día.","[""t1""]"
+salt,Salt,Rare resources,25200,10,0,Salt Rake,salt_rake,minerals/salt_rake.png,50,20,"{""Wood"": 3}",0,7,minerals/salt.png,"Salt usa Salt Rake, tarda 7h y produce 10 Salt base por nodo.","[""t1""]"

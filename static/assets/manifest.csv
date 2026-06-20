@@ -1,0 +1,182 @@
+index,skill_name,original_name,category,tier,cost,selected_in_excel,does_not_modify_current_calcs,description,cell_icon,cell_name,source_media_path,extracted_filename,width,height
+1,1 point,1 point,,,,T1,False,,C9,D9,xl/media/image1.png,icons/001_1_point.png,1200,761
+2,2 points,2 points,,,,T2,False,,C10,D10,xl/media/image1.png,icons/002_2_points.png,1200,761
+3,3 points,3 points,,,,T3,False,,C11,D11,xl/media/image1.png,icons/003_3_points.png,1200,761
+4,Green Thumb,Green Thumb,Legacy,Legacy,0,0,False,+5% more coins when selling crops (Seed Shop),C16,D16,xl/media/image54.png,icons/004_Green_Thumb.png,13,13
+5,Lumberjack's Extra,Lumberjack's Extra,Trees,,,1,False,+0.1 in wood yield.,J16,K16,xl/media/image23.png,icons/005_Lumberjacks_Extra.png,62,62
+6,Seed Specialist,Seed Specialist,Legacy,Legacy,0,0,False,-10% on crop growth time,C17,D17,xl/media/image53.png,icons/006_Seed_Specialist.png,11,12
+7,Tree Charge,Tree Charge,Trees,,,1,False,-10% in the growth time of trees.,J17,K17,xl/media/image111.png,icons/007_Tree_Charge.png,62,60
+8,Coder,Coder,Legacy,Legacy,0,0,False,+20% on crop harvest,C18,D18,xl/media/image33.png,icons/008_Coder.png,10,10
+9,More Axes,More Axes,Trees,,,0,False,+50 in axe stock.,J18,K18,xl/media/image22.png,icons/009_More_Axes.png,60,60
+10,Lumberjack,Lumberjack,Legacy,Legacy,0,0,False,+10% more wood,C19,D19,xl/media/image2.png,icons/010_Lumberjack.png,21,13
+11,Insta-Chop,Insta-Chop - X,Trees,,,1,True,A single hit on trees.,J19,K19,xl/media/image52.png,icons/011_Insta-Chop.png,61,62
+12,Logger,Logger,Legacy,Legacy,0,0,False,Uses half an axe per tree,C20,D20,xl/media/image7.png,icons/012_Logger.png,16,8
+13,Prospector,Prospector,Legacy,Legacy,0,0,False,+20% Stone,C21,D21,xl/media/image9.png,icons/013_Prospector.png,15,9
+14,Tough Tree,Tough Tree,Trees,Tier 2,2,1,False,1/10 chance of x3 in wood yield.,J21,K21,xl/media/image28.png,icons/014_Tough_Tree.png,63,62
+15,Gold Rush,Gold Rush,Legacy,Legacy,0,0,False,+50% Gold,C22,D22,xl/media/image51.png,icons/015_Gold_Rush.png,12,16
+16,Feller's Discount,Feller's Discount,Trees,Tier 2,2,0,False,-20% in axe cost.,J22,K22,xl/media/image17.png,icons/016_Fellers_Discount.png,61,58
+17,Discord Mod,Discord Mod,Legacy,Legacy,0,0,False,+35% Wood,C23,D23,xl/media/image19.png,icons/017_Discord_Mod.png,16,16
+18,Money Tree,Money Tree - X,Trees,Tier 2,2,0,True,1% chance to find 200 Coins when cutting down trees.,J23,K23,xl/media/image21.png,icons/018_Money_Tree.png,63,60
+19,Barn Manager,Barn Manager,Legacy,Legacy,0,0,False,+5% Animal Production +10% Chance of Mutant Animals,C24,D24,xl/media/image34.png,icons/019_Barn_Manager.png,448,460
+20,Wrangler,Wrangler,Legacy,Legacy,0,0,False,-10% on animal growth time +10% Chance of Mutant Animals,C25,D25,xl/media/image93.png,icons/020_Wrangler.png,459,457
+21,Tree Turnaround,Tree Turnaround,Trees,Tier 3,3,1,False,15% chance for trees to grow instantly.,J25,K25,xl/media/image120.png,icons/021_Tree_Turnaround.png,61,61
+22,Artist,Artist,Legacy,Legacy,0,0,False,10% Discount on Seeds and Tools,C26,D26,xl/media/image49.png,icons/022_Artist.png,456,458
+23,Tree Blitz,Tree Blitz - X,Trees,Tier 3,3,0,True,Make all trees grow instantly (once every 24 hours).,J26,K26,xl/media/image35.png,icons/023_Tree_Blitz.png,62,62
+24,Liquidity Provider,Liquidity Provider - X,Legacy,Legacy,0,0,True,+50% reduction in FLOWER withdrawal fee,C27,D27,xl/media/image56.png,icons/024_Liquidity_Provider.png,451,474
+25,Rock'N'Roll,Rock'N'Roll,Mining,,,1,False,+0.1 Stone Yield,J31,K31,xl/media/image10.png,icons/025_RockNRoll.png,62,61
+26,Green Thumb,Green Thumb,Crop,Tier 1,1,1,False,-5% in the time of Crops,C32,D32,xl/media/image4.png,icons/026_Green_Thumb.png,110,110
+27,Iron Bumpkin,Iron Bumpkin,Mining,,,0,False,+0.1 Iron Yield,J32,K32,xl/media/image16.png,icons/027_Iron_Bumpkin.png,62,60
+28,Young Farmer,Young Farmer,Crop,Tier 1,1,0,False,+0.1 Basic Crop Yield,C33,D33,xl/media/image31.png,icons/028_Young_Farmer.png,112,110
+29,Speed Miner,Speed Miner,Mining,,,1,False,-20% in stone recovery time.,J33,K33,xl/media/image25.png,icons/029_Speed_Miner.png,63,62
+30,Experienced Farmer,Experienced Farmer,Crop,Tier 1,1,0,False,+0.1 Medium Crop Yield,C34,D34,xl/media/image55.png,icons/030_Experienced_Farmer.png,112,112
+31,Tap Prospector,Tap Prospector - X,Mining,,,0,True,"1 hit on small minerals (stone, iron, gold)",J34,K34,xl/media/image24.png,icons/031_Tap_Prospector.png,62,62
+32,Betty's Friend,Betty's Friend - X,Crop,Tier 1,1,1,True,Delivery of 'Betty' Coin increased by 30%,C35,D35,xl/media/image36.png,icons/032_Bettys_Friend.png,113,108
+33,Forge-Ward Profits,Forge-Ward Profits - X,Mining,,,1,True,+20% revenue on deliveries to the Blacksmith.,J35,K35,xl/media/image74.png,icons/033_Forge-Ward_Profits.png,61,62
+34,Old Farmer,Old Farmer,Crop,Tier 1,1,1,False,+0.1 Advanded Crop Yield,C36,D36,xl/media/image8.png,icons/034_Old_Farmer.png,111,112
+35,Chonky Scarecrow,Chonky Scarecrow - X,Crop,Tier 1,1,0,True,Basic Scarecrow AOE increased to 7x7; -10% basic crop growth time.,C37,D37,xl/media/image58.png,icons/035_Chonky_Scarecrow.png,112,112
+36,Iron Hustle,Iron Hustle,Mining,Tier 2,2,0,False,-30% in iron recovery time.,J37,K37,xl/media/image37.png,icons/036_Iron_Hustle.png,63,61
+37,Frugal Miner,Frugal Miner,Mining,Tier 2,2,1,False,-20% in pickaxe coin cost.,J38,K38,xl/media/image79.png,icons/037_Frugal_Miner.png,62,62
+38,Strong Roots,Strong Roots,Crop,Tier 2,2,1,False,10% reduction in the time of Advanced Crops,C39,D39,xl/media/image6.png,icons/038_Strong_Roots.png,94,92
+39,Rocky Favor,Rocky Favor,Mining,Tier 2,2,1,False,"+1 in stone yield, -0.5 in iron yield.",J39,K39,xl/media/image38.png,icons/039_Rocky_Favor.png,63,62
+40,Coin Swindler,Coin Swindler,Crop,Tier 2,2,0,False,+10% coins when selling crops (Seed Shop),C40,D40,xl/media/image14.png,icons/040_Coin_Swindler.png,95,97
+41,Fire Kissed,Fire Kissed,Mining,Tier 2,2,1,False,+1 in Crimstone yield on the 5th consecutive day.,J40,K40,xl/media/image29.png,icons/041_Fire_Kissed.png,62,62
+42,Golden Sunflower,Golden Sunflower - X,Crop,Tier 2,2,0,True,1/700 chance of getting +0.35 gold when manually harvesting sunflowers,C41,D41,xl/media/image60.png,icons/042_Golden_Sunflower.png,96,94
+43,Midas Sprint,Midas Sprint,Mining,Tier 2,2,0,False,-10% in gold recovery time.,J41,K41,xl/media/image42.png,icons/043_Midas_Sprint.png,62,62
+44,Horror Mike,Horror Mike,Crop,Tier 2,2,0,False,Scary Mike AOE increases the size to 7x7 and +0.1 Crops (Medium Crops),C42,D42,xl/media/image70.png,icons/044_Horror_Mike.png,94,93
+45,Laurie's Gains,Laurie's Gains,Crop,Tier 2,2,1,False,Laurie Crow AOE increases the size to 7x7 and +0.1 Crops (Advanced Crops),C43,D43,xl/media/image18.png,icons/045_Lauries_Gains.png,94,92
+46,Midas Rush,Midas Rush,Mining,Tier 3,3,0,False,-20% in gold recovery time.,J43,K43,xl/media/image41.png,icons/046_Midas_Rush.png,62,61
+47,Golden Touch,Golden Touch,Mining,Tier 3,3,1,False,+0.5 Gold Yield,J44,K44,xl/media/image5.png,icons/047_Golden_Touch.png,62,63
+48,Acre Farm,Acre Farm,Crop,Tier 3,3,1,False,"+1 Advanced crop yield, -0.5 Basic and Medium crop yield",C45,D45,xl/media/image15.png,icons/048_Acre_Farm.png,93,94
+49,More Picks,More Picks,Mining,Tier 3,3,1,False,"Increased stock: +70 Pickaxe, +20 Stone Pickaxe, +7 Iron Pickaxe.",J45,K45,xl/media/image47.png,icons/049_More_Picks.png,63,60
+50,Hectare Farm,Hectare Farm,Crop,Tier 3,3,0,False,"+1 Basic and Medium crop yield, -0.5 Advanced crop yield",C46,D46,xl/media/image30.png,icons/050_Hectare_Farm.png,93,95
+51,Ferrous Favor,Ferrous Favor,Mining,Tier 3,3,0,False,"+1 in iron yield, -0.5 in stone yield.",J46,K46,xl/media/image12.png,icons/051_Ferrous_Favor.png,63,62
+52,Instant Growth,Instant Growth - X,Crop,Tier 3,3,1,True,Ability to make all Crops ready for harvest (1/72h),C47,D47,xl/media/image3.png,icons/052_Instant_Growth.png,92,94
+53,Fireside Alchemist,Fireside Alchemist,Mining,Tier 3,3,0,False,-15% in Crimstone recovery time.,J47,K47,xl/media/image40.png,icons/053_Fireside_Alchemist.png,61,62
+54,Fruitful Fumble,Fruitful Fumble,Fruit Patch,,,1,False,+0.1 Fruit Yield,C52,D52,xl/media/image46.png,icons/054_Fruitful_Fumble.png,63,63
+55,Efficient Feeding,Efficient Feeding,Animals,,,0,False,-5% in feed for all animals.,J52,K52,xl/media/image11.png,icons/055_Efficient_Feeding.png,62,62
+56,Fruity Heaven,Fruity Heaven,Fruit Patch,,,0,False,-10% in the cost of fruit seeds,C53,D53,xl/media/image44.png,icons/056_Fruity_Heaven.png,62,63
+57,Restless Animals,Restless Animals,Animals,,,1,False,-10% in animal sleep time.,J53,K53,xl/media/image45.png,icons/057_Restless_Animals.png,63,63
+58,Fruity Profit,Fruity Profit - X,Fruit Patch,,,1,True,+50% coins on Tango deliveries,C54,D54,xl/media/image26.png,icons/058_Fruity_Profit.png,64,62
+59,Fine Fibers,Fine Fibers,Animals,,,1,False,"+0.1 in feather, leather, and Merino wool yield.",J54,K54,xl/media/image57.png,icons/059_Fine_Fibers.png,63,62
+60,Loyal Macaw,Loyal Macaw,Fruit Patch,,,1,False,Double Macaw's Effect,C55,D55,xl/media/image32.png,icons/060_Loyal_Macaw.png,63,63
+61,Bountiful Bounties,Bountiful Bounties,Animals,,,0,False,+50% in coins from Animal Rewards.,J55,K55,xl/media/image20.png,icons/061_Bountiful_Bounties.png,62,62
+62,No Axe No Worries,No Axe No Worries,Fruit Patch,,,0,False,"Cut fruit branches without axes, -1 wood from fruit branches",C56,D56,xl/media/image43.png,icons/062_No_Axe_No_Worries.png,64,62
+63,Double Bale,Double Bale,Animals,,,1,False,Double the effect of Bale.,J56,K56,xl/media/image66.png,icons/063_Double_Bale.png,63,63
+64,Bale Economy,Bale Economy,Animals,,,1,False,Bale affects milk and wool production.,J57,K57,xl/media/image27.png,icons/064_Bale_Economy.png,61,62
+65,Catchup,Catchup,Fruit Patch,Tier 2,2,0,False,-10% in the growth time of fruits,C58,D58,xl/media/image118.png,icons/065_Catchup.png,62,61
+66,Featherweight,Featherweight,Animals,,,0,False,"+0.25 Feather yield
+-0.35 Leather & Merino Wool yield",J58,K58,xl/media/image13.png,icons/066_Featherweight.png,62,60
+67,Fruity Woody,Fruity Woody,Fruit Patch,Tier 2,2,0,False,+1 wood from fruit branches and stems,C59,D59,xl/media/image50.png,icons/067_Fruity_Woody.png,63,62
+68,Pear Turbocharge,Pear Turbocharge,Fruit Patch,Tier 2,2,1,False,Double the effect of Immortal Pear's,C60,D60,xl/media/image59.png,icons/068_Pear_Turbocharge.png,62,60
+69,Crime Fruit,Crime Fruit,Fruit Patch,Tier 2,2,0,False,+10 in the stock of Tomato and Lemon seeds,C61,D61,xl/media/image125.png,icons/069_Crime_Fruit.png,64,61
+70,Abundant Harvest,Abundant Harvest,Animals,Tier 2,2,1,False,"+0.2 in egg, wool, and milk yield.",J61,K61,xl/media/image61.png,icons/070_Abundant_Harvest.png,62,63
+71,Heartwarming Instruments,Heartwarming Instruments,Animals,Tier 2,2,1,False,+50% animal experience from Animal Affection tools.,J62,K62,xl/media/image39.png,icons/071_Heartwarming_Instruments.png,62,61
+72,Generous Orchard,Generous Orchard,Fruit Patch,Tier 3,3,1,False,20% chance of +1 in fruit yield,C63,D63,xl/media/image62.png,icons/072_Generous_Orchard.png,60,60
+73,Kale Mix,Kale Mix,Animals,Tier 2,2,0,False,Mixed Grain requires 3 kale to mix.,J63,K63,xl/media/image90.png,icons/073_Kale_Mix.png,61,61
+74,Long Pickings,Long Pickings,Fruit Patch,Tier 3,3,0,False,"-50% in the growth time of apples and bananas,
++100% in the growth time for all other fruits.",C64,D64,xl/media/image67.png,icons/074_Long_Pickings.png,62,63
+75,Alternate Medicine,Alternate Medicine - X,Animals,Tier 2,2,0,True,Medicine requires 1 less lemon and honey to mix.,J64,K64,xl/media/image71.png,icons/075_Alternate_Medicine.png,62,61
+76,Healthy Livestock,Healthy Livestock - X,Animals,Tier 2,2,1,True,-50% chance of disease.,J65,K65,xl/media/image78.png,icons/076_Healthy_Livestock.png,62,62
+77,Short Pickings,Short Pickings,Fruit Patch,Tier 3,3,0,False,"-50% in the growth time of blueberries and oranges,
++100% in the growth time for all other fruits.",C66,D66,xl/media/image68.png,icons/077_Short_Pickings.png,62,61
+78,Merino Whisperer,Merino Whisperer,Animals,Tier 2,2,0,False,"+0.25 Merino Wool yield
+-0.35 Leather & Feather yield",J66,K66,xl/media/image72.png,icons/078_Merino_Whisperer.png,61,62
+79,Zesty Vibes,Zesty Vibes,Fruit Patch,Tier 3,3,0,False,"+1 in the yield of Tomato and Lemon,
+-0.25 in the yield for all other fruits.",C68,D68,xl/media/image122.png,icons/079_Zesty_Vibes.png,62,62
+80,Clucky Grazing,Clucky Grazing,Animals,Tier 3,3,0,False,"-25% feed for chickens,
++50% feed for other animals.",J69,K69,xl/media/image159.png,icons/080_Clucky_Grazing.png,62,62
+81,Sheepwise Diet,Sheepwise Diet,Animals,Tier 3,3,1,False,"-25% feed for sheep,
++50% feed for other animals.",J71,K71,xl/media/image76.png,icons/081_Sheepwise_Diet.png,61,60
+82,Cow-Smart Nutrition,Cow-Smart Nutrition,Animals,Tier 3,3,0,False,"-25% feed for cows,
++50% feed for other animals.",J73,K73,xl/media/image109.png,icons/082_Cow-Smart_Nutrition.png,61,62
+83,Glass Room,Glass Room,Greenhouse,,,1,False,+0.1 in greenhouse production yield.,C74,D74,xl/media/image65.png,icons/083_Glass_Room.png,64,63
+84,Rice and Shine,Rice and Shine,Greenhouse,,,0,False,-5% in the growth time of greenhouse products.,C75,D75,xl/media/image69.png,icons/084_Rice_and_Shine.png,64,61
+85,Chonky Feed,Chonky Feed,Animals,Tier 3,3,1,False,"2x animal experience from feeding,
++50% feed for all animals.",J75,K75,xl/media/image83.png,icons/085_Chonky_Feed.png,61,62
+86,Seedy Business,Seedy Business,Greenhouse,,,1,False,-15% in the cost of greenhouse seeds.,C76,D76,xl/media/image77.png,icons/086_Seedy_Business.png,63,61
+87,Victoria's Secretary,Victoria's Secretary - X,Greenhouse,,,1,True,+50% in coins on Victoria's deliveries.,C77,D77,xl/media/image199.png,icons/087_Victorias_Secretary.png,61,61
+88,Barnyard Rouse,Barnyard Rouse - X,Animals,Tier 3,3,0,True,Instantly wake up all animals (1/5d).,J77,K77,xl/media/image48.png,icons/088_Barnyard_Rouse.png,63,61
+89,Leathercraft Mastery,Leathercraft Mastery,Animals,Tier 3,3,0,False,"+0.25 Leather yield
+-0.35 Feather & Merino Wool yield",J78,K78,xl/media/image85.png,icons/089_Leathercraft_Mastery.png,63,61
+90,Olive Express,Olive Express,Greenhouse,Tier 2,2,0,False,-10% in the growth time of olives.,C79,D79,xl/media/image81.png,icons/090_Olive_Express.png,62,61
+91,Rice Rocket,Rice Rocket,Greenhouse,Tier 2,2,0,False,-10% in the growth time of rice.,C80,D80,xl/media/image92.png,icons/091_Rice_Rocket.png,64,61
+92,Vine Velocity,Vine Velocity,Greenhouse,Tier 2,2,0,False,-10% in the growth time of grapes.,C81,D81,xl/media/image63.png,icons/092_Vine_Velocity.png,61,62
+93,Seeded Bounty,Seeded Bounty,Greenhouse,Tier 2,2,0,False,"+0.5 in GH production yield, +1 greenhouse seed to plant.",C82,D82,xl/media/image87.png,icons/093_Seeded_Bounty.png,62,60
+94,Greenhouse Gamble,Greenhouse Gamble,Greenhouse,Tier 3,3,0,False,25% chance of +1 in GH production.,C84,D84,xl/media/image106.png,icons/094_Greenhouse_Gamble.png,62,60
+95,Fisherman's 5 Fold,Fisherman's 5 Fold - X,Fishing,,,1,True,+5 in the daily fishing limit.,J84,K84,xl/media/image94.png,icons/095_Fishermans_5_Fold.png,61,59
+96,Slick Saver,Slick Saver,Greenhouse,Tier 3,3,0,False,-1 Oil to cultivate GH products.,C85,D85,xl/media/image80.png,icons/096_Slick_Saver.png,63,61
+97,Fishy Chance,Fishy Chance - X,Fishing,,,0,True,10% chance to get +1 basic fish.,J85,K85,xl/media/image88.png,icons/097_Fishy_Chance.png,61,61
+98,Greasy Plants,Greasy Plants,Greenhouse,Tier 3,3,0,False,"+1 in GH production yield, +100% in Oil consumption.",C86,D86,xl/media/image98.png,icons/098_Greasy_Plants.png,61,60
+99,Fishy Roll,Fishy Roll - X,Fishing,,,1,True,10% chance to get +1 advanced fish.,J86,K86,xl/media/image82.png,icons/099_Fishy_Roll.png,62,62
+100,Greenhouse Guru,Greenhouse Guru - X,Greenhouse,Tier 3,3,0,True,Make all GH crops that are growing ready for harvest (1/96h).,C87,D87,xl/media/image101.png,icons/100_Greenhouse_Guru.png,61,61
+101,Reel Deal,Reel Deal - X,Fishing,,,0,True,-50% on the cost of fishing rods.,J87,K87,xl/media/image73.png,icons/101_Reel_Deal.png,62,62
+102,Fisherman's 10 Fold,Fisherman's 10 Fold - X,Fishing,Tier 2,2,1,True,+10 in the daily fishing limit.,J89,K89,xl/media/image89.png,icons/102_Fishermans_10_Fold.png,62,61
+103,Fishy Fortune,Fishy Fortune - X,Fishing,Tier 2,2,0,True,+100% in Coins from Corale deliveries.,J90,K90,xl/media/image99.png,icons/103_Fishy_Fortune.png,63,61
+104,Fishy Gamble,Fishy Gamble - X,Fishing,Tier 2,2,1,True,20% chance to get +1 expert fish.,J91,K91,xl/media/image86.png,icons/104_Fishy_Gamble.png,63,63
+105,Sweet Bonus,Sweet Bonus - X,Bees Flowers,,,0,True,+0.1 Honey per hive.,C93,D93,xl/media/image96.png,icons/105_Sweet_Bonus.png,62,62
+106,Frenzied Fish,Frenzied Fish - X,Fishing,Tier 3,3,0,True,"During the fish Frenzied, +1 fish and 50% chance of +1 fish.",J93,K93,xl/media/image139.png,icons/106_Frenzied_Fish.png,62,62
+107,Hyper Bees,Hyper Bees - X,Bees Flowers,,,0,True,+0.1 in honey production speed.,C94,D94,xl/media/image102.png,icons/107_Hyper_Bees.png,62,61
+108,More With Less,More With Less - X,Fishing,Tier 3,3,0,True,"+15 in the daily fishing limit, -1 worm from all composters.",J94,K94,xl/media/image114.png,icons/108_More_With_Less.png,62,61
+109,Blooming Boost,Blooming Boost - X,Bees Flowers,,,0,True,-10% in the growth time of flowers.,C95,D95,xl/media/image105.png,icons/109_Blooming_Boost.png,63,59
+110,Fishy Feast,Fishy Feast - X,Fishing,Tier 3,3,1,True,+20% Fish XP.,J95,K95,xl/media/image84.png,icons/110_Fishy_Feast.png,61,62
+111,Flower Sale,Flower Sale - X,Bees Flowers,,,0,True,-20% in the cost of flower seeds.,C96,D96,xl/media/image91.png,icons/111_Flower_Sale.png,62,60
+112,Buzzworthy Treats,Buzzworthy Treats,Bees Flowers,Tier 2,2,0,False,+10% Experience in foods made with honey.,C98,D98,xl/media/image95.png,icons/112_Buzzworthy_Treats.png,63,59
+113,Blossom Bonding,Blossom Bonding - X,Bees Flowers,Tier 2,2,0,True,+2 relationship points when gifting flowers.,C99,D99,xl/media/image110.png,icons/113_Blossom_Bonding.png,63,61
+114,Pollen Power Up,Pollen Power Up - X,Bees Flowers,Tier 2,2,0,True,Additional yield of +0.1 harvest after pollination.,C100,D100,xl/media/image75.png,icons/114_Pollen_Power_Up.png,62,61
+115,Fast Feasts,Fast Feasts,Fishing,Tier 3,3,0,False,-10% cooking time for Firepit and Kitchen.,J100,K100,xl/media/image64.png,icons/115_Fast_Feasts.png,63,63
+116,Petalled Perk,Petalled Perk - X,Bees Flowers,Tier 2,2,0,True,10% chance to get +1 flower.,C101,D101,xl/media/image104.png,icons/116_Petalled_Perk.png,61,60
+117,Nom Nom,Nom Nom - X,Fishing,Tier 3,3,0,True,+10% in food delivery revenue.,J101,K101,xl/media/image123.png,icons/117_Nom_Nom.png,63,62
+118,Munching Mastery,Munching Mastery,Fishing,Tier 3,3,1,False,+5% Experience when eating meals.,J102,K102,xl/media/image113.png,icons/118_Munching_Mastery.png,63,63
+119,Bee Collective,Bee Collective - X,Bees Flowers,Tier 3,3,0,True,+20% chance of a bee swarm.,C103,D103,xl/media/image107.png,icons/119_Bee_Collective.png,63,62
+120,Swift Sizzle,Swift Sizzle - X,Fishing,Tier 3,3,0,True,-40% cooking time for FirePit with Oil.,J103,K103,xl/media/image148.png,icons/120_Swift_Sizzle.png,63,59
+121,Flower Power,Flower Power - X,Bees Flowers,Tier 3,3,0,True,-20% in the growth time of flowers.,C104,D104,xl/media/image134.png,icons/121_Flower_Power.png,62,62
+122,Flowery Abode,Flowery Abode - X,Bees Flowers,Tier 3,3,0,True,"+0.5 in honey production speed,
++50% in flower growth time.",C105,D105,xl/media/image145.png,icons/122_Flowery_Abode.png,62,61
+123,Frosted Cakes,Frosted Cakes,Fishing,Tier 2,2,0,False,-10% cooking time for cakes.,J105,K105,xl/media/image103.png,icons/123_Frosted_Cakes.png,62,59
+124,Juicy Boost,Juicy Boost,Fishing,Tier 2,2,0,False,+10% experience for Smoothie Shack drinks.,J106,K106,xl/media/image97.png,icons/124_Juicy_Boost.png,63,59
+125,Petal Blessed,Petal Blessed - X,Bees Flowers,Tier 3,3,0,True,Skill: make all currently growing flowers ready to be harvested (1/96h).,C107,D107,xl/media/image100.png,icons/125_Petal_Blessed.png,60,62
+126,Turbo Fry,Turbo Fry - X,Fishing,Tier 2,2,0,True,-50% cooking time for Kitchen with Oil.,J107,K107,xl/media/image154.png,icons/126_Turbo_Fry.png,63,62
+127,Drive-Through Deli,Drive-Through Deli,Fishing,Tier 2,2,0,False,+15% experience for Deli meals.,J108,K108,xl/media/image136.png,icons/127_Drive-Through_Deli.png,61,61
+128,Double Nom,Double Nom,Fishing,Tier 3,3,0,False,"+1 food when cooking, 2x ingredients needed for cooking.",J110,K110,xl/media/image112.png,icons/128_Double_Nom.png,62,62
+129,Fiery Jackpot,Fiery Jackpot,Fishing,Tier 3,3,0,False,+20% chance to get +1 food in the Firepit.,J111,K111,xl/media/image117.png,icons/129_Fiery_Jackpot.png,63,62
+130,Fry Frenzy,Fry Frenzy - X,Fishing,Tier 3,3,0,True,-60% cooking time for the Deli with Oil.,J112,K112,xl/media/image170.png,icons/130_Fry_Frenzy.png,61,62
+131,Crop Extension Module I,Crop Extension Module I - X,Machinery,,,0,True,Allow Rhubarb and Zucchini seeds to be used in the CM.,C113,D113,xl/media/image131.png,icons/131_Crop_Extension_Module_I.png,63,62
+132,Instant Gratification,Instant Gratification - X,Fishing,Tier 3,3,0,True,Makes all currently cooking meals ready to be consumed (1/72h).,J113,K113,xl/media/image119.png,icons/132_Instant_Gratification.png,60,62
+133,Crop Processor Unit,Crop Processor Unit,Machinery,,,0,False,"-5% in CM growth time, +10% in Oil consumption.",C114,D114,xl/media/image149.png,icons/133_Crop_Processor_Unit.png,64,64
+134,Oil Gadget,Oil Gadget,Machinery,,,1,False,-10% in Oil consumption.,C115,D115,xl/media/image108.png,icons/134_Oil_Gadget.png,62,66
+135,Oil Extraction,Oil Extraction,Machinery,,,1,False,+1 Oil when collecting from reserves.,C116,D116,xl/media/image115.png,icons/135_Oil_Extraction.png,62,62
+136,Leak-Proof Tank,Leak-Proof Tank - X,Machinery,,,0,True,Triple the Oil tank capacity of the Crop Machine.,C117,D117,xl/media/image152.png,icons/136_Leak-Proof_Tank.png,65,63
+137,Crop Extension Module II,Crop Extension Module II - X,Machinery,Tier 2,2,0,True,Allow Carrot and Cabbage seeds to be used in the CM.,C119,D119,xl/media/image162.png,icons/137_Crop_Extension_Module_II.png,65,62
+138,Efficient Bin,Efficient Bin - X,Compost,,,0,True,+5 Sprout Mix.,J119,K119,xl/media/image158.png,icons/138_Efficient_Bin.png,62,59
+139,Crop Extension Module III,Crop Extension Module III - X,Machinery,Tier 2,2,0,True,Allow Yam and Brocolli seeds to be used in the CM.,C120,D120,xl/media/image127.png,icons/139_Crop_Extension_Module_III.png,65,62
+140,Turbo Charged,Turbo Charged - X,Compost,,,0,True,+5 Fruitful Blend,J120,K120,xl/media/image143.png,icons/140_Turbo_Charged.png,63,62
+141,Rapid Rig,Rapid Rig,Machinery,Tier 2,2,0,False,"-20% in CM growth time, +40% in Oil consumption.",C121,D121,xl/media/image167.png,icons/141_Rapid_Rig.png,62,60
+142,Wormy Treat,Wormy Treat - X,Compost,,,0,True,+1 Worm,J121,K121,xl/media/image130.png,icons/142_Wormy_Treat.png,63,60
+143,Oil Be Back,Oil Be Back,Machinery,Tier 2,2,0,False,-20% in Oil refilling time.,C122,D122,xl/media/image129.png,icons/143_Oil_Be_Back.png,63,62
+144,Feathery Business,Feathery Business - X,Compost,,,0,True,"Use feathers instead of eggs to speed up the composters,
+2x feathers to speed up the composters.",J122,K122,xl/media/image198.png,icons/144_Feathery_Business.png,63,61
+145,Oil Rig,Oil Rig,Machinery,Tier 2,2,1,False,Oil Drill requires 20 Wool instead of Leather to craft,C123,D123,xl/media/image124.png,icons/145_Oil_Rig.png,63,63
+146,Sprout Surge,Sprout Surge - X,Compost,,,0,True,Place Sprout Mix in all plots.,J124,K124,xl/media/image121.png,icons/146_Sprout_Surge.png,63,61
+147,Field Expansion Module,Field Expansion Module - X,Machinery,Tier 3,3,0,True,+5 packages added to the machine.,C125,D125,xl/media/image150.png,icons/147_Field_Expansion_Module.png,62,65
+148,Blend-tastic,Blend-tastic - X,Compost,,,0,True,Place Fruitful Blend in all fruit tree plots.,J125,K125,xl/media/image135.png,icons/148_Blend-tastic.png,61,61
+149,Field Extension Module,Field Extension Module,Machinery,Tier 3,3,0,False,+5 plots added to the machine.,C126,D126,xl/media/image171.png,icons/149_Field_Extension_Module.png,64,63
+150,Efficiency Extension Module,Efficiency Extension Module,Machinery,Tier 3,3,0,False,-30% in Oil consumption.,C127,D127,xl/media/image142.png,icons/150_Efficiency_Extension_Module.png,63,62
+151,Swift Decomposer,Swift Decomposer - X,Compost,Tier 2,2,0,True,-10% in composting time.,J127,K127,xl/media/image116.png,icons/151_Swift_Decomposer.png,62,60
+152,Grease Lightning,Grease Lightning - X,Machinery,Tier 3,3,0,True,Make empty Oil wells refill instantly (1/96h).,C128,D128,xl/media/image177.png,icons/152_Grease_Lightning.png,64,65
+153,Root Rocket,Root Rocket - X,Compost,Tier 2,2,0,True,Place Rapid Root in all plots.,J128,K128,xl/media/image190.png,icons/153_Root_Rocket.png,63,62
+154,Composting Bonanza,Composting Bonanza - X,Compost,Tier 2,2,0,True,"Speed up the composters for an additional hour when boosted,
+2x resources to boost the composters.",J129,K129,xl/media/image156.png,icons/154_Composting_Bonanza.png,63,61
+155,Premium Worms,Premium Worms - X,Compost,Tier 2,2,0,True,+10 Rapid Root,J131,K131,xl/media/image188.png,icons/155_Premium_Worms.png,61,60
+156,Fruitful Bounty,Fruitful Bounty - X,Compost,Tier 2,2,0,True,Double the effect of Fruitful Blend's.,J132,K132,xl/media/image147.png,icons/156_Fruitful_Bounty.png,59,62
+157,Composting Overhaul,Composting Overhaul - X,Compost,Tier 3,3,0,True,"+2 Worms, -5 fertilisers",J134,K134,xl/media/image128.png,icons/157_Composting_Overhaul.png,61,60
+158,Composting Revamp,Composting Revamp - X,Compost,Tier 3,3,0,True,"+5 fertilisers, -3 Worms",J135,K135,xl/media/image179.png,icons/158_Composting_Revamp.png,63,61
+159,Cheap Rakes,Cheap Rakes,Aging,Tier 1,1,0,False,-20% salt rake coin cost,,,,icons/159_Cheap_Rakes.png,,
+160,Speedy Aging,Speedy Aging,Aging,Tier 1,1,0,False,-10% Fish Aging time,,,,icons/160_Speedy_Aging.png,,
+161,Salty Seas,Salty Seas,Aging,Tier 1,1,0,False,-10% salt charge replenishment time,,,,icons/161_Salty_Seas.png,,
+162,Wide Rakes,Wide Rakes,Aging,Tier 1,1,0,False,+2 Salt per harvest,,,,icons/162_Wide_Rakes.png,,
+163,Bacalhau,Bacalhau,Aging,Tier 1,1,0,False,+1 Bait yield from fermentation rack,,,,icons/163_Bacalhau.png,,
+164,Fish Smoking,Fish Smoking,Aging,Tier 2,2,0,False,Doubled chance Aged Fish becomes Prime Aged,,,,icons/164_Fish_Smoking.png,,
+165,Refiner,Refiner,Aging,Tier 2,2,0,False,15% chance of +1 Refined Salt when making Refined Salt,,,,icons/165_Refiner.png,,
+168,Sea Blessed,Sea Blessed,Aging,Tier 2,2,0,False,5% chance to restore 1 charge to 4 Salt hodes on harvest,,,,icons/168_Sea_Blessed.png,,
+169,Ager,Ager,Aging,Tier 3,3,0,False,"2x output from Aging Shed Racks | 2x Aging Shed inputs (ingredients, fish & salt)",,,,icons/169_Ager.png,,
+170,Salt Surge,Salt Surge,Aging,Tier 3,3,0,False,Recharge all Salt hodes to max,,,,icons/170_Salt_Surge.png,,

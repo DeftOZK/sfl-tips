@@ -1,0 +1,101 @@
+{
+  "version": 1,
+  "skills": [
+    {
+      "id": "string",
+      "name": "string",
+      "category": "string",
+      "tier": "number",
+      "cost": "number",
+      "description": "string",
+      "inactive": "boolean",
+      "icon": "string"
+    }
+  ],
+  "assets": {
+    "nfts": [
+      {
+        "id": "string",
+        "sflHubId": "string optional; maps selected asset to one exact SFL Hub boost rule when needed",
+        "idName": "string optional alias for sflHubId",
+        "name": "string",
+        "group": "nfts | wearables | blacksmith | shrines",
+        "section": "string",
+        "effect_text": "string",
+        "image": "string"
+      }
+    ],
+    "wearables": [
+      {
+        "id": "string",
+        "sflHubId": "string optional; maps selected asset to one exact SFL Hub boost rule when needed",
+        "idName": "string optional alias for sflHubId",
+        "name": "string",
+        "group": "nfts | wearables | blacksmith | shrines",
+        "section": "string",
+        "effect_text": "string",
+        "image": "string"
+      }
+    ],
+    "blacksmith": [
+      {
+        "id": "string",
+        "sflHubId": "string optional; maps selected asset to one exact SFL Hub boost rule when needed",
+        "idName": "string optional alias for sflHubId",
+        "name": "string",
+        "group": "nfts | wearables | blacksmith | shrines",
+        "section": "string",
+        "effect_text": "string",
+        "image": "string"
+      }
+    ],
+    "shrines": [
+      {
+        "id": "string",
+        "sflHubId": "string optional; maps selected asset to one exact SFL Hub boost rule when needed",
+        "idName": "string optional alias for sflHubId",
+        "name": "string",
+        "group": "nfts | wearables | blacksmith | shrines",
+        "section": "string",
+        "effect_text": "string",
+        "image": "string"
+      }
+    ]
+  },
+  "config": {
+    "islandType": "Basic | Spring | Desert | Volcano",
+    "season": "Spring | Summer | Autumn | Winter",
+    "vip": "boolean",
+    "gemPack": "gems-usd, example: 1350-9.09",
+    "coinsPerFlower": "number",
+    "flowerUsd": "number internal default 0.071",
+    "includeRestock": "boolean",
+    "gemsPerRestock": "number; allowed values: 5, 10, 15, 20",
+    "plots": {
+      "crops": "number",
+      "fruits": "number",
+      "greenhouse": "fixed number 4"
+    },
+    "activeHoursPerDay": "integer from 0 to 24; used instead of fixed 24h/day in daily crop calculations",
+    "mineralNodes": {
+      "wood": "{ t1, t2, t3 }",
+      "stone": "{ t1, t2, t3 }",
+      "iron": "{ t1, t2, t3 }",
+      "gold": "{ t1, t2, t3 }",
+      "crimstone": "{ t1 only }",
+      "oil": "{ t1 only }",
+      "salt": "{ t1 only }"
+    },
+    "mineralBoughtMarket": {
+      "description": "Map de recursos marcados como comprados en market. Por default no se marca ninguno; la calculadora usa costo propio escalonado para recursos producibles.",
+      "wood": "boolean",
+      "stone": "boolean",
+      "iron": "boolean",
+      "gold": "boolean",
+      "crimstone": "boolean",
+      "oil": "boolean",
+      "salt": "boolean"
+    }
+  },
+  "updatedAt": "ISO datetime"
+}
